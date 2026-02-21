@@ -1,0 +1,299 @@
+---
+title: "_Physalia_ global population genomics: Fig. 1"
+format:
+  html:
+    embed-resources: true
+theme: cosmo
+---
+
+Samuel H. Church
+
+Initiated: March, 2023
+
+```{r init}
+
+setwd("/Users/samuelchurch/Downloads/Physalia_spatiotemporal/R_code")
+#| include: false
+
+library(gridExtra)
+library(ggplot2)
+#library(RcppCNPy)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(tidyr)
+library(ggtree)
+library(ggrepel)
+library(maps)
+library(ape)
+library(phytools)
+library(viridis)
+
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+theme_set(theme_classic())
+
+
+colors <- c("#E78AC3","#00008B","#800000","#DAA520","#006400","#DAA520","#DC143C","#FC8D62","#452a00","#686f80","#66C2A5","#B3B3B3")
+names(colors) <- c("Central Pacific","E Indian","Gulf of California","Gulf of Mexico","NE Atlantic","NW Atlantic","NW Pacific","SE Pacific","SW Atlantic","SW Pacific","W Indian")
+
+ocean_levels <- c("Gulf of Mexico","NW Atlantic","NE Atlantic","SW Atlantic","W Indian","E Indian","SW Pacific","NW Pacific","Central Pacific","Gulf of California","SE Pacific")
+sample_info$ocean <- factor(sample_info$ocean,levels=ocean_levels)
+
+cols <- c("dark cyan","dark orange","dark red","#9B59B6","#6DCFF6","dark blue","dodgerblue2")
+names(cols) <- c("phy","utr","B2","meg","min")
+
+metadata <- read.delim("../data/metadata.tsv",header=T,stringsAsFactors=F)# %>% filter(status %in% c("sequenced","sequenced elsewhere"))
+#hand <- read.delim("../data/handedness.tsv",header=T,stringsAsFactors=F) 
+
+sample_info <- read.delim("../data/sample_ids.tsv",header=T,stringsAsFactors=F) %>%
+  mutate(year = as.numeric(gsub(".*/(.*)","\\1",date_collected)), month = as.numeric(gsub("(.*)/.*/.*","\\1",date_collected))) %>% 
+  separate(lat_long,into=c("latitude","longitude"),sep=", ") %>% 
+  mutate(latitude = as.numeric(latitude), longitude = as.numeric(longitude)) %>% 
+  filter(status != "excluded")
+locations <- sample_info %>% pull(location) %>% unique()
+
+assignments <- read.delim("../data/subset.txt",header=F,sep=" ",stringsAsFactors=F) %>%
+  rename(ID = V1, cluster = V2) %>%
+  mutate(cluster = recode(cluster, "A" = "phy", "B1" = "utr", "C1" = "meg", "C2" = "min"))
+sample_info <- sample_info %>% left_join(.,assignments,by="ID")
+
+inat <- read.delim("../inaturalist_machine_learning/observations-582197.csv",sep=",",header=T,stringsAsFactors=F) %>% filter(!is.na(longitude) & !is.na(latitude))
+
+LeftBound = 110
+world <- ne_countries(scale = "medium", returnclass = "sf") %>% st_set_crs(4326)
+robinson = paste("+proj=robin +lon_0=",LeftBound," +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",sep="")
+world2 = world %>% st_break_antimeridian(lon_0 = LeftBound) %>% st_transform(crs = robinson)
+
+sample_info_tally <- sample_info %>% mutate(latitude = round(latitude,0), longitude = round(longitude,0), year2 = ifelse(year < 2023, "<2023",year)) %>% group_by(latitude,longitude,cluster,year2) %>% tally()
+
+transpoint = st_as_sf(sample_info_tally,coords=c("longitude","latitude"),crs=4326)
+dtran = st_transform(transpoint,robinson)
+
+spac_lon_range <- c(140,-140)
+spac_lat_range <- c(-50,-20)
+
+bbox_ll <- st_bbox(c(
+   xmin = spac_lon_range[1],
+   xmax = spac_lon_range[2],
+   ymin = spac_lat_range[1],
+   ymax = spac_lat_range[2]
+ ), crs = st_crs(4326)) %>% st_as_sfc()
+bbox_proj <- st_transform(bbox_ll, crs = robinson)
+bbox_coords <- st_bbox(bbox_proj)
+xlims <- c(bbox_coords$xmin, bbox_coords$xmax)
+ylims <- c(bbox_coords$ymin, bbox_coords$ymax)
+
+theme_set(theme_minimal())
+g1 <- ggplot(data=world2) + geom_sf(fill = "light gray", colour = NA) +
+  	coord_sf(xlim = xlims, ylim = ylims) + 
+  geom_label_repel(data=dtran,aes(geometry=geometry,label= cluster,fill=cluster),stat="sf_coordinates",color="white",
+    size=1.5,max.overlaps=100,box.padding=0.35,segment.color="dark gray",segment.size=0.25)  + 
+  geom_point(data=dtran,aes(geometry=geometry,color = cluster, shape=as.character(year2)),size = 1.5, alpha =0.9, stat="sf_coordinates") + 
+  #theme(legend.position = "none") +
+  scale_x_continuous(breaks=c(120,130,140,150,160,170,180,-170,-160,-150,-140,-130,-120,-110,-100)) + 
+  scale_fill_manual(values = cols, "assignment") +
+  scale_color_manual(values = cols, "assignment") +
+  xlab("") + ylab("")
+  
+pdf(file="../figures/panels/SPacific_sampling_assignments.pdf",height=4,width=8)
+print(g1)
+dev.off()
+
+g1 <- ggplot(data=world2) + geom_sf(fill = "light gray", colour = NA) +
+  geom_point(data=itran,aes(geometry=geometry, size = n), color = "royalblue2", alpha=0.5,pch=16 ,stat="sf_coordinates") + 
+  #theme(legend.position = "none") +
+  ggtitle(paste0(sum(si$n)," total samples")) + 
+  scale_size() + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+
+pdf(file="../figures/panels/map_sampling.pdf",height=4,width=8)
+print(g1)
+dev.off()
+
+inat_tally <- inat %>% mutate(latitude = round(latitude,5), longitude = round(longitude,5)) %>% group_by(lat,lon) %>% tally()
+
+transinat <- st_as_sf(inat_tally,coords=c("longitude","latitude"),crs=4326)
+itran <- st_transform(transinat,robinson)
+
+g2 <-  ggplot(data=world2) + geom_sf(fill = "light gray", colour = NA) +
+  geom_point(data=dtran,aes(geometry=geometry, size = n, color = ocean), alpha=0.7,pch=16 ,stat="sf_coordinates") +
+  #theme(legend.position = "none") +
+  ggtitle(paste0(sum(si$n)," total samples")) + 
+  scale_color_manual(values = colors) + 
+  scale_size(range = c(2,8),breaks=c(1,round(max(si$n)/2,0),15,max(si$n))) + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+png(file="../figures/panels/map_sampling_regions.png",height=1400,width=2400,res=300)
+print(g2)
+dev.off()
+
+g3 <- ggplot(data=world2) + geom_sf(fill = "#D3D3D3", colour = NA) +
+  	coord_sf(xlim = xlims, ylim = ylims) + 
+  geom_point(data=dtran,aes(geometry=geometry, color = cluster, shape = cluster), size = 2, alpha=0.7 ,stat="sf_coordinates") +
+  #theme(legend.position = "none") +
+  ggtitle(paste0(sum(si$n)," total samples")) + 
+  scale_shape_manual(values = c(14,16,9,17,8)) + 
+  scale_color_manual(values = cols) + 
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+```
+
+
+```{r SPAC}
+
+longitude_range <- c(100,-130)
+latitude_range <- c(-50,0)
+LeftBound = 110
+
+build_world <- function(LeftBound,latitude_range,longitude_range,species_of_interest){
+	data <- sample_info %>% 
+	filter(lat >= latitude_range[1], lat <= latitude_range[2]) %>%
+	filter(long >= longitude_range[1], long <= longitude_range[2])
+
+	world <- ne_countries(scale = "medium", returnclass = "sf") %>% st_set_crs(4326)
+	robinson = paste("+proj=robin +lon_0=",LeftBound," +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",sep="")
+	world2 = world %>% st_break_antimeridian(lon_0 = LeftBound) %>% st_transform(crs = robinson)
+
+	transinat <- st_as_sf(data ,coords=c("longitude","latitude"),crs=4326)
+	itran <- st_transform(transinat,robinson)
+	itran <- itran %>% mutate(x = st_coordinates(geometry)[,1], y = st_coordinates(geometry)[,2])
+ 
+  # --- Add this block for xlim/ylim based on the bounding box ---
+  bbox_ll <- st_bbox(c(
+    xmin = longitude_range[1],
+    xmax = longitude_range[2],
+    ymin = latitude_range[1],
+    ymax = latitude_range[2]
+  ), crs = st_crs(4326)) %>% st_as_sfc()
+
+  bbox_proj <- st_transform(bbox_ll, crs = robinson)
+  bbox_coords <- st_bbox(bbox_proj)
+
+  xlims <- c(bbox_coords$xmin, bbox_coords$xmax)
+  ylims <- c(bbox_coords$ymin, bbox_coords$ymax)
+
+	return(list(data = data, world2 = world2, itran = itran, xlims = xlims, ylims = ylims))
+}
+
+name <- paste0(longitude_range[1],"_",longitude_range[2],"_",latitude_range[1],"_",latitude_range[2])
+world <- build_world(LeftBound,latitude_range,longitude_range,species_of_interest)
+
+g3 <- ggplot(data=world[['world2']]) + geom_sf(fill = "#D3D3D3", colour = NA) +
+  	coord_sf(xlim = world[['xlims']], ylim = world[['ylims']]) + 
+  	theme(legend.position = "none",
+  	axis.title.x=element_blank(),
+  	axis.title.y=element_blank()) +
+	scale_x_continuous(breaks = seq(-180, 180, by = 20)) +
+	scale_y_continuous(breaks = seq(-90, 90, by = 20))
+ 
+gdata <- world[['itran']] %>%  st_drop_geometry() %>% select(x, y) %>% slice_sample(prop = 1) 
+
+month1 <-  g3 +
+  geom_point(data=gdata,aes(x=x,y=y), size = 1, alpha=0.75,pch=16) 
+
+month1
+```
+
+
+
+```{r cov}
+dir <- "../results/SPAC/"
+name <- "SPAC"
+bam_list <- paste0(dir,"SPAC_bam.filelist")
+
+PC_info <- data.frame(ID = read.table(bam_list,head=F) %>% 
+  apply(.,1,function(x){gsub(".*sorted/(.*)_pic.bam","\\1",x)})) %>% 
+  left_join(.,sample_info,by="ID")
+
+cov <- as.matrix(read.table(paste0(dir,name,".cov")))
+e <- eigen(cov)
+exp_var <- paste0(round(e$values / sum(e$values) *100,1),"%")
+
+n_vectors <- ncol(e$vectors)
+e_vectors <- e$vectors[,1:n_vectors]
+colnames(e_vectors) <- paste0("PC",seq(1:n_vectors))
+PC_info <- bind_cols(PC_info,e_vectors)
+
+eigen_plot <- ggplot(data.frame(eigenvalues = e$values, 
+                      k = seq(1:length(e$values))),
+                aes(y = eigenvalues, x = k)) + 
+  geom_vline(xintercept = 5, linetype="dashed") + 
+  geom_point() + 
+  scale_x_continuous(limits = c(0,30),breaks=c(0,1,2,3,4,5,10,20,30))
+
+png(paste0("../figures/panels/cov_",name,".png"),width=1200,height=800,res=300)
+print(eigen_plot)
+dev.off()
+```
+
+```{r PCA}
+g4 <- ggplot(PC_info,aes(y=PC2,x=-1*PC1,label=ID)) +
+  geom_vline(xintercept=0, linetype="dotted", color="dark gray") +
+  geom_hline(yintercept=0, linetype="dotted", color="dark gray") +
+  geom_point(size=2.5,alpha=0.5,pch=16,color="royalblue2") + 
+  #geom_text_repel(max.overlaps=50,size=1,segment.colour=NA,box.padding=0) + 
+  ylab(paste0("PC2 : ",exp_var[2])) + 
+  xlab(paste0("PC1 : ",exp_var[1])) + 
+  theme(legend.position="none") 
+
+g6 <- ggplot(PC_info,aes(y=PC3,x=-1*PC1,label=ID)) +
+  geom_vline(xintercept=0, linetype="dotted", color="dark gray") +
+  geom_hline(yintercept=0, linetype="dotted", color="dark gray") +
+  geom_point(size=2.5,alpha=0.5,pch=16,color="royalblue2") + 
+  ylab(paste0("PC3 : ",exp_var[3])) + 
+  xlab(paste0("PC1 : ",exp_var[1])) + 
+  theme(legend.position="none") 
+  
+g7 <- ggplot(PC_info,aes(y=PC1,x=PC2,label=ID,color=ocean)) + #color=lubridate::mdy(date_collected))) + 
+  geom_vline(xintercept=0, linetype="dotted", color="dark gray") +
+  geom_hline(yintercept=0, linetype="dotted", color="dark gray") +
+  geom_point(size=2.5,alpha=0.75,pch=16) + 
+  ylab(paste0("pcangsd PC1 : ",exp_var[1])) + 
+  xlab(paste0("pcangsd PC2 : ",exp_var[2])) + 
+  theme(legend.position="none") +
+  scale_color_manual(values = colors)
+
+g8 <- ggplot(PC_info,aes(y=PC1,x=PC3,label=ID,color=ocean)) + #color=lubridate::mdy(date_collected))) + 
+  geom_vline(xintercept=0, linetype="dotted", color="dark gray") +
+  geom_hline(yintercept=0, linetype="dotted", color="dark gray") +
+  geom_point(size=2.5,alpha=0.75,pch=16) + 
+  ylab(paste0("pcangsd PC1 : ",exp_var[1])) + 
+  xlab(paste0("pcangsd PC3 : ",exp_var[3])) + 
+  theme(legend.position="none") +
+  scale_color_manual(values = colors)
+
+pdf(file=paste0("../figures/panels/",name,"_PC1.pdf"),width=3,height=3,useDingbats=F)
+print(g4)
+dev.off()
+
+pdf(file=paste0("../figures/panels/",name,"_PC3.pdf"),width=3,height=3,useDingbats=F)
+print(g6)
+dev.off()
+
+pdf(file=paste0("../figures/panels/",name,"_PC1_ocean.pdf"),width=5,height=2.5,useDingbats=F)
+print(g7)
+dev.off()
+
+pdf(file=paste0("../figures/panels/",name,"_PC3_ocean.pdf"),width=5,height=2.5,useDingbats=F)
+print(g8)
+dev.off()
+```

@@ -1,0 +1,286 @@
+---
+title: "_Physalia_ global population genomics: Fig. 2"
+format:
+  html:
+    embed-resources: true
+theme: cosmo
+---
+
+Samuel H. Church
+Initiated: March, 2023
+
+
+```{r init}
+#| include: false
+
+library(gridExtra)
+library(ggplot2)
+#library(RcppCNPy)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(tidyr)
+library(ggtree)
+library(ggrepel)
+library(ggnewscale)
+library(maps)
+library(ape)
+library(phytools)
+library(viridis)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+
+theme_set(theme_classic())
+```
+
+```{r setup}
+#| echo: false
+metadata <- read.delim("../data/metadata.tsv",header=T,stringsAsFactors=F) %>% filter(status %in% c("sequenced","sequenced elsewhere"))
+
+sample_info <- read.delim("../data/sample_ids.tsv",header=T,stringsAsFactors=F) %>%
+  mutate(year = gsub(".*/(.*)","\\1",date_collected), month = as.numeric(gsub("(.*)/.*/.*","\\1",date_collected))) %>% 
+  separate(lat_long,into=c("lat","long"),sep=", ")
+locations <- sample_info %>% pull(location) %>% unique()
+
+cols <- c("dark cyan","dark orange","dark red","#9B59B6","#6DCFF6","dark blue","dodgerblue2")
+names(cols) <- c("A","B1","B2","C1","C2")
+
+anchor_samples <- data.frame(cluster = c("C2","C1","B2","B1","A"), 
+  ID = c("YPM-IZ-110468","YPM-IZ-111010","YPM-IZ-110877","YPM-IZ-104460","YPM-IZ-110876"))
+
+```
+
+```{r admix-assignments}
+dir <- "../results/subset/"
+name <- "subset"
+bam_list <- paste0(dir,"subset_bam.filelist")
+
+n <- 5
+
+admix_info <- data.frame(ID = read.table(bam_list,head=F) %>% 
+  apply(.,1,function(x){gsub(".*sorted/(.*)_pic.bam","\\1",x)})) %>% 
+  left_join(.,sample_info,by="ID")
+
+q <- read.delim(paste0(dir,name,".admix.",n,".Q"),header=F,sep=" ")  %>% 
+    mutate(ID = admix_info$ID, 
+      location = admix_info$location, 
+      ocean = admix_info$ocean,
+      label = paste(location,ID,sep=":")) %>% 
+    tidyr::pivot_longer(cols=starts_with("V"),names_to="PC") %>%
+    group_by(label) %>% 
+    mutate(likely_assignment = PC[which.max(value)],
+           assignment_prob = max(value))
+    
+cluster_IDs <- left_join(anchor_samples,q %>% distinct(ID,likely_assignment),by="ID") %>% select(cluster,likely_assignment)
+q <- left_join(q,cluster_IDs,by="likely_assignment") %>% 
+  arrange(match(cluster,c("A","B1","B2","C1","C2")), desc(assignment_prob)) %>% 
+  ungroup()
+
+label_order <- levels(q %>% mutate(id = forcats::fct_inorder(factor(label))) %>% pull(id))
+assignments <- q %>% distinct(ID,cluster,likely_assignment)
+```
+
+```{r admix-map}
+# set up the globe and projection
+LeftBound = -90
+world <- ne_countries(scale = "medium", returnclass = "sf") %>% st_set_crs(4326)
+robinson = paste("+proj=robin +lon_0=",LeftBound," +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",sep="")
+world2 = world %>% st_break_antimeridian(lon_0 = LeftBound) %>% st_transform(crs = robinson)
+
+si <- sample_info %>% filter(ID %in% assignments$ID) %>% 
+  mutate(lat = as.numeric(lat), lon = as.numeric(long)) %>% 
+  left_join(.,assignments,by="ID") %>% 
+  mutate(lat = round(lat,0), lon = round(lon,0)) %>% group_by(lat,lon,cluster) %>% tally()
+
+transpoint = st_as_sf(si,coords=c("lon","lat"),crs=4326)
+dtran = st_transform(transpoint,robinson)
+
+g1 <- ggplot(data=world2) + geom_sf(fill = "light gray", colour = NA) +
+  geom_label_repel(data=dtran,aes(geometry=geometry,label= cluster,fill=cluster),stat="sf_coordinates",color="white",
+    size=4.5,max.overlaps=100,box.padding=0.5,segment.color="dark gray",segment.size=0.5)  + 
+  geom_point(data=dtran,aes(geometry=geometry,color=cluster),stat="sf_coordinates") + 
+  theme(legend.position = "none") +
+  scale_fill_manual(values = cols) +
+  scale_color_manual(values = cols) +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+pdf(paste0(file="../figures/panels/",name,"_map_assignments.pdf"),height=6,width=10,useDingbats=F)
+print(g1)
+dev.off()
+```
+
+```{r admix-assigments}
+read_q <- function(n,dir,name){
+  admix_info <- data.frame(ID = read.table(bam_list,head=F) %>% 
+  apply(.,1,function(x){gsub(".*sorted/(.*)_pic.bam","\\1",x)})) %>% 
+  left_join(.,sample_info,by="ID")
+
+  q <- read.delim(paste0(dir,name,".admix.",n,".Q"),header=F,sep=" ")  %>% 
+    mutate(ID = admix_info$ID, 
+      location = admix_info$location, 
+      ocean = admix_info$ocean,
+      label = paste(location,ID,sep=":")) %>% 
+    tidyr::pivot_longer(cols=starts_with("V"),names_to="PC") %>%
+    group_by(label) %>% 
+    mutate(likely_assignment = PC[which.max(value)],
+           assignment_prob = max(value)) %>% 
+    arrange(likely_assignment, desc(assignment_prob)) %>% 
+    ungroup()
+
+  assign_order <- q %>% arrange(match(label,label_order)) %>%
+    pull(likely_assignment) %>% unique
+
+  q <- q %>% mutate(fct_label = forcats::fct_inorder(factor(label)),
+          #fct_label = factor(label,levels=q %>% arrange(ocean) %>% pull(label) %>% unique),
+          fct_assign = factor(likely_assignment,levels=assign_order),
+          fct_PC = factor(PC,levels=assign_order)) 
+
+  g <- ggplot(q, aes(fct_label, value, fill=fct_PC)) +
+    #ggplot(q, aes(fct_label, value, fill = ocean)) +
+    geom_col(width=0.95) +
+    facet_grid(~fct_assign, scales = 'free', space = 'free') + 
+    theme(strip.background = element_blank(),strip.text.x = element_blank()) +
+    xlab("") + ylab("") +
+    theme(legend.position="none",axis.text=element_text(size=3),
+      axis.text.x = element_text(angle = 45, hjust=1),
+      axis.ticks.x = element_blank()) 
+
+   return(g)
+}
+
+fct_cols <- c("dark cyan","dark orange","dark red","#9B59B6","#6DCFF6","dark blue","dodgerblue2")
+names(fct_cols) <- cluster_IDs %>% arrange(match(cluster,names(cols))) %>% pull(likely_assignment)
+
+admix <- read_q(n,dir,name)
+pdf(paste0("../figures/panels/",name,"_admixture.pdf"),height=8,width=35)
+print(admix + scale_fill_manual(values = fct_cols))
+dev.off()
+```
+
+
+```{r write_pops}
+#write.table(assignments %>% select(ID,cluster) %>% arrange(ID),file="../data/subset.txt",col.names=F,quote=F,row.names=F)
+```
+
+```{r pixy-data}
+dir <- "../results/pixy/locations/"
+name <- "locations"
+
+fst <- read.delim(paste0(dir,"pixy_fst.txt")) 
+dxy <- read.delim(paste0(dir,"pixy_dxy.txt")) 
+pi <- read.delim(paste0(dir,"pixy_pi.txt"))
+
+pops <- fst %>% arrange(pop1,pop2) %>% distinct(pop1,pop2)
+
+options(scipen=999)
+```
+
+```{r plot-fst}
+#   for (p in 1:nrow(pops)){
+#     combo <- pops[p,]
+#     thisPop <- strict(fst, pop1 == combo$pop1[[1]] & pop2 == combo$pop2[[1]]) %>% mutate(start = window_pos_1 -1, end = window_pos_2-1,value = avg_wc_fst,name=paste0("reg",window_pos_1)) %>% select(chromosome,start,end,value) %>%
+#     mutate(value = ifelse(is.na(value),"",value))
+#     write.table(thisPop,file=paste("fst_utr_", combo$pop1[[1]], "_", combo$pop2[[1]],".bedgraph", sep=""),sep="\t",col.names=F,row.names=F,quote=F)
+#   }
+#   
+#   for (p in 1:length(unique(pi$pop))){
+#     pop <- unique(pi$pop)[p]
+#     thisPop <- strict(pi, pop == pop) %>% mutate(start = window_pos_1 -1, end = window_pos_2-1,value = avg_pi,name=paste0("reg",window_pos_1)) %>% select(chromosome,start,end,value) %>%
+#     mutate(value = ifelse(is.na(value),"",value))
+#     write.table(thisPop,file=paste("pi_", pop,".bedgraph", sep=""),sep="\t",col.names=F,row.names=F,quote=F)
+#   }
+
+summary_fst <- fst %>% 
+  left_join(.,assignments %>% distinct(cluster) %>% mutate(pop1 = cluster),by="pop1") %>% 
+  left_join(.,assignments %>% distinct(cluster) %>% mutate(pop2 = cluster),by="pop2") %>% 
+  group_by(pop1,pop2) %>% summarize(Fst = mean(avg_wc_fst, na.rm=T)) %>% ungroup() %>% 
+  filter(!(pop1 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific") | pop2 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific")))
+
+sym_fst <- bind_rows(summary_fst,summary_fst %>% rename(pop1 = pop2, pop2 = pop1)) %>% arrange(Fst) %>% data.frame
+fst_mat_plot <- ggplot(sym_fst,aes(x = pop1, y = pop2, fill = Fst, label= round(Fst,2))) + 
+  geom_tile() + 
+  scale_fill_distiller("Ave. Fst", type = "seq", limits = c(-0.1,1),
+                        direction = 1,
+                        palette = "Greys") +  
+  geom_text(color="black",size=3) + 
+  xlab("") + ylab("")
+
+png(paste0("../figures/panels/",name,"_Fst.png"),height=1850,width=2400,res=300)
+print(fst_mat_plot +  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+)
+dev.off()
+```
+
+```{r plot-dxy}
+
+summary_dxy <- dxy %>% group_by(pop1,pop2) %>% 
+  summarize(dxy = sum(count_diffs,na.rm=T) / sum(count_comparisons, na.rm=T)) %>% 
+  rename(value = dxy) 
+
+sym_dxy <- bind_rows(summary_dxy,summary_dxy %>% rename(pop1 = pop2, pop2 = pop1)) %>% 
+  filter(!(pop1 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific") | pop2 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific")))
+
+summary_pi <- pi %>% group_by(pop) %>% 
+  summarize(pi = sum(count_diffs,na.rm=T) / sum(count_comparisons, na.rm=T)) %>% 
+  arrange(pi) %>% 
+  rename(pop1 = pop, value = pi) %>% mutate(pop2 = pop1) %>%
+  filter(!(pop1 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific") | pop2 %in% c("B1 SW Atlantic","C1 W Indian","B2 Central Pacific")))
+
+Dxy_mat_plot <- ggplot(sym_dxy,aes(x = pop1, y = pop2, fill = value, label= round(value,3))) + 
+  geom_tile() + 
+  scale_fill_distiller("Ave. Dxy",type = "seq", limits = c(0,0.025),
+                        direction = 1,
+                        palette = "Blues") +  
+  geom_text(color="black",size=3) + 
+  xlab("") + ylab("") + 
+  new_scale_fill() + 
+  geom_tile(data = summary_pi,aes(fill=value)) + 
+  geom_text(data = summary_pi, color="white",size=3) +
+  scale_fill_distiller("Ave. pi",type = "seq", limits = c(0,0.025),
+                        direction = 1,
+                        palette = "Reds")
+
+png(paste0("../figures/panels/",name,"_Dxy.png"),height=1850,width=2400,res=300)
+print(Dxy_mat_plot +  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+)
+dev.off()
+```
+
+```{r plot-windows}
+summary_pi <- pi %>% group_by(pop) %>% 
+  summarize(pi = sum(count_diffs,na.rm=T) / sum(count_comparisons, na.rm=T)) %>% 
+  arrange(pi)
+
+pdf(paste0("../figures/panels/",name,"_pi_windows.pdf"),height=5,width=12,useDingbats = F)
+ggplot(pi %>% filter(avg_pi > 0, no_sites > 10) %>% group_by(pop) %>% sample_n(5000),aes(y = pop, x = avg_pi, color = pop,alpha=0.02)) + 
+  geom_point(position=position_jitter(width=0,height=0.3),pch=16) + 
+  scale_color_manual(values = cols) + 
+  geom_boxplot(outlier.shape = NA, coef = 0) + 
+  theme(legend.position="none") + 
+  scale_x_log10() + 
+  ylab("population comparison") + xlab("pi values on genomic windows")
+dev.off()
+
+pdf(paste0("../figures/panels/",name,"_Fst_windows.pdf"),height=5,width=12,useDingbats = F)
+ggplot(fst %>% 
+    filter(no_snps > 10) %>% 
+    mutate(comparison = paste(pop1,pop2,sep=":")) %>% 
+    group_by(comparison) %>% 
+    sample_n(5000),
+  aes(y = comparison, x = avg_wc_fst, alpha=0.02)) + 
+  geom_point(position=position_jitter(width=0,height=0.3),pch=16,color="dark gray") + 
+  geom_boxplot(outlier.shape = NA, coef = 0) + 
+  theme(legend.position="none") +
+  ylab("population comparison") + xlab("Fst values on genomic windows")
+dev.off()
+
+#  summary_dxy <- dxy %>% group_by(pop1,pop2) %>% summarize(dxy = sum(count_diffs,na.rm=T) / sum(count_comparisons, na.rm=T)) %>% arrange(dxy)
+#  
+#  sym_dxy <- bind_rows(summary_dxy,summary_dxy %>% rename(pop1 = pop2, pop2 = pop1)) #%>% rename(ID = pop1) %>% left_join(.,sample_info,by="ID")
+```
