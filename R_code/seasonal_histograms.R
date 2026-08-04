@@ -11,7 +11,7 @@ ranges <- list(
 )
 
 #i <- 1
-# for(i in 1:5){source("R_code/seasonal_histograms.R")}
+#for(i in 1:5){source("R_code/seasonal_histograms.R")}
 
 species_of_interest <- c("utriculus","physalis","megalista","minuta")
 longitude_range <- ranges[[i]][c(1,2)] 
@@ -21,10 +21,10 @@ LeftBound = (longitude_range[2] + longitude_range[1]) / 2
 name <- paste0(longitude_range[1],"_",longitude_range[2],"_",latitude_range[1],"_",latitude_range[2])
 world <- build_world(LeftBound,latitude_range,longitude_range,species_of_interest)
 
-month1_data <- world[['itran']] %>% filter(mon %in% c(1,2,3)) %>%  st_drop_geometry() %>% select(x, y, species) %>% add_count(species) %>% arrange((species))
-month2_data <- world[['itran']] %>% filter(mon %in% c(4,5,6)) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange((species))
-month3_data <- world[['itran']] %>% filter(mon %in% c(7,8,9)) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange((species))
-month4_data <- world[['itran']] %>% filter(mon %in% c(10,11,12)) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange((species))
+month1_data <- world[['itran']] %>% filter(mon %in% c(1,2,3)) %>% filter(x >= world[['xlims']][1], x <= world[['xlims']][2]) %>% filter(y >= world[['ylims']][1], y <= world[['ylims']][2]) %>% st_drop_geometry() %>% select(x, y, species) %>% add_count(species) %>% arrange(desc(n))
+month2_data <- world[['itran']] %>% filter(mon %in% c(4,5,6)) %>% filter(x >= world[['xlims']][1], x <= world[['xlims']][2]) %>% filter(y >= world[['ylims']][1], y <= world[['ylims']][2]) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange(desc(n))
+month3_data <- world[['itran']] %>% filter(mon %in% c(7,8,9)) %>% filter(x >= world[['xlims']][1], x <= world[['xlims']][2]) %>% filter(y >= world[['ylims']][1], y <= world[['ylims']][2]) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange(desc(n))
+month4_data <- world[['itran']] %>% filter(mon %in% c(10,11,12)) %>% filter(x >= world[['xlims']][1], x <= world[['xlims']][2]) %>% filter(y >= world[['ylims']][1], y <= world[['ylims']][2]) %>%  st_drop_geometry() %>% select(x, y, species)  %>% add_count(species) %>% arrange(desc(n))
 
 month_plot <- ggplot(data=world[['world2']]) + geom_sf(fill = "#D3D3D3", colour = NA) +
   	coord_sf(xlim = world[['xlims']], ylim = world[['ylims']]) + 

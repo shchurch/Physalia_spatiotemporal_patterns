@@ -67,7 +67,9 @@ corrected_data_1 <- read.delim("data/corrected.tsv",sep="\t",header=T,stringsAsF
     mutate(status = "corrected_initial") %>% filter(id %in% inat_results$id) # remove any that were dropped from inat during the correction period
 
 # `corrected_final.tsv` is a later/final correction round.
-corrected_data_2 <- read.delim("data/corrected_final.tsv",sep="\t",header=T,stringsAsFactors=F) %>% 
+corrected_data_final <- read.delim("data/corrected_final.tsv",sep="\t",header=T,stringsAsFactors=F)
+corrected_data_DD <- bind_rows(read.delim("data/corrected_DD.tsv",sep="\t",header=T,stringsAsFactors=F)) 
+corrected_data_2 <- corrected_data_DD %>% bind_rows(corrected_data_final %>% filter(!id %in% corrected_data_DD$id)) %>% 
     mutate(status = "corrected_final")
 
 # Community IDs from iNat when the observation has been identified beyond the generic "Physalia".
@@ -102,3 +104,4 @@ final_results <- inr_5 %>% select(id,species,status) %>% left_join(.,inat_result
 	mutate(yd = yday(observed_on), ymd = ymd(observed_on),  mon = month(observed_on), year = year(observed_on)) %>% 
 	filter(!is.na(longitude)) %>% mutate(species = factor(species, levels=species_order))
 
+write.table(final_results, file="results/final_labeled_dataset.tsv", sep="\t", row.names=F, quote=F)
