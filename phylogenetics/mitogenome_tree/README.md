@@ -12,7 +12,7 @@ passed to IQ-TREE with 1000 bootstraps").
 | `iqtree_result.treefile` | ML tree |
 | `iqtree_result.contree` | Consensus tree with UFBoot support values |
 | `iqtree_result.iqtree` | IQ-TREE report — model selection, alignment stats |
-| `Physalia_mt_IDs.txt` | The 199 sample IDs the tree was built from |
+| (taxon list) | `../Physalia_sample_IDs.txt` — the 199 sample IDs the tree was built from |
 
 ## Provenance
 
@@ -23,6 +23,7 @@ The authoritative pipeline is `new_mt_script.sh` driven by `batch_newmt.sh`:
 
 ```bash
 bash tool_scripts/new_mt_script.sh 24 Physalia_annotated tmp.txt Physalia_mt_IDs.txt
+# Physalia_mt_IDs.txt is tracked here as ../Physalia_sample_IDs.txt
 ```
 
 `new_mt_script.sh` takes the first `*path*fasta` from each
@@ -41,7 +42,7 @@ the four Saint Helena samples.
 
 ## Taxon set
 
-199 samples, matching `Physalia_mt_IDs.txt` exactly:
+199 samples, matching `../Physalia_sample_IDs.txt` exactly:
 
 - all **168** mitogenomes submitted to GenBank (accessions PZ224316–PZ224483)
 - **28** `SEA2025-*` samples from the 2025 cruise
