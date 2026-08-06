@@ -1,0 +1,5 @@
+	megalista	minuta	physalis	utriculus
+megalista	133	2	15	6
+minuta	0	22	1	4
+physalis	17	2	135	11
+utriculus	9	8	13	165
