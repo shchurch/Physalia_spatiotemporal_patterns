@@ -116,7 +116,7 @@ We have also visualized trends for _P. megalista_ and _P. utriculus_ in the Sout
 
 In combination with our analysis of beaching observations, we collected open ocean samples from the Southwest Pacific over multiple years and performed whole-genome sequencing to confirm their identity. We combined these with sequenced specimens collected from beaches in the same region to investigate the offshore components of their seasonality, given that this region has three overlapping species with distinct spatiotemporal patterns of stranding. 
 
-Both _P. utriculus_ and _P. megalista_ were collected from the open ocean east of New Zealand, with _P. minuta_ consistently (over multiple years) recovered west of ~150 deg W longitude, and _P. meglista_ observed E, with the exception of a single _P. megalista_ observation at 160 deg W in 2025. These observations are suggestive of distinct open ocean distributions within and without the South Pacific gyre (@fig-openocean). 
+Both _P. minuta_ and _P. megalista_ were collected from the open ocean east of New Zealand, with _P. minuta_ consistently (over multiple years) recovered west of ~150 deg W longitude, and _P. megalista_ observed further east, with the exception of a single _P. megalista_ observation at 160 deg W in 2025. These observations are suggestive of distinct open ocean distributions within and without the South Pacific gyre (@fig-openocean). 
 
 Open-ocean transects were sampled at the same time of the year (April-May), therefore giving insight into interannual signals, but cannot provide data on other time periods. Collections at other times of the year may inform us of how their distribution changes, and how they move with the currents through the seasons. 
 
