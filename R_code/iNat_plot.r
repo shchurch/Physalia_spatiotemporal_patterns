@@ -1,6 +1,6 @@
 # plot inaturalist records
+# run from the repository root (see R_code/README.md)
 
-setwd("~/Downloads/Physalia_spatiotemporal/")
 source("R_code/read.data.R")
 
 results <- final_results %>% filter(!is.na(longitude) & !is.na(latitude)) %>%

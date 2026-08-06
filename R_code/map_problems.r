@@ -1,4 +1,4 @@
-setwd("~/Downloads/Physalia_spatiotemporal/")
+# run from the repository root (see R_code/README.md)
 source("R_code/read.data.R")
 
 utr <- final_results %>% filter(species == "utriculus")

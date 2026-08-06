@@ -22,7 +22,10 @@ library(RColorBrewer)
   )
 
 # ---- Main directory ----
-main_dir <- file.path("/Users/samuelchurch/Downloads/Physalia_spatiotemporal/Physalia_annotated", "individual_genomes")
+# Run from the repository root (see R_code/README.md).
+# Physalia_annotated/individual_genomes is not currently tracked in this repo --
+# update this path once the annotated mitogenomes are added (see issue #13).
+main_dir <- file.path("Physalia_annotated", "individual_genomes")
 
 # Find all subdirectories (one per genome ID)
 genome_dirs <- list.dirs(main_dir, recursive = FALSE)
