@@ -67,7 +67,7 @@ Samples were stored in 100% ethanol and DNA Shield (Zymo). The same procedure wa
 
 ## Read quality control and mitochondrial genomes assembly
 
- For subsequent analyses, we used previously published _Physalia_ WGS libraries XXX, and added the new Southwest Pacific and South Atlantic samples. The raw reads were checked with a quality control pipeline [put the pipeline on GitHub]. In this pipeline, we subset reads to 10 million, trim them with Trimmomatic (default settings) [@bolger2014trimmomatic], and run them through FastQC, Kraken2 (standard contaminant database)[@wood2019improved] and sharkmer v1.0.1. [@dunn2026sharkmer] (metazoa, cnidaria, and bacteria PCR primers). The reads were also mapped with BWA [@li2013aligning] to a human genome [GRCh38, GCA_000001405.15], to check for human contamination, and were used to assemble and annotate mitochondrial genomes using GetOrganelle (custom seed of siphonophore genomes, -R 10, --reduce-reads-for-coverage inf, --max-reads inf) [@jin2020getorganelle], MITOS2 (--orih 0, --oril 0, --trna 0, --intron 0, --linear, -c 4) [@onath2019improved] and tRNAscan-SE (-O, -g gcode.invmito) [@chan2021trnascan].
+ For subsequent analyses, we used previously published _Physalia_ WGS libraries (n=151), and added the new Southwest Pacific and South Atlantic samples. The raw reads were checked with a quality control pipeline [put the pipeline on GitHub]. In this pipeline, we subset reads to 10 million, trim them with Trimmomatic (default settings) [@bolger2014trimmomatic], and run them through FastQC, Kraken2 (standard contaminant database)[@wood2019improved] and sharkmer v1.0.1. [@dunn2026sharkmer] (metazoa, cnidaria, and bacteria PCR primers). The reads were also mapped with BWA [@li2013aligning] to a human genome [GRCh38, GCA_000001405.15], to check for human contamination, and were used to assemble and annotate mitochondrial genomes using GetOrganelle (custom seed of siphonophore genomes, -R 10, --reduce-reads-for-coverage inf, --max-reads inf) [@jin2020getorganelle], MITOS2 (--orih 0, --oril 0, --trna 0, --intron 0, --linear, -c 4) [@onath2019improved] and tRNAscan-SE (-O, -g gcode.invmito) [@chan2021trnascan].
 
 ### Phylogenetic analyses
 
@@ -160,10 +160,11 @@ Small _P. physalis_ may share some characteristics associated with other species
 
 _P. physalis_ colonies vary in color from blue, to pink, purple, and green, but specimens from the South Atlantic and Caribbean Sea in particular achieve a bright pink coloration that is not known from other species of _Physalia_ (XXX add supp figure). Colonies from both the North and South Atlantic may have reddish gastrozooids, also unique to _P. physalis_ (XXX add supp figure). Other colonies have dark blue, purple, or blue-green gastrozooids and palpons, while gonodendra are light purple. The apex of the crest is often pink, but may have no obvious coloration. The large float is typically shaded blue or pink, and is not glassy or strongly opalescent.
 
+Neotype specimen: YPM-IZ-110254
 
 ### _Physalia utriculus_, common bluebottle (Figure 1B, F)
 
-In our previous publication, _Physalia utriculus_ comprised two well-supported sister lineages, labeled B1 and B2 in Church et al. (2025). The neotype presented here for _P. utriculus_ is a member of the B1 lineage; B2 was recently described as a separate species, _'P. mikazuki_' by Yongstar et al. (2025) [@yongstar2025physalia; ]
+In our previous publication, _Physalia utriculus_ comprised two well-supported sister lineages, labeled B1 and B2 in Church et al. (2025). The neotype presented here for _P. utriculus_ (YPM-IZ-110777) is a member of the B1 lineage; B2 was recently described as a separate species, _'P. mikazuki_' by Yongstar et al. (2025) [@yongstar2025physalia; ]
 
 The most reliable positive indicator of specimens of  _P. utriculus_ is the presence of bright yellow coloration on the distal tip of gastrozooids (Figure 1B inset). Other than the distal tip, gastrozooids are typically a bright blue, as are palpons and large tentacles, while gonodendra are light purple (XXX add supp figure). Crest coloration varies from pink to blue or no color (xxx add supp figures). The anterior apex of the float may be colored green, yellow, or blue (xxx add supp figures). Excluding the crest and anterior apex, coloration on the float is usually absent, and observation of a glassy transparent float is usually indicative of _P. utriculus_ (though very recently surfaced specimens of all species have glassy, globular floats). The float of _P. utriculus_ may appear curved or S-shaped when viewed dorsally, though in live animals this can change quickly as the muscles in the float contract and relax.
 
@@ -187,8 +188,6 @@ _P. minuta_ was described in detail in our previous manuscript [@church2025popul
 
 Zooid and tentacle coloration varies from bright blue to dark blue-green; gastrozooids may have pale cream-colored distal tips (xxx add supp figures). The float is typically without color except for the anterior apex, which may be green (xxx add supp figures). In live specimens, the crest may be raised (Figure 1C), but in beached or fixed specimens it is typically fully relaxed (Figure 1P).
 
-Neotype specimen: XX
-
 ### _Physalia megalista_, southern bluebottle (Figure 1A, E)
 
 _P megalista_ is best recognized by the shape of the float and crest. In typical specimens, the float is elongated, with a prominent projection of the float beyond the anterior point of insertion of the crest (i.e., the crest is "incomplete"). In a relaxed posture, this projection of the float may appear shorter (Figure 1D), but when disturbed, the muscles are contracted such that the anterior projection is raised perpendicular to the water (Figure 1H). It is common to find specimens of _P. megalista_ in this position on the beach. Another common posture has both the anterior and posterior apices of the flared on the opposite side of the main zone, giving the float a "horned" appearance (xxx supp figures). The crest of _P. megalista_ is distinct in having a crimped appearance along the dorsal surface (Figure 1D).
@@ -197,7 +196,7 @@ _P megalista_ may have one or multiple prominent tentacles. These are generally 
 
 Zooid and tentacle coloration is typically a dark blue-green, with palpons more green than tentacles. In some specimens in the South Atlantic, minor tentacles may have red coloration (xxx Supp Fig). The float is often opalescent purple and blue-green, and rarely glassy. The crest often has a lavender apex with green at the bases of the septae. 
 
-Neotype specimen: XX
+Neotype specimen: WAM-Z88480
 
 # Discussion
 
