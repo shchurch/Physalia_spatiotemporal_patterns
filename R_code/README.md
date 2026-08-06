@@ -8,17 +8,16 @@
  
  ## Working directory expectations
  
- Most scripts assume you run them from the **repository root** (i.e., `Physalia_spatiotemporal/`), because they reference paths like:
+ **Convention: no script hard-codes a machine-specific path. Start every `.R`/`.r` script from the repository root** (i.e., `Physalia_spatiotemporal/`), because they reference paths like:
  
  - `source("R_code/read.data.R")`
  - `data/...`
  - `results/...`
  - `figures/...`
  
- Two scripts (`iNat_plot.r`, `map_problems.r`) currently hard-code `setwd("~/Downloads/Physalia_spatiotemporal/")`. If you run elsewhere, either:
+ The two scripts that used to hard-code `setwd("~/Downloads/Physalia_spatiotemporal/")` (`iNat_plot.r`, `map_problems.r`) have had that line removed -- just start R in the repo root and relative paths resolve.
  
- - Update the `setwd(...)` line for your machine, or
- - Start R in the repo root so relative paths resolve.
+ **`.qmd` notebooks (`PCA.qmd`, `admixture.qmd`) are the one exception**: Quarto defaults a document's working directory to the file's own location, so these run with `R_code/` as the working directory and use `../data/...`, `../results/...` paths accordingly. No `setwd()` is needed or should be added back.
  
  ## Shared inputs produced/consumed by scripts
  

@@ -11,9 +11,10 @@ Samuel H. Church
 Initiated: March, 2023
 
 ```{r init}
-
-setwd("/Users/samuelchurch/Downloads/Physalia_spatiotemporal/R_code")
 #| include: false
+# Quarto defaults a .qmd's working directory to the file's own location (R_code/),
+# which is what the relative ../data/... and ../results/... paths below expect --
+# no setwd() needed.
 
 library(gridExtra)
 library(ggplot2)
