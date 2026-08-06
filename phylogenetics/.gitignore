@@ -20,4 +20,6 @@ gene_trees/work_*/
 
 # wrapper build logs (the IQ-TREE .log files are kept for provenance)
 build_*.log
+rebuild_*.log
+resume_*.log
 *.mafft.log

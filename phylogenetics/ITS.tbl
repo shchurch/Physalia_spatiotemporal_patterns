@@ -1,0 +1,1674 @@
+>Feature FM-16644
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature NIWA-173304
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature NIWA-173305
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature OA-190531-1
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature OA-Bluebottle
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph209
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph211
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph218
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph225
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph239
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph250
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph252
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph255
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph256
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph259
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph264
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph265
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph271
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph272
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature SEA2025-Ph273
+<1	151	rRNA
+			product	18S ribosomal RNA
+152	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature TMAG-K5632
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature TMAG-K5633
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature TMAG-K5634
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>876	misc_RNA
+			product	internal transcribed spacer 2
+>Feature TMAG-K5635
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature TMAG-K5636
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z88480
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97900
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97901
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97902
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97903
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97906
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97907
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97908
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97909
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97910
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97911
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97914
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97916
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97917
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97920
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97921
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature WAM-Z97923
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-104460
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-104461
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-104464
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-104465
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106919
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106920
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106923
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106935
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106936
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106937
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106941
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>865	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106943
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106954
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-106958
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110251
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110254
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110264
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110268
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110269
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	397	misc_RNA
+			product	internal transcribed spacer 1
+398	551	rRNA
+			product	5.8S ribosomal RNA
+552	>874	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110276
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110277
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	399	misc_RNA
+			product	internal transcribed spacer 1
+400	553	rRNA
+			product	5.8S ribosomal RNA
+554	>876	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110278
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110433
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110434
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110436
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110438
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110443
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110460
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110467
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110468
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110469
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110470
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110471
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110473
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110474
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110480
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110515
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110520
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110526
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110556
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110557
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110558
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110566
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110569
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110600
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110602
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110605
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110612
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110613
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110616
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110631
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110633
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110667
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110694
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110716
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110726
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110738
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110777
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110780
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110785
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110786
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110828
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110829
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110830
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110842
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110843
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110844
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110845
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110846
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110847
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110876
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>865	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110877
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	402	misc_RNA
+			product	internal transcribed spacer 1
+403	556	rRNA
+			product	5.8S ribosomal RNA
+557	>879	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110878
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	397	misc_RNA
+			product	internal transcribed spacer 1
+398	551	rRNA
+			product	5.8S ribosomal RNA
+552	>874	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110880
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110881
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110882
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110883
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110906
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110907
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110925
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110926
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110930
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110931
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	402	misc_RNA
+			product	internal transcribed spacer 1
+403	556	rRNA
+			product	5.8S ribosomal RNA
+557	>879	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110933
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110937
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110938
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110943
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	402	misc_RNA
+			product	internal transcribed spacer 1
+403	556	rRNA
+			product	5.8S ribosomal RNA
+557	>879	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-110972
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111006
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111007
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111008
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111009
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	401	misc_RNA
+			product	internal transcribed spacer 1
+402	555	rRNA
+			product	5.8S ribosomal RNA
+556	>878	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111010
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>857	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111012
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111013
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111014
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111016
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111017
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111018
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	386	misc_RNA
+			product	internal transcribed spacer 1
+387	540	rRNA
+			product	5.8S ribosomal RNA
+541	>863	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111156
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111157
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111158
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111159
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	396	misc_RNA
+			product	internal transcribed spacer 1
+397	550	rRNA
+			product	5.8S ribosomal RNA
+551	>871	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111160
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111163
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111207
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	412	misc_RNA
+			product	internal transcribed spacer 1
+413	566	rRNA
+			product	5.8S ribosomal RNA
+567	>887	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111208
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111209
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111210
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111220
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111231
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111241
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111243
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111256
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111261
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111495
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111513
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111514
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111517
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>857	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111518
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>857	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111519
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111520
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111521
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111529
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111530
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111539
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	396	misc_RNA
+			product	internal transcribed spacer 1
+397	550	rRNA
+			product	5.8S ribosomal RNA
+551	>871	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111547
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111759
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111760
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111806
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111813
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111814
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	396	misc_RNA
+			product	internal transcribed spacer 1
+397	550	rRNA
+			product	5.8S ribosomal RNA
+551	>871	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111816
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111819
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111820
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111822
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111825
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	392	misc_RNA
+			product	internal transcribed spacer 1
+393	546	rRNA
+			product	5.8S ribosomal RNA
+547	>867	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111839
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	402	misc_RNA
+			product	internal transcribed spacer 1
+403	556	rRNA
+			product	5.8S ribosomal RNA
+557	>879	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-111840
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	398	misc_RNA
+			product	internal transcribed spacer 1
+399	552	rRNA
+			product	5.8S ribosomal RNA
+553	>875	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-115977
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-115978
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-115980
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-115990
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	413	misc_RNA
+			product	internal transcribed spacer 1
+414	567	rRNA
+			product	5.8S ribosomal RNA
+568	>888	misc_RNA
+			product	internal transcribed spacer 2
+>Feature YPM-IZ-116019
+<1	152	rRNA
+			product	18S ribosomal RNA
+153	394	misc_RNA
+			product	internal transcribed spacer 1
+395	548	rRNA
+			product	5.8S ribosomal RNA
+549	>869	misc_RNA
+			product	internal transcribed spacer 2
