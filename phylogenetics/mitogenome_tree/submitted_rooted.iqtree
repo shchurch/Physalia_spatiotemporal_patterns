@@ -1,0 +1,941 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted_rooted.aln.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 966293
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 171 sequences with 16150 nucleotide sites
+Number of constant sites: 8836 (= 54.7121% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 8836 (= 54.7121% of all sites)
+Number of parsimony informative sites: 5973
+Number of distinct site patterns: 4844
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVM+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVM+F+I+R4      -114735.466  230176.932 +     0.62  230192.754 +     0.63  232891.387 +    0.987
+GTR+F+I+R4      -114734.954  230177.909 +     0.38  230193.821 +     0.37  232900.054 -    0.013
+TPM3u+F+I+R4    -114766.731  230235.461 - 1.21e-13  230251.102 - 1.35e-13  232934.537 - 4.21e-10
+TIM3+F+I+R4     -114765.600  230235.199 - 1.38e-13  230250.931 - 1.47e-13  232941.965 - 1.03e-11
+TVM+F+R4        -114771.669  230247.339 - 3.19e-16  230263.070 - 3.39e-16  232954.104 - 2.37e-14
+GTR+F+R4        -114768.103  230242.207 - 4.15e-15  230258.029 - 4.22e-15  232956.662 - 6.61e-15
+TIM3+F+R4       -114802.173  230306.346 -  4.9e-29  230321.988 - 5.46e-29  233005.422 - 1.71e-25
+TPM3u+F+R4      -114811.431  230322.863 - 1.27e-32  230338.414 - 1.48e-32  233014.249 - 2.07e-27
+TPM2u+F+I+R4    -114832.936  230367.871 - 2.14e-42  230383.513 - 2.38e-42  233066.947 - 7.45e-39
+TIM2+F+I+R4     -114832.563  230369.125 - 1.14e-42  230384.857 - 1.22e-42  233075.891 - 8.51e-41
+HKY+F+I+R4      -114853.507  230407.014 - 6.77e-51  230422.566 - 7.88e-51  233098.401 -  1.1e-45
+K3Pu+F+I+R4     -114852.054  230406.108 - 1.06e-50  230421.749 - 1.19e-50  233105.184 - 3.71e-47
+TN+F+I+R4       -114853.097  230408.194 - 3.75e-51  230423.836 - 4.18e-51  233107.270 - 1.31e-47
+TIM+F+I+R4      -114851.485  230406.970 - 6.92e-51  230422.701 - 7.36e-51  233113.735 - 5.15e-49
+TIM2+F+R4       -114867.803  230437.606 - 1.54e-57  230453.247 - 1.71e-57  233136.682 - 5.36e-54
+TPM2u+F+R4      -114875.139  230450.278 - 2.73e-60  230465.830 - 3.18e-60  233141.665 - 4.44e-55
+HKY+F+R4        -114890.342  230478.685 - 1.85e-66  230494.147 - 2.25e-66  233162.381 - 1.41e-59
+TN+F+R4         -114886.133  230472.267 - 4.58e-65  230487.818 - 5.34e-65  233163.653 - 7.46e-60
+TIM+F+R4        -114885.088  230472.176 -  4.8e-65  230487.817 - 5.34e-65  233171.252 - 1.67e-61
+K3Pu+F+R4       -114892.212  230484.423 - 1.05e-67  230499.975 - 1.22e-67  233175.810 - 1.71e-62
+GTR+I+R4        -117413.703  235529.405 -        0  235545.047 -        0  238228.481 -        0
+SYM+I+R4        -117413.739  235529.479 -        0  235545.120 -        0  238228.555 -        0
+SYM+I+R4        -117413.739  235529.479 -        0  235545.120 -        0  238228.555 -        0
+GTR+R4          -117426.255  235552.509 -        0  235568.061 -        0  238243.896 -        0
+SYM+R4          -117426.293  235552.585 -        0  235568.137 -        0  238243.972 -        0
+SYM+R4          -117426.293  235552.585 -        0  235568.137 -        0  238243.972 -        0
+TVM+I+R4        -117426.987  235553.974 -        0  235569.526 -        0  238245.361 -        0
+TVMe+I+R4       -117427.045  235554.090 -        0  235569.642 -        0  238245.477 -        0
+TVMe+I+R4       -117427.045  235554.090 -        0  235569.642 -        0  238245.477 -        0
+TIM+I+R4        -117435.449  235568.898 -        0  235584.360 -        0  238252.595 -        0
+TIMe+I+R4       -117435.544  235569.087 -        0  235584.549 -        0  238252.784 -        0
+TIMe+I+R4       -117435.544  235569.087 -        0  235584.549 -        0  238252.784 -        0
+TVM+R4          -117438.790  235575.580 -        0  235591.042 -        0  238259.276 -        0
+TVMe+R4         -117438.962  235575.925 -        0  235591.387 -        0  238259.621 -        0
+TVMe+R4         -117438.962  235575.925 -        0  235591.387 -        0  238259.621 -        0
+K3Pu+I+R4       -117448.183  235592.365 -        0  235607.738 -        0  238268.372 -        0
+K3P+I+R4        -117448.254  235592.507 -        0  235607.880 -        0  238268.514 -        0
+K3P+I+R4        -117448.254  235592.507 -        0  235607.880 -        0  238268.514 -        0
+TIM+R4          -117449.297  235594.594 -        0  235609.967 -        0  238270.601 -        0
+TIMe+R4         -117449.495  235594.990 -        0  235610.362 -        0  238270.997 -        0
+TIMe+R4         -117449.495  235594.990 -        0  235610.362 -        0  238270.997 -        0
+K3Pu+R4         -117459.300  235612.600 -        0  235627.884 -        0  238280.918 -        0
+K3P+R4          -117459.412  235612.825 -        0  235628.108 -        0  238281.142 -        0
+K3P+R4          -117459.412  235612.825 -        0  235628.108 -        0  238281.142 -        0
+TIM2+I+R4       -117465.423  235628.845 -        0  235644.307 -        0  238312.542 -        0
+TIM2e+I+R4      -117465.498  235628.996 -        0  235644.458 -        0  238312.693 -        0
+TIM2e+I+R4      -117465.498  235628.996 -        0  235644.458 -        0  238312.693 -        0
+TIM2+R4         -117477.853  235651.705 -        0  235667.078 -        0  238327.712 -        0
+TIM2e+R4        -117478.072  235652.144 -        0  235667.516 -        0  238328.151 -        0
+TIM2e+R4        -117478.072  235652.144 -        0  235667.516 -        0  238328.151 -        0
+TPM2u+I+R4      -117479.230  235654.459 -        0  235669.832 -        0  238330.466 -        0
+TPM2+I+R4       -117479.276  235654.551 -        0  235669.924 -        0  238330.558 -        0
+TPM2+I+R4       -117479.276  235654.551 -        0  235669.924 -        0  238330.558 -        0
+TPM2u+R4        -117490.170  235674.340 -        0  235689.624 -        0  238342.657 -        0
+TPM2+R4         -117490.245  235674.491 -        0  235689.774 -        0  238342.808 -        0
+TPM2+R4         -117490.245  235674.491 -        0  235689.774 -        0  238342.808 -        0
+TN+I+R4         -117491.096  235678.193 -        0  235693.565 -        0  238354.200 -        0
+TNe+I+R4        -117491.214  235678.427 -        0  235693.800 -        0  238354.434 -        0
+TNe+I+R4        -117491.214  235678.427 -        0  235693.800 -        0  238354.434 -        0
+TIM3+I+R4       -117486.925  235671.851 -        0  235687.313 -        0  238355.547 -        0
+TIM3e+I+R4      -117487.036  235672.073 -        0  235687.535 -        0  238355.769 -        0
+TIM3e+I+R4      -117487.036  235672.073 -        0  235687.535 -        0  238355.769 -        0
+TN+R4           -117503.959  235701.919 -        0  235717.202 -        0  238370.236 -        0
+TNe+R4          -117504.193  235702.385 -        0  235717.669 -        0  238370.703 -        0
+TNe+R4          -117504.193  235702.385 -        0  235717.669 -        0  238370.703 -        0
+HKY+I+R4        -117504.376  235702.753 -        0  235718.036 -        0  238371.070 -        0
+K2P+I+R4        -117504.540  235703.081 -        0  235718.364 -        0  238371.398 -        0
+K2P+I+R4        -117504.540  235703.081 -        0  235718.364 -        0  238371.398 -        0
+TIM3+R4         -117499.738  235695.476 -        0  235710.848 -        0  238371.483 -        0
+TIM3e+R4        -117499.939  235695.879 -        0  235711.251 -        0  238371.886 -        0
+TIM3e+R4        -117499.939  235695.879 -        0  235711.251 -        0  238371.886 -        0
+TPM3u+I+R4      -117500.169  235696.338 -        0  235711.711 -        0  238372.345 -        0
+TPM3+I+R4       -117500.252  235696.503 -        0  235711.876 -        0  238372.510 -        0
+TPM3+I+R4       -117500.252  235696.503 -        0  235711.876 -        0  238372.510 -        0
+HKY+R4          -117514.935  235721.870 -        0  235737.065 -        0  238382.498 -        0
+K2P+R4          -117515.087  235722.173 -        0  235737.368 -        0  238382.801 -        0
+K2P+R4          -117515.087  235722.173 -        0  235737.368 -        0  238382.801 -        0
+TPM3u+R4        -117511.036  235716.072 -        0  235731.355 -        0  238384.389 -        0
+TPM3+R4         -117511.147  235716.294 -        0  235731.578 -        0  238384.612 -        0
+TPM3+R4         -117511.147  235716.294 -        0  235731.578 -        0  238384.612 -        0
+F81+F+R4        -125063.534  250823.068 -        0  250838.441 -        0  253499.075 -        0
+F81+F+I+R4      -125063.993  250825.987 -        0  250841.449 -        0  253509.684 -        0
+F81+R4          -126122.808  252935.615 -        0  252950.722 -        0  255588.553 -        0
+JC+R4           -126125.008  252940.016 -        0  252955.123 -        0  255592.954 -        0
+JC+R4           -126125.008  252940.016 -        0  252955.123 -        0  255592.954 -        0
+F81+I+R4        -126123.223  252938.446 -        0  252953.640 -        0  255599.073 -        0
+JC+I+R4         -126123.410  252938.821 -        0  252954.016 -        0  255599.448 -        0
+JC+I+R4         -126123.410  252938.821 -        0  252954.016 -        0  255599.448 -        0
+JC+I+R3         -126136.645  252961.289 -        0  252976.307 -        0  255606.538 -        0
+JC+R5           -126122.542  252939.084 -        0  252954.368 -        0  255607.402 -        0
+JC+I+R5         -126121.531  252939.063 -        0  252954.435 -        0  255615.070 -        0
+JC+R3           -126173.917  253033.834 -        0  253048.764 -        0  255671.393 -        0
+JC+I+G4         -126230.762  253143.524 -        0  253158.279 -        0  255765.703 -        0
+JC+I+R2         -126231.494  253146.989 -        0  253161.831 -        0  255776.858 -        0
+JC+G4           -126321.792  253323.583 -        0  253338.251 -        0  255938.073 -        0
+JC+R2           -126425.875  253533.751 -        0  253548.506 -        0  256155.930 -        0
+JC+I            -126971.908  254623.817 -        0  254638.484 -        0  257238.306 -        0
+JC              -132547.959  265773.917 -        0  265788.498 -        0  268380.717 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVM+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.5429
+  A-G: 22.7905
+  A-T: 0.9003
+  C-G: 3.0160
+  C-T: 22.7905
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2868
+  pi(C) = 0.167
+  pi(G) = 0.1753
+  pi(T) = 0.3708
+
+Rate matrix Q:
+
+  A   -0.7963   0.04473    0.6936   0.05795
+  C   0.07681    -1.636   0.09179     1.467
+  G     1.135   0.08743    -1.286   0.06437
+  T   0.04482    0.6607   0.03043   -0.7359
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.4243
+Site proportion and rates:  (0.1988,0.2045) (0.3051,1.882) (0.06818,4.761) (0.003645,16.64)
+
+ Category  Relative_rate  Proportion
+  0         0              0.4243
+  1         0.2045         0.1988
+  2         1.882          0.3051
+  3         4.761          0.06818
+  4         16.64          0.003645
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -114719.8258 (s.e. 1017.2187)
+Unconstrained log-likelihood (without tree): -86008.7736
+Number of free parameters (#branches + #model parameters): 353
+Akaike information criterion (AIC) score: 230145.6516
+Corrected Akaike information criterion (AICc) score: 230161.4736
+Bayesian information criterion (BIC) score: 232860.1070
+
+Total tree length (sum of branch lengths): 3.8677
+Sum of internal branch lengths: 2.8368 (73.3475% of tree length)
+
+WARNING: 39 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'FM-16644_mtgenome_scaffold_1--2070701_' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--FM-16644_mtgenome_scaffold_1--2070701_
+|
+|                                   +--NIWA-173304_mtgenome_scaffold_1--71_
+|                                +**| (87)
+|                                |  +--NIWA-173305_mtgenome_scaffold_1--7_
+|                             +--| (91)
+|                             |  |  +--YPM-IZ-110469_mtgenome_scaffold_1--19_
+|                             |  +--| (100)
+|                             |     +--YPM-IZ-110558_mtgenome_scaffold_1--23_25_
+|                          +--| (100)
+|                          |  +--YPM-IZ-110467_mtgenome_scaffold_1--25_
+|                       +--| (100)
+|                       |  +--YPM-IZ-111208_mtgenome_scaffold_1--45_
+|                    +--| (100)
+|                    |  |           +--TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_
+|                    |  |        +--| (91)
+|                    |  |        |  +--YPM-IZ-110470_mtgenome_scaffold_1--179_
+|                    |  |     +**| (90)
+|                    |  |     |  +--YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_
+|                    |  |  +--| (100)
+|                    |  |  |  +--YPM-IZ-111243_mtgenome_scaffold_1--241_
+|                    |  +--| (100)
+|                    |     |     +--YPM-IZ-111207_mtgenome_scaffold_1--126_
+|                    |     |  +--| (66)
+|                    |     |  |  |  +--YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_
+|                    |     |  |  +--| (72)
+|                    |     |  |     +--YPM-IZ-111256_mtgenome_scaffold_1--62_
+|                    |     +**| (70)
+|                    |        +--YPM-IZ-111210_mtgenome_scaffold_1--126_
+|                 +**| (99)
+|                 |  |     +--TMAG-K5634_mtgenome_scaffold_1--899_
+|                 |  |  +--| (97)
+|                 |  |  |  |     +--YPM-IZ-110468_mtgenome_scaffold_1--103_
+|                 |  |  |  |  +--| (75)
+|                 |  |  |  |  |  +--YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_
+|                 |  |  |  +--| (75)
+|                 |  |  |     |  +--YPM-IZ-110557_mtgenome_scaffold_1--2255_
+|                 |  |  |     +--| (100)
+|                 |  |  |        +--YPM-IZ-111220_mtgenome_scaffold_1--35_
+|                 |  +--| (97)
+|                 |     +--YPM-IZ-111806_mtgenome_scaffold_1--1953_
+|              +--| (100)
+|              |  |  +--YPM-IZ-115977_mtgenome_scaffold_1--1315_
+|              |  +--| (100)
+|              |     +--YPM-IZ-115990_mtgenome_scaffold_1--33_
+|           +--| (100)
+|           |  |        +--TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_
+|           |  |     +--| (100)
+|           |  |     |  |  +--TMAG-K5636_mtgenome_scaffold_1--7_
+|           |  |     |  +--| (100)
+|           |  |     |     +--YPM-IZ-115980_mtgenome_scaffold_1--39_
+|           |  |  +--| (98)
+|           |  |  |  |     +--YPM-IZ-110556_mtgenome_scaffold_1--39_
+|           |  |  |  |  +--| (100)
+|           |  |  |  |  |  +--YPM-IZ-111231_mtgenome_scaffold_1--13_
+|           |  |  |  +--| (98)
+|           |  |  |     +--YPM-IZ-115978_mtgenome_scaffold_1--35_
+|           |  +--| (97)
+|           |     |  +--YPM-IZ-111241_mtgenome_scaffold_1--31_
+|           |     +--| (100)
+|           |        +--YPM-IZ-111759_mtgenome_scaffold_1--39_
+|        +--| (97)
+|        |  |                                                    +--KT809335.1
+|        |  |                                      +-------------| (100)
+|        |  |                                      |             +--OQ957206.1
+|        |  +--------------------------------------| (100)
+|        |                                         +-------------OQ957199.1
+|     +--| (100)
+|     |  |                    +--TMAG-K5632_mtgenome_scaffold_1--989_
+|     |  |                 +**| (93)
+|     |  |                 |  +--YPM-IZ-111816_mtgenome_scaffold_1--83_
+|     |  |              +--| (99)
+|     |  |              |  +--YPM-IZ-111156_mtgenome_scaffold_1--210193_
+|     |  |           +--| (100)
+|     |  |           |  +--YPM-IZ-111819_mtgenome_scaffold_1--137_
+|     |  |        +--| (92)
+|     |  |        |  +--YPM-IZ-110829_mtgenome_scaffold_1--19_
+|     |  |     +--| (91)
+|     |  |     |  |  +--YPM-IZ-110828_mtgenome_scaffold_1--138717_
+|     |  |     |  +--| (100)
+|     |  |     |     |        +--YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_
+|     |  |     |     |     +--| (100)
+|     |  |     |     |     |  +--YPM-IZ-111519_mtgenome_scaffold_1--19_
+|     |  |     |     |  +--| (100)
+|     |  |     |     |  |  +--YPM-IZ-111514_mtgenome_scaffold_1--73_
+|     |  |     |     +--| (100)
+|     |  |     |        |  +--YPM-IZ-111517_mtgenome_scaffold_1--149_
+|     |  |     |        +--| (100)
+|     |  |     |           +--YPM-IZ-111521_mtgenome_scaffold_1--25_
+|     |  |  +--| (100)
+|     |  |  |  |                    +--YPM-IZ-111157_mtgenome_scaffold_1--2780990_
+|     |  |  |  |                 +--| (99)
+|     |  |  |  |                 |  +--YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_
+|     |  |  |  |              +--| (98)
+|     |  |  |  |              |  |  +--YPM-IZ-111518_mtgenome_scaffold_1--93_
+|     |  |  |  |              |  +**| (82)
+|     |  |  |  |              |     +--YPM-IZ-111825_mtgenome_scaffold_1--114_
+|     |  |  |  |           +--| (99)
+|     |  |  |  |           |  |  +--YPM-IZ-111530_mtgenome_scaffold_1--59_
+|     |  |  |  |           |  +--| (100)
+|     |  |  |  |           |     +--YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_
+|     |  |  |  |        +**| (6)
+|     |  |  |  |        |  +--YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_
+|     |  |  |  |     +**| (10)
+|     |  |  |  |     |  |        +--YPM-IZ-111160_mtgenome_scaffold_1--95_
+|     |  |  |  |     |  |     +**| (100)
+|     |  |  |  |     |  |     |  +--YPM-IZ-111529_mtgenome_scaffold_1--85_109_
+|     |  |  |  |     |  |  +--| (100)
+|     |  |  |  |     |  |  |  +--YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_
+|     |  |  |  |     |  +**| (19)
+|     |  |  |  |     |     +--YPM-IZ-111822_mtgenome_scaffold_1--863_
+|     |  |  |  |  +**| (54)
+|     |  |  |  |  |  |  +--YPM-IZ-111495_mtgenome_scaffold_1--2307_
+|     |  |  |  |  |  +--| (100)
+|     |  |  |  |  |     +--YPM-IZ-111539_mtgenome_scaffold_1--73_
+|     |  |  |  +--| (100)
+|     |  |  |     +--YPM-IZ-111159_mtgenome_scaffold_1--91_
+|     |  +--| (100)
+|     |     |        +--WAM-Z88480_mtgenome_scaffold_1--87796_
+|     |     |     +--| (100)
+|     |     |     |  +--WAM-Z97903_mtgenome_scaffold_1--345_
+|     |     |  +--| (100)
+|     |     |  |  +--WAM-Z97909_mtgenome_scaffold_1--97_
+|     |     +--| (100)
+|     |        |  +--WAM-Z97900_mtgenome_scaffold_1--183769_
+|     |        +--| (100)
+|     |           |        +--WAM-Z97901_mtgenome_scaffold_1--85509_
+|     |           |     +**| (100)
+|     |           |     |  |  +--WAM-Z97906_mtgenome_scaffold_1--887_
+|     |           |     |  +--| (100)
+|     |           |     |     +--YPM-IZ-111010_mtgenome_scaffold_1--438941_
+|     |           |  +--| (100)
+|     |           |  |  +--YPM-IZ-116019_mtgenome_scaffold_1--87_
+|     |           +--| (98)
+|     |              +--WAM-Z97920_mtgenome_scaffold_1--101725_
+|  +--| (100)
+|  |  |                                                           +--OA-190531-1_mtgenome_scaffold_1--6916990_
+|  |  |                                                        +--| (87)
+|  |  |                                                        |  |  +--YPM-IZ-106920_mtgenome_scaffold_1--5927075_
+|  |  |                                                        |  +--| (97)
+|  |  |                                                        |     +--YPM-IZ-111547_mtgenome_scaffold_1--13_
+|  |  |                                                     +**| (90)
+|  |  |                                                     |  +--YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_
+|  |  |                                                  +--| (99)
+|  |  |                                                  |  |  +--WAM-Z97921_mtgenome_scaffold_1--3670774_
+|  |  |                                                  |  +**| (83)
+|  |  |                                                  |     +--YPM-IZ-110520_mtgenome_scaffold_1--4729815_
+|  |  |                                               +--| (88)
+|  |  |                                               |  +--YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_
+|  |  |                                            +--| (93)
+|  |  |                                            |  |  +--YPM-IZ-110268_mtgenome_scaffold_1--1922_
+|  |  |                                            |  +--| (93)
+|  |  |                                            |     +--YPM-IZ-110906_mtgenome_scaffold_1--4432_
+|  |  |                                         +--| (100)
+|  |  |                                         |  |     +--WAM-Z97907_mtgenome_scaffold_1--5077_5083_
+|  |  |                                         |  |  +**| (100)
+|  |  |                                         |  |  |  +--YPM-IZ-110277_mtgenome_scaffold_1--31_
+|  |  |                                         |  +--| (100)
+|  |  |                                         |     +--YPM-IZ-110264_mtgenome_scaffold_1--595_
+|  |  |                                      +**| (78)
+|  |  |                                      |  +--YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_
+|  |  |                                   +--| (87)
+|  |  |                                   |  |        +--YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_
+|  |  |                                   |  |     +--| (100)
+|  |  |                                   |  |     |  +--YPM-IZ-110933_mtgenome_scaffold_1--4214602_
+|  |  |                                   |  |  +--| (100)
+|  |  |                                   |  |  |  +--YPM-IZ-110600_mtgenome_scaffold_1--9856101_
+|  |  |                                   |  +--| (100)
+|  |  |                                   |     +--YPM-IZ-110569_mtgenome_scaffold_1--81_
+|  |  |                                +--| (70)
+|  |  |                                |  +--WAM-Z97914_mtgenome_scaffold_1--7045_
+|  |  |                             +**| (25)
+|  |  |                             |  |           +--YPM-IZ-106923_mtgenome_scaffold_1--4966863_
+|  |  |                             |  |        +--| (100)
+|  |  |                             |  |        |  +--YPM-IZ-110613_mtgenome_scaffold_1--1106529_
+|  |  |                             |  |     +--| (100)
+|  |  |                             |  |     |  |  +--YPM-IZ-110602_mtgenome_scaffold_1--93203_
+|  |  |                             |  |     |  +--| (100)
+|  |  |                             |  |     |     |  +--YPM-IZ-110786_mtgenome_scaffold_1--19_13_
+|  |  |                             |  |     |     +--| (100)
+|  |  |                             |  |     |        +--YPM-IZ-110830_mtgenome_scaffold_1--14148106_
+|  |  |                             |  |  +**| (69)
+|  |  |                             |  |  |  |  +--YPM-IZ-110278_mtgenome_scaffold_1--1860_
+|  |  |                             |  |  |  +--| (95)
+|  |  |                             |  |  |     +--YPM-IZ-110780_mtgenome_scaffold_1--3329_
+|  |  |                             |  +--| (98)
+|  |  |                             |     |  +--YPM-IZ-110471_mtgenome_scaffold_1--71_
+|  |  |                             |     +**| (84)
+|  |  |                             |        +--YPM-IZ-111008_mtgenome_scaffold_1--5714_
+|  |  |                          +**| (53)
+|  |  |                          |  |                       +--OA-Bluebottle_mtgenome_scaffold_1--7_
+|  |  |                          |  |                    +--| (95)
+|  |  |                          |  |                    |  +--YPM-IZ-111007_mtgenome_scaffold_1--24333_
+|  |  |                          |  |                 +**| (53)
+|  |  |                          |  |                 |  +--WAM-Z97923_mtgenome_scaffold_1--1339152_
+|  |  |                          |  |              +**| (59)
+|  |  |                          |  |              |  |        +--WAM-Z97916_mtgenome_scaffold_1--5832_5826_
+|  |  |                          |  |              |  |     +**| (96)
+|  |  |                          |  |              |  |     |  +--YPM-IZ-110882_mtgenome_scaffold_1--4791_
+|  |  |                          |  |              |  |  +--| (95)
+|  |  |                          |  |              |  |  |  +--YPM-IZ-110926_mtgenome_scaffold_1--19_
+|  |  |                          |  |              |  +--| (71)
+|  |  |                          |  |              |     +--YPM-IZ-110460_mtgenome_scaffold_1--5466859_
+|  |  |                          |  |           +--| (100)
+|  |  |                          |  |           |  +--YPM-IZ-110515_mtgenome_scaffold_1--3014873_
+|  |  |                          |  |        +**| (50)
+|  |  |                          |  |        |  +--YPM-IZ-110925_mtgenome_scaffold_1--1615_43_
+|  |  |                          |  |     +--| (51)
+|  |  |                          |  |     |  +--YPM-IZ-110616_mtgenome_scaffold_1--28984_
+|  |  |                          |  |  +--| (100)
+|  |  |                          |  |  |  |  +--YPM-IZ-110526_mtgenome_scaffold_1--6200253_
+|  |  |                          |  |  |  +**| (53)
+|  |  |                          |  |  |     +--YPM-IZ-110930_mtgenome_scaffold_1--79_
+|  |  |                          |  +--| (90)
+|  |  |                          |     +--YPM-IZ-111006_mtgenome_scaffold_1--8287079_
+|  |  |                       +**| (50)
+|  |  |                       |  |  +--YPM-IZ-110269_mtgenome_scaffold_1--1371_
+|  |  |                       |  +--| (100)
+|  |  |                       |     +--YPM-IZ-110777_mtgenome_scaffold_1--5439_
+|  |  |                    +--| (94)
+|  |  |                    |  +--YPM-IZ-110480_mtgenome_scaffold_1--149_
+|  |  |                 +**| (85)
+|  |  |                 |  |     +--WAM-Z97908_mtgenome_scaffold_1--4943_
+|  |  |                 |  |  +--| (100)
+|  |  |                 |  |  |  +--YPM-IZ-110937_mtgenome_scaffold_1--54732_
+|  |  |                 |  +--| (100)
+|  |  |                 |     |  +--YPM-IZ-104464_mtgenome_scaffold_1--9609600_
+|  |  |                 |     +**| (87)
+|  |  |                 |        +--YPM-IZ-110881_mtgenome_scaffold_1--9129_12510_11590_12697_12634_11588_1157_trimmed
+|  |  |              +--| (100)
+|  |  |              |  |  +--YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_
+|  |  |              |  +--| (100)
+|  |  |              |     +--YPM-IZ-110938_mtgenome_scaffold_1--77153_
+|  |  |           +--| (100)
+|  |  |           |  |        +--WAM-Z97910_mtgenome_scaffold_1--2758006_
+|  |  |           |  |     +--| (100)
+|  |  |           |  |     |  +--YPM-IZ-111163_mtgenome_scaffold_1--57_
+|  |  |           |  |  +--| (100)
+|  |  |           |  |  |  +--YPM-IZ-110907_mtgenome_scaffold_1--12130_
+|  |  |           |  +--| (100)
+|  |  |           |     +--YPM-IZ-110612_mtgenome_scaffold_1--46_
+|  |  |        +--| (100)
+|  |  |        |  |           +--WAM-Z97902_mtgenome_scaffold_1--3572698_
+|  |  |        |  |        +--| (76)
+|  |  |        |  |        |  +--YPM-IZ-110605_mtgenome_scaffold_1--167020_
+|  |  |        |  |     +**| (71)
+|  |  |        |  |     |  +--YPM-IZ-110474_mtgenome_scaffold_1--6005_
+|  |  |        |  |  +**| (93)
+|  |  |        |  |  |  +--WAM-Z97911_mtgenome_scaffold_1--46529_
+|  |  |        |  +--| (100)
+|  |  |        |     |  +--WAM-Z97917_mtgenome_scaffold_1--31_
+|  |  |        |     +--| (100)
+|  |  |        |        +--YPM-IZ-104461_mtgenome_scaffold_1--3200194_
+|  |  |     +--| (99)
+|  |  |     |  +--YPM-IZ-110473_mtgenome_scaffold_1--3900_
+|  |  |  +--| (100)
+|  |  |  |  |     +--YPM-IZ-106919_mtgenome_scaffold_1--1023865_
+|  |  |  |  |  +--| (100)
+|  |  |  |  |  |  +--YPM-IZ-111840_mtgenome_scaffold_1--3618182_
+|  |  |  |  +--| (100)
+|  |  |  |     +--YPM-IZ-111009_mtgenome_scaffold_1--4766313_
+|  |  +--| (100)
+|  |     |        +--YPM-IZ-110877_mtgenome_scaffold_1--1818166_
+|  |     |     +--| (100)
+|  |     |     |  +--YPM-IZ-110878_mtgenome_scaffold_1--19_
+|  |     |  +--| (100)
+|  |     |  |  +--YPM-IZ-110943_mtgenome_scaffold_1--93_
+|  |     +--| (100)
+|  |        |  +--YPM-IZ-110931_mtgenome_scaffold_1--20627_
+|  |        +--| (100)
+|  |           +--YPM-IZ-111839_mtgenome_scaffold_1--1107_7_
++--| (98)
+|  |              +--YPM-IZ-106936_mtgenome_scaffold_1--797_
+|  |           +--| (100)
+|  |           |  +--YPM-IZ-110876_mtgenome_scaffold_1--26693_
+|  |        +--| (75)
+|  |        |  +--YPM-IZ-106937_mtgenome_scaffold_1--5264988_
+|  |     +--| (80)
+|  |     |  |  +--YPM-IZ-111012_mtgenome_scaffold_1--1607_
+|  |     |  +--| (100)
+|  |     |     +--YPM-IZ-111013_mtgenome_scaffold_1--3855739_
+|  |  +--| (84)
+|  |  |  +--YPM-IZ-110251_mtgenome_scaffold_1--5878756_
+|  +--| (83)
+|     |        +--YPM-IZ-110434_mtgenome_scaffold_1--19_
+|     |     +--| (100)
+|     |     |  |  +--YPM-IZ-110843_mtgenome_scaffold_1--3633236_
+|     |     |  +--| (100)
+|     |     |     +--YPM-IZ-111018_mtgenome_scaffold_1--3743432_
+|     |  +--| (100)
+|     |  |  |     +--YPM-IZ-110738_mtgenome_scaffold_1--28195_
+|     |  |  |  +**| (100)
+|     |  |  |  |  +--YPM-IZ-110847_mtgenome_scaffold_1--4169614_
+|     |  |  +--| (100)
+|     |  |     +--YPM-IZ-110842_mtgenome_scaffold_1--4182747_
+|     +--| (100)
+|        |  +--YPM-IZ-110667_mtgenome_scaffold_1--1220096_
+|        +--| (100)
+|           +--YPM-IZ-110694_mtgenome_scaffold_1--6113849_
+|
+|                    +--YPM-IZ-106935_mtgenome_scaffold_1--4052902_
+|                 +--| (98)
+|                 |  +--YPM-IZ-110438_mtgenome_scaffold_1--5944_
+|              +--| (97)
+|              |  |  +--YPM-IZ-106958_mtgenome_scaffold_1--4444372_
+|              |  +--| (99)
+|              |     +--YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_
+|           +**| (22)
+|           |  +--YPM-IZ-111017_mtgenome_scaffold_1--3305370_
+|        +**| (20)
+|        |  |  +--YPM-IZ-110844_mtgenome_scaffold_1--4968002_
+|        |  +**| (48)
+|        |     +--YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_
+|     +--| (100)
+|     |  |  +--YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_
+|     |  +--| (100)
+|     |     +--YPM-IZ-110631_mtgenome_scaffold_1--171174_
+|  +**| (92)
+|  |  |                 +--YPM-IZ-106941_mtgenome_scaffold_1--5624014_
+|  |  |              +**| (75)
+|  |  |              |  +--YPM-IZ-110633_mtgenome_scaffold_1--5829952_
+|  |  |           +--| (100)
+|  |  |           |  +--YPM-IZ-110846_mtgenome_scaffold_1--4922341_
+|  |  |        +**| (91)
+|  |  |        |  |     +--YPM-IZ-106943_mtgenome_scaffold_1--8748509_
+|  |  |        |  |  +**| (77)
+|  |  |        |  |  |  +--YPM-IZ-111016_mtgenome_scaffold_1--25_
+|  |  |        |  +--| (100)
+|  |  |        |     +--YPM-IZ-110436_mtgenome_scaffold_1--15_
+|  |  |     +--| (70)
+|  |  |     |  +--YPM-IZ-110443_mtgenome_scaffold_1--7155733_
+|  |  |  +--| (97)
+|  |  |  |  +--YPM-IZ-110726_mtgenome_scaffold_1--42859_
+|  |  +**| (45)
+|  |     |     +--YPM-IZ-110254_mtgenome_scaffold_1--5573165_
+|  |     |  +--| (98)
+|  |     |  |  +--YPM-IZ-110716_mtgenome_scaffold_1--3051232_
+|  |     +--| (99)
+|  |        +--YPM-IZ-110880_mtgenome_scaffold_1--5613327_
++--| (84)
+   +--YPM-IZ-111014_mtgenome_scaffold_1--49_
+
+Tree in newick format:
+
+(FM-16644_mtgenome_scaffold_1--2070701_:0.0020451243,((((((((((((NIWA-173304_mtgenome_scaffold_1--71_:0.0016734149,NIWA-173305_mtgenome_scaffold_1--7_:0.0025846678)87:0.0000010002,(YPM-IZ-110469_mtgenome_scaffold_1--19_:0.0001388840,YPM-IZ-110558_mtgenome_scaffold_1--23_25_:0.0003489550)100:0.0015350354)91:0.0000675191,YPM-IZ-110467_mtgenome_scaffold_1--25_:0.0016048695)100:0.0005563915,YPM-IZ-111208_mtgenome_scaffold_1--45_:0.0023855382)100:0.0003515086,((((TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_:0.0018255142,YPM-IZ-110470_mtgenome_scaffold_1--179_:0.0022448938)91:0.0001305264,YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_:0.0025813830)90:0.0000029202,YPM-IZ-111243_mtgenome_scaffold_1--241_:0.0024578227)100:0.0004966806,((YPM-IZ-111207_mtgenome_scaffold_1--126_:0.0023132162,(YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_:0.0027947161,YPM-IZ-111256_mtgenome_scaffold_1--62_:0.0025025535)72:0.0000793381)66:0.0000727964,YPM-IZ-111210_mtgenome_scaffold_1--126_:0.0032228556)70:0.0000024497)100:0.0002850626)100:0.0005670952,((TMAG-K5634_mtgenome_scaffold_1--899_:0.0043011825,((YPM-IZ-110468_mtgenome_scaffold_1--103_:0.0024070876,YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_:0.0035586944)75:0.0002573265,(YPM-IZ-110557_mtgenome_scaffold_1--2255_:0.0017505810,YPM-IZ-111220_mtgenome_scaffold_1--35_:0.0024643540)100:0.0005538151)75:0.0000762357)97:0.0002087990,YPM-IZ-111806_mtgenome_scaffold_1--1953_:0.0037402081)97:0.0000633176)99:0.0000573002,(YPM-IZ-115977_mtgenome_scaffold_1--1315_:0.0025405891,YPM-IZ-115990_mtgenome_scaffold_1--33_:0.0016127896)100:0.0019150278)100:0.0026091352,(((TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_:0.0042696853,(TMAG-K5636_mtgenome_scaffold_1--7_:0.0027473814,YPM-IZ-115980_mtgenome_scaffold_1--39_:0.0021222749)100:0.0016570652)100:0.0005858869,((YPM-IZ-110556_mtgenome_scaffold_1--39_:0.0028106338,YPM-IZ-111231_mtgenome_scaffold_1--13_:0.0026002288)100:0.0001853197,YPM-IZ-115978_mtgenome_scaffold_1--35_:0.0026877239)98:0.0009593272)98:0.0003081182,(YPM-IZ-111241_mtgenome_scaffold_1--31_:0.0025397158,YPM-IZ-111759_mtgenome_scaffold_1--39_:0.0025244519)100:0.0020262295)97:0.0016442127)100:0.1107928476,((KT809335.1:0.0393168290,OQ957206.1:0.0500353245)100:0.5750301186,OQ957199.1:0.5554075876)100:1.5431302470)97:0.0569601740,(((((((TMAG-K5632_mtgenome_scaffold_1--989_:0.0021455409,YPM-IZ-111816_mtgenome_scaffold_1--83_:0.0015516991)93:0.0000593419,YPM-IZ-111156_mtgenome_scaffold_1--210193_:0.0027747482)99:0.0004138990,YPM-IZ-111819_mtgenome_scaffold_1--137_:0.0025488127)100:0.0064784673,YPM-IZ-110829_mtgenome_scaffold_1--19_:0.0088629239)92:0.0002403820,(YPM-IZ-110828_mtgenome_scaffold_1--138717_:0.0088166840,(((YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_:0.0016798287,YPM-IZ-111519_mtgenome_scaffold_1--19_:0.0012587645)100:0.0011666881,YPM-IZ-111514_mtgenome_scaffold_1--73_:0.0025283099)100:0.0050021823,(YPM-IZ-111517_mtgenome_scaffold_1--149_:0.0068225703,YPM-IZ-111521_mtgenome_scaffold_1--25_:0.0067808042)100:0.0004020836)100:0.0008177706)100:0.0006412097)91:0.0011281291,(((((((YPM-IZ-111157_mtgenome_scaffold_1--2780990_:0.0013722439,YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_:0.0017146406)99:0.0001929038,(YPM-IZ-111518_mtgenome_scaffold_1--93_:0.0015640781,YPM-IZ-111825_mtgenome_scaffold_1--114_:0.0021175298)82:0.0000020387)98:0.0000680064,(YPM-IZ-111530_mtgenome_scaffold_1--59_:0.0019120987,YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_:0.0015745021)100:0.0005398999)99:0.0002031801,YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_:0.0021103650)6:0.0000026149,(((YPM-IZ-111160_mtgenome_scaffold_1--95_:0.0013753880,YPM-IZ-111529_mtgenome_scaffold_1--85_109_:0.0016493278)100:0.0000462487,YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_:0.0013716822)100:0.0006819297,YPM-IZ-111822_mtgenome_scaffold_1--863_:0.0025913938)19:0.0000010002)10:0.0000010002,(YPM-IZ-111495_mtgenome_scaffold_1--2307_:0.0018409199,YPM-IZ-111539_mtgenome_scaffold_1--73_:0.0020524368)100:0.0005430385)54:0.0000011963,YPM-IZ-111159_mtgenome_scaffold_1--91_:0.0019052214)100:0.0055659470)100:0.0245624181,(((WAM-Z88480_mtgenome_scaffold_1--87796_:0.0031850133,WAM-Z97903_mtgenome_scaffold_1--345_:0.0034347086)100:0.0008325351,WAM-Z97909_mtgenome_scaffold_1--97_:0.0044109157)100:0.0001978735,(WAM-Z97900_mtgenome_scaffold_1--183769_:0.0049589698,(((WAM-Z97901_mtgenome_scaffold_1--85509_:0.0041287551,(WAM-Z97906_mtgenome_scaffold_1--887_:0.0035746135,YPM-IZ-111010_mtgenome_scaffold_1--438941_:0.0031670863)100:0.0006787072)100:0.0000463648,YPM-IZ-116019_mtgenome_scaffold_1--87_:0.0037592015)100:0.0011449752,WAM-Z97920_mtgenome_scaffold_1--101725_:0.0056021497)98:0.0000768250)100:0.0002392901)100:0.0285947770)100:0.1390980250)100:0.0302695654,((((((((((((((((((((OA-190531-1_mtgenome_scaffold_1--6916990_:0.0019199718,(YPM-IZ-106920_mtgenome_scaffold_1--5927075_:0.0015772801,YPM-IZ-111547_mtgenome_scaffold_1--13_:0.0017180174)97:0.0001177401)87:0.0000724880,YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_:0.0019114362)90:0.0000010002,(WAM-Z97921_mtgenome_scaffold_1--3670774_:0.0014216136,YPM-IZ-110520_mtgenome_scaffold_1--4729815_:0.0018481886)83:0.0000010002)99:0.0003547448,YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_:0.0012802861)88:0.0001420021,(YPM-IZ-110268_mtgenome_scaffold_1--1922_:0.0032181301,YPM-IZ-110906_mtgenome_scaffold_1--4432_:0.0024960028)93:0.0000672460)93:0.0000634592,((WAM-Z97907_mtgenome_scaffold_1--5077_5083_:0.0023519283,YPM-IZ-110277_mtgenome_scaffold_1--31_:0.0017100904)100:0.0000525585,YPM-IZ-110264_mtgenome_scaffold_1--595_:0.0014921950)100:0.0010014051)100:0.0002823661,YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_:0.0030644669)78:0.0000025278,(((YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_:0.0009645477,YPM-IZ-110933_mtgenome_scaffold_1--4214602_:0.0018185210)100:0.0003497911,YPM-IZ-110600_mtgenome_scaffold_1--9856101_:0.0014549057)100:0.0011828335,YPM-IZ-110569_mtgenome_scaffold_1--81_:0.0019221747)100:0.0010637358)87:0.0000797977,WAM-Z97914_mtgenome_scaffold_1--7045_:0.0038492421)70:0.0000807388,((((YPM-IZ-106923_mtgenome_scaffold_1--4966863_:0.0024349992,YPM-IZ-110613_mtgenome_scaffold_1--1106529_:0.0025589285)100:0.0004248383,(YPM-IZ-110602_mtgenome_scaffold_1--93203_:0.0022753485,(YPM-IZ-110786_mtgenome_scaffold_1--19_13_:0.0022972347,YPM-IZ-110830_mtgenome_scaffold_1--14148106_:0.0029753332)100:0.0001746324)100:0.0005108064)100:0.0004316122,(YPM-IZ-110278_mtgenome_scaffold_1--1860_:0.0028222550,YPM-IZ-110780_mtgenome_scaffold_1--3329_:0.0031024541)95:0.0003927673)69:0.0000021354,(YPM-IZ-110471_mtgenome_scaffold_1--71_:0.0032324308,YPM-IZ-111008_mtgenome_scaffold_1--5714_:0.0035241454)84:0.0000419598)98:0.0000728838)25:0.0000021765,((((((((OA-Bluebottle_mtgenome_scaffold_1--7_:0.0021820690,YPM-IZ-111007_mtgenome_scaffold_1--24333_:0.0013959494)95:0.0001258469,WAM-Z97923_mtgenome_scaffold_1--1339152_:0.0020977666)53:0.0000010002,(((WAM-Z97916_mtgenome_scaffold_1--5832_5826_:0.0022912035,YPM-IZ-110882_mtgenome_scaffold_1--4791_:0.0025780621)96:0.0000147554,YPM-IZ-110926_mtgenome_scaffold_1--19_:0.0019476030)95:0.0000726577,YPM-IZ-110460_mtgenome_scaffold_1--5466859_:0.0019468196)71:0.0000705151)59:0.0000010002,YPM-IZ-110515_mtgenome_scaffold_1--3014873_:0.0010971326)100:0.0004246755,YPM-IZ-110925_mtgenome_scaffold_1--1615_43_:0.0018107063)50:0.0000010002,YPM-IZ-110616_mtgenome_scaffold_1--28984_:0.0020903438)51:0.0000694219,(YPM-IZ-110526_mtgenome_scaffold_1--6200253_:0.0022328630,YPM-IZ-110930_mtgenome_scaffold_1--79_:0.0022339634)53:0.0000022505)100:0.0005349171,YPM-IZ-111006_mtgenome_scaffold_1--8287079_:0.0030687773)90:0.0002106713)53:0.0000029202,(YPM-IZ-110269_mtgenome_scaffold_1--1371_:0.0009952195,YPM-IZ-110777_mtgenome_scaffold_1--5439_:0.0013496291)100:0.0012110092)50:0.0000022084,YPM-IZ-110480_mtgenome_scaffold_1--149_:0.0032164458)94:0.0000797126,((WAM-Z97908_mtgenome_scaffold_1--4943_:0.0022888698,YPM-IZ-110937_mtgenome_scaffold_1--54732_:0.0022912101)100:0.0008397322,(YPM-IZ-104464_mtgenome_scaffold_1--9609600_:0.0027865725,YPM-IZ-110881_mtgenome_scaffold_1--9129_12510_11590_12697_12634_11588_1157_trimmed:0.0017030173)87:0.0000029044)100:0.0003539354)85:0.0000020787,(YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_:0.0026361676,YPM-IZ-110938_mtgenome_scaffold_1--77153_:0.0028014770)100:0.0006075168)100:0.0000702741,(((WAM-Z97910_mtgenome_scaffold_1--2758006_:0.0014848224,YPM-IZ-111163_mtgenome_scaffold_1--57_:0.0010763920)100:0.0014195453,YPM-IZ-110907_mtgenome_scaffold_1--12130_:0.0024322613)100:0.0005775380,YPM-IZ-110612_mtgenome_scaffold_1--46_:0.0022052343)100:0.0000696640)100:0.0011763399,((((WAM-Z97902_mtgenome_scaffold_1--3572698_:0.0038657554,YPM-IZ-110605_mtgenome_scaffold_1--167020_:0.0035680813)76:0.0000913660,YPM-IZ-110474_mtgenome_scaffold_1--6005_:0.0041522258)71:0.0000022933,WAM-Z97911_mtgenome_scaffold_1--46529_:0.0027840598)93:0.0000446597,(WAM-Z97917_mtgenome_scaffold_1--31_:0.0018487768,YPM-IZ-104461_mtgenome_scaffold_1--3200194_:0.0015691353)100:0.0009381176)100:0.0009664093)100:0.0022894761,YPM-IZ-110473_mtgenome_scaffold_1--3900_:0.0071024341)99:0.0022010066,((YPM-IZ-106919_mtgenome_scaffold_1--1023865_:0.0029279019,YPM-IZ-111840_mtgenome_scaffold_1--3618182_:0.0028317955)100:0.0012370170,YPM-IZ-111009_mtgenome_scaffold_1--4766313_:0.0044627048)100:0.0041976300)100:0.0479716865,(((YPM-IZ-110877_mtgenome_scaffold_1--1818166_:0.0006824883,YPM-IZ-110878_mtgenome_scaffold_1--19_:0.0012764084)100:0.0013897393,YPM-IZ-110943_mtgenome_scaffold_1--93_:0.0017414026)100:0.0013796404,(YPM-IZ-110931_mtgenome_scaffold_1--20627_:0.0011829244,YPM-IZ-111839_mtgenome_scaffold_1--1107_7_:0.0016187736)100:0.0020796040)100:0.0546268897)100:0.0446199109)100:0.0927124488,(((((YPM-IZ-106936_mtgenome_scaffold_1--797_:0.0015612888,YPM-IZ-110876_mtgenome_scaffold_1--26693_:0.0012773024)100:0.0014172629,YPM-IZ-106937_mtgenome_scaffold_1--5264988_:0.0023427416)75:0.0001322200,(YPM-IZ-111012_mtgenome_scaffold_1--1607_:0.0023403521,YPM-IZ-111013_mtgenome_scaffold_1--3855739_:0.0027140504)100:0.0007596090)80:0.0000685833,YPM-IZ-110251_mtgenome_scaffold_1--5878756_:0.0025463103)84:0.0017186577,(((YPM-IZ-110434_mtgenome_scaffold_1--19_:0.0019737770,(YPM-IZ-110843_mtgenome_scaffold_1--3633236_:0.0014142565,YPM-IZ-111018_mtgenome_scaffold_1--3743432_:0.0017604928)100:0.0000631170)100:0.0002811983,((YPM-IZ-110738_mtgenome_scaffold_1--28195_:0.0021935912,YPM-IZ-110847_mtgenome_scaffold_1--4169614_:0.0011347919)100:0.0000568898,YPM-IZ-110842_mtgenome_scaffold_1--4182747_:0.0016173101)100:0.0002788001)100:0.0003691191,(YPM-IZ-110667_mtgenome_scaffold_1--1220096_:0.0004911979,YPM-IZ-110694_mtgenome_scaffold_1--6113849_:0.0003884624)100:0.0013871305)100:0.0006248471)83:0.0006103966)98:0.0009595829,(((((((YPM-IZ-106935_mtgenome_scaffold_1--4052902_:0.0009112352,YPM-IZ-110438_mtgenome_scaffold_1--5944_:0.0004212435)98:0.0000703296,(YPM-IZ-106958_mtgenome_scaffold_1--4444372_:0.0017637027,YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_:0.0008421918)99:0.0001395757)97:0.0000707423,YPM-IZ-111017_mtgenome_scaffold_1--3305370_:0.0011242866)22:0.0000021262,(YPM-IZ-110844_mtgenome_scaffold_1--4968002_:0.0014050844,YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_:0.0009809172)48:0.0000028516)20:0.0000020399,(YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_:0.0003505042,YPM-IZ-110631_mtgenome_scaffold_1--171174_:0.0003508973)100:0.0009139801)100:0.0003504093,((((((YPM-IZ-106941_mtgenome_scaffold_1--5624014_:0.0008767722,YPM-IZ-110633_mtgenome_scaffold_1--5829952_:0.0005608909)75:0.0000010002,YPM-IZ-110846_mtgenome_scaffold_1--4922341_:0.0008435768)100:0.0006369078,((YPM-IZ-106943_mtgenome_scaffold_1--8748509_:0.0006298420,YPM-IZ-111016_mtgenome_scaffold_1--25_:0.0011216880)77:0.0000010002,YPM-IZ-110436_mtgenome_scaffold_1--15_:0.0013317035)100:0.0004205537)91:0.0000020854,YPM-IZ-110443_mtgenome_scaffold_1--7155733_:0.0011951346)70:0.0000798279,YPM-IZ-110726_mtgenome_scaffold_1--42859_:0.0017588093)97:0.0000799055,((YPM-IZ-110254_mtgenome_scaffold_1--5573165_:0.0011958194,YPM-IZ-110716_mtgenome_scaffold_1--3051232_:0.0016194658)98:0.0001384033,YPM-IZ-110880_mtgenome_scaffold_1--5613327_:0.0018476958)99:0.0002796832)45:0.0000023107)92:0.0000022530,YPM-IZ-111014_mtgenome_scaffold_1--49_:0.0015456146)84:0.0001549479);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -114720.127846
+Robinson-Foulds distance between ML tree and consensus tree: 12
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--FM-16644_mtgenome_scaffold_1--2070701_
+|
+|                                   +--NIWA-173304_mtgenome_scaffold_1--71_
+|                                +--| (87)
+|                                |  +--NIWA-173305_mtgenome_scaffold_1--7_
+|                             +--| (91)
+|                             |  |  +--YPM-IZ-110469_mtgenome_scaffold_1--19_
+|                             |  +--| (100)
+|                             |     +--YPM-IZ-110558_mtgenome_scaffold_1--23_25_
+|                          +--| (100)
+|                          |  +--YPM-IZ-110467_mtgenome_scaffold_1--25_
+|                       +--| (100)
+|                       |  +--YPM-IZ-111208_mtgenome_scaffold_1--45_
+|                    +--| (100)
+|                    |  |           +--TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_
+|                    |  |        +--| (91)
+|                    |  |        |  +--YPM-IZ-110470_mtgenome_scaffold_1--179_
+|                    |  |     +--| (90)
+|                    |  |     |  +--YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_
+|                    |  |  +--| (100)
+|                    |  |  |  +--YPM-IZ-111243_mtgenome_scaffold_1--241_
+|                    |  +--| (100)
+|                    |     |     +--YPM-IZ-111207_mtgenome_scaffold_1--126_
+|                    |     |  +--| (66)
+|                    |     |  |  |  +--YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_
+|                    |     |  |  +--| (72)
+|                    |     |  |     +--YPM-IZ-111256_mtgenome_scaffold_1--62_
+|                    |     +--| (70)
+|                    |        +--YPM-IZ-111210_mtgenome_scaffold_1--126_
+|                 +--| (99)
+|                 |  |     +--TMAG-K5634_mtgenome_scaffold_1--899_
+|                 |  |  +--| (97)
+|                 |  |  |  |     +--YPM-IZ-110468_mtgenome_scaffold_1--103_
+|                 |  |  |  |  +--| (75)
+|                 |  |  |  |  |  +--YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_
+|                 |  |  |  +--| (75)
+|                 |  |  |     |  +--YPM-IZ-110557_mtgenome_scaffold_1--2255_
+|                 |  |  |     +--| (100)
+|                 |  |  |        +--YPM-IZ-111220_mtgenome_scaffold_1--35_
+|                 |  +--| (97)
+|                 |     +--YPM-IZ-111806_mtgenome_scaffold_1--1953_
+|              +--| (100)
+|              |  |  +--YPM-IZ-115977_mtgenome_scaffold_1--1315_
+|              |  +--| (100)
+|              |     +--YPM-IZ-115990_mtgenome_scaffold_1--33_
+|           +--| (100)
+|           |  |        +--TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_
+|           |  |     +--| (100)
+|           |  |     |  |  +--TMAG-K5636_mtgenome_scaffold_1--7_
+|           |  |     |  +--| (100)
+|           |  |     |     +--YPM-IZ-115980_mtgenome_scaffold_1--39_
+|           |  |  +--| (98)
+|           |  |  |  |     +--YPM-IZ-110556_mtgenome_scaffold_1--39_
+|           |  |  |  |  +--| (100)
+|           |  |  |  |  |  +--YPM-IZ-111231_mtgenome_scaffold_1--13_
+|           |  |  |  +--| (98)
+|           |  |  |     +--YPM-IZ-115978_mtgenome_scaffold_1--35_
+|           |  +--| (97)
+|           |     |  +--YPM-IZ-111241_mtgenome_scaffold_1--31_
+|           |     +--| (100)
+|           |        +--YPM-IZ-111759_mtgenome_scaffold_1--39_
+|        +--| (97)
+|        |  |                                                    +--KT809335.1
+|        |  |                                      +-------------| (100)
+|        |  |                                      |             +--OQ957206.1
+|        |  +--------------------------------------| (100)
+|        |                                         +-------------OQ957199.1
+|     +--| (100)
+|     |  |                    +--TMAG-K5632_mtgenome_scaffold_1--989_
+|     |  |                 +--| (93)
+|     |  |                 |  +--YPM-IZ-111816_mtgenome_scaffold_1--83_
+|     |  |              +--| (99)
+|     |  |              |  +--YPM-IZ-111156_mtgenome_scaffold_1--210193_
+|     |  |           +--| (100)
+|     |  |           |  +--YPM-IZ-111819_mtgenome_scaffold_1--137_
+|     |  |        +--| (92)
+|     |  |        |  +--YPM-IZ-110829_mtgenome_scaffold_1--19_
+|     |  |     +--| (91)
+|     |  |     |  |  +--YPM-IZ-110828_mtgenome_scaffold_1--138717_
+|     |  |     |  +--| (100)
+|     |  |     |     |        +--YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_
+|     |  |     |     |     +--| (100)
+|     |  |     |     |     |  +--YPM-IZ-111519_mtgenome_scaffold_1--19_
+|     |  |     |     |  +--| (100)
+|     |  |     |     |  |  +--YPM-IZ-111514_mtgenome_scaffold_1--73_
+|     |  |     |     +--| (100)
+|     |  |     |        |  +--YPM-IZ-111517_mtgenome_scaffold_1--149_
+|     |  |     |        +--| (100)
+|     |  |     |           +--YPM-IZ-111521_mtgenome_scaffold_1--25_
+|     |  |  +--| (100)
+|     |  |  |  |                    +--YPM-IZ-111157_mtgenome_scaffold_1--2780990_
+|     |  |  |  |                 +--| (99)
+|     |  |  |  |                 |  +--YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_
+|     |  |  |  |              +--| (98)
+|     |  |  |  |              |  |  +--YPM-IZ-111518_mtgenome_scaffold_1--93_
+|     |  |  |  |              |  +--| (82)
+|     |  |  |  |              |     +--YPM-IZ-111825_mtgenome_scaffold_1--114_
+|     |  |  |  |           +--| (99)
+|     |  |  |  |           |  |  +--YPM-IZ-111530_mtgenome_scaffold_1--59_
+|     |  |  |  |           |  +--| (100)
+|     |  |  |  |           |     +--YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_
+|     |  |  |  |        +--| (29)
+|     |  |  |  |        |  |  +--YPM-IZ-111495_mtgenome_scaffold_1--2307_
+|     |  |  |  |        |  +--| (100)
+|     |  |  |  |        |     +--YPM-IZ-111539_mtgenome_scaffold_1--73_
+|     |  |  |  |     +--| (14)
+|     |  |  |  |     |  |        +--YPM-IZ-111160_mtgenome_scaffold_1--95_
+|     |  |  |  |     |  |     +--| (100)
+|     |  |  |  |     |  |     |  +--YPM-IZ-111529_mtgenome_scaffold_1--85_109_
+|     |  |  |  |     |  |  +--| (100)
+|     |  |  |  |     |  |  |  +--YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_
+|     |  |  |  |     |  +--| (40)
+|     |  |  |  |     |     +--YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_
+|     |  |  |  |  +--| (54)
+|     |  |  |  |  |  +--YPM-IZ-111822_mtgenome_scaffold_1--863_
+|     |  |  |  +--| (100)
+|     |  |  |     +--YPM-IZ-111159_mtgenome_scaffold_1--91_
+|     |  +--| (100)
+|     |     |        +--WAM-Z88480_mtgenome_scaffold_1--87796_
+|     |     |     +--| (100)
+|     |     |     |  +--WAM-Z97903_mtgenome_scaffold_1--345_
+|     |     |  +--| (100)
+|     |     |  |  +--WAM-Z97909_mtgenome_scaffold_1--97_
+|     |     +--| (100)
+|     |        |  +--WAM-Z97900_mtgenome_scaffold_1--183769_
+|     |        +--| (100)
+|     |           |        +--WAM-Z97901_mtgenome_scaffold_1--85509_
+|     |           |     +--| (100)
+|     |           |     |  |  +--WAM-Z97906_mtgenome_scaffold_1--887_
+|     |           |     |  +--| (100)
+|     |           |     |     +--YPM-IZ-111010_mtgenome_scaffold_1--438941_
+|     |           |  +--| (100)
+|     |           |  |  +--YPM-IZ-116019_mtgenome_scaffold_1--87_
+|     |           +--| (98)
+|     |              +--WAM-Z97920_mtgenome_scaffold_1--101725_
+|  +--| (100)
+|  |  |                                                           +--OA-190531-1_mtgenome_scaffold_1--6916990_
+|  |  |                                                        +--| (87)
+|  |  |                                                        |  |  +--YPM-IZ-106920_mtgenome_scaffold_1--5927075_
+|  |  |                                                        |  +--| (97)
+|  |  |                                                        |     +--YPM-IZ-111547_mtgenome_scaffold_1--13_
+|  |  |                                                     +--| (90)
+|  |  |                                                     |  +--YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_
+|  |  |                                                  +--| (99)
+|  |  |                                                  |  |  +--WAM-Z97921_mtgenome_scaffold_1--3670774_
+|  |  |                                                  |  +--| (83)
+|  |  |                                                  |     +--YPM-IZ-110520_mtgenome_scaffold_1--4729815_
+|  |  |                                               +--| (88)
+|  |  |                                               |  +--YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_
+|  |  |                                            +--| (93)
+|  |  |                                            |  |  +--YPM-IZ-110268_mtgenome_scaffold_1--1922_
+|  |  |                                            |  +--| (93)
+|  |  |                                            |     +--YPM-IZ-110906_mtgenome_scaffold_1--4432_
+|  |  |                                         +--| (100)
+|  |  |                                         |  |     +--WAM-Z97907_mtgenome_scaffold_1--5077_5083_
+|  |  |                                         |  |  +--| (100)
+|  |  |                                         |  |  |  +--YPM-IZ-110277_mtgenome_scaffold_1--31_
+|  |  |                                         |  +--| (100)
+|  |  |                                         |     +--YPM-IZ-110264_mtgenome_scaffold_1--595_
+|  |  |                                      +--| (78)
+|  |  |                                      |  +--YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_
+|  |  |                                   +--| (87)
+|  |  |                                   |  |        +--YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_
+|  |  |                                   |  |     +--| (100)
+|  |  |                                   |  |     |  +--YPM-IZ-110933_mtgenome_scaffold_1--4214602_
+|  |  |                                   |  |  +--| (100)
+|  |  |                                   |  |  |  +--YPM-IZ-110600_mtgenome_scaffold_1--9856101_
+|  |  |                                   |  +--| (100)
+|  |  |                                   |     +--YPM-IZ-110569_mtgenome_scaffold_1--81_
+|  |  |                                +--| (70)
+|  |  |                                |  +--WAM-Z97914_mtgenome_scaffold_1--7045_
+|  |  |                             +--| (25)
+|  |  |                             |  |           +--YPM-IZ-106923_mtgenome_scaffold_1--4966863_
+|  |  |                             |  |        +--| (100)
+|  |  |                             |  |        |  +--YPM-IZ-110613_mtgenome_scaffold_1--1106529_
+|  |  |                             |  |     +--| (100)
+|  |  |                             |  |     |  |  +--YPM-IZ-110602_mtgenome_scaffold_1--93203_
+|  |  |                             |  |     |  +--| (100)
+|  |  |                             |  |     |     |  +--YPM-IZ-110786_mtgenome_scaffold_1--19_13_
+|  |  |                             |  |     |     +--| (100)
+|  |  |                             |  |     |        +--YPM-IZ-110830_mtgenome_scaffold_1--14148106_
+|  |  |                             |  |  +--| (69)
+|  |  |                             |  |  |  |  +--YPM-IZ-110278_mtgenome_scaffold_1--1860_
+|  |  |                             |  |  |  +--| (95)
+|  |  |                             |  |  |     +--YPM-IZ-110780_mtgenome_scaffold_1--3329_
+|  |  |                             |  +--| (98)
+|  |  |                             |     |  +--YPM-IZ-110471_mtgenome_scaffold_1--71_
+|  |  |                             |     +--| (84)
+|  |  |                             |        +--YPM-IZ-111008_mtgenome_scaffold_1--5714_
+|  |  |                          +--| (53)
+|  |  |                          |  |                       +--OA-Bluebottle_mtgenome_scaffold_1--7_
+|  |  |                          |  |                    +--| (95)
+|  |  |                          |  |                    |  +--YPM-IZ-111007_mtgenome_scaffold_1--24333_
+|  |  |                          |  |                 +--| (53)
+|  |  |                          |  |                 |  +--WAM-Z97923_mtgenome_scaffold_1--1339152_
+|  |  |                          |  |              +--| (59)
+|  |  |                          |  |              |  |        +--WAM-Z97916_mtgenome_scaffold_1--5832_5826_
+|  |  |                          |  |              |  |     +--| (96)
+|  |  |                          |  |              |  |     |  +--YPM-IZ-110882_mtgenome_scaffold_1--4791_
+|  |  |                          |  |              |  |  +--| (95)
+|  |  |                          |  |              |  |  |  +--YPM-IZ-110926_mtgenome_scaffold_1--19_
+|  |  |                          |  |              |  +--| (71)
+|  |  |                          |  |              |     +--YPM-IZ-110460_mtgenome_scaffold_1--5466859_
+|  |  |                          |  |           +--| (100)
+|  |  |                          |  |           |  +--YPM-IZ-110515_mtgenome_scaffold_1--3014873_
+|  |  |                          |  |        +--| (50)
+|  |  |                          |  |        |  +--YPM-IZ-110925_mtgenome_scaffold_1--1615_43_
+|  |  |                          |  |     +--| (51)
+|  |  |                          |  |     |  +--YPM-IZ-110616_mtgenome_scaffold_1--28984_
+|  |  |                          |  |  +--| (100)
+|  |  |                          |  |  |  |  +--YPM-IZ-110526_mtgenome_scaffold_1--6200253_
+|  |  |                          |  |  |  +--| (53)
+|  |  |                          |  |  |     +--YPM-IZ-110930_mtgenome_scaffold_1--79_
+|  |  |                          |  +--| (90)
+|  |  |                          |     +--YPM-IZ-111006_mtgenome_scaffold_1--8287079_
+|  |  |                       +--| (50)
+|  |  |                       |  |  +--YPM-IZ-110269_mtgenome_scaffold_1--1371_
+|  |  |                       |  +--| (100)
+|  |  |                       |     +--YPM-IZ-110777_mtgenome_scaffold_1--5439_
+|  |  |                    +--| (94)
+|  |  |                    |  +--YPM-IZ-110480_mtgenome_scaffold_1--149_
+|  |  |                 +--| (85)
+|  |  |                 |  |     +--WAM-Z97908_mtgenome_scaffold_1--4943_
+|  |  |                 |  |  +--| (100)
+|  |  |                 |  |  |  +--YPM-IZ-110937_mtgenome_scaffold_1--54732_
+|  |  |                 |  +--| (100)
+|  |  |                 |     |  +--YPM-IZ-104464_mtgenome_scaffold_1--9609600_
+|  |  |                 |     +--| (87)
+|  |  |                 |        +--YPM-IZ-110881_mtgenome_scaffold_1--9129_12510_11590_12697_12634_11588_1157_trimmed
+|  |  |              +--| (100)
+|  |  |              |  |  +--YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_
+|  |  |              |  +--| (100)
+|  |  |              |     +--YPM-IZ-110938_mtgenome_scaffold_1--77153_
+|  |  |           +--| (100)
+|  |  |           |  |        +--WAM-Z97910_mtgenome_scaffold_1--2758006_
+|  |  |           |  |     +--| (100)
+|  |  |           |  |     |  +--YPM-IZ-111163_mtgenome_scaffold_1--57_
+|  |  |           |  |  +--| (100)
+|  |  |           |  |  |  +--YPM-IZ-110907_mtgenome_scaffold_1--12130_
+|  |  |           |  +--| (100)
+|  |  |           |     +--YPM-IZ-110612_mtgenome_scaffold_1--46_
+|  |  |        +--| (100)
+|  |  |        |  |           +--WAM-Z97902_mtgenome_scaffold_1--3572698_
+|  |  |        |  |        +--| (76)
+|  |  |        |  |        |  +--YPM-IZ-110605_mtgenome_scaffold_1--167020_
+|  |  |        |  |     +--| (71)
+|  |  |        |  |     |  +--YPM-IZ-110474_mtgenome_scaffold_1--6005_
+|  |  |        |  |  +--| (93)
+|  |  |        |  |  |  +--WAM-Z97911_mtgenome_scaffold_1--46529_
+|  |  |        |  +--| (100)
+|  |  |        |     |  +--WAM-Z97917_mtgenome_scaffold_1--31_
+|  |  |        |     +--| (100)
+|  |  |        |        +--YPM-IZ-104461_mtgenome_scaffold_1--3200194_
+|  |  |     +--| (99)
+|  |  |     |  +--YPM-IZ-110473_mtgenome_scaffold_1--3900_
+|  |  |  +--| (100)
+|  |  |  |  |     +--YPM-IZ-106919_mtgenome_scaffold_1--1023865_
+|  |  |  |  |  +--| (100)
+|  |  |  |  |  |  +--YPM-IZ-111840_mtgenome_scaffold_1--3618182_
+|  |  |  |  +--| (100)
+|  |  |  |     +--YPM-IZ-111009_mtgenome_scaffold_1--4766313_
+|  |  +--| (100)
+|  |     |        +--YPM-IZ-110877_mtgenome_scaffold_1--1818166_
+|  |     |     +--| (100)
+|  |     |     |  +--YPM-IZ-110878_mtgenome_scaffold_1--19_
+|  |     |  +--| (100)
+|  |     |  |  +--YPM-IZ-110943_mtgenome_scaffold_1--93_
+|  |     +--| (100)
+|  |        |  +--YPM-IZ-110931_mtgenome_scaffold_1--20627_
+|  |        +--| (100)
+|  |           +--YPM-IZ-111839_mtgenome_scaffold_1--1107_7_
++--| (98)
+|  |              +--YPM-IZ-106936_mtgenome_scaffold_1--797_
+|  |           +--| (100)
+|  |           |  +--YPM-IZ-110876_mtgenome_scaffold_1--26693_
+|  |        +--| (75)
+|  |        |  +--YPM-IZ-106937_mtgenome_scaffold_1--5264988_
+|  |     +--| (80)
+|  |     |  |  +--YPM-IZ-111012_mtgenome_scaffold_1--1607_
+|  |     |  +--| (100)
+|  |     |     +--YPM-IZ-111013_mtgenome_scaffold_1--3855739_
+|  |  +--| (84)
+|  |  |  +--YPM-IZ-110251_mtgenome_scaffold_1--5878756_
+|  +--| (83)
+|     |        +--YPM-IZ-110434_mtgenome_scaffold_1--19_
+|     |     +--| (100)
+|     |     |  |  +--YPM-IZ-110843_mtgenome_scaffold_1--3633236_
+|     |     |  +--| (100)
+|     |     |     +--YPM-IZ-111018_mtgenome_scaffold_1--3743432_
+|     |  +--| (100)
+|     |  |  |     +--YPM-IZ-110738_mtgenome_scaffold_1--28195_
+|     |  |  |  +--| (100)
+|     |  |  |  |  +--YPM-IZ-110847_mtgenome_scaffold_1--4169614_
+|     |  |  +--| (100)
+|     |  |     +--YPM-IZ-110842_mtgenome_scaffold_1--4182747_
+|     +--| (100)
+|        |  +--YPM-IZ-110667_mtgenome_scaffold_1--1220096_
+|        +--| (100)
+|           +--YPM-IZ-110694_mtgenome_scaffold_1--6113849_
+|
+|                 +--YPM-IZ-106935_mtgenome_scaffold_1--4052902_
+|              +--| (98)
+|              |  +--YPM-IZ-110438_mtgenome_scaffold_1--5944_
+|           +--| (97)
+|           |  |  +--YPM-IZ-106958_mtgenome_scaffold_1--4444372_
+|           |  +--| (99)
+|           |     +--YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_
+|        +--| (100)
+|        |  |        +--YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_
+|        |  |     +--| (100)
+|        |  |     |  +--YPM-IZ-110631_mtgenome_scaffold_1--171174_
+|        |  |  +--| (10)
+|        |  |  |  +--YPM-IZ-111017_mtgenome_scaffold_1--3305370_
+|        |  +--| (26)
+|        |     |  +--YPM-IZ-110844_mtgenome_scaffold_1--4968002_
+|        |     +--| (48)
+|        |        +--YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_
+|     +--| (53)
+|     |  |              +--YPM-IZ-106941_mtgenome_scaffold_1--5624014_
+|     |  |           +--| (75)
+|     |  |           |  +--YPM-IZ-110633_mtgenome_scaffold_1--5829952_
+|     |  |        +--| (100)
+|     |  |        |  +--YPM-IZ-110846_mtgenome_scaffold_1--4922341_
+|     |  |     +--| (91)
+|     |  |     |  |     +--YPM-IZ-106943_mtgenome_scaffold_1--8748509_
+|     |  |     |  |  +--| (77)
+|     |  |     |  |  |  +--YPM-IZ-111016_mtgenome_scaffold_1--25_
+|     |  |     |  +--| (100)
+|     |  |     |     +--YPM-IZ-110436_mtgenome_scaffold_1--15_
+|     |  |  +--| (70)
+|     |  |  |  +--YPM-IZ-110443_mtgenome_scaffold_1--7155733_
+|     |  +--| (97)
+|     |     +--YPM-IZ-110726_mtgenome_scaffold_1--42859_
+|  +--| (92)
+|  |  |     +--YPM-IZ-110254_mtgenome_scaffold_1--5573165_
+|  |  |  +--| (98)
+|  |  |  |  +--YPM-IZ-110716_mtgenome_scaffold_1--3051232_
+|  |  +--| (99)
+|  |     +--YPM-IZ-110880_mtgenome_scaffold_1--5613327_
++--| (84)
+   +--YPM-IZ-111014_mtgenome_scaffold_1--49_
+
+
+Consensus tree in newick format: 
+
+(FM-16644_mtgenome_scaffold_1--2070701_:0.0020447933,((((((((((((NIWA-173304_mtgenome_scaffold_1--71_:0.0016726621,NIWA-173305_mtgenome_scaffold_1--7_:0.0025835183)87:0.0000029039,(YPM-IZ-110469_mtgenome_scaffold_1--19_:0.0001380589,YPM-IZ-110558_mtgenome_scaffold_1--23_25_:0.0003479205)100:0.0015342886)91:0.0000673071,YPM-IZ-110467_mtgenome_scaffold_1--25_:0.0016040792)100:0.0005558899,YPM-IZ-111208_mtgenome_scaffold_1--45_:0.0023844566)100:0.0003504994,((((TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_:0.0018247493,YPM-IZ-110470_mtgenome_scaffold_1--179_:0.0022439525)91:0.0001302378,YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_:0.0025804141)90:0.0000028178,YPM-IZ-111243_mtgenome_scaffold_1--241_:0.0024566755)100:0.0004961667,((YPM-IZ-111207_mtgenome_scaffold_1--126_:0.0023121615,(YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_:0.0027931901,YPM-IZ-111256_mtgenome_scaffold_1--62_:0.0025011884)72:0.0000801214)66:0.0000714924,YPM-IZ-111210_mtgenome_scaffold_1--126_:0.0032215001)70:0.0000024438)100:0.0002843903)100:0.0005664252,((TMAG-K5634_mtgenome_scaffold_1--899_:0.0043002755,((YPM-IZ-110468_mtgenome_scaffold_1--103_:0.0024061461,YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_:0.0035570328)75:0.0002566335,(YPM-IZ-110557_mtgenome_scaffold_1--2255_:0.0017498321,YPM-IZ-111220_mtgenome_scaffold_1--35_:0.0024632599)100:0.0005533350)75:0.0000754354)97:0.0002077023,YPM-IZ-111806_mtgenome_scaffold_1--1953_:0.0037384634)97:0.0000626589)99:0.0000564629,(YPM-IZ-115977_mtgenome_scaffold_1--1315_:0.0025393931,YPM-IZ-115990_mtgenome_scaffold_1--33_:0.0016120467)100:0.0019143011)100:0.0026087728,(((TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_:0.0042692280,(TMAG-K5636_mtgenome_scaffold_1--7_:0.0027461061,YPM-IZ-115980_mtgenome_scaffold_1--39_:0.0021213549)100:0.0016564060)100:0.0005844401,((YPM-IZ-110556_mtgenome_scaffold_1--39_:0.0028094212,YPM-IZ-111231_mtgenome_scaffold_1--13_:0.0025990361)100:0.0001847303,YPM-IZ-115978_mtgenome_scaffold_1--35_:0.0026865123)98:0.0009584801)98:0.0003070944,(YPM-IZ-111241_mtgenome_scaffold_1--31_:0.0025385188,YPM-IZ-111759_mtgenome_scaffold_1--39_:0.0025233502)100:0.0020253976)97:0.0016435048)100:0.1121219107,((KT809335.1:0.0391214892,OQ957206.1:0.0502566866)100:0.5750241142,OQ957199.1:0.5552825901)100:1.5433578976)97:0.0554379312,(((((((TMAG-K5632_mtgenome_scaffold_1--989_:0.0021441735,YPM-IZ-111816_mtgenome_scaffold_1--83_:0.0015507268)93:0.0000590256,YPM-IZ-111156_mtgenome_scaffold_1--210193_:0.0027734476)99:0.0004129266,YPM-IZ-111819_mtgenome_scaffold_1--137_:0.0025471622)100:0.0064773204,YPM-IZ-110829_mtgenome_scaffold_1--19_:0.0088613382)92:0.0002406796,(YPM-IZ-110828_mtgenome_scaffold_1--138717_:0.0088152825,(((YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_:0.0016791837,YPM-IZ-111519_mtgenome_scaffold_1--19_:0.0012582842)100:0.0011653349,YPM-IZ-111514_mtgenome_scaffold_1--73_:0.0025268579)100:0.0050017535,(YPM-IZ-111517_mtgenome_scaffold_1--149_:0.0068214091,YPM-IZ-111521_mtgenome_scaffold_1--25_:0.0067796020)100:0.0004023969)100:0.0008169715)100:0.0006404117)91:0.0011283660,(((((((YPM-IZ-111157_mtgenome_scaffold_1--2780990_:0.0013718147,YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_:0.0017140034)99:0.0001916568,(YPM-IZ-111518_mtgenome_scaffold_1--93_:0.0015634339,YPM-IZ-111825_mtgenome_scaffold_1--114_:0.0021163108)82:0.0000029039)98:0.0000674806,(YPM-IZ-111530_mtgenome_scaffold_1--59_:0.0019109949,YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_:0.0015738568)100:0.0005387764)99:0.0002029596,(YPM-IZ-111495_mtgenome_scaffold_1--2307_:0.0018398558,YPM-IZ-111539_mtgenome_scaffold_1--73_:0.0020512198)100:0.0005418711)29:0.0000029039,(((YPM-IZ-111160_mtgenome_scaffold_1--95_:0.0013747410,YPM-IZ-111529_mtgenome_scaffold_1--85_109_:0.0016485923)100:0.0000464640,YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_:0.0013711645)100:0.0006813271,YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_:0.0021091051)40:0.0000021522)14:0.0000021522,YPM-IZ-111822_mtgenome_scaffold_1--863_:0.0025898423)54:0.0000023044,YPM-IZ-111159_mtgenome_scaffold_1--91_:0.0019030708)100:0.0055638488)100:0.0245582304,(((WAM-Z88480_mtgenome_scaffold_1--87796_:0.0031840483,WAM-Z97903_mtgenome_scaffold_1--345_:0.0034336253)100:0.0008319003,WAM-Z97909_mtgenome_scaffold_1--97_:0.0044103934)100:0.0001983644,(WAM-Z97900_mtgenome_scaffold_1--183769_:0.0049582453,(((WAM-Z97901_mtgenome_scaffold_1--85509_:0.0041271606,(WAM-Z97906_mtgenome_scaffold_1--887_:0.0035736294,YPM-IZ-111010_mtgenome_scaffold_1--438941_:0.0031662352)100:0.0006771769)100:0.0000466669,YPM-IZ-116019_mtgenome_scaffold_1--87_:0.0037576304)100:0.0011443680,WAM-Z97920_mtgenome_scaffold_1--101725_:0.0056013330)98:0.0000765326)100:0.0002378157)100:0.0285879658)100:0.1390724251)100:0.0302870366,((((((((((((((((((((OA-190531-1_mtgenome_scaffold_1--6916990_:0.0019207638,(YPM-IZ-106920_mtgenome_scaffold_1--5927075_:0.0015768393,YPM-IZ-111547_mtgenome_scaffold_1--13_:0.0017175697)97:0.0001154141)87:0.0000720731,YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_:0.0019092457)90:0.0000029039,(WAM-Z97921_mtgenome_scaffold_1--3670774_:0.0014214781,YPM-IZ-110520_mtgenome_scaffold_1--4729815_:0.0018475317)83:0.0000029039)99:0.0003539376,YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_:0.0012784942)88:0.0001406353,(YPM-IZ-110268_mtgenome_scaffold_1--1922_:0.0032168882,YPM-IZ-110906_mtgenome_scaffold_1--4432_:0.0024951191)93:0.0000659451)93:0.0000622125,((WAM-Z97907_mtgenome_scaffold_1--5077_5083_:0.0023509269,YPM-IZ-110277_mtgenome_scaffold_1--31_:0.0017097647)100:0.0000521041,YPM-IZ-110264_mtgenome_scaffold_1--595_:0.0014920677)100:0.0009999640)100:0.0002807313,YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_:0.0030630531)78:0.0000029039,(((YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_:0.0009632084,YPM-IZ-110933_mtgenome_scaffold_1--4214602_:0.0018181369)100:0.0003482296,YPM-IZ-110600_mtgenome_scaffold_1--9856101_:0.0014538725)100:0.0011811390,YPM-IZ-110569_mtgenome_scaffold_1--81_:0.0019212558)100:0.0010629030)87:0.0000786903,WAM-Z97914_mtgenome_scaffold_1--7045_:0.0038485318)70:0.0000805622,((((YPM-IZ-106923_mtgenome_scaffold_1--4966863_:0.0024339298,YPM-IZ-110613_mtgenome_scaffold_1--1106529_:0.0025578294)100:0.0004241381,(YPM-IZ-110602_mtgenome_scaffold_1--93203_:0.0022746081,(YPM-IZ-110786_mtgenome_scaffold_1--19_13_:0.0022966166,YPM-IZ-110830_mtgenome_scaffold_1--14148106_:0.0029741890)100:0.0001731708)100:0.0005095156)100:0.0004303484,(YPM-IZ-110278_mtgenome_scaffold_1--1860_:0.0028210648,YPM-IZ-110780_mtgenome_scaffold_1--3329_:0.0031010948)95:0.0003918451)69:0.0000029039,(YPM-IZ-110471_mtgenome_scaffold_1--71_:0.0032302877,YPM-IZ-111008_mtgenome_scaffold_1--5714_:0.0035219236)84:0.0000434493)98:0.0000726614)25:0.0000028785,((((((((OA-Bluebottle_mtgenome_scaffold_1--7_:0.0021814796,YPM-IZ-111007_mtgenome_scaffold_1--24333_:0.0013948145)95:0.0001253266,WAM-Z97923_mtgenome_scaffold_1--1339152_:0.0020967392)53:0.0000029197,(((WAM-Z97916_mtgenome_scaffold_1--5832_5826_:0.0022895915,YPM-IZ-110882_mtgenome_scaffold_1--4791_:0.0025763155)96:0.0000154952,YPM-IZ-110926_mtgenome_scaffold_1--19_:0.0019470305)95:0.0000723732,YPM-IZ-110460_mtgenome_scaffold_1--5466859_:0.0019462406)71:0.0000694226)59:0.0000029039,YPM-IZ-110515_mtgenome_scaffold_1--3014873_:0.0010968862)100:0.0004236569,YPM-IZ-110925_mtgenome_scaffold_1--1615_43_:0.0018092393)50:0.0000029039,YPM-IZ-110616_mtgenome_scaffold_1--28984_:0.0020894836)51:0.0000683382,(YPM-IZ-110526_mtgenome_scaffold_1--6200253_:0.0022316430,YPM-IZ-110930_mtgenome_scaffold_1--79_:0.0022327722)53:0.0000029039)100:0.0005342920,YPM-IZ-111006_mtgenome_scaffold_1--8287079_:0.0030674497)90:0.0002100602)53:0.0000028785,(YPM-IZ-110269_mtgenome_scaffold_1--1371_:0.0009939442,YPM-IZ-110777_mtgenome_scaffold_1--5439_:0.0013478564)100:0.0012094444)50:0.0000028785,YPM-IZ-110480_mtgenome_scaffold_1--149_:0.0032150709)94:0.0000786791,((WAM-Z97908_mtgenome_scaffold_1--4943_:0.0022881544,YPM-IZ-110937_mtgenome_scaffold_1--54732_:0.0022905147)100:0.0008387733,(YPM-IZ-104464_mtgenome_scaffold_1--9609600_:0.0027853693,YPM-IZ-110881_mtgenome_scaffold_1--9129_12510_11590_12697_12634_11588_1157_trimmed:0.0017018331)87:0.0000029197)100:0.0003521967)85:0.0000028785,(YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_:0.0026348208,YPM-IZ-110938_mtgenome_scaffold_1--77153_:0.0028003319)100:0.0006055703)100:0.0000691832,(((WAM-Z97910_mtgenome_scaffold_1--2758006_:0.0014830084,YPM-IZ-111163_mtgenome_scaffold_1--57_:0.0010750292)100:0.0014179150,YPM-IZ-110907_mtgenome_scaffold_1--12130_:0.0024314636)100:0.0005765958,YPM-IZ-110612_mtgenome_scaffold_1--46_:0.0022046440)100:0.0000683728)100:0.0011750705,((((WAM-Z97902_mtgenome_scaffold_1--3572698_:0.0038641537,YPM-IZ-110605_mtgenome_scaffold_1--167020_:0.0035666431)76:0.0000909880,YPM-IZ-110474_mtgenome_scaffold_1--6005_:0.0041514839)71:0.0000022749,WAM-Z97911_mtgenome_scaffold_1--46529_:0.0027829077)93:0.0000456051,(WAM-Z97917_mtgenome_scaffold_1--31_:0.0018475545,YPM-IZ-104461_mtgenome_scaffold_1--3200194_:0.0015671823)100:0.0009367341)100:0.0009648416)100:0.0022887801,YPM-IZ-110473_mtgenome_scaffold_1--3900_:0.0071009550)99:0.0022014784,((YPM-IZ-106919_mtgenome_scaffold_1--1023865_:0.0029270800,YPM-IZ-111840_mtgenome_scaffold_1--3618182_:0.0028306730)100:0.0012355960,YPM-IZ-111009_mtgenome_scaffold_1--4766313_:0.0044621138)100:0.0041963445)100:0.0479632962,(((YPM-IZ-110877_mtgenome_scaffold_1--1818166_:0.0006823237,YPM-IZ-110878_mtgenome_scaffold_1--19_:0.0012751016)100:0.0013882532,YPM-IZ-110943_mtgenome_scaffold_1--93_:0.0017395858)100:0.0013778769,(YPM-IZ-110931_mtgenome_scaffold_1--20627_:0.0011817195,YPM-IZ-111839_mtgenome_scaffold_1--1107_7_:0.0016169869)100:0.0020808806)100:0.0546169088)100:0.0446150068)100:0.0926887898,(((((YPM-IZ-106936_mtgenome_scaffold_1--797_:0.0015601655,YPM-IZ-110876_mtgenome_scaffold_1--26693_:0.0012755122)100:0.0014165646,YPM-IZ-106937_mtgenome_scaffold_1--5264988_:0.0023420916)75:0.0001315333,(YPM-IZ-111012_mtgenome_scaffold_1--1607_:0.0023397607,YPM-IZ-111013_mtgenome_scaffold_1--3855739_:0.0027131423)100:0.0007591305)80:0.0000667350,YPM-IZ-110251_mtgenome_scaffold_1--5878756_:0.0025458470)84:0.0017176161,(((YPM-IZ-110434_mtgenome_scaffold_1--19_:0.0019734273,(YPM-IZ-110843_mtgenome_scaffold_1--3633236_:0.0014134490,YPM-IZ-111018_mtgenome_scaffold_1--3743432_:0.0017592772)100:0.0000620862)100:0.0002810043,((YPM-IZ-110738_mtgenome_scaffold_1--28195_:0.0021930599,YPM-IZ-110847_mtgenome_scaffold_1--4169614_:0.0011332574)100:0.0000566834,YPM-IZ-110842_mtgenome_scaffold_1--4182747_:0.0016161240)100:0.0002786378)100:0.0003682711,(YPM-IZ-110667_mtgenome_scaffold_1--1220096_:0.0004900371,YPM-IZ-110694_mtgenome_scaffold_1--6113849_:0.0003875933)100:0.0013855256)100:0.0006236520)83:0.0006104664)98:0.0009599036,((((((YPM-IZ-106935_mtgenome_scaffold_1--4052902_:0.0009102709,YPM-IZ-110438_mtgenome_scaffold_1--5944_:0.0004202935)98:0.0000694658,(YPM-IZ-106958_mtgenome_scaffold_1--4444372_:0.0017624669,YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_:0.0008413089)99:0.0001385542)97:0.0000698115,(((YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_:0.0003502719,YPM-IZ-110631_mtgenome_scaffold_1--171174_:0.0003506476)100:0.0009125501,YPM-IZ-111017_mtgenome_scaffold_1--3305370_:0.0011227839)10:0.0000029039,(YPM-IZ-110844_mtgenome_scaffold_1--4968002_:0.0014042244,YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_:0.0009796050)48:0.0000029039)26:0.0000029039)100:0.0003495805,(((((YPM-IZ-106941_mtgenome_scaffold_1--5624014_:0.0008754637,YPM-IZ-110633_mtgenome_scaffold_1--5829952_:0.0005602778)75:0.0000026902,YPM-IZ-110846_mtgenome_scaffold_1--4922341_:0.0008422662)100:0.0006362745,((YPM-IZ-106943_mtgenome_scaffold_1--8748509_:0.0006290181,YPM-IZ-111016_mtgenome_scaffold_1--25_:0.0011199542)77:0.0000029039,YPM-IZ-110436_mtgenome_scaffold_1--15_:0.0013306579)100:0.0004192976)91:0.0000020873,YPM-IZ-110443_mtgenome_scaffold_1--7155733_:0.0011935549)70:0.0000797140,YPM-IZ-110726_mtgenome_scaffold_1--42859_:0.0017575843)97:0.0000787993)53:0.0000026902,((YPM-IZ-110254_mtgenome_scaffold_1--5573165_:0.0011942140,YPM-IZ-110716_mtgenome_scaffold_1--3051232_:0.0016183326)98:0.0001374628,YPM-IZ-110880_mtgenome_scaffold_1--5613327_:0.0018463729)99:0.0002785322)92:0.0000022085,YPM-IZ-111014_mtgenome_scaffold_1--49_:0.0015445152)84:0.0001537835);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted_rooted.treefile -m "TVM{1.54286,22.7905,0.900331,3.01601}+F{0.286804,0.167018,0.175335,0.370843}+I{0.424293}+R4{0.198803,0.204494,0.305075,1.88164,0.0681843,4.76143,0.00364467,16.641}" --length 16150
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted_rooted.aln.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted_rooted.aln.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug  6 14:04:46 2026
+Total CPU time used: 2606.615795 seconds (0h:43m:26s)
+Total wall-clock time used: 896.345335 seconds (0h:14m:56s)
+

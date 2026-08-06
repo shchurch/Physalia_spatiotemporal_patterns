@@ -1,0 +1,1498 @@
+IQ-TREE version 3.0.1 for MacOS Intel 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Samuels-MacBook-Air-343.local (SSE4.2, 16 GB RAM)
+Command: /Users/samuelchurch/anaconda3/envs/tree/bin/iqtree -s /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta -B 1000 -nt AUTO
+Seed:    400252 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug  5 21:56:13 2026
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.00998592 secs using 93.18% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00230289 secs using 229.3% CPU
+Alignment has 239 sequences with 905 columns, 277 distinct patterns
+53 parsimony-informative, 60 singleton sites, 792 constant sites
+               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000138998 secs using 292.8% CPU
+   1  FM-16644         4.64%    passed     95.58%
+   2  NIWA-173304      1.88%    passed     99.30%
+   3  NIWA-173305      1.88%    passed     99.68%
+   4  OA-190531-1      3.31%    passed     96.84%
+   5  OA-Bluebottle    3.31%    passed     99.26%
+   6  TMAG-K5632       4.20%    passed     99.98%
+   7  TMAG-K5633       1.88%    passed     99.74%
+   8  TMAG-K5634       3.20%    passed     99.40%
+   9  TMAG-K5635       1.88%    passed     99.32%
+  10  TMAG-K5636       1.88%    passed     99.33%
+  11  WAM-Z88480       4.20%    passed     99.71%
+  12  WAM-Z97900       4.20%    passed     99.71%
+  13  WAM-Z97901       4.20%    passed     98.80%
+  14  WAM-Z97902       3.31%    passed     98.42%
+  15  WAM-Z97903       3.98%    passed     99.98%
+  16  WAM-Z97906       4.20%    passed     99.68%
+  17  WAM-Z97907       3.31%    passed     98.42%
+  18  WAM-Z97908       3.31%    passed     99.09%
+  19  WAM-Z97910       3.31%    passed     99.09%
+  20  WAM-Z97911       3.31%    passed     98.14%
+  21  WAM-Z97914       3.31%    passed     98.65%
+  22  WAM-Z97916       3.31%    passed     98.87%
+  23  WAM-Z97917       3.31%    passed     98.75%
+  24  WAM-Z97920       3.98%    passed     99.07%
+  25  WAM-Z97921       3.31%    passed     99.09%
+  26  WAM-Z97923       3.31%    passed     98.65%
+  27  YPM-IZ-104460    3.31%    passed     98.89%
+  28  YPM-IZ-104461    3.31%    passed     98.87%
+  29  YPM-IZ-104464    3.31%    passed     98.89%
+  30  YPM-IZ-104465    3.31%    passed     98.89%
+  31  YPM-IZ-106919    3.31%    passed     98.65%
+  32  YPM-IZ-106920    3.31%    passed     99.09%
+  33  YPM-IZ-106923    3.31%    passed     98.65%
+  34  YPM-IZ-106935    4.64%    passed     97.00%
+  35  YPM-IZ-106936    4.64%    passed     97.00%
+  36  YPM-IZ-106937    4.64%    passed     97.00%
+  37  YPM-IZ-106941    4.42%    passed     96.01%
+  38  YPM-IZ-106943    4.64%    passed     97.00%
+  39  YPM-IZ-106954    4.64%    passed     97.00%
+  40  YPM-IZ-106958    4.64%    passed     96.48%
+  41  YPM-IZ-110251    4.64%    passed     96.66%
+  42  YPM-IZ-110254    4.64%    passed     97.00%
+  43  YPM-IZ-110264    3.31%    passed     99.09%
+  44  YPM-IZ-110268    3.31%    passed     98.89%
+  45  YPM-IZ-110269    3.43%    passed     98.94%
+  46  YPM-IZ-110276    3.31%    passed     98.42%
+  47  YPM-IZ-110277    3.20%    passed     98.40%
+  48  YPM-IZ-110278    3.31%    passed     98.65%
+  49  YPM-IZ-110433    4.64%    passed     97.00%
+  50  YPM-IZ-110434    4.64%    passed     97.02%
+  51  YPM-IZ-110436    4.64%    passed     97.02%
+  52  YPM-IZ-110438    4.64%    passed     95.21%
+  53  YPM-IZ-110443    4.64%    passed     97.00%
+  54  YPM-IZ-110460    3.31%    passed     99.09%
+  55  YPM-IZ-110467    1.88%    passed     99.68%
+  56  YPM-IZ-110468    1.88%    passed     99.55%
+  57  YPM-IZ-110469    1.88%    passed     99.68%
+  58  YPM-IZ-110470    1.88%    passed     99.68%
+  59  YPM-IZ-110471    3.31%    passed     98.65%
+  60  YPM-IZ-110473    3.31%    passed     98.52%
+  61  YPM-IZ-110474    3.31%    passed     98.89%
+  62  YPM-IZ-110480    3.31%    passed     98.52%
+  63  YPM-IZ-110515    3.31%    passed     99.70%
+  64  YPM-IZ-110520    3.31%    passed     97.29%
+  65  YPM-IZ-110526    3.31%    passed     98.89%
+  66  YPM-IZ-110556    1.88%    passed     99.68%
+  67  YPM-IZ-110557    1.88%    passed     99.55%
+  68  YPM-IZ-110558    1.88%    passed     97.93%
+  69  YPM-IZ-110566    3.31%    passed     99.09%
+  70  YPM-IZ-110569    3.31%    passed     99.09%
+  71  YPM-IZ-110600    3.31%    passed     99.09%
+  72  YPM-IZ-110602    3.31%    passed     99.21%
+  73  YPM-IZ-110605    3.31%    passed     98.89%
+  74  YPM-IZ-110612    3.31%    passed     99.21%
+  75  YPM-IZ-110613    3.31%    passed     99.38%
+  76  YPM-IZ-110616    3.31%    passed     98.65%
+  77  YPM-IZ-110631    4.64%    passed     95.92%
+  78  YPM-IZ-110633    4.64%    passed     96.65%
+  79  YPM-IZ-110667    4.64%    passed     97.02%
+  80  YPM-IZ-110694    4.64%    passed     97.00%
+  81  YPM-IZ-110716    4.64%    passed     97.00%
+  82  YPM-IZ-110726    4.64%    passed     96.65%
+  83  YPM-IZ-110738    4.64%    passed     97.00%
+  84  YPM-IZ-110777    3.31%    passed     99.09%
+  85  YPM-IZ-110780    3.31%    passed     99.09%
+  86  YPM-IZ-110785    3.31%    passed     99.09%
+  87  YPM-IZ-110786    3.31%    passed     98.65%
+  88  YPM-IZ-110828    4.20%    passed    100.00%
+  89  YPM-IZ-110829    4.20%    passed     98.86%
+  90  YPM-IZ-110830    3.31%    passed     99.09%
+  91  YPM-IZ-110842    4.64%    passed     95.62%
+  92  YPM-IZ-110843    4.64%    passed     95.62%
+  93  YPM-IZ-110844    4.64%    passed     95.48%
+  94  YPM-IZ-110845    4.64%    passed     95.21%
+  95  YPM-IZ-110846    4.64%    passed     96.65%
+  96  YPM-IZ-110847    4.64%    passed     97.00%
+  97  YPM-IZ-110876    4.42%    passed     95.63%
+  98  YPM-IZ-110877    2.87%    passed     99.21%
+  99  YPM-IZ-110878    3.43%    passed     98.57%
+ 100  YPM-IZ-110880    4.64%    passed     97.00%
+ 101  YPM-IZ-110881    3.31%    passed     98.87%
+ 102  YPM-IZ-110882    3.31%    passed     99.09%
+ 103  YPM-IZ-110883    3.31%    passed     99.19%
+ 104  YPM-IZ-110906    3.31%    passed     99.57%
+ 105  YPM-IZ-110907    3.31%    passed     98.96%
+ 106  YPM-IZ-110925    3.31%    passed     99.09%
+ 107  YPM-IZ-110926    3.31%    passed     99.09%
+ 108  YPM-IZ-110930    3.31%    passed     98.65%
+ 109  YPM-IZ-110931    2.87%    passed     99.40%
+ 110  YPM-IZ-110933    3.31%    passed     98.89%
+ 111  YPM-IZ-110937    3.31%    passed     98.65%
+ 112  YPM-IZ-110938    3.31%    passed     98.89%
+ 113  YPM-IZ-110943    2.87%    passed     99.21%
+ 114  YPM-IZ-110972    4.64%    passed     97.02%
+ 115  YPM-IZ-111006    3.31%    passed     98.25%
+ 116  YPM-IZ-111007    3.31%    passed     98.65%
+ 117  YPM-IZ-111008    3.31%    passed     99.09%
+ 118  YPM-IZ-111009    2.98%    passed     99.22%
+ 119  YPM-IZ-111010    5.30%    passed     99.90%
+ 120  YPM-IZ-111012    4.64%    passed     96.48%
+ 121  YPM-IZ-111013    4.64%    passed     97.00%
+ 122  YPM-IZ-111014    4.64%    passed     97.00%
+ 123  YPM-IZ-111016    4.64%    passed     95.92%
+ 124  YPM-IZ-111017    4.64%    passed     97.02%
+ 125  YPM-IZ-111018    4.64%    passed     96.65%
+ 126  YPM-IZ-111156    4.20%    passed     99.41%
+ 127  YPM-IZ-111157    4.20%    passed     99.71%
+ 128  YPM-IZ-111158    3.98%    passed     99.20%
+ 129  YPM-IZ-111159    3.76%    passed     99.75%
+ 130  YPM-IZ-111160    4.20%    passed     99.27%
+ 131  YPM-IZ-111163    3.31%    passed     98.65%
+ 132  YPM-IZ-111207    1.99%    passed     99.72%
+ 133  YPM-IZ-111208    1.88%    passed     99.74%
+ 134  YPM-IZ-111209    1.88%    passed     99.75%
+ 135  YPM-IZ-111210    1.88%    passed     99.74%
+ 136  YPM-IZ-111241    1.88%    passed     99.68%
+ 137  YPM-IZ-111243    1.88%    passed     99.86%
+ 138  YPM-IZ-111495    4.20%    passed     99.98%
+ 139  YPM-IZ-111513    3.98%    passed     99.62%
+ 140  YPM-IZ-111514    4.20%    passed     99.68%
+ 141  YPM-IZ-111517    5.30%    passed     99.90%
+ 142  YPM-IZ-111518    5.30%    passed     99.93%
+ 143  YPM-IZ-111519    3.98%    passed     99.78%
+ 144  YPM-IZ-111520    4.20%    passed     98.80%
+ 145  YPM-IZ-111521    3.98%    passed     99.32%
+ 146  YPM-IZ-111529    3.98%    passed     99.36%
+ 147  YPM-IZ-111530    4.20%    passed     99.30%
+ 148  YPM-IZ-111539    3.76%    passed     99.66%
+ 149  YPM-IZ-111547    3.31%    passed     98.52%
+ 150  YPM-IZ-111839    2.87%    passed     99.40%
+ 151  YPM-IZ-111840    3.31%    passed     99.28%
+ 152  SEA2025-Ph209    1.99%    passed     99.72%
+ 153  SEA2025-Ph239    1.88%    passed     99.68%
+ 154  SEA2025-Ph250    1.99%    passed     99.69%
+ 155  SEA2025-Ph255    1.88%    passed     99.57%
+ 156  SEA2025-Ph259    1.88%    passed     99.68%
+ 157  SEA2025-Ph264    1.99%    passed     99.71%
+ 158  SEA2025-Ph271    1.88%    passed     99.74%
+ 159  SEA2025-Ph273    3.31%    passed     99.55%
+ 160  SEA2025-Ph211    1.88%    passed     99.81%
+ 161  SEA2025-Ph218    1.99%    passed     99.72%
+ 162  SEA2025-Ph225    1.99%    passed     99.69%
+ 163  SEA2025-Ph252    1.99%    passed     99.50%
+ 164  SEA2025-Ph256    1.99%    passed     99.69%
+ 165  SEA2025-Ph265    1.88%    passed     99.68%
+ 166  SEA2025-Ph272    1.88%    passed     99.74%
+ 167  YPM-IZ-111759    1.88%    passed     99.86%
+ 168  YPM-IZ-111760    1.88%    passed     99.55%
+ 169  YPM-IZ-111814    3.76%    passed     99.66%
+ 170  YPM-IZ-111819    4.20%    passed     99.71%
+ 171  YPM-IZ-111820    4.20%    passed     99.41%
+ 172  YPM-IZ-111220    1.88%    passed     99.73%
+ 173  YPM-IZ-111261    1.88%    passed     99.32%
+ 174  YPM-IZ-111256    1.88%    passed     99.74%
+ 175  WAM-Z97909       3.98%    passed     99.32%
+ 176  YPM-IZ-111231    1.88%    passed     99.05%
+ 177  YPM-IZ-111806    1.88%    passed     99.55%
+ 178  YPM-IZ-111813    1.88%    passed     99.68%
+ 179  YPM-IZ-111816    3.98%    passed     99.99%
+ 180  YPM-IZ-111822    4.20%    passed     99.98%
+ 181  YPM-IZ-111825    4.20%    passed     99.68%
+ 182  YPM-IZ-115977    1.88%    passed     99.93%
+ 183  YPM-IZ-115978    1.88%    passed     99.68%
+ 184  YPM-IZ-115980    1.88%    passed     99.68%
+ 185  YPM-IZ-115990    1.88%    passed     99.74%
+ 186  YPM-IZ-116019    3.98%    passed     99.07%
+ 187  AB377546.1      74.36%    passed     64.23%
+ 188  FJ847271.1      64.42%    passed     72.57%
+ 189  FJ847272.1      54.70%    passed     76.43%
+ 190  FJ847273.1      59.12%    passed     51.44%
+ 191  FJ847274.1      54.81%    passed     94.92%
+ 192  FJ847275.1      54.92%    passed     67.29%
+ 193  FJ847276.1      51.27%    passed     73.16%
+ 194  FJ847277.1      55.80%    passed     58.78%
+ 195  FJ847278.1      56.91%    passed     55.95%
+ 196  FJ847279.1      56.13%    passed     56.22%
+ 197  FJ847280.1      69.28%    passed     39.45%
+ 198  FJ847281.1      62.54%    passed     79.71%
+ 199  FJ847282.1      62.54%    passed     64.59%
+ 200  FJ847283.1      64.86%    passed     87.04%
+ 201  FJ847284.1      59.67%    passed     91.92%
+ 202  FJ847285.1      69.28%    passed     50.48%
+ 203  FJ847286.1      72.60%    passed     64.24%
+ 204  FJ847287.1      59.23%    passed     93.84%
+ 205  FJ847288.1      73.04%    passed     94.27%
+ 206  FJ847289.1      70.61%    passed     72.85%
+ 207  FJ847290.1      74.92%    passed     84.45%
+ 208  FJ847291.1      70.72%    passed     52.73%
+ 209  FJ847292.1      65.30%    passed     30.63%
+ 210  FJ847293.1      64.31%    passed     69.45%
+ 211  FJ847294.1      54.92%    passed     65.17%
+ 212  FJ847295.1      56.46%    passed     46.86%
+ 213  FJ847296.1      55.03%    passed     71.04%
+ 214  FJ847297.1      68.40%    passed     69.01%
+ 215  FJ847298.1      54.14%    passed     62.49%
+ 216  FJ847299.1      54.14%    passed     61.64%
+ 217  FJ847300.1      55.14%    passed     56.28%
+ 218  FJ847301.1      71.71%    passed     45.50%
+ 219  FJ847302.1      61.88%    passed     86.63%
+ 220  FJ847303.1      59.89%    passed     80.77%
+ 221  FJ847304.1      59.56%    passed     77.22%
+ 222  FJ847305.1      58.34%    passed     66.79%
+ 223  FJ847306.1      62.65%    passed     22.14%
+ 224  FJ847307.1      63.20%    passed     21.93%
+ 225  FJ847308.1      64.31%    passed     70.36%
+ 226  FJ847309.1      59.56%    passed     85.72%
+ 227  FJ847310.1      60.99%    passed     84.59%
+ 228  FJ847311.1      64.31%    passed     71.17%
+ 229  FJ847312.1      64.31%    passed     70.90%
+ 230  FJ847313.1      64.31%    passed     71.25%
+ 231  FJ847314.1      64.31%    passed     71.25%
+ 232  FJ847315.1      68.84%    passed     54.51%
+ 233  FJ847316.1      68.84%    passed     56.84%
+ 234  FJ847317.1      70.94%    passed     56.19%
+ 235  FJ847318.1      68.51%    passed     64.24%
+ 236  FJ847319.1      64.09%    passed     64.34%
+ 237  FJ847320.1      60.44%    passed     94.14%
+ 238  FJ847321.1      52.38%    passed     61.06%
+ 239  FJ847322.1      67.29%    passed     80.26%
+WARNING: 53 sequences contain more than 50% gaps/ambiguity
+****  TOTAL           16.53%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: YPM-IZ-110467 is identical to NIWA-173305 but kept for subsequent analysis
+NOTE: YPM-IZ-111495 is identical to TMAG-K5632 but kept for subsequent analysis
+NOTE: YPM-IZ-111261 is identical to TMAG-K5635 but kept for subsequent analysis
+NOTE: WAM-Z97900 is identical to WAM-Z88480 but kept for subsequent analysis
+NOTE: YPM-IZ-111514 is identical to WAM-Z97906 but kept for subsequent analysis
+NOTE: WAM-Z97910 is identical to WAM-Z97908 but kept for subsequent analysis
+NOTE: WAM-Z97923 is identical to WAM-Z97914 but kept for subsequent analysis
+NOTE: YPM-IZ-110881 is identical to WAM-Z97916 but kept for subsequent analysis
+NOTE: YPM-IZ-116019 is identical to WAM-Z97920 but kept for subsequent analysis
+NOTE: YPM-IZ-104465 is identical to YPM-IZ-104464 but kept for subsequent analysis
+NOTE: YPM-IZ-106937 is identical to YPM-IZ-106935 but kept for subsequent analysis
+NOTE: YPM-IZ-106943 is identical to YPM-IZ-106936 but kept for subsequent analysis
+NOTE: YPM-IZ-110436 is identical to YPM-IZ-110434 but kept for subsequent analysis
+NOTE: YPM-IZ-110557 is identical to YPM-IZ-110468 but kept for subsequent analysis
+NOTE: YPM-IZ-110612 is identical to YPM-IZ-110602 but kept for subsequent analysis
+NOTE: YPM-IZ-111016 is identical to YPM-IZ-110631 but kept for subsequent analysis
+NOTE: YPM-IZ-110726 is identical to YPM-IZ-110633 but kept for subsequent analysis
+NOTE: YPM-IZ-110943 is identical to YPM-IZ-110877 but kept for subsequent analysis
+NOTE: YPM-IZ-111839 is identical to YPM-IZ-110931 but kept for subsequent analysis
+NOTE: YPM-IZ-111517 is identical to YPM-IZ-111010 but kept for subsequent analysis
+NOTE: YPM-IZ-111210 is identical to YPM-IZ-111208 but kept for subsequent analysis
+NOTE: YPM-IZ-111814 is identical to YPM-IZ-111539 but kept for subsequent analysis
+NOTE: SEA2025-Ph225 is identical to SEA2025-Ph250 but kept for subsequent analysis
+NOTE: FJ847314.1 is identical to FJ847313.1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000734091 secs using 209.1% CPU
+Identifying sites to remove: done in 0.00133204 secs using 197.9% CPU
+NOTE: 62 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: YPM-IZ-110469 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-110470 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-110556 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111241 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph239 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph259 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph265 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111813 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-115978 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-115980 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111822 (identical to TMAG-K5632) is ignored but added at the end
+NOTE: YPM-IZ-111157 (identical to WAM-Z88480) is ignored but added at the end
+NOTE: WAM-Z97921 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-106920 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110460 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110566 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110569 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110600 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110777 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110780 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110785 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110830 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110882 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110925 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110926 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-111008 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-106923 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110278 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110471 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110616 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110930 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110937 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-111007 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-111163 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110268 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110474 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110526 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110605 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110933 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110938 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-106954 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110254 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110433 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110443 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110694 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110738 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110847 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110880 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-111013 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110716 (identical to YPM-IZ-106936) is ignored but added at the end
+NOTE: YPM-IZ-111014 (identical to YPM-IZ-106936) is ignored but added at the end
+NOTE: YPM-IZ-110667 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-110972 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-111017 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-111760 (identical to YPM-IZ-110468) is ignored but added at the end
+NOTE: YPM-IZ-111806 (identical to YPM-IZ-110468) is ignored but added at the end
+NOTE: YPM-IZ-111018 (identical to YPM-IZ-110633) is ignored but added at the end
+NOTE: SEA2025-Ph271 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: SEA2025-Ph272 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: YPM-IZ-111256 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: YPM-IZ-115990 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: SEA2025-Ph256 (identical to SEA2025-Ph250) is ignored but added at the end
+Alignment was printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+66 trees examined
+Threads: 1 / Time: 8.020 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -6464
+Threads: 2 / Time: 7.069 sec / Speedup: 1.135 / Efficiency: 57% / LogL: -6464
+Threads: 3 / Time: 6.755 sec / Speedup: 1.187 / Efficiency: 40% / LogL: -6464
+Determining AUTO threadcount: done in 21.8449 secs using 185.2% CPU
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.346526 secs using 186.2% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2622.502
+Optimal log-likelihood: -2622.316
+Rate parameters:  A-C: 0.86141  A-G: 0.68489  A-T: 1.07531  C-G: 0.50031  C-T: 1.76768  G-T: 1.00000
+Base frequencies:  A: 0.255  C: 0.231  G: 0.238  T: 0.277
+Proportion of invariable sites: 0.452
+Gamma shape alpha: 0.323
+Parameters optimization took 1 rounds (0.102 sec)
+Time for fast ML tree search: 0.654 seconds
+
+NOTE: ModelFinder requires 17 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 905 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            2715.922     351 6133.845     6580.687     7821.430
+  2  JC+I          2643.841     352 5991.681     6441.884     7684.074
+  3  JC+G4         2646.028     352 5996.056     6446.259     7688.450
+  4  JC+I+G4       2637.242     353 5980.484     6434.066     7677.685
+  5  JC+R2         2643.796     353 5993.592     6447.175     7690.793
+  6  JC+R3         2625.592     355 5961.185     6421.586     7668.002
++R4 reinitialized from +R3 with factor 0.500
+  7  JC+R4         2625.679     357 5965.358     6432.656     7681.791
+ 14  JC+I+R2       2643.833     354 5995.666     6452.648     7697.675
+ 15  JC+I+R3       2625.960     356 5963.920     6427.760     7675.545
+ 16  JC+I+R4       2625.730     358 5967.459     6438.236     7688.700
+ 26  JC+I+G4       2637.242     353 5980.484     6434.066     7677.685
+ 28  JC+R3         2625.592     355 5961.185     6421.586     7668.002
+ 37  JC+I+R3       2625.960     356 5963.920     6427.760     7675.545
+ 48  F81+I+G4      2637.088     353 5980.176     6433.759     7677.377
+ 50  F81+R3        2625.631     355 5961.263     6421.663     7668.080
+ 59  F81+I+R3      2625.951     356 5963.901     6427.741     7675.526
+ 70  F81+F+I+G4    2632.639     356 5977.278     6441.117     7688.903
+ 72  F81+F+R3      2621.362     358 5958.723     6429.500     7679.964
+ 81  F81+F+I+R3    2621.601     359 5961.201     6435.477     7687.250
+ 92  K2P+I+G4      2634.996     354 5977.992     6434.974     7680.001
+ 94  K2P+R3        2623.786     356 5959.571     6423.411     7671.196
+103  K2P+I+R3      2624.029     357 5962.058     6429.356     7678.491
+114  K2P+I+G4      2634.996     354 5977.992     6434.974     7680.001
+116  K2P+R3        2623.786     356 5959.571     6423.411     7671.196
+125  K2P+I+R3      2624.029     357 5962.058     6429.356     7678.491
+136  HKY+I+G4      2634.850     354 5977.699     6434.681     7679.708
+138  HKY+R3        2623.784     356 5959.568     6423.407     7671.193
+147  HKY+I+R3      2624.001     357 5962.002     6429.300     7678.435
+158  HKY+F+I+G4    2630.420     357 5974.839     6442.137     7691.272
+160  HKY+F+R3      2619.433     359 5956.867     6431.142     7682.916
+169  HKY+F+I+R3    2619.606     360 5959.211     6437.005     7690.068
+180  TNe+I+G4      2628.693     355 5967.387     6427.788     7674.204
+182  TNe+R3        2620.013     357 5954.025     6421.323     7670.458
+191  TNe+I+R3      2620.114     358 5956.228     6427.005     7677.469
+202  TNe+I+G4      2628.693     355 5967.387     6427.788     7674.204
+204  TNe+R3        2620.013     357 5954.025     6421.323     7670.458
+213  TNe+I+R3      2620.114     358 5956.228     6427.005     7677.469
+224  TN+I+G4       2628.594     355 5967.187     6427.588     7674.004
+226  TN+R3         2620.007     357 5954.013     6421.311     7670.446
+235  TN+I+R3       2620.101     358 5956.203     6426.979     7677.444
+246  TN+F+I+G4     2624.517     358 5965.034     6435.810     7686.274
+248  TN+F+R3       2615.890     360 5951.781     6429.575     7682.637
+257  TN+F+I+R3     2615.941     361 5953.883     6435.216     7689.547
+268  K3P+I+G4      2634.608     355 5979.215     6439.616     7686.032
+270  K3P+R3        2623.679     357 5961.359     6428.657     7677.792
+279  K3P+I+R3      2623.854     358 5963.709     6434.485     7684.950
+290  K3P+I+G4      2634.608     355 5979.215     6439.616     7686.032
+292  K3P+R3        2623.679     357 5961.359     6428.657     7677.792
+301  K3P+I+R3      2623.854     358 5963.709     6434.485     7684.950
+312  K3Pu+I+G4     2634.469     355 5978.939     6439.340     7685.756
+314  K3Pu+R3       2623.679     357 5961.358     6428.656     7677.791
+323  K3Pu+I+R3     2623.836     358 5963.673     6434.450     7684.914
+334  K3Pu+F+I+G4   2629.862     358 5975.724     6446.500     7696.965
+336  K3Pu+F+R3     2619.300     360 5958.601     6436.395     7689.457
+345  K3Pu+F+I+R3   2619.400     361 5960.800     6442.134     7696.465
+356  TPM2+I+G4     2633.824     355 5977.648     6438.049     7684.465
+358  TPM2+R3       2622.453     357 5958.907     6426.205     7675.339
+367  TPM2+I+R3     2622.745     358 5961.490     6432.266     7682.731
+378  TPM2+I+G4     2633.824     355 5977.648     6438.049     7684.465
+380  TPM2+R3       2622.453     357 5958.907     6426.205     7675.339
+389  TPM2+I+R3     2622.745     358 5961.490     6432.266     7682.731
+400  TPM2u+I+G4    2633.680     355 5977.359     6437.760     7684.176
+402  TPM2u+R3      2622.448     357 5958.897     6426.195     7675.329
+411  TPM2u+I+R3    2622.712     358 5961.425     6432.201     7682.665
+422  TPM2u+F+I+G4  2629.410     358 5974.821     6445.597     7696.061
+424  TPM2u+F+R3    2618.482     360 5956.964     6434.758     7687.820
+433  TPM2u+F+I+R3  2618.667     361 5959.335     6440.668     7694.999
+444  TPM3+I+G4     2631.850     355 5973.699     6434.100     7680.516
+446  TPM3+R3       2620.664     357 5955.328     6422.626     7671.760
+455  TPM3+I+R3     2620.925     358 5957.850     6428.626     7679.090
+466  TPM3+I+G4     2631.850     355 5973.699     6434.100     7680.516
+468  TPM3+R3       2620.664     357 5955.328     6422.626     7671.760
+477  TPM3+I+R3     2620.925     358 5957.850     6428.626     7679.090
+488  TPM3u+I+G4    2631.720     355 5973.440     6433.841     7680.257
+490  TPM3u+R3      2620.659     357 5955.319     6422.617     7671.752
+499  TPM3u+I+R3    2620.894     358 5957.788     6428.564     7679.028
+510  TPM3u+F+I+G4  2628.319     358 5972.639     6443.415     7693.879
+512  TPM3u+F+R3    2617.447     360 5954.895     6432.689     7685.751
+521  TPM3u+F+I+R3  2617.612     361 5957.224     6438.557     7692.889
+532  TIMe+I+G4     2628.197     356 5968.394     6432.233     7680.019
+534  TIMe+R3       2619.911     358 5955.822     6426.598     7677.062
+543  TIMe+I+R3     2619.969     359 5957.938     6432.213     7683.986
+554  TIMe+I+G4     2628.197     356 5968.394     6432.233     7680.019
+556  TIMe+R3       2619.911     358 5955.822     6426.598     7677.062
+565  TIMe+I+R3     2619.969     359 5957.938     6432.213     7683.986
+576  TIM+I+G4      2628.114     356 5968.228     6432.068     7679.853
+578  TIM+R3        2619.904     358 5955.808     6426.584     7677.049
+587  TIM+I+R3      2619.957     359 5957.913     6432.188     7683.962
+598  TIM+F+I+G4    2624.274     359 5966.547     6440.822     7692.596
+600  TIM+F+R3      2615.756     361 5953.512     6434.846     7689.177
+609  TIM+F+I+R3    2615.796     362 5955.592     6440.485     7696.065
+620  TIM2e+I+G4    2627.700     356 5967.400     6431.239     7679.025
+622  TIM2e+R3      2618.677     358 5953.353     6424.130     7674.594
+631  TIM2e+I+R3    2618.878     359 5955.757     6430.032     7681.805
+642  TIM2e+I+G4    2627.700     356 5967.400     6431.239     7679.025
+644  TIM2e+R3      2618.677     358 5953.353     6424.130     7674.594
+653  TIM2e+I+R3    2618.878     359 5955.757     6430.032     7681.805
+664  TIM2+I+G4     2627.602     356 5967.204     6431.043     7678.829
+666  TIM2+R3       2618.674     358 5953.347     6424.124     7674.588
+675  TIM2+I+R3     2618.858     359 5955.716     6429.991     7681.764
+686  TIM2+F+I+G4   2623.874     359 5965.749     6440.024     7691.797
+688  TIM2+F+R3     2614.913     361 5951.826     6433.159     7687.491
+697  TIM2+F+I+R3   2615.053     362 5954.107     6439.000     7694.579
+708  TIM3e+I+G4    2625.306     356 5962.611     6426.451     7674.236
+710  TIM3e+R3      2616.597     358 5949.194     6419.971     7670.435
+719  TIM3e+I+R3    2616.776     359 5951.553     6425.828     7677.602
+730  TIM3e+I+G4    2625.306     356 5962.611     6426.451     7674.236
+732  TIM3e+R3      2616.597     358 5949.194     6419.971     7670.435
+741  TIM3e+I+R3    2616.776     359 5951.553     6425.828     7677.602
+752  TIM3+I+G4     2625.217     356 5962.434     6426.273     7674.059
+754  TIM3+R3       2616.595     358 5949.190     6419.966     7670.431
+763  TIM3+I+R3     2616.759     359 5951.518     6425.793     7677.567
+774  TIM3+F+I+G4   2622.654     359 5963.308     6437.583     7689.356
+776  TIM3+F+R3     2613.790     361 5949.581     6430.914     7685.245
+785  TIM3+F+I+R3   2613.924     362 5951.849     6436.742     7692.321
+796  TVMe+I+G4     2630.035     357 5974.071     6441.369     7690.503
+798  TVMe+R3       2618.629     359 5955.258     6429.533     7681.307
+807  TVMe+I+R3     2618.931     360 5957.863     6435.657     7688.719
+818  TVMe+I+G4     2630.035     357 5974.071     6441.369     7690.503
+820  TVMe+R3       2618.629     359 5955.258     6429.533     7681.307
+829  TVMe+I+R3     2618.931     360 5957.863     6435.657     7688.719
+840  TVM+I+G4      2629.914     357 5973.827     6441.125     7690.260
+842  TVM+R3        2618.620     359 5955.241     6429.516     7681.289
+851  TVM+I+R3      2618.892     360 5957.784     6435.578     7688.640
+862  TVM+F+I+G4    2626.977     360 5973.954     6451.748     7704.811
+864  TVM+F+R3      2615.809     362 5955.618     6440.511     7696.090
+873  TVM+F+I+R3    2616.018     363 5958.035     6446.509     7703.316
+884  SYM+I+G4      2623.704     358 5963.408     6434.184     7684.648
+886  SYM+R3        2614.561     360 5949.123     6426.917     7679.979
+895  SYM+I+R3      2614.785     361 5951.569     6432.903     7687.234
+906  SYM+I+G4      2623.704     358 5963.408     6434.184     7684.648
+908  SYM+R3        2614.561     360 5949.123     6426.917     7679.979
+917  SYM+I+R3      2614.785     361 5951.569     6432.903     7687.234
+928  GTR+I+G4      2623.620     358 5963.240     6434.017     7684.481
+930  GTR+R3        2614.555     360 5949.109     6426.903     7679.966
+939  GTR+I+R3      2614.760     361 5951.521     6432.854     7687.185
+950  GTR+F+I+G4    2621.364     361 5964.728     6446.061     7700.392
+952  GTR+F+R3      2612.112     363 5950.223     6438.697     7695.504
+961  GTR+F+I+R3    2612.309     364 5952.618     6444.692     7702.707
+Akaike Information Criterion:           GTR+R3
+Corrected Akaike Information Criterion: TIM3+R3
+Bayesian Information Criterion:         JC+R3
+Best-fit model: JC+R3 chosen according to BIC
+
+All model information printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.model.gz
+CPU time for ModelFinder: 76.943 seconds (0h:1m:16s)
+Wall-clock time for ModelFinder: 41.299 seconds (0h:0m:41s)
+Generating 1000 samples for ultrafast bootstrap (seed: 400252)...
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2626.131
+2. Current log-likelihood: -2625.640
+Optimal log-likelihood: -2625.629
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.571,0.000) (0.396,1.318) (0.033,14.670)
+Parameters optimization took 2 rounds (0.134 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0655768 secs using 192.4% CPU
+Computing ML distances took 0.065835 sec (of wall-clock time) 0.126468 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000473022 secs using 252.2% CPU
+Constructing RapidNJ tree: done in 0.00331187 secs using 250.5% CPU
+Computing RapidNJ tree took 0.003873 sec (of wall-clock time) 0.010723 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2653.370
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.672 second
+Computing log-likelihood of 98 initial trees ... 1.068 seconds
+Current best score: -2591.543
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.837984 secs using 190.1% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2589.182
+Optimizing NNI: done in 0.697059 secs using 187.3% CPU
+Optimizing NNI: done in 0.631694 secs using 191.7% CPU
+Optimizing NNI: done in 0.817488 secs using 190% CPU
+Optimizing NNI: done in 0.811774 secs using 186.6% CPU
+Optimizing NNI: done in 0.982234 secs using 177.4% CPU
+Optimizing NNI: done in 0.89714 secs using 175.6% CPU
+Optimizing NNI: done in 0.730851 secs using 190.3% CPU
+Optimizing NNI: done in 0.86521 secs using 192% CPU
+Optimizing NNI: done in 0.864794 secs using 186.1% CPU
+Iteration 10 / LogL: -2597.498 / Time: 0h:0m:51s
+Optimizing NNI: done in 0.682855 secs using 190% CPU
+Optimizing NNI: done in 0.798669 secs using 187.2% CPU
+Optimizing NNI: done in 0.834815 secs using 188.4% CPU
+Optimizing NNI: done in 0.657553 secs using 185.8% CPU
+Optimizing NNI: done in 0.676535 secs using 190.9% CPU
+Optimizing NNI: done in 0.782636 secs using 189.6% CPU
+Optimizing NNI: done in 0.74751 secs using 188.9% CPU
+Optimizing NNI: done in 1.04253 secs using 180.1% CPU
+Optimizing NNI: done in 0.48436 secs using 190.6% CPU
+Optimizing NNI: done in 0.634934 secs using 191.6% CPU
+Iteration 20 / LogL: -2604.685 / Time: 0h:0m:59s
+Finish initializing candidate tree set (20)
+Current best tree score: -2589.182 / CPU time: 17.468
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.799147 secs using 150.1% CPU
+Optimizing NNI: done in 0.575033 secs using 158.8% CPU
+Optimizing NNI: done in 1.49357 secs using 108.6% CPU
+Optimizing NNI: done in 0.789383 secs using 169.3% CPU
+Optimizing NNI: done in 0.540717 secs using 155% CPU
+Optimizing NNI: done in 0.728327 secs using 175.8% CPU
+Optimizing NNI: done in 0.567697 secs using 184.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -2587.953
+Optimizing NNI: done in 0.580144 secs using 180% CPU
+Optimizing NNI: done in 0.893776 secs using 173.8% CPU
+Optimizing NNI: done in 0.779655 secs using 187.5% CPU
+Iteration 30 / LogL: -2589.835 / Time: 0h:1m:7s (0h:1m:26s left)
+Optimizing NNI: done in 0.589889 secs using 190.6% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -2587.063
+Optimizing NNI: done in 0.937649 secs using 143.7% CPU
+Optimizing NNI: done in 0.820489 secs using 164.9% CPU
+Optimizing NNI: done in 0.41142 secs using 183% CPU
+Optimizing NNI: done in 0.680148 secs using 185.3% CPU
+Optimizing NNI: done in 0.741267 secs using 161.8% CPU
+Optimizing NNI: done in 0.744363 secs using 176.9% CPU
+Optimizing NNI: done in 0.639198 secs using 182.2% CPU
+Optimizing NNI: done in 0.640889 secs using 177% CPU
+Optimizing NNI: done in 0.682693 secs using 189.7% CPU
+Iteration 40 / LogL: -2589.855 / Time: 0h:1m:14s (0h:1m:16s left)
+Optimizing NNI: done in 0.754329 secs using 188.5% CPU
+Optimizing NNI: done in 0.864935 secs using 188% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 42: -2586.784
+Optimizing NNI: done in 0.664482 secs using 187.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 43: -2586.565
+Optimizing NNI: done in 0.680328 secs using 187.4% CPU
+Optimizing NNI: done in 0.678545 secs using 187.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 45: -2586.539
+Optimizing NNI: done in 0.751239 secs using 171.1% CPU
+Optimizing NNI: done in 0.556542 secs using 189.5% CPU
+Optimizing NNI: done in 0.799035 secs using 190% CPU
+Optimizing NNI: done in 0.533431 secs using 192.1% CPU
+Optimizing NNI: done in 0.633864 secs using 192.5% CPU
+Iteration 50 / LogL: -2586.730 / Time: 0h:1m:21s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -2624.434
+Optimizing NNI: done in 0.701151 secs using 190.3% CPU
+Optimizing NNI: done in 0.711045 secs using 188.8% CPU
+Optimizing NNI: done in 0.661849 secs using 190.9% CPU
+Optimizing NNI: done in 0.928885 secs using 187.8% CPU
+Optimizing NNI: done in 0.367904 secs using 193.9% CPU
+Optimizing NNI: done in 0.558088 secs using 190.7% CPU
+Optimizing NNI: done in 0.826493 secs using 187.3% CPU
+Optimizing NNI: done in 0.49969 secs using 191.2% CPU
+Optimizing NNI: done in 0.556252 secs using 187.7% CPU
+Optimizing NNI: done in 0.7355 secs using 180.6% CPU
+Iteration 60 / LogL: -2586.731 / Time: 0h:1m:28s (0h:1m:8s left)
+Optimizing NNI: done in 1.07575 secs using 171.6% CPU
+Optimizing NNI: done in 0.854306 secs using 178.8% CPU
+Optimizing NNI: done in 0.565387 secs using 183.8% CPU
+Optimizing NNI: done in 0.478646 secs using 183% CPU
+Optimizing NNI: done in 0.899125 secs using 188.2% CPU
+Optimizing NNI: done in 0.689355 secs using 188.5% CPU
+Optimizing NNI: done in 0.347996 secs using 184.9% CPU
+Optimizing NNI: done in 0.442862 secs using 192.1% CPU
+Optimizing NNI: done in 0.40579 secs using 185.5% CPU
+Optimizing NNI: done in 0.499493 secs using 190.8% CPU
+Iteration 70 / LogL: -2586.669 / Time: 0h:1m:35s (0h:0m:58s left)
+Optimizing NNI: done in 0.916058 secs using 159.8% CPU
+Optimizing NNI: done in 0.226834 secs using 188.2% CPU
+Optimizing NNI: done in 0.636292 secs using 188% CPU
+Optimizing NNI: done in 0.453943 secs using 183.7% CPU
+Optimizing NNI: done in 0.904885 secs using 149.7% CPU
+Optimizing NNI: done in 0.714346 secs using 179.6% CPU
+Optimizing NNI: done in 0.62142 secs using 188.2% CPU
+Optimizing NNI: done in 0.613925 secs using 185.6% CPU
+Optimizing NNI: done in 0.86009 secs using 181.4% CPU
+Optimizing NNI: done in 0.713158 secs using 174.4% CPU
+Iteration 80 / LogL: -2601.014 / Time: 0h:1m:42s (0h:0m:50s left)
+Optimizing NNI: done in 0.376149 secs using 171.3% CPU
+
+******************************************************
+CHECKPOINT: Resuming analysis from /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.ckp.gz
+
+IQ-TREE version 3.0.1 for MacOS Intel 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    Samuels-MacBook-Air-343.local (SSE4.2, 16 GB RAM)
+Command: /Users/samuelchurch/anaconda3/envs/tree/bin/iqtree -s /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta -B 1000 -nt AUTO
+Seed:    278191 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug  5 21:58:46 2026
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.00922608 secs using 95.31% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00249195 secs using 234.2% CPU
+Alignment has 239 sequences with 905 columns, 277 distinct patterns
+53 parsimony-informative, 60 singleton sites, 792 constant sites
+               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000159025 secs using 355.9% CPU
+   1  FM-16644         4.64%    passed     95.58%
+   2  NIWA-173304      1.88%    passed     99.30%
+   3  NIWA-173305      1.88%    passed     99.68%
+   4  OA-190531-1      3.31%    passed     96.84%
+   5  OA-Bluebottle    3.31%    passed     99.26%
+   6  TMAG-K5632       4.20%    passed     99.98%
+   7  TMAG-K5633       1.88%    passed     99.74%
+   8  TMAG-K5634       3.20%    passed     99.40%
+   9  TMAG-K5635       1.88%    passed     99.32%
+  10  TMAG-K5636       1.88%    passed     99.33%
+  11  WAM-Z88480       4.20%    passed     99.71%
+  12  WAM-Z97900       4.20%    passed     99.71%
+  13  WAM-Z97901       4.20%    passed     98.80%
+  14  WAM-Z97902       3.31%    passed     98.42%
+  15  WAM-Z97903       3.98%    passed     99.98%
+  16  WAM-Z97906       4.20%    passed     99.68%
+  17  WAM-Z97907       3.31%    passed     98.42%
+  18  WAM-Z97908       3.31%    passed     99.09%
+  19  WAM-Z97910       3.31%    passed     99.09%
+  20  WAM-Z97911       3.31%    passed     98.14%
+  21  WAM-Z97914       3.31%    passed     98.65%
+  22  WAM-Z97916       3.31%    passed     98.87%
+  23  WAM-Z97917       3.31%    passed     98.75%
+  24  WAM-Z97920       3.98%    passed     99.07%
+  25  WAM-Z97921       3.31%    passed     99.09%
+  26  WAM-Z97923       3.31%    passed     98.65%
+  27  YPM-IZ-104460    3.31%    passed     98.89%
+  28  YPM-IZ-104461    3.31%    passed     98.87%
+  29  YPM-IZ-104464    3.31%    passed     98.89%
+  30  YPM-IZ-104465    3.31%    passed     98.89%
+  31  YPM-IZ-106919    3.31%    passed     98.65%
+  32  YPM-IZ-106920    3.31%    passed     99.09%
+  33  YPM-IZ-106923    3.31%    passed     98.65%
+  34  YPM-IZ-106935    4.64%    passed     97.00%
+  35  YPM-IZ-106936    4.64%    passed     97.00%
+  36  YPM-IZ-106937    4.64%    passed     97.00%
+  37  YPM-IZ-106941    4.42%    passed     96.01%
+  38  YPM-IZ-106943    4.64%    passed     97.00%
+  39  YPM-IZ-106954    4.64%    passed     97.00%
+  40  YPM-IZ-106958    4.64%    passed     96.48%
+  41  YPM-IZ-110251    4.64%    passed     96.66%
+  42  YPM-IZ-110254    4.64%    passed     97.00%
+  43  YPM-IZ-110264    3.31%    passed     99.09%
+  44  YPM-IZ-110268    3.31%    passed     98.89%
+  45  YPM-IZ-110269    3.43%    passed     98.94%
+  46  YPM-IZ-110276    3.31%    passed     98.42%
+  47  YPM-IZ-110277    3.20%    passed     98.40%
+  48  YPM-IZ-110278    3.31%    passed     98.65%
+  49  YPM-IZ-110433    4.64%    passed     97.00%
+  50  YPM-IZ-110434    4.64%    passed     97.02%
+  51  YPM-IZ-110436    4.64%    passed     97.02%
+  52  YPM-IZ-110438    4.64%    passed     95.21%
+  53  YPM-IZ-110443    4.64%    passed     97.00%
+  54  YPM-IZ-110460    3.31%    passed     99.09%
+  55  YPM-IZ-110467    1.88%    passed     99.68%
+  56  YPM-IZ-110468    1.88%    passed     99.55%
+  57  YPM-IZ-110469    1.88%    passed     99.68%
+  58  YPM-IZ-110470    1.88%    passed     99.68%
+  59  YPM-IZ-110471    3.31%    passed     98.65%
+  60  YPM-IZ-110473    3.31%    passed     98.52%
+  61  YPM-IZ-110474    3.31%    passed     98.89%
+  62  YPM-IZ-110480    3.31%    passed     98.52%
+  63  YPM-IZ-110515    3.31%    passed     99.70%
+  64  YPM-IZ-110520    3.31%    passed     97.29%
+  65  YPM-IZ-110526    3.31%    passed     98.89%
+  66  YPM-IZ-110556    1.88%    passed     99.68%
+  67  YPM-IZ-110557    1.88%    passed     99.55%
+  68  YPM-IZ-110558    1.88%    passed     97.93%
+  69  YPM-IZ-110566    3.31%    passed     99.09%
+  70  YPM-IZ-110569    3.31%    passed     99.09%
+  71  YPM-IZ-110600    3.31%    passed     99.09%
+  72  YPM-IZ-110602    3.31%    passed     99.21%
+  73  YPM-IZ-110605    3.31%    passed     98.89%
+  74  YPM-IZ-110612    3.31%    passed     99.21%
+  75  YPM-IZ-110613    3.31%    passed     99.38%
+  76  YPM-IZ-110616    3.31%    passed     98.65%
+  77  YPM-IZ-110631    4.64%    passed     95.92%
+  78  YPM-IZ-110633    4.64%    passed     96.65%
+  79  YPM-IZ-110667    4.64%    passed     97.02%
+  80  YPM-IZ-110694    4.64%    passed     97.00%
+  81  YPM-IZ-110716    4.64%    passed     97.00%
+  82  YPM-IZ-110726    4.64%    passed     96.65%
+  83  YPM-IZ-110738    4.64%    passed     97.00%
+  84  YPM-IZ-110777    3.31%    passed     99.09%
+  85  YPM-IZ-110780    3.31%    passed     99.09%
+  86  YPM-IZ-110785    3.31%    passed     99.09%
+  87  YPM-IZ-110786    3.31%    passed     98.65%
+  88  YPM-IZ-110828    4.20%    passed    100.00%
+  89  YPM-IZ-110829    4.20%    passed     98.86%
+  90  YPM-IZ-110830    3.31%    passed     99.09%
+  91  YPM-IZ-110842    4.64%    passed     95.62%
+  92  YPM-IZ-110843    4.64%    passed     95.62%
+  93  YPM-IZ-110844    4.64%    passed     95.48%
+  94  YPM-IZ-110845    4.64%    passed     95.21%
+  95  YPM-IZ-110846    4.64%    passed     96.65%
+  96  YPM-IZ-110847    4.64%    passed     97.00%
+  97  YPM-IZ-110876    4.42%    passed     95.63%
+  98  YPM-IZ-110877    2.87%    passed     99.21%
+  99  YPM-IZ-110878    3.43%    passed     98.57%
+ 100  YPM-IZ-110880    4.64%    passed     97.00%
+ 101  YPM-IZ-110881    3.31%    passed     98.87%
+ 102  YPM-IZ-110882    3.31%    passed     99.09%
+ 103  YPM-IZ-110883    3.31%    passed     99.19%
+ 104  YPM-IZ-110906    3.31%    passed     99.57%
+ 105  YPM-IZ-110907    3.31%    passed     98.96%
+ 106  YPM-IZ-110925    3.31%    passed     99.09%
+ 107  YPM-IZ-110926    3.31%    passed     99.09%
+ 108  YPM-IZ-110930    3.31%    passed     98.65%
+ 109  YPM-IZ-110931    2.87%    passed     99.40%
+ 110  YPM-IZ-110933    3.31%    passed     98.89%
+ 111  YPM-IZ-110937    3.31%    passed     98.65%
+ 112  YPM-IZ-110938    3.31%    passed     98.89%
+ 113  YPM-IZ-110943    2.87%    passed     99.21%
+ 114  YPM-IZ-110972    4.64%    passed     97.02%
+ 115  YPM-IZ-111006    3.31%    passed     98.25%
+ 116  YPM-IZ-111007    3.31%    passed     98.65%
+ 117  YPM-IZ-111008    3.31%    passed     99.09%
+ 118  YPM-IZ-111009    2.98%    passed     99.22%
+ 119  YPM-IZ-111010    5.30%    passed     99.90%
+ 120  YPM-IZ-111012    4.64%    passed     96.48%
+ 121  YPM-IZ-111013    4.64%    passed     97.00%
+ 122  YPM-IZ-111014    4.64%    passed     97.00%
+ 123  YPM-IZ-111016    4.64%    passed     95.92%
+ 124  YPM-IZ-111017    4.64%    passed     97.02%
+ 125  YPM-IZ-111018    4.64%    passed     96.65%
+ 126  YPM-IZ-111156    4.20%    passed     99.41%
+ 127  YPM-IZ-111157    4.20%    passed     99.71%
+ 128  YPM-IZ-111158    3.98%    passed     99.20%
+ 129  YPM-IZ-111159    3.76%    passed     99.75%
+ 130  YPM-IZ-111160    4.20%    passed     99.27%
+ 131  YPM-IZ-111163    3.31%    passed     98.65%
+ 132  YPM-IZ-111207    1.99%    passed     99.72%
+ 133  YPM-IZ-111208    1.88%    passed     99.74%
+ 134  YPM-IZ-111209    1.88%    passed     99.75%
+ 135  YPM-IZ-111210    1.88%    passed     99.74%
+ 136  YPM-IZ-111241    1.88%    passed     99.68%
+ 137  YPM-IZ-111243    1.88%    passed     99.86%
+ 138  YPM-IZ-111495    4.20%    passed     99.98%
+ 139  YPM-IZ-111513    3.98%    passed     99.62%
+ 140  YPM-IZ-111514    4.20%    passed     99.68%
+ 141  YPM-IZ-111517    5.30%    passed     99.90%
+ 142  YPM-IZ-111518    5.30%    passed     99.93%
+ 143  YPM-IZ-111519    3.98%    passed     99.78%
+ 144  YPM-IZ-111520    4.20%    passed     98.80%
+ 145  YPM-IZ-111521    3.98%    passed     99.32%
+ 146  YPM-IZ-111529    3.98%    passed     99.36%
+ 147  YPM-IZ-111530    4.20%    passed     99.30%
+ 148  YPM-IZ-111539    3.76%    passed     99.66%
+ 149  YPM-IZ-111547    3.31%    passed     98.52%
+ 150  YPM-IZ-111839    2.87%    passed     99.40%
+ 151  YPM-IZ-111840    3.31%    passed     99.28%
+ 152  SEA2025-Ph209    1.99%    passed     99.72%
+ 153  SEA2025-Ph239    1.88%    passed     99.68%
+ 154  SEA2025-Ph250    1.99%    passed     99.69%
+ 155  SEA2025-Ph255    1.88%    passed     99.57%
+ 156  SEA2025-Ph259    1.88%    passed     99.68%
+ 157  SEA2025-Ph264    1.99%    passed     99.71%
+ 158  SEA2025-Ph271    1.88%    passed     99.74%
+ 159  SEA2025-Ph273    3.31%    passed     99.55%
+ 160  SEA2025-Ph211    1.88%    passed     99.81%
+ 161  SEA2025-Ph218    1.99%    passed     99.72%
+ 162  SEA2025-Ph225    1.99%    passed     99.69%
+ 163  SEA2025-Ph252    1.99%    passed     99.50%
+ 164  SEA2025-Ph256    1.99%    passed     99.69%
+ 165  SEA2025-Ph265    1.88%    passed     99.68%
+ 166  SEA2025-Ph272    1.88%    passed     99.74%
+ 167  YPM-IZ-111759    1.88%    passed     99.86%
+ 168  YPM-IZ-111760    1.88%    passed     99.55%
+ 169  YPM-IZ-111814    3.76%    passed     99.66%
+ 170  YPM-IZ-111819    4.20%    passed     99.71%
+ 171  YPM-IZ-111820    4.20%    passed     99.41%
+ 172  YPM-IZ-111220    1.88%    passed     99.73%
+ 173  YPM-IZ-111261    1.88%    passed     99.32%
+ 174  YPM-IZ-111256    1.88%    passed     99.74%
+ 175  WAM-Z97909       3.98%    passed     99.32%
+ 176  YPM-IZ-111231    1.88%    passed     99.05%
+ 177  YPM-IZ-111806    1.88%    passed     99.55%
+ 178  YPM-IZ-111813    1.88%    passed     99.68%
+ 179  YPM-IZ-111816    3.98%    passed     99.99%
+ 180  YPM-IZ-111822    4.20%    passed     99.98%
+ 181  YPM-IZ-111825    4.20%    passed     99.68%
+ 182  YPM-IZ-115977    1.88%    passed     99.93%
+ 183  YPM-IZ-115978    1.88%    passed     99.68%
+ 184  YPM-IZ-115980    1.88%    passed     99.68%
+ 185  YPM-IZ-115990    1.88%    passed     99.74%
+ 186  YPM-IZ-116019    3.98%    passed     99.07%
+ 187  AB377546.1      74.36%    passed     64.23%
+ 188  FJ847271.1      64.42%    passed     72.57%
+ 189  FJ847272.1      54.70%    passed     76.43%
+ 190  FJ847273.1      59.12%    passed     51.44%
+ 191  FJ847274.1      54.81%    passed     94.92%
+ 192  FJ847275.1      54.92%    passed     67.29%
+ 193  FJ847276.1      51.27%    passed     73.16%
+ 194  FJ847277.1      55.80%    passed     58.78%
+ 195  FJ847278.1      56.91%    passed     55.95%
+ 196  FJ847279.1      56.13%    passed     56.22%
+ 197  FJ847280.1      69.28%    passed     39.45%
+ 198  FJ847281.1      62.54%    passed     79.71%
+ 199  FJ847282.1      62.54%    passed     64.59%
+ 200  FJ847283.1      64.86%    passed     87.04%
+ 201  FJ847284.1      59.67%    passed     91.92%
+ 202  FJ847285.1      69.28%    passed     50.48%
+ 203  FJ847286.1      72.60%    passed     64.24%
+ 204  FJ847287.1      59.23%    passed     93.84%
+ 205  FJ847288.1      73.04%    passed     94.27%
+ 206  FJ847289.1      70.61%    passed     72.85%
+ 207  FJ847290.1      74.92%    passed     84.45%
+ 208  FJ847291.1      70.72%    passed     52.73%
+ 209  FJ847292.1      65.30%    passed     30.63%
+ 210  FJ847293.1      64.31%    passed     69.45%
+ 211  FJ847294.1      54.92%    passed     65.17%
+ 212  FJ847295.1      56.46%    passed     46.86%
+ 213  FJ847296.1      55.03%    passed     71.04%
+ 214  FJ847297.1      68.40%    passed     69.01%
+ 215  FJ847298.1      54.14%    passed     62.49%
+ 216  FJ847299.1      54.14%    passed     61.64%
+ 217  FJ847300.1      55.14%    passed     56.28%
+ 218  FJ847301.1      71.71%    passed     45.50%
+ 219  FJ847302.1      61.88%    passed     86.63%
+ 220  FJ847303.1      59.89%    passed     80.77%
+ 221  FJ847304.1      59.56%    passed     77.22%
+ 222  FJ847305.1      58.34%    passed     66.79%
+ 223  FJ847306.1      62.65%    passed     22.14%
+ 224  FJ847307.1      63.20%    passed     21.93%
+ 225  FJ847308.1      64.31%    passed     70.36%
+ 226  FJ847309.1      59.56%    passed     85.72%
+ 227  FJ847310.1      60.99%    passed     84.59%
+ 228  FJ847311.1      64.31%    passed     71.17%
+ 229  FJ847312.1      64.31%    passed     70.90%
+ 230  FJ847313.1      64.31%    passed     71.25%
+ 231  FJ847314.1      64.31%    passed     71.25%
+ 232  FJ847315.1      68.84%    passed     54.51%
+ 233  FJ847316.1      68.84%    passed     56.84%
+ 234  FJ847317.1      70.94%    passed     56.19%
+ 235  FJ847318.1      68.51%    passed     64.24%
+ 236  FJ847319.1      64.09%    passed     64.34%
+ 237  FJ847320.1      60.44%    passed     94.14%
+ 238  FJ847321.1      52.38%    passed     61.06%
+ 239  FJ847322.1      67.29%    passed     80.26%
+WARNING: 53 sequences contain more than 50% gaps/ambiguity
+****  TOTAL           16.53%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: YPM-IZ-110467 is identical to NIWA-173305 but kept for subsequent analysis
+NOTE: YPM-IZ-111495 is identical to TMAG-K5632 but kept for subsequent analysis
+NOTE: YPM-IZ-111261 is identical to TMAG-K5635 but kept for subsequent analysis
+NOTE: WAM-Z97900 is identical to WAM-Z88480 but kept for subsequent analysis
+NOTE: YPM-IZ-111514 is identical to WAM-Z97906 but kept for subsequent analysis
+NOTE: WAM-Z97910 is identical to WAM-Z97908 but kept for subsequent analysis
+NOTE: WAM-Z97923 is identical to WAM-Z97914 but kept for subsequent analysis
+NOTE: YPM-IZ-110881 is identical to WAM-Z97916 but kept for subsequent analysis
+NOTE: YPM-IZ-116019 is identical to WAM-Z97920 but kept for subsequent analysis
+NOTE: YPM-IZ-104465 is identical to YPM-IZ-104464 but kept for subsequent analysis
+NOTE: YPM-IZ-106937 is identical to YPM-IZ-106935 but kept for subsequent analysis
+NOTE: YPM-IZ-106943 is identical to YPM-IZ-106936 but kept for subsequent analysis
+NOTE: YPM-IZ-110436 is identical to YPM-IZ-110434 but kept for subsequent analysis
+NOTE: YPM-IZ-110557 is identical to YPM-IZ-110468 but kept for subsequent analysis
+NOTE: YPM-IZ-110612 is identical to YPM-IZ-110602 but kept for subsequent analysis
+NOTE: YPM-IZ-111016 is identical to YPM-IZ-110631 but kept for subsequent analysis
+NOTE: YPM-IZ-110726 is identical to YPM-IZ-110633 but kept for subsequent analysis
+NOTE: YPM-IZ-110943 is identical to YPM-IZ-110877 but kept for subsequent analysis
+NOTE: YPM-IZ-111839 is identical to YPM-IZ-110931 but kept for subsequent analysis
+NOTE: YPM-IZ-111517 is identical to YPM-IZ-111010 but kept for subsequent analysis
+NOTE: YPM-IZ-111210 is identical to YPM-IZ-111208 but kept for subsequent analysis
+NOTE: YPM-IZ-111814 is identical to YPM-IZ-111539 but kept for subsequent analysis
+NOTE: SEA2025-Ph225 is identical to SEA2025-Ph250 but kept for subsequent analysis
+NOTE: FJ847314.1 is identical to FJ847313.1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000659943 secs using 271.1% CPU
+Identifying sites to remove: done in 0.00137281 secs using 293.1% CPU
+NOTE: 62 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: YPM-IZ-110469 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-110470 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-110556 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111241 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph239 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph259 (identical to NIWA-173305) is ignored but added at the end
+NOTE: SEA2025-Ph265 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111813 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-115978 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-115980 (identical to NIWA-173305) is ignored but added at the end
+NOTE: YPM-IZ-111822 (identical to TMAG-K5632) is ignored but added at the end
+NOTE: YPM-IZ-111157 (identical to WAM-Z88480) is ignored but added at the end
+NOTE: WAM-Z97921 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-106920 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110460 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110566 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110569 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110600 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110777 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110780 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110785 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110830 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110882 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110925 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-110926 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-111008 (identical to WAM-Z97908) is ignored but added at the end
+NOTE: YPM-IZ-106923 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110278 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110471 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110616 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110930 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110937 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-111007 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-111163 (identical to WAM-Z97914) is ignored but added at the end
+NOTE: YPM-IZ-110268 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110474 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110526 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110605 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110933 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-110938 (identical to YPM-IZ-104464) is ignored but added at the end
+NOTE: YPM-IZ-106954 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110254 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110433 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110443 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110694 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110738 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110847 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110880 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-111013 (identical to YPM-IZ-106935) is ignored but added at the end
+NOTE: YPM-IZ-110716 (identical to YPM-IZ-106936) is ignored but added at the end
+NOTE: YPM-IZ-111014 (identical to YPM-IZ-106936) is ignored but added at the end
+NOTE: YPM-IZ-110667 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-110972 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-111017 (identical to YPM-IZ-110434) is ignored but added at the end
+NOTE: YPM-IZ-111760 (identical to YPM-IZ-110468) is ignored but added at the end
+NOTE: YPM-IZ-111806 (identical to YPM-IZ-110468) is ignored but added at the end
+NOTE: YPM-IZ-111018 (identical to YPM-IZ-110633) is ignored but added at the end
+NOTE: SEA2025-Ph271 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: SEA2025-Ph272 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: YPM-IZ-111256 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: YPM-IZ-115990 (identical to YPM-IZ-111208) is ignored but added at the end
+NOTE: SEA2025-Ph256 (identical to SEA2025-Ph250) is ignored but added at the end
+Alignment was printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.uniqueseq.phy
+
+NOTE: Restoring information from model checkpoint file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+66 trees examined
+Threads: 1 / Time: 8.063 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -5965
+Threads: 2 / Time: 7.266 sec / Speedup: 1.110 / Efficiency: 55% / LogL: -5965
+Threads: 3 / Time: 6.943 sec / Speedup: 1.161 / Efficiency: 39% / LogL: -5965
+Determining AUTO threadcount: done in 22.2748 secs using 184.9% CPU
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+CHECKPOINT: Tree restored, LogL: -2621.776
+NOTE: ModelFinder requires 17 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 905 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            2715.922     351 6133.845     6580.687     7821.430
+  2  JC+I          2643.841     352 5991.681     6441.884     7684.074
+  3  JC+G4         2646.028     352 5996.056     6446.259     7688.450
+  4  JC+I+G4       2637.242     353 5980.484     6434.066     7677.685
+  5  JC+R2         2643.796     353 5993.592     6447.175     7690.793
+  6  JC+R3         2625.592     355 5961.185     6421.586     7668.002
+  7  JC+R4         2625.679     357 5965.358     6432.656     7681.791
+ 14  JC+I+R2       2643.833     354 5995.666     6452.648     7697.675
+ 15  JC+I+R3       2625.960     356 5963.920     6427.760     7675.545
+ 16  JC+I+R4       2625.730     358 5967.459     6438.236     7688.700
+ 26  JC+I+G4       2637.242     353 5980.484     6434.066     7677.685
+ 28  JC+R3         2625.592     355 5961.185     6421.586     7668.002
+ 37  JC+I+R3       2625.960     356 5963.920     6427.760     7675.545
+ 48  F81+I+G4      2637.088     353 5980.176     6433.759     7677.377
+ 50  F81+R3        2625.631     355 5961.263     6421.663     7668.080
+ 59  F81+I+R3      2625.951     356 5963.901     6427.741     7675.526
+ 70  F81+F+I+G4    2632.639     356 5977.278     6441.117     7688.903
+ 72  F81+F+R3      2621.362     358 5958.723     6429.500     7679.964
+ 81  F81+F+I+R3    2621.601     359 5961.201     6435.477     7687.250
+ 92  K2P+I+G4      2634.996     354 5977.992     6434.974     7680.001
+ 94  K2P+R3        2623.786     356 5959.571     6423.411     7671.196
+103  K2P+I+R3      2624.029     357 5962.058     6429.356     7678.491
+114  K2P+I+G4      2634.996     354 5977.992     6434.974     7680.001
+116  K2P+R3        2623.786     356 5959.571     6423.411     7671.196
+125  K2P+I+R3      2624.029     357 5962.058     6429.356     7678.491
+136  HKY+I+G4      2634.850     354 5977.699     6434.681     7679.708
+138  HKY+R3        2623.784     356 5959.568     6423.407     7671.193
+147  HKY+I+R3      2624.001     357 5962.002     6429.300     7678.435
+158  HKY+F+I+G4    2630.420     357 5974.839     6442.137     7691.272
+160  HKY+F+R3      2619.433     359 5956.867     6431.142     7682.916
+169  HKY+F+I+R3    2619.606     360 5959.211     6437.005     7690.068
+180  TNe+I+G4      2628.693     355 5967.387     6427.788     7674.204
+182  TNe+R3        2620.013     357 5954.025     6421.323     7670.458
+191  TNe+I+R3      2620.114     358 5956.228     6427.005     7677.469
+202  TNe+I+G4      2628.693     355 5967.387     6427.788     7674.204
+204  TNe+R3        2620.013     357 5954.025     6421.323     7670.458
+213  TNe+I+R3      2620.114     358 5956.228     6427.005     7677.469
+224  TN+I+G4       2628.594     355 5967.187     6427.588     7674.004
+226  TN+R3         2620.007     357 5954.013     6421.311     7670.446
+235  TN+I+R3       2620.101     358 5956.203     6426.979     7677.444
+246  TN+F+I+G4     2624.517     358 5965.034     6435.810     7686.274
+248  TN+F+R3       2615.890     360 5951.781     6429.575     7682.637
+257  TN+F+I+R3     2615.941     361 5953.883     6435.216     7689.547
+268  K3P+I+G4      2634.608     355 5979.215     6439.616     7686.032
+270  K3P+R3        2623.679     357 5961.359     6428.657     7677.792
+279  K3P+I+R3      2623.854     358 5963.709     6434.485     7684.950
+290  K3P+I+G4      2634.608     355 5979.215     6439.616     7686.032
+292  K3P+R3        2623.679     357 5961.359     6428.657     7677.792
+301  K3P+I+R3      2623.854     358 5963.709     6434.485     7684.950
+312  K3Pu+I+G4     2634.469     355 5978.939     6439.340     7685.756
+314  K3Pu+R3       2623.679     357 5961.358     6428.656     7677.791
+323  K3Pu+I+R3     2623.836     358 5963.673     6434.450     7684.914
+334  K3Pu+F+I+G4   2629.862     358 5975.724     6446.500     7696.965
+336  K3Pu+F+R3     2619.300     360 5958.601     6436.395     7689.457
+345  K3Pu+F+I+R3   2619.400     361 5960.800     6442.134     7696.465
+356  TPM2+I+G4     2633.824     355 5977.648     6438.049     7684.465
+358  TPM2+R3       2622.453     357 5958.907     6426.205     7675.339
+367  TPM2+I+R3     2622.745     358 5961.490     6432.266     7682.731
+378  TPM2+I+G4     2633.824     355 5977.648     6438.049     7684.465
+380  TPM2+R3       2622.453     357 5958.907     6426.205     7675.339
+389  TPM2+I+R3     2622.745     358 5961.490     6432.266     7682.731
+400  TPM2u+I+G4    2633.680     355 5977.359     6437.760     7684.176
+402  TPM2u+R3      2622.448     357 5958.897     6426.195     7675.329
+411  TPM2u+I+R3    2622.712     358 5961.425     6432.201     7682.665
+422  TPM2u+F+I+G4  2629.410     358 5974.821     6445.597     7696.061
+424  TPM2u+F+R3    2618.482     360 5956.964     6434.758     7687.820
+433  TPM2u+F+I+R3  2618.667     361 5959.335     6440.668     7694.999
+444  TPM3+I+G4     2631.850     355 5973.699     6434.100     7680.516
+446  TPM3+R3       2620.664     357 5955.328     6422.626     7671.760
+455  TPM3+I+R3     2620.925     358 5957.850     6428.626     7679.090
+466  TPM3+I+G4     2631.850     355 5973.699     6434.100     7680.516
+468  TPM3+R3       2620.664     357 5955.328     6422.626     7671.760
+477  TPM3+I+R3     2620.925     358 5957.850     6428.626     7679.090
+488  TPM3u+I+G4    2631.720     355 5973.440     6433.841     7680.257
+490  TPM3u+R3      2620.659     357 5955.319     6422.617     7671.752
+499  TPM3u+I+R3    2620.894     358 5957.788     6428.564     7679.028
+510  TPM3u+F+I+G4  2628.319     358 5972.639     6443.415     7693.879
+512  TPM3u+F+R3    2617.447     360 5954.895     6432.689     7685.751
+521  TPM3u+F+I+R3  2617.612     361 5957.224     6438.557     7692.889
+532  TIMe+I+G4     2628.197     356 5968.394     6432.233     7680.019
+534  TIMe+R3       2619.911     358 5955.822     6426.598     7677.062
+543  TIMe+I+R3     2619.969     359 5957.938     6432.213     7683.986
+554  TIMe+I+G4     2628.197     356 5968.394     6432.233     7680.019
+556  TIMe+R3       2619.911     358 5955.822     6426.598     7677.062
+565  TIMe+I+R3     2619.969     359 5957.938     6432.213     7683.986
+576  TIM+I+G4      2628.114     356 5968.228     6432.068     7679.853
+578  TIM+R3        2619.904     358 5955.808     6426.584     7677.049
+587  TIM+I+R3      2619.957     359 5957.913     6432.188     7683.962
+598  TIM+F+I+G4    2624.274     359 5966.547     6440.822     7692.596
+600  TIM+F+R3      2615.756     361 5953.512     6434.846     7689.177
+609  TIM+F+I+R3    2615.796     362 5955.592     6440.485     7696.065
+620  TIM2e+I+G4    2627.700     356 5967.400     6431.239     7679.025
+622  TIM2e+R3      2618.677     358 5953.353     6424.130     7674.594
+631  TIM2e+I+R3    2618.878     359 5955.757     6430.032     7681.805
+642  TIM2e+I+G4    2627.700     356 5967.400     6431.239     7679.025
+644  TIM2e+R3      2618.677     358 5953.353     6424.130     7674.594
+653  TIM2e+I+R3    2618.878     359 5955.757     6430.032     7681.805
+664  TIM2+I+G4     2627.602     356 5967.204     6431.043     7678.829
+666  TIM2+R3       2618.674     358 5953.347     6424.124     7674.588
+675  TIM2+I+R3     2618.858     359 5955.716     6429.991     7681.764
+686  TIM2+F+I+G4   2623.874     359 5965.749     6440.024     7691.797
+688  TIM2+F+R3     2614.913     361 5951.826     6433.159     7687.491
+697  TIM2+F+I+R3   2615.053     362 5954.107     6439.000     7694.579
+708  TIM3e+I+G4    2625.306     356 5962.611     6426.451     7674.236
+710  TIM3e+R3      2616.597     358 5949.194     6419.971     7670.435
+719  TIM3e+I+R3    2616.776     359 5951.553     6425.828     7677.602
+730  TIM3e+I+G4    2625.306     356 5962.611     6426.451     7674.236
+732  TIM3e+R3      2616.597     358 5949.194     6419.971     7670.435
+741  TIM3e+I+R3    2616.776     359 5951.553     6425.828     7677.602
+752  TIM3+I+G4     2625.217     356 5962.434     6426.273     7674.059
+754  TIM3+R3       2616.595     358 5949.190     6419.966     7670.431
+763  TIM3+I+R3     2616.759     359 5951.518     6425.793     7677.567
+774  TIM3+F+I+G4   2622.654     359 5963.308     6437.583     7689.356
+776  TIM3+F+R3     2613.790     361 5949.581     6430.914     7685.245
+785  TIM3+F+I+R3   2613.924     362 5951.849     6436.742     7692.321
+796  TVMe+I+G4     2630.035     357 5974.071     6441.369     7690.503
+798  TVMe+R3       2618.629     359 5955.258     6429.533     7681.307
+807  TVMe+I+R3     2618.931     360 5957.863     6435.657     7688.719
+818  TVMe+I+G4     2630.035     357 5974.071     6441.369     7690.503
+820  TVMe+R3       2618.629     359 5955.258     6429.533     7681.307
+829  TVMe+I+R3     2618.931     360 5957.863     6435.657     7688.719
+840  TVM+I+G4      2629.914     357 5973.827     6441.125     7690.260
+842  TVM+R3        2618.620     359 5955.241     6429.516     7681.289
+851  TVM+I+R3      2618.892     360 5957.784     6435.578     7688.640
+862  TVM+F+I+G4    2626.977     360 5973.954     6451.748     7704.811
+864  TVM+F+R3      2615.809     362 5955.618     6440.511     7696.090
+873  TVM+F+I+R3    2616.018     363 5958.035     6446.509     7703.316
+884  SYM+I+G4      2623.704     358 5963.408     6434.184     7684.648
+886  SYM+R3        2614.561     360 5949.123     6426.917     7679.979
+895  SYM+I+R3      2614.785     361 5951.569     6432.903     7687.234
+906  SYM+I+G4      2623.704     358 5963.408     6434.184     7684.648
+908  SYM+R3        2614.561     360 5949.123     6426.917     7679.979
+917  SYM+I+R3      2614.785     361 5951.569     6432.903     7687.234
+928  GTR+I+G4      2623.620     358 5963.240     6434.017     7684.481
+930  GTR+R3        2614.555     360 5949.109     6426.903     7679.966
+939  GTR+I+R3      2614.760     361 5951.521     6432.854     7687.185
+950  GTR+F+I+G4    2621.364     361 5964.728     6446.061     7700.392
+952  GTR+F+R3      2612.112     363 5950.223     6438.697     7695.504
+961  GTR+F+I+R3    2612.309     364 5952.618     6444.692     7702.707
+Akaike Information Criterion:           GTR+R3
+Corrected Akaike Information Criterion: TIM3+R3
+Bayesian Information Criterion:         JC+R3
+Best-fit model: JC+R3 chosen according to BIC
+
+All model information printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.model.gz
+CPU time for ModelFinder: 41.374 seconds (0h:0m:41s)
+Wall-clock time for ModelFinder: 22.348 seconds (0h:0m:22s)
+Generating 1000 samples for ultrafast bootstrap (seed: 278191)...
+CHECKPOINT: 1000 UFBoot trees and 1 UFBootSplits restored
+
+NOTE: 5 MB RAM (0 GB) is required!
+CHECKPOINT: Model parameters restored, LogL: -2588.652
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+CHECKPOINT: Candidate tree set restored, best LogL: -2586.539
+Finish initializing candidate tree set (20)
+Current best tree score: -2586.539 / CPU time: 0.000
+Number of iterations: 79
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.690113 secs using 188.1% CPU
+Iteration 80 / LogL: -2594.138 / Time: 0h:0m:23s (0h:0m:0s left)
+Optimizing NNI: done in 0.469939 secs using 193.4% CPU
+Optimizing NNI: done in 0.442296 secs using 191.7% CPU
+Optimizing NNI: done in 0.476934 secs using 191% CPU
+Optimizing NNI: done in 0.120231 secs using 193.5% CPU
+Optimizing NNI: done in 0.661319 secs using 193.1% CPU
+Optimizing NNI: done in 0.635178 secs using 193.6% CPU
+Optimizing NNI: done in 0.64412 secs using 190.3% CPU
+Optimizing NNI: done in 0.818306 secs using 186.7% CPU
+Optimizing NNI: done in 0.540374 secs using 186.2% CPU
+Optimizing NNI: done in 0.543756 secs using 188.1% CPU
+Iteration 90 / LogL: -2588.324 / Time: 0h:0m:28s (0h:0m:3s left)
+Optimizing NNI: done in 0.532443 secs using 189.7% CPU
+Optimizing NNI: done in 0.69794 secs using 187.3% CPU
+Optimizing NNI: done in 0.44027 secs using 192.8% CPU
+Optimizing NNI: done in 0.38888 secs using 193.3% CPU
+Optimizing NNI: done in 0.341864 secs using 195.4% CPU
+Optimizing NNI: done in 0.486067 secs using 193.8% CPU
+Optimizing NNI: done in 0.646319 secs using 189.6% CPU
+Optimizing NNI: done in 0.56304 secs using 186.2% CPU
+Optimizing NNI: done in 0.537758 secs using 189.9% CPU
+Optimizing NNI: done in 0.610081 secs using 168.3% CPU
+Iteration 100 / LogL: -2598.873 / Time: 0h:0m:34s (0h:0m:5s left)
+Log-likelihood cutoff on original alignment: -2624.434
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.905
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.558461 secs using 191.7% CPU
+Optimizing NNI: done in 0.727741 secs using 190.3% CPU
+Optimizing NNI: done in 0.650305 secs using 188.1% CPU
+Optimizing NNI: done in 0.362032 secs using 195.6% CPU
+Optimizing NNI: done in 0.268361 secs using 179.6% CPU
+Optimizing NNI: done in 0.686548 secs using 175.3% CPU
+Optimizing NNI: done in 0.695406 secs using 184.9% CPU
+Optimizing NNI: done in 0.449727 secs using 193.1% CPU
+Optimizing NNI: done in 0.596062 secs using 194.4% CPU
+Optimizing NNI: done in 0.714437 secs using 191.3% CPU
+Iteration 110 / LogL: -2588.079 / Time: 0h:0m:41s (0h:0m:15s left)
+Optimizing NNI: done in 0.479101 secs using 190.5% CPU
+Optimizing NNI: done in 1.79136 secs using 112.3% CPU
+Optimizing NNI: done in 0.269238 secs using 181.7% CPU
+Optimizing NNI: done in 0.348707 secs using 182.5% CPU
+Optimizing NNI: done in 0.332666 secs using 184.1% CPU
+Optimizing NNI: done in 1.03868 secs using 152% CPU
+Optimizing NNI: done in 3.09023 secs using 52.02% CPU
+Optimizing NNI: done in 3.74763 secs using 41.35% CPU
+Optimizing NNI: done in 3.67931 secs using 45.51% CPU
+Optimizing NNI: done in 3.03531 secs using 44.21% CPU
+Iteration 120 / LogL: -2592.934 / Time: 0h:0m:59s (0h:0m:25s left)
+Optimizing NNI: done in 4.79969 secs using 31.62% CPU
+Optimizing NNI: done in 4.01747 secs using 37.7% CPU
+Optimizing NNI: done in 3.21736 secs using 42.51% CPU
+Optimizing NNI: done in 1.14988 secs using 125.5% CPU
+Optimizing NNI: done in 1.29803 secs using 106.2% CPU
+Optimizing NNI: done in 1.40955 secs using 122% CPU
+Optimizing NNI: done in 1.0804 secs using 133.3% CPU
+Optimizing NNI: done in 1.14731 secs using 134.8% CPU
+Optimizing NNI: done in 1.32941 secs using 112.1% CPU
+Optimizing NNI: done in 1.70402 secs using 95.7% CPU
+Iteration 130 / LogL: -2589.133 / Time: 0h:1m:21s (0h:0m:32s left)
+Optimizing NNI: done in 2.36029 secs using 61.95% CPU
+Optimizing NNI: done in 1.46066 secs using 85.02% CPU
+Optimizing NNI: done in 0.869236 secs using 124.7% CPU
+Optimizing NNI: done in 1.41138 secs using 95.74% CPU
+Optimizing NNI: done in 1.26647 secs using 133% CPU
+Optimizing NNI: done in 1.3574 secs using 135.4% CPU
+Optimizing NNI: done in 1.19086 secs using 127.1% CPU
+Optimizing NNI: done in 1.49101 secs using 107.4% CPU
+Optimizing NNI: done in 1.02496 secs using 177.2% CPU
+Optimizing NNI: done in 0.906063 secs using 148.8% CPU
+Iteration 140 / LogL: -2599.527 / Time: 0h:1m:36s (0h:0m:31s left)
+Optimizing NNI: done in 0.761987 secs using 161.9% CPU
+Optimizing NNI: done in 0.477448 secs using 164.8% CPU
+Optimizing NNI: done in 0.653336 secs using 173.3% CPU
+Optimizing NNI: done in 0.554329 secs using 189.7% CPU
+Optimizing NNI: done in 0.580747 secs using 182.8% CPU
+Optimizing NNI: done in 0.875984 secs using 181.9% CPU
+Optimizing NNI: done in 0.55193 secs using 192.3% CPU
+Optimizing NNI: done in 0.947799 secs using 185.6% CPU
+Optimizing NNI: done in 0.72111 secs using 160.3% CPU
+Optimizing NNI: done in 1.03258 secs using 184.4% CPU
+Iteration 150 / LogL: -2587.991 / Time: 0h:1m:44s (0h:0m:27s left)
+Log-likelihood cutoff on original alignment: -2624.434
+Optimizing NNI: done in 0.753165 secs using 164.2% CPU
+Optimizing NNI: done in 0.201906 secs using 193.8% CPU
+Optimizing NNI: done in 1.05498 secs using 187% CPU
+Optimizing NNI: done in 0.568481 secs using 191.8% CPU
+Optimizing NNI: done in 0.456058 secs using 194.4% CPU
+Optimizing NNI: done in 0.783268 secs using 186.8% CPU
+Optimizing NNI: done in 0.860858 secs using 163.7% CPU
+Optimizing NNI: done in 1.04432 secs using 160.9% CPU
+Optimizing NNI: done in 0.821013 secs using 178% CPU
+Optimizing NNI: done in 0.836324 secs using 170.5% CPU
+Iteration 160 / LogL: -2588.317 / Time: 0h:1m:53s (0h:0m:22s left)
+Optimizing NNI: done in 1.06117 secs using 175.8% CPU
+Optimizing NNI: done in 1.13672 secs using 173.6% CPU
+Optimizing NNI: done in 0.639932 secs using 171.9% CPU
+Optimizing NNI: done in 0.257837 secs using 181.2% CPU
+Optimizing NNI: done in 0.874008 secs using 170.9% CPU
+Optimizing NNI: done in 0.608229 secs using 192.2% CPU
+Optimizing NNI: done in 0.599526 secs using 190.5% CPU
+Optimizing NNI: done in 0.388775 secs using 188.6% CPU
+Optimizing NNI: done in 0.858909 secs using 185.6% CPU
+Optimizing NNI: done in 0.475061 secs using 186.9% CPU
+Iteration 170 / LogL: -2594.307 / Time: 0h:2m:1s (0h:0m:17s left)
+Optimizing NNI: done in 0.66001 secs using 191.6% CPU
+Optimizing NNI: done in 1.14533 secs using 132.9% CPU
+Optimizing NNI: done in 0.779076 secs using 173% CPU
+Optimizing NNI: done in 0.698022 secs using 174.9% CPU
+Optimizing NNI: done in 0.631717 secs using 189.8% CPU
+Optimizing NNI: done in 0.47627 secs using 187.1% CPU
+Optimizing NNI: done in 0.915003 secs using 185.3% CPU
+Optimizing NNI: done in 0.724216 secs using 192.8% CPU
+Optimizing NNI: done in 0.653182 secs using 193.4% CPU
+Optimizing NNI: done in 0.811571 secs using 181.6% CPU
+Iteration 180 / LogL: -2592.344 / Time: 0h:2m:9s (0h:0m:12s left)
+Optimizing NNI: done in 0.587821 secs using 162.8% CPU
+Optimizing NNI: done in 0.590973 secs using 194% CPU
+Optimizing NNI: done in 0.566931 secs using 193% CPU
+Optimizing NNI: done in 0.528672 secs using 193.5% CPU
+Optimizing NNI: done in 0.864373 secs using 193.4% CPU
+Optimizing NNI: done in 0.360601 secs using 186.8% CPU
+Optimizing NNI: done in 1.07648 secs using 178.8% CPU
+Optimizing NNI: done in 0.75728 secs using 184.9% CPU
+Optimizing NNI: done in 0.587723 secs using 135.6% CPU
+Optimizing NNI: done in 0.850018 secs using 180.3% CPU
+Iteration 190 / LogL: -2588.311 / Time: 0h:2m:17s (0h:0m:6s left)
+Optimizing NNI: done in 0.586196 secs using 170% CPU
+Optimizing NNI: done in 0.582892 secs using 193% CPU
+Optimizing NNI: done in 0.850274 secs using 171.2% CPU
+Optimizing NNI: done in 0.750797 secs using 190.4% CPU
+Optimizing NNI: done in 0.710843 secs using 188.2% CPU
+Optimizing NNI: done in 0.681965 secs using 193.9% CPU
+Optimizing NNI: done in 0.639597 secs using 191.9% CPU
+Optimizing NNI: done in 0.276376 secs using 194.8% CPU
+Optimizing NNI: done in 0.551377 secs using 190.8% CPU
+Optimizing NNI: done in 0.667474 secs using 191% CPU
+Iteration 200 / LogL: -2599.363 / Time: 0h:2m:25s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2624.434
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.978
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 0.555621 secs using 169.3% CPU
+Optimizing NNI: done in 0.81362 secs using 189.8% CPU
+Optimizing NNI: done in 0.482832 secs using 186.2% CPU
+Optimizing NNI: done in 0.839815 secs using 188% CPU
+Optimizing NNI: done in 0.593301 secs using 188.6% CPU
+Optimizing NNI: done in 0.51688 secs using 187.6% CPU
+Optimizing NNI: done in 0.564447 secs using 190.9% CPU
+Optimizing NNI: done in 0.773679 secs using 184% CPU
+Optimizing NNI: done in 0.568639 secs using 184% CPU
+Optimizing NNI: done in 0.48071 secs using 179.6% CPU
+Iteration 210 / LogL: -2594.835 / Time: 0h:2m:32s (0h:0m:56s left)
+Optimizing NNI: done in 0.55843 secs using 184.6% CPU
+Optimizing NNI: done in 0.645022 secs using 188.6% CPU
+Optimizing NNI: done in 0.559746 secs using 191.1% CPU
+Optimizing NNI: done in 0.766548 secs using 164.6% CPU
+Optimizing NNI: done in 0.791268 secs using 184.2% CPU
+Optimizing NNI: done in 0.785832 secs using 190.3% CPU
+Optimizing NNI: done in 0.701705 secs using 188.5% CPU
+Optimizing NNI: done in 0.863083 secs using 175.9% CPU
+Optimizing NNI: done in 0.704817 secs using 183.7% CPU
+Optimizing NNI: done in 0.670394 secs using 183.8% CPU
+Iteration 220 / LogL: -2588.065 / Time: 0h:2m:41s (0h:0m:50s left)
+Optimizing NNI: done in 0.411415 secs using 192.8% CPU
+Optimizing NNI: done in 0.702418 secs using 191.9% CPU
+Optimizing NNI: done in 0.622271 secs using 191.7% CPU
+Optimizing NNI: done in 0.470952 secs using 194.9% CPU
+Optimizing NNI: done in 0.49042 secs using 181.1% CPU
+Optimizing NNI: done in 0.19264 secs using 196.1% CPU
+Optimizing NNI: done in 0.783754 secs using 178.6% CPU
+Optimizing NNI: done in 0.58741 secs using 193.4% CPU
+Optimizing NNI: done in 0.533454 secs using 191.4% CPU
+Optimizing NNI: done in 0.452063 secs using 191% CPU
+Iteration 230 / LogL: -2588.325 / Time: 0h:2m:48s (0h:0m:44s left)
+Optimizing NNI: done in 0.582413 secs using 188.8% CPU
+Optimizing NNI: done in 0.361274 secs using 188.6% CPU
+Optimizing NNI: done in 0.730799 secs using 178.7% CPU
+Optimizing NNI: done in 0.711506 secs using 180.7% CPU
+Optimizing NNI: done in 0.75401 secs using 173.5% CPU
+Optimizing NNI: done in 0.693457 secs using 183.8% CPU
+Optimizing NNI: done in 0.404694 secs using 181% CPU
+Optimizing NNI: done in 0.566635 secs using 184.3% CPU
+Optimizing NNI: done in 0.64711 secs using 189.4% CPU
+Optimizing NNI: done in 0.55273 secs using 187.1% CPU
+Iteration 240 / LogL: -2588.051 / Time: 0h:2m:55s (0h:0m:38s left)
+Optimizing NNI: done in 0.649845 secs using 187.4% CPU
+Optimizing NNI: done in 0.720469 secs using 179.8% CPU
+Optimizing NNI: done in 0.500686 secs using 170.6% CPU
+Optimizing NNI: done in 0.369454 secs using 189.5% CPU
+Optimizing NNI: done in 0.553872 secs using 190.5% CPU
+Optimizing NNI: done in 0.665309 secs using 189.3% CPU
+Optimizing NNI: done in 0.508169 secs using 188.4% CPU
+Optimizing NNI: done in 0.789553 secs using 192.2% CPU
+Optimizing NNI: done in 0.633513 secs using 192.1% CPU
+Optimizing NNI: done in 0.761993 secs using 124.9% CPU
+Iteration 250 / LogL: -2588.278 / Time: 0h:3m:2s (0h:0m:32s left)
+Log-likelihood cutoff on original alignment: -2624.434
+Optimizing NNI: done in 1.08907 secs using 137% CPU
+Optimizing NNI: done in 0.679909 secs using 161.8% CPU
+Optimizing NNI: done in 0.707557 secs using 158.9% CPU
+Optimizing NNI: done in 0.582552 secs using 190.9% CPU
+Optimizing NNI: done in 0.475532 secs using 187.3% CPU
+Optimizing NNI: done in 0.718879 secs using 187.9% CPU
+Optimizing NNI: done in 0.840137 secs using 184.2% CPU
+Optimizing NNI: done in 0.763276 secs using 178.8% CPU
+Optimizing NNI: done in 0.617086 secs using 193.3% CPU
+Optimizing NNI: done in 0.859411 secs using 190.2% CPU
+Iteration 260 / LogL: -2588.127 / Time: 0h:3m:12s (0h:0m:26s left)
+Optimizing NNI: done in 0.236146 secs using 194.3% CPU
+Optimizing NNI: done in 0.550795 secs using 192.7% CPU
+Optimizing NNI: done in 0.750765 secs using 178.7% CPU
+Optimizing NNI: done in 0.523813 secs using 192% CPU
+Optimizing NNI: done in 0.560956 secs using 189% CPU
+Optimizing NNI: done in 0.506188 secs using 175.5% CPU
+Optimizing NNI: done in 0.858317 secs using 164.7% CPU
+Optimizing NNI: done in 0.68678 secs using 182.4% CPU
+Optimizing NNI: done in 0.53722 secs using 183% CPU
+Optimizing NNI: done in 0.767597 secs using 167% CPU
+Iteration 270 / LogL: -2593.845 / Time: 0h:3m:20s (0h:0m:19s left)
+Optimizing NNI: done in 0.77196 secs using 190.8% CPU
+Optimizing NNI: done in 0.50062 secs using 158.5% CPU
+Optimizing NNI: done in 0.873417 secs using 182.9% CPU
+Optimizing NNI: done in 0.815313 secs using 144.6% CPU
+Optimizing NNI: done in 0.778021 secs using 187.4% CPU
+Optimizing NNI: done in 0.807719 secs using 170% CPU
+Optimizing NNI: done in 0.655479 secs using 190.1% CPU
+Optimizing NNI: done in 0.667763 secs using 171.4% CPU
+Optimizing NNI: done in 0.814892 secs using 155% CPU
+Optimizing NNI: done in 0.907998 secs using 158.9% CPU
+Iteration 280 / LogL: -2588.319 / Time: 0h:3m:29s (0h:0m:13s left)
+Optimizing NNI: done in 0.765689 secs using 179.3% CPU
+Optimizing NNI: done in 0.490139 secs using 177% CPU
+Optimizing NNI: done in 0.491984 secs using 189.5% CPU
+Optimizing NNI: done in 0.847809 secs using 192% CPU
+Optimizing NNI: done in 0.479552 secs using 194.2% CPU
+Optimizing NNI: done in 0.383081 secs using 194.6% CPU
+Optimizing NNI: done in 0.505601 secs using 190.6% CPU
+Optimizing NNI: done in 0.550062 secs using 191.7% CPU
+Optimizing NNI: done in 0.468434 secs using 192.6% CPU
+Optimizing NNI: done in 0.58868 secs using 189.5% CPU
+Iteration 290 / LogL: -2591.926 / Time: 0h:3m:37s (0h:0m:6s left)
+Optimizing NNI: done in 0.603302 secs using 193.4% CPU
+Optimizing NNI: done in 0.855893 secs using 190.7% CPU
+Optimizing NNI: done in 1.06714 secs using 192.6% CPU
+Optimizing NNI: done in 0.687866 secs using 183.4% CPU
+Optimizing NNI: done in 0.670221 secs using 190.6% CPU
+Optimizing NNI: done in 0.639418 secs using 184.6% CPU
+Optimizing NNI: done in 0.574039 secs using 192.6% CPU
+Optimizing NNI: done in 0.47348 secs using 192.9% CPU
+Optimizing NNI: done in 0.580853 secs using 178.9% CPU
+Optimizing NNI: done in 0.597322 secs using 185.7% CPU
+Iteration 300 / LogL: -2588.358 / Time: 0h:3m:45s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2624.434
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+TREE SEARCH COMPLETED AFTER 300 ITERATIONS / Time: 0h:3m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2588.652
+2. Current log-likelihood: -2588.306
+Optimal log-likelihood: -2588.304
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.591,0.000) (0.385,1.550) (0.023,17.186)
+Parameters optimization took 2 rounds (0.132 sec)
+BEST SCORE FOUND : -2588.304
+Creating bootstrap support values...
+Split supports printed to NEXUS file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.splits.nex
+Total tree length: 0.289
+
+Total number of iterations: 300
+CPU time used for tree search: 313.690 sec (0h:5m:13s)
+Wall-clock time used for tree search: 203.886 sec (0h:3m:23s)
+Total CPU time used: 356.410 sec (0h:5m:56s)
+Total wall-clock time used: 227.045 sec (0h:3m:47s)
+
+Computing bootstrap consensus tree...
+Reading input file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.splits.nex...
+177 taxa and 7203 splits.
+Consensus tree written to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.contree
+Reading input trees file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.contree
+Log-likelihood of consensus tree: -2588.256
+
+Analysis results written to: 
+  IQ-TREE report:                /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.iqtree
+  Maximum-likelihood tree:       /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.treefile
+  Likelihood distances:          /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.splits.nex
+  Consensus tree:                /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.contree
+  Screen log file:               /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/gene_trees/ITS.aln.fasta.log
+
+Date and Time: Wed Aug  5 22:02:33 2026
