@@ -7,7 +7,7 @@ sample list for every phylogenetic analysis here, not just the mitogenome tree.
 
 It comprises:
 
-- the **168** mitogenomes submitted to GenBank (accessions PZ224316–PZ224483)
+- the **168** mitogenomes submitted to GenBank (accessions PZ224317–PZ224484)
 - **28** `SEA2025-*` samples from the 2025 cruise
 - `YPM-IZ-104465`, `YPM-IZ-110972`, `YPM-IZ-111760`
 

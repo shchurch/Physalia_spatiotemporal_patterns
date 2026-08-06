@@ -1,0 +1,695 @@
+IQ-TREE version 3.0.1 for MacOS Intel 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    10-18-56-7.dynapool.wireless.nyu.edu (SSE4.2, 16 GB RAM)
+Command: /Users/samuelchurch/anaconda3/envs/tree/bin/iqtree -s /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.aln.fa -B 1000 -nt AUTO -pre /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted
+Seed:    904277 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Aug  6 09:18:09 2026
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.aln.fa ... Fasta format detected
+Reading fasta file: done in 0.0384982 secs using 84.67% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0215201 secs using 309.5% CPU
+Alignment has 168 sequences with 15420 columns, 3704 distinct patterns
+4434 parsimony-informative, 867 singleton sites, 10119 constant sites
+WARNING: Some sequence names are changed as follows:
+FM-16644_mtgenome_scaffold_1--2070701+ -> FM-16644_mtgenome_scaffold_1--2070701_
+_R_NIWA-173304_mtgenome_scaffold_1--71+ -> _R_NIWA-173304_mtgenome_scaffold_1--71_
+_R_NIWA-173305_mtgenome_scaffold_1--7+ -> _R_NIWA-173305_mtgenome_scaffold_1--7_
+OA-190531-1_mtgenome_scaffold_1--6916990+ -> OA-190531-1_mtgenome_scaffold_1--6916990_
+_R_OA-Bluebottle_mtgenome_scaffold_1--7+ -> _R_OA-Bluebottle_mtgenome_scaffold_1--7_
+TMAG-K5632_mtgenome_scaffold_1--989+ -> TMAG-K5632_mtgenome_scaffold_1--989_
+_R_TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881+ -> _R_TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_
+TMAG-K5634_mtgenome_scaffold_1--899+ -> TMAG-K5634_mtgenome_scaffold_1--899_
+_R_TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487+ -> _R_TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_
+_R_TMAG-K5636_mtgenome_scaffold_1--7+ -> _R_TMAG-K5636_mtgenome_scaffold_1--7_
+_R_WAM-Z88480_mtgenome_scaffold_1--87796+ -> _R_WAM-Z88480_mtgenome_scaffold_1--87796_
+_R_WAM-Z97900_mtgenome_scaffold_1--183769+ -> _R_WAM-Z97900_mtgenome_scaffold_1--183769_
+_R_WAM-Z97901_mtgenome_scaffold_1--85509+ -> _R_WAM-Z97901_mtgenome_scaffold_1--85509_
+WAM-Z97902_mtgenome_scaffold_1--3572698+ -> WAM-Z97902_mtgenome_scaffold_1--3572698_
+_R_WAM-Z97903_mtgenome_scaffold_1--345+ -> _R_WAM-Z97903_mtgenome_scaffold_1--345_
+_R_WAM-Z97906_mtgenome_scaffold_1--887+ -> _R_WAM-Z97906_mtgenome_scaffold_1--887_
+WAM-Z97907_mtgenome_scaffold_1--5077_5083+ -> WAM-Z97907_mtgenome_scaffold_1--5077_5083_
+_R_WAM-Z97908_mtgenome_scaffold_1--4943+ -> _R_WAM-Z97908_mtgenome_scaffold_1--4943_
+WAM-Z97910_mtgenome_scaffold_1--2758006+ -> WAM-Z97910_mtgenome_scaffold_1--2758006_
+_R_WAM-Z97911_mtgenome_scaffold_1--46529+ -> _R_WAM-Z97911_mtgenome_scaffold_1--46529_
+_R_WAM-Z97914_mtgenome_scaffold_1--7045+ -> _R_WAM-Z97914_mtgenome_scaffold_1--7045_
+WAM-Z97916_mtgenome_scaffold_1--5832_5826+ -> WAM-Z97916_mtgenome_scaffold_1--5832_5826_
+WAM-Z97917_mtgenome_scaffold_1--31+ -> WAM-Z97917_mtgenome_scaffold_1--31_
+WAM-Z97920_mtgenome_scaffold_1--101725+ -> WAM-Z97920_mtgenome_scaffold_1--101725_
+WAM-Z97921_mtgenome_scaffold_1--3670774+ -> WAM-Z97921_mtgenome_scaffold_1--3670774_
+WAM-Z97923_mtgenome_scaffold_1--1339152+ -> WAM-Z97923_mtgenome_scaffold_1--1339152_
+YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419+ -> YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_
+_R_YPM-IZ-104461_mtgenome_scaffold_1--3200194+ -> _R_YPM-IZ-104461_mtgenome_scaffold_1--3200194_
+YPM-IZ-104464_mtgenome_scaffold_1--9609600+ -> YPM-IZ-104464_mtgenome_scaffold_1--9609600_
+YPM-IZ-106919_mtgenome_scaffold_1--1023865+ -> YPM-IZ-106919_mtgenome_scaffold_1--1023865_
+_R_YPM-IZ-106920_mtgenome_scaffold_1--5927075+ -> _R_YPM-IZ-106920_mtgenome_scaffold_1--5927075_
+_R_YPM-IZ-106923_mtgenome_scaffold_1--4966863+ -> _R_YPM-IZ-106923_mtgenome_scaffold_1--4966863_
+_R_YPM-IZ-106935_mtgenome_scaffold_1--4052902+ -> _R_YPM-IZ-106935_mtgenome_scaffold_1--4052902_
+YPM-IZ-106936_mtgenome_scaffold_1--797+ -> YPM-IZ-106936_mtgenome_scaffold_1--797_
+_R_YPM-IZ-106937_mtgenome_scaffold_1--5264988+ -> _R_YPM-IZ-106937_mtgenome_scaffold_1--5264988_
+YPM-IZ-106941_mtgenome_scaffold_1--5624014+ -> YPM-IZ-106941_mtgenome_scaffold_1--5624014_
+YPM-IZ-106943_mtgenome_scaffold_1--8748509+ -> YPM-IZ-106943_mtgenome_scaffold_1--8748509_
+YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710+ -> YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_
+YPM-IZ-106958_mtgenome_scaffold_1--4444372+ -> YPM-IZ-106958_mtgenome_scaffold_1--4444372_
+YPM-IZ-110251_mtgenome_scaffold_1--5878756+ -> YPM-IZ-110251_mtgenome_scaffold_1--5878756_
+_R_YPM-IZ-110254_mtgenome_scaffold_1--5573165+ -> _R_YPM-IZ-110254_mtgenome_scaffold_1--5573165_
+_R_YPM-IZ-110264_mtgenome_scaffold_1--595+ -> _R_YPM-IZ-110264_mtgenome_scaffold_1--595_
+_R_YPM-IZ-110268_mtgenome_scaffold_1--1922+ -> _R_YPM-IZ-110268_mtgenome_scaffold_1--1922_
+YPM-IZ-110269_mtgenome_scaffold_1--1371+ -> YPM-IZ-110269_mtgenome_scaffold_1--1371_
+YPM-IZ-110276_mtgenome_scaffold_1--1521_1367+ -> YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_
+_R_YPM-IZ-110277_mtgenome_scaffold_1--31+ -> _R_YPM-IZ-110277_mtgenome_scaffold_1--31_
+YPM-IZ-110278_mtgenome_scaffold_1--1860+ -> YPM-IZ-110278_mtgenome_scaffold_1--1860_
+YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821+ -> YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_
+YPM-IZ-110434_mtgenome_scaffold_1--19+ -> YPM-IZ-110434_mtgenome_scaffold_1--19_
+YPM-IZ-110436_mtgenome_scaffold_1--15+ -> YPM-IZ-110436_mtgenome_scaffold_1--15_
+_R_YPM-IZ-110438_mtgenome_scaffold_1--5944+ -> _R_YPM-IZ-110438_mtgenome_scaffold_1--5944_
+_R_YPM-IZ-110443_mtgenome_scaffold_1--7155733+ -> _R_YPM-IZ-110443_mtgenome_scaffold_1--7155733_
+YPM-IZ-110460_mtgenome_scaffold_1--5466859+ -> YPM-IZ-110460_mtgenome_scaffold_1--5466859_
+_R_YPM-IZ-110467_mtgenome_scaffold_1--25+ -> _R_YPM-IZ-110467_mtgenome_scaffold_1--25_
+_R_YPM-IZ-110468_mtgenome_scaffold_1--103+ -> _R_YPM-IZ-110468_mtgenome_scaffold_1--103_
+YPM-IZ-110469_mtgenome_scaffold_1--19+ -> YPM-IZ-110469_mtgenome_scaffold_1--19_
+_R_YPM-IZ-110470_mtgenome_scaffold_1--179+ -> _R_YPM-IZ-110470_mtgenome_scaffold_1--179_
+YPM-IZ-110471_mtgenome_scaffold_1--71+ -> YPM-IZ-110471_mtgenome_scaffold_1--71_
+YPM-IZ-110473_mtgenome_scaffold_1--3900+ -> YPM-IZ-110473_mtgenome_scaffold_1--3900_
+_R_YPM-IZ-110474_mtgenome_scaffold_1--6005+ -> _R_YPM-IZ-110474_mtgenome_scaffold_1--6005_
+YPM-IZ-110480_mtgenome_scaffold_1--149+ -> YPM-IZ-110480_mtgenome_scaffold_1--149_
+YPM-IZ-110515_mtgenome_scaffold_1--3014873+ -> YPM-IZ-110515_mtgenome_scaffold_1--3014873_
+_R_YPM-IZ-110520_mtgenome_scaffold_1--4729815+ -> _R_YPM-IZ-110520_mtgenome_scaffold_1--4729815_
+YPM-IZ-110526_mtgenome_scaffold_1--6200253+ -> YPM-IZ-110526_mtgenome_scaffold_1--6200253_
+YPM-IZ-110556_mtgenome_scaffold_1--39+ -> YPM-IZ-110556_mtgenome_scaffold_1--39_
+YPM-IZ-110557_mtgenome_scaffold_1--2255+ -> YPM-IZ-110557_mtgenome_scaffold_1--2255_
+YPM-IZ-110558_mtgenome_scaffold_1--23_25+ -> YPM-IZ-110558_mtgenome_scaffold_1--23_25_
+_R_YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687+ -> _R_YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_
+YPM-IZ-110569_mtgenome_scaffold_1--81+ -> YPM-IZ-110569_mtgenome_scaffold_1--81_
+YPM-IZ-110600_mtgenome_scaffold_1--9856101+ -> YPM-IZ-110600_mtgenome_scaffold_1--9856101_
+YPM-IZ-110602_mtgenome_scaffold_1--93203+ -> YPM-IZ-110602_mtgenome_scaffold_1--93203_
+_R_YPM-IZ-110605_mtgenome_scaffold_1--167020+ -> _R_YPM-IZ-110605_mtgenome_scaffold_1--167020_
+YPM-IZ-110612_mtgenome_scaffold_1--46+ -> YPM-IZ-110612_mtgenome_scaffold_1--46_
+YPM-IZ-110613_mtgenome_scaffold_1--1106529+ -> YPM-IZ-110613_mtgenome_scaffold_1--1106529_
+YPM-IZ-110616_mtgenome_scaffold_1--28984+ -> YPM-IZ-110616_mtgenome_scaffold_1--28984_
+_R_YPM-IZ-110631_mtgenome_scaffold_1--171174+ -> _R_YPM-IZ-110631_mtgenome_scaffold_1--171174_
+_R_YPM-IZ-110633_mtgenome_scaffold_1--5829952+ -> _R_YPM-IZ-110633_mtgenome_scaffold_1--5829952_
+_R_YPM-IZ-110667_mtgenome_scaffold_1--1220096+ -> _R_YPM-IZ-110667_mtgenome_scaffold_1--1220096_
+_R_YPM-IZ-110694_mtgenome_scaffold_1--6113849+ -> _R_YPM-IZ-110694_mtgenome_scaffold_1--6113849_
+_R_YPM-IZ-110716_mtgenome_scaffold_1--3051232+ -> _R_YPM-IZ-110716_mtgenome_scaffold_1--3051232_
+YPM-IZ-110726_mtgenome_scaffold_1--42859+ -> YPM-IZ-110726_mtgenome_scaffold_1--42859_
+YPM-IZ-110738_mtgenome_scaffold_1--28195+ -> YPM-IZ-110738_mtgenome_scaffold_1--28195_
+_R_YPM-IZ-110777_mtgenome_scaffold_1--5439+ -> _R_YPM-IZ-110777_mtgenome_scaffold_1--5439_
+_R_YPM-IZ-110780_mtgenome_scaffold_1--3329+ -> _R_YPM-IZ-110780_mtgenome_scaffold_1--3329_
+YPM-IZ-110785_mtgenome_scaffold_1--63330_84247+ -> YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_
+YPM-IZ-110786_mtgenome_scaffold_1--19_13+ -> YPM-IZ-110786_mtgenome_scaffold_1--19_13_
+_R_YPM-IZ-110828_mtgenome_scaffold_1--138717+ -> _R_YPM-IZ-110828_mtgenome_scaffold_1--138717_
+YPM-IZ-110829_mtgenome_scaffold_1--19+ -> YPM-IZ-110829_mtgenome_scaffold_1--19_
+_R_YPM-IZ-110830_mtgenome_scaffold_1--14148106+ -> _R_YPM-IZ-110830_mtgenome_scaffold_1--14148106_
+_R_YPM-IZ-110842_mtgenome_scaffold_1--4182747+ -> _R_YPM-IZ-110842_mtgenome_scaffold_1--4182747_
+YPM-IZ-110843_mtgenome_scaffold_1--3633236+ -> YPM-IZ-110843_mtgenome_scaffold_1--3633236_
+YPM-IZ-110844_mtgenome_scaffold_1--4968002+ -> YPM-IZ-110844_mtgenome_scaffold_1--4968002_
+YPM-IZ-110845_mtgenome_scaffold_1--3569_3561+ -> YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_
+YPM-IZ-110846_mtgenome_scaffold_1--4922341+ -> YPM-IZ-110846_mtgenome_scaffold_1--4922341_
+_R_YPM-IZ-110847_mtgenome_scaffold_1--4169614+ -> _R_YPM-IZ-110847_mtgenome_scaffold_1--4169614_
+YPM-IZ-110876_mtgenome_scaffold_1--26693+ -> YPM-IZ-110876_mtgenome_scaffold_1--26693_
+_R_YPM-IZ-110877_mtgenome_scaffold_1--1818166+ -> _R_YPM-IZ-110877_mtgenome_scaffold_1--1818166_
+YPM-IZ-110878_mtgenome_scaffold_1--19+ -> YPM-IZ-110878_mtgenome_scaffold_1--19_
+YPM-IZ-110880_mtgenome_scaffold_1--5613327+ -> YPM-IZ-110880_mtgenome_scaffold_1--5613327_
+YPM-IZ-110882_mtgenome_scaffold_1--4791+ -> YPM-IZ-110882_mtgenome_scaffold_1--4791_
+YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615+ -> YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_
+YPM-IZ-110906_mtgenome_scaffold_1--4432+ -> YPM-IZ-110906_mtgenome_scaffold_1--4432_
+YPM-IZ-110907_mtgenome_scaffold_1--12130+ -> YPM-IZ-110907_mtgenome_scaffold_1--12130_
+_R_YPM-IZ-110925_mtgenome_scaffold_1--1615_43+ -> _R_YPM-IZ-110925_mtgenome_scaffold_1--1615_43_
+YPM-IZ-110926_mtgenome_scaffold_1--19+ -> YPM-IZ-110926_mtgenome_scaffold_1--19_
+YPM-IZ-110930_mtgenome_scaffold_1--79+ -> YPM-IZ-110930_mtgenome_scaffold_1--79_
+YPM-IZ-110931_mtgenome_scaffold_1--20627+ -> YPM-IZ-110931_mtgenome_scaffold_1--20627_
+YPM-IZ-110933_mtgenome_scaffold_1--4214602+ -> YPM-IZ-110933_mtgenome_scaffold_1--4214602_
+YPM-IZ-110937_mtgenome_scaffold_1--54732+ -> YPM-IZ-110937_mtgenome_scaffold_1--54732_
+YPM-IZ-110938_mtgenome_scaffold_1--77153+ -> YPM-IZ-110938_mtgenome_scaffold_1--77153_
+_R_YPM-IZ-110943_mtgenome_scaffold_1--93+ -> _R_YPM-IZ-110943_mtgenome_scaffold_1--93_
+_R_YPM-IZ-111006_mtgenome_scaffold_1--8287079+ -> _R_YPM-IZ-111006_mtgenome_scaffold_1--8287079_
+_R_YPM-IZ-111007_mtgenome_scaffold_1--24333+ -> _R_YPM-IZ-111007_mtgenome_scaffold_1--24333_
+_R_YPM-IZ-111008_mtgenome_scaffold_1--5714+ -> _R_YPM-IZ-111008_mtgenome_scaffold_1--5714_
+_R_YPM-IZ-111009_mtgenome_scaffold_1--4766313+ -> _R_YPM-IZ-111009_mtgenome_scaffold_1--4766313_
+_R_YPM-IZ-111010_mtgenome_scaffold_1--438941+ -> _R_YPM-IZ-111010_mtgenome_scaffold_1--438941_
+YPM-IZ-111012_mtgenome_scaffold_1--1607+ -> YPM-IZ-111012_mtgenome_scaffold_1--1607_
+YPM-IZ-111013_mtgenome_scaffold_1--3855739+ -> YPM-IZ-111013_mtgenome_scaffold_1--3855739_
+YPM-IZ-111014_mtgenome_scaffold_1--49+ -> YPM-IZ-111014_mtgenome_scaffold_1--49_
+YPM-IZ-111016_mtgenome_scaffold_1--25+ -> YPM-IZ-111016_mtgenome_scaffold_1--25_
+_R_YPM-IZ-111017_mtgenome_scaffold_1--3305370+ -> _R_YPM-IZ-111017_mtgenome_scaffold_1--3305370_
+_R_YPM-IZ-111018_mtgenome_scaffold_1--3743432+ -> _R_YPM-IZ-111018_mtgenome_scaffold_1--3743432_
+_R_YPM-IZ-111156_mtgenome_scaffold_1--210193+ -> _R_YPM-IZ-111156_mtgenome_scaffold_1--210193_
+YPM-IZ-111157_mtgenome_scaffold_1--2780990+ -> YPM-IZ-111157_mtgenome_scaffold_1--2780990_
+_R_YPM-IZ-111158_mtgenome_scaffold_1--711158_708652+ -> _R_YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_
+_R_YPM-IZ-111159_mtgenome_scaffold_1--91+ -> _R_YPM-IZ-111159_mtgenome_scaffold_1--91_
+YPM-IZ-111160_mtgenome_scaffold_1--95+ -> YPM-IZ-111160_mtgenome_scaffold_1--95_
+_R_YPM-IZ-111163_mtgenome_scaffold_1--57+ -> _R_YPM-IZ-111163_mtgenome_scaffold_1--57_
+YPM-IZ-111207_mtgenome_scaffold_1--126+ -> YPM-IZ-111207_mtgenome_scaffold_1--126_
+_R_YPM-IZ-111208_mtgenome_scaffold_1--45+ -> _R_YPM-IZ-111208_mtgenome_scaffold_1--45_
+YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572+ -> YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_
+YPM-IZ-111210_mtgenome_scaffold_1--126+ -> YPM-IZ-111210_mtgenome_scaffold_1--126_
+YPM-IZ-111241_mtgenome_scaffold_1--31+ -> YPM-IZ-111241_mtgenome_scaffold_1--31_
+YPM-IZ-111243_mtgenome_scaffold_1--241+ -> YPM-IZ-111243_mtgenome_scaffold_1--241_
+_R_YPM-IZ-111495_mtgenome_scaffold_1--2307+ -> _R_YPM-IZ-111495_mtgenome_scaffold_1--2307_
+YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507+ -> YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_
+YPM-IZ-111514_mtgenome_scaffold_1--73+ -> YPM-IZ-111514_mtgenome_scaffold_1--73_
+YPM-IZ-111517_mtgenome_scaffold_1--149+ -> YPM-IZ-111517_mtgenome_scaffold_1--149_
+_R_YPM-IZ-111518_mtgenome_scaffold_1--93+ -> _R_YPM-IZ-111518_mtgenome_scaffold_1--93_
+_R_YPM-IZ-111519_mtgenome_scaffold_1--19+ -> _R_YPM-IZ-111519_mtgenome_scaffold_1--19_
+YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127+ -> YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_
+_R_YPM-IZ-111521_mtgenome_scaffold_1--25+ -> _R_YPM-IZ-111521_mtgenome_scaffold_1--25_
+_R_YPM-IZ-111529_mtgenome_scaffold_1--85_109+ -> _R_YPM-IZ-111529_mtgenome_scaffold_1--85_109_
+YPM-IZ-111530_mtgenome_scaffold_1--59+ -> YPM-IZ-111530_mtgenome_scaffold_1--59_
+YPM-IZ-111539_mtgenome_scaffold_1--73+ -> YPM-IZ-111539_mtgenome_scaffold_1--73_
+YPM-IZ-111547_mtgenome_scaffold_1--13+ -> YPM-IZ-111547_mtgenome_scaffold_1--13_
+_R_YPM-IZ-111839_mtgenome_scaffold_1--1107_7+ -> _R_YPM-IZ-111839_mtgenome_scaffold_1--1107_7_
+YPM-IZ-111840_mtgenome_scaffold_1--3618182+ -> YPM-IZ-111840_mtgenome_scaffold_1--3618182_
+YPM-IZ-111759_mtgenome_scaffold_1--39+ -> YPM-IZ-111759_mtgenome_scaffold_1--39_
+YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085+ -> YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_
+_R_YPM-IZ-111819_mtgenome_scaffold_1--137+ -> _R_YPM-IZ-111819_mtgenome_scaffold_1--137_
+_R_YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435+ -> _R_YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_
+YPM-IZ-111220_mtgenome_scaffold_1--35+ -> YPM-IZ-111220_mtgenome_scaffold_1--35_
+_R_YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431+ -> _R_YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_
+_R_YPM-IZ-111256_mtgenome_scaffold_1--62+ -> _R_YPM-IZ-111256_mtgenome_scaffold_1--62_
+WAM-Z97909_mtgenome_scaffold_1--97+ -> WAM-Z97909_mtgenome_scaffold_1--97_
+_R_YPM-IZ-111231_mtgenome_scaffold_1--13+ -> _R_YPM-IZ-111231_mtgenome_scaffold_1--13_
+YPM-IZ-111806_mtgenome_scaffold_1--1953+ -> YPM-IZ-111806_mtgenome_scaffold_1--1953_
+YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887+ -> YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_
+YPM-IZ-111816_mtgenome_scaffold_1--83+ -> YPM-IZ-111816_mtgenome_scaffold_1--83_
+YPM-IZ-111822_mtgenome_scaffold_1--863+ -> YPM-IZ-111822_mtgenome_scaffold_1--863_
+YPM-IZ-111825_mtgenome_scaffold_1--114+ -> YPM-IZ-111825_mtgenome_scaffold_1--114_
+_R_YPM-IZ-115977_mtgenome_scaffold_1--1315+ -> _R_YPM-IZ-115977_mtgenome_scaffold_1--1315_
+YPM-IZ-115978_mtgenome_scaffold_1--35+ -> YPM-IZ-115978_mtgenome_scaffold_1--35_
+_R_YPM-IZ-115980_mtgenome_scaffold_1--39+ -> _R_YPM-IZ-115980_mtgenome_scaffold_1--39_
+YPM-IZ-115990_mtgenome_scaffold_1--33+ -> YPM-IZ-115990_mtgenome_scaffold_1--33_
+YPM-IZ-116019_mtgenome_scaffold_1--87+ -> YPM-IZ-116019_mtgenome_scaffold_1--87_
+
+                                                                                    Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000415087 secs using 380.6% CPU
+   1  FM-16644_mtgenome_scaffold_1--2070701_                                                2.48%    passed     53.79%
+   2  _R_NIWA-173304_mtgenome_scaffold_1--71_                                               2.50%    passed     88.29%
+   3  _R_NIWA-173305_mtgenome_scaffold_1--7_                                                2.50%    passed     78.10%
+   4  OA-190531-1_mtgenome_scaffold_1--6916990_                                             2.48%    passed     47.52%
+   5  _R_OA-Bluebottle_mtgenome_scaffold_1--7_                                              2.48%    passed     34.87%
+   6  TMAG-K5632_mtgenome_scaffold_1--989_                                                  2.48%    failed      0.12%
+   7  _R_TMAG-K5633_mtgenome_scaffold_1--2549905_2580071_3638016_761881_                    2.50%    passed     95.18%
+   8  TMAG-K5634_mtgenome_scaffold_1--899_                                                  2.46%    passed     91.75%
+   9  _R_TMAG-K5635_mtgenome_scaffold_1--9457583_12485676_8055487_                          1.95%    passed     62.23%
+  10  _R_TMAG-K5636_mtgenome_scaffold_1--7_                                                 2.50%    passed     88.56%
+  11  _R_WAM-Z88480_mtgenome_scaffold_1--87796_                                             2.54%    failed      0.15%
+  12  _R_WAM-Z97900_mtgenome_scaffold_1--183769_                                            2.54%    failed      0.07%
+  13  _R_WAM-Z97901_mtgenome_scaffold_1--85509_                                             2.54%    failed      0.16%
+  14  WAM-Z97902_mtgenome_scaffold_1--3572698_                                              2.48%    passed     37.48%
+  15  _R_WAM-Z97903_mtgenome_scaffold_1--345_                                               2.54%    failed      0.11%
+  16  _R_WAM-Z97906_mtgenome_scaffold_1--887_                                               2.54%    failed      0.03%
+  17  WAM-Z97907_mtgenome_scaffold_1--5077_5083_                                            2.48%    passed     59.13%
+  18  _R_WAM-Z97908_mtgenome_scaffold_1--4943_                                              2.48%    passed     56.29%
+  19  WAM-Z97910_mtgenome_scaffold_1--2758006_                                              2.48%    passed     55.61%
+  20  _R_WAM-Z97911_mtgenome_scaffold_1--46529_                                             2.48%    passed     42.21%
+  21  _R_WAM-Z97914_mtgenome_scaffold_1--7045_                                              2.47%    passed     54.17%
+  22  WAM-Z97916_mtgenome_scaffold_1--5832_5826_                                            2.48%    passed     43.01%
+  23  WAM-Z97917_mtgenome_scaffold_1--31_                                                   2.48%    passed     50.33%
+  24  WAM-Z97920_mtgenome_scaffold_1--101725_                                               2.54%    failed      0.04%
+  25  WAM-Z97921_mtgenome_scaffold_1--3670774_                                              2.48%    passed     48.35%
+  26  WAM-Z97923_mtgenome_scaffold_1--1339152_                                              2.48%    passed     41.47%
+  27  YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_                            1.28%    passed     76.41%
+  28  _R_YPM-IZ-104461_mtgenome_scaffold_1--3200194_                                        2.48%    passed     44.93%
+  29  YPM-IZ-104464_mtgenome_scaffold_1--9609600_                                           2.50%    passed     46.71%
+  30  YPM-IZ-106919_mtgenome_scaffold_1--1023865_                                           2.50%    passed     24.71%
+  31  _R_YPM-IZ-106920_mtgenome_scaffold_1--5927075_                                        2.48%    passed     44.67%
+  32  _R_YPM-IZ-106923_mtgenome_scaffold_1--4966863_                                        2.48%    passed     41.53%
+  33  _R_YPM-IZ-106935_mtgenome_scaffold_1--4052902_                                        2.48%    passed     61.24%
+  34  YPM-IZ-106936_mtgenome_scaffold_1--797_                                               2.48%    passed     30.24%
+  35  _R_YPM-IZ-106937_mtgenome_scaffold_1--5264988_                                        2.48%    passed     41.51%
+  36  YPM-IZ-106941_mtgenome_scaffold_1--5624014_                                           1.69%    passed     85.06%
+  37  YPM-IZ-106943_mtgenome_scaffold_1--8748509_                                           2.48%    passed     52.49%
+  38  YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_                                   2.46%    passed     44.28%
+  39  YPM-IZ-106958_mtgenome_scaffold_1--4444372_                                           2.48%    passed     55.00%
+  40  YPM-IZ-110251_mtgenome_scaffold_1--5878756_                                           2.48%    passed     43.00%
+  41  _R_YPM-IZ-110254_mtgenome_scaffold_1--5573165_                                        2.43%    passed     57.16%
+  42  _R_YPM-IZ-110264_mtgenome_scaffold_1--595_                                            2.48%    passed     44.84%
+  43  _R_YPM-IZ-110268_mtgenome_scaffold_1--1922_                                           2.48%    passed     43.40%
+  44  YPM-IZ-110269_mtgenome_scaffold_1--1371_                                              2.48%    passed     40.36%
+  45  YPM-IZ-110276_mtgenome_scaffold_1--1521_1367_                                         2.48%    passed     37.38%
+  46  _R_YPM-IZ-110277_mtgenome_scaffold_1--31_                                             2.48%    passed     42.93%
+  47  YPM-IZ-110278_mtgenome_scaffold_1--1860_                                              2.50%    passed     52.07%
+  48  YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_                2.48%    passed     53.96%
+  49  YPM-IZ-110434_mtgenome_scaffold_1--19_                                                2.48%    passed     48.38%
+  50  YPM-IZ-110436_mtgenome_scaffold_1--15_                                                2.48%    passed     51.29%
+  51  _R_YPM-IZ-110438_mtgenome_scaffold_1--5944_                                           2.48%    passed     48.01%
+  52  _R_YPM-IZ-110443_mtgenome_scaffold_1--7155733_                                        2.48%    passed     44.92%
+  53  YPM-IZ-110460_mtgenome_scaffold_1--5466859_                                           2.48%    passed     53.03%
+  54  _R_YPM-IZ-110467_mtgenome_scaffold_1--25_                                             2.50%    passed     80.52%
+  55  _R_YPM-IZ-110468_mtgenome_scaffold_1--103_                                            2.50%    passed     92.84%
+  56  YPM-IZ-110469_mtgenome_scaffold_1--19_                                                2.50%    passed     94.48%
+  57  _R_YPM-IZ-110470_mtgenome_scaffold_1--179_                                            2.41%    passed     92.99%
+  58  YPM-IZ-110471_mtgenome_scaffold_1--71_                                                2.48%    passed     46.60%
+  59  YPM-IZ-110473_mtgenome_scaffold_1--3900_                                              2.48%    passed     44.50%
+  60  _R_YPM-IZ-110474_mtgenome_scaffold_1--6005_                                           2.50%    passed     54.76%
+  61  YPM-IZ-110480_mtgenome_scaffold_1--149_                                               2.48%    passed     54.88%
+  62  YPM-IZ-110515_mtgenome_scaffold_1--3014873_                                           2.48%    passed     36.25%
+  63  _R_YPM-IZ-110520_mtgenome_scaffold_1--4729815_                                        2.46%    passed     42.54%
+  64  YPM-IZ-110526_mtgenome_scaffold_1--6200253_                                           2.48%    passed     45.33%
+  65  YPM-IZ-110556_mtgenome_scaffold_1--39_                                                2.47%    passed     93.16%
+  66  YPM-IZ-110557_mtgenome_scaffold_1--2255_                                              2.50%    passed     85.81%
+  67  YPM-IZ-110558_mtgenome_scaffold_1--23_25_                                             2.50%    passed     94.01%
+  68  _R_YPM-IZ-110566_mtgenome_scaffold_1--2675_2287_2687_                                 2.48%    passed     41.04%
+  69  YPM-IZ-110569_mtgenome_scaffold_1--81_                                                1.17%    passed     99.64%
+  70  YPM-IZ-110600_mtgenome_scaffold_1--9856101_                                           2.48%    passed     45.32%
+  71  YPM-IZ-110602_mtgenome_scaffold_1--93203_                                             2.48%    passed     40.17%
+  72  _R_YPM-IZ-110605_mtgenome_scaffold_1--167020_                                         2.48%    passed     33.64%
+  73  YPM-IZ-110612_mtgenome_scaffold_1--46_                                                2.48%    passed     53.60%
+  74  YPM-IZ-110613_mtgenome_scaffold_1--1106529_                                           2.46%    passed     56.04%
+  75  YPM-IZ-110616_mtgenome_scaffold_1--28984_                                             2.48%    passed     43.32%
+  76  _R_YPM-IZ-110631_mtgenome_scaffold_1--171174_                                         2.48%    passed     46.86%
+  77  _R_YPM-IZ-110633_mtgenome_scaffold_1--5829952_                                        2.48%    passed     53.08%
+  78  _R_YPM-IZ-110667_mtgenome_scaffold_1--1220096_                                        2.50%    passed     55.57%
+  79  _R_YPM-IZ-110694_mtgenome_scaffold_1--6113849_                                        1.70%    passed     86.08%
+  80  _R_YPM-IZ-110716_mtgenome_scaffold_1--3051232_                                        2.48%    passed     48.85%
+  81  YPM-IZ-110726_mtgenome_scaffold_1--42859_                                             2.48%    passed     53.90%
+  82  YPM-IZ-110738_mtgenome_scaffold_1--28195_                                             2.48%    passed     51.27%
+  83  _R_YPM-IZ-110777_mtgenome_scaffold_1--5439_                                           2.48%    passed     43.75%
+  84  _R_YPM-IZ-110780_mtgenome_scaffold_1--3329_                                           2.50%    passed     56.47%
+  85  YPM-IZ-110785_mtgenome_scaffold_1--63330_84247_                                       2.48%    passed     44.67%
+  86  YPM-IZ-110786_mtgenome_scaffold_1--19_13_                                             2.46%    passed     38.05%
+  87  _R_YPM-IZ-110828_mtgenome_scaffold_1--138717_                                         2.48%    failed      0.04%
+  88  YPM-IZ-110829_mtgenome_scaffold_1--19_                                                2.48%    failed      0.15%
+  89  _R_YPM-IZ-110830_mtgenome_scaffold_1--14148106_                                       2.46%    passed     49.80%
+  90  _R_YPM-IZ-110842_mtgenome_scaffold_1--4182747_                                        2.48%    passed     52.79%
+  91  YPM-IZ-110843_mtgenome_scaffold_1--3633236_                                           2.48%    passed     48.80%
+  92  YPM-IZ-110844_mtgenome_scaffold_1--4968002_                                           2.48%    passed     42.79%
+  93  YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_                                         2.48%    passed     50.78%
+  94  YPM-IZ-110846_mtgenome_scaffold_1--4922341_                                           2.46%    passed     47.32%
+  95  _R_YPM-IZ-110847_mtgenome_scaffold_1--4169614_                                        2.48%    passed     50.96%
+  96  YPM-IZ-110876_mtgenome_scaffold_1--26693_                                             2.48%    passed     33.79%
+  97  _R_YPM-IZ-110877_mtgenome_scaffold_1--1818166_                                        2.50%    passed     73.97%
+  98  YPM-IZ-110878_mtgenome_scaffold_1--19_                                                2.50%    passed     72.92%
+  99  YPM-IZ-110880_mtgenome_scaffold_1--5613327_                                           2.55%    passed     53.57%
+ 100  YPM-IZ-110881_mtgenome_scaffold_1--9129_12510_11590_12697_12634_11588_1157_trimmed    2.48%    passed     54.17%
+ 101  YPM-IZ-110882_mtgenome_scaffold_1--4791_                                              2.48%    passed     39.65%
+ 102  YPM-IZ-110883_mtgenome_scaffold_1--13624_12908_13615_                                 2.48%    passed     34.99%
+ 103  YPM-IZ-110906_mtgenome_scaffold_1--4432_                                              2.48%    passed     61.14%
+ 104  YPM-IZ-110907_mtgenome_scaffold_1--12130_                                             2.49%    passed     49.39%
+ 105  _R_YPM-IZ-110925_mtgenome_scaffold_1--1615_43_                                        2.48%    passed     50.48%
+ 106  YPM-IZ-110926_mtgenome_scaffold_1--19_                                                2.48%    passed     44.25%
+ 107  YPM-IZ-110930_mtgenome_scaffold_1--79_                                                2.48%    passed     42.86%
+ 108  YPM-IZ-110931_mtgenome_scaffold_1--20627_                                             2.50%    passed     81.58%
+ 109  YPM-IZ-110933_mtgenome_scaffold_1--4214602_                                           2.48%    passed     45.60%
+ 110  YPM-IZ-110937_mtgenome_scaffold_1--54732_                                             2.48%    passed     41.04%
+ 111  YPM-IZ-110938_mtgenome_scaffold_1--77153_                                             2.46%    passed     40.32%
+ 112  _R_YPM-IZ-110943_mtgenome_scaffold_1--93_                                             2.50%    passed     81.57%
+ 113  _R_YPM-IZ-111006_mtgenome_scaffold_1--8287079_                                        2.48%    passed     45.54%
+ 114  _R_YPM-IZ-111007_mtgenome_scaffold_1--24333_                                          2.48%    passed     49.21%
+ 115  _R_YPM-IZ-111008_mtgenome_scaffold_1--5714_                                           2.48%    passed     52.29%
+ 116  _R_YPM-IZ-111009_mtgenome_scaffold_1--4766313_                                        2.47%    passed     37.04%
+ 117  _R_YPM-IZ-111010_mtgenome_scaffold_1--438941_                                         2.54%    failed      0.04%
+ 118  YPM-IZ-111012_mtgenome_scaffold_1--1607_                                              2.47%    passed     54.32%
+ 119  YPM-IZ-111013_mtgenome_scaffold_1--3855739_                                           2.48%    passed     43.24%
+ 120  YPM-IZ-111014_mtgenome_scaffold_1--49_                                                2.48%    passed     51.58%
+ 121  YPM-IZ-111016_mtgenome_scaffold_1--25_                                                2.48%    passed     52.92%
+ 122  _R_YPM-IZ-111017_mtgenome_scaffold_1--3305370_                                        2.48%    passed     44.92%
+ 123  _R_YPM-IZ-111018_mtgenome_scaffold_1--3743432_                                        2.48%    passed     61.05%
+ 124  _R_YPM-IZ-111156_mtgenome_scaffold_1--210193_                                         2.48%    failed      0.24%
+ 125  YPM-IZ-111157_mtgenome_scaffold_1--2780990_                                           2.48%    failed      0.15%
+ 126  _R_YPM-IZ-111158_mtgenome_scaffold_1--711158_708652_                                  2.48%    failed      0.15%
+ 127  _R_YPM-IZ-111159_mtgenome_scaffold_1--91_                                             2.48%    failed      0.10%
+ 128  YPM-IZ-111160_mtgenome_scaffold_1--95_                                                2.48%    failed      0.11%
+ 129  _R_YPM-IZ-111163_mtgenome_scaffold_1--57_                                             2.48%    passed     48.13%
+ 130  YPM-IZ-111207_mtgenome_scaffold_1--126_                                               2.50%    passed     92.85%
+ 131  _R_YPM-IZ-111208_mtgenome_scaffold_1--45_                                             2.50%    passed     94.72%
+ 132  YPM-IZ-111209_mtgenome_scaffold_1--3334379_3512572_                                   2.50%    passed     93.61%
+ 133  YPM-IZ-111210_mtgenome_scaffold_1--126_                                               2.50%    passed     86.70%
+ 134  YPM-IZ-111241_mtgenome_scaffold_1--31_                                                2.46%    passed     93.39%
+ 135  YPM-IZ-111243_mtgenome_scaffold_1--241_                                               1.84%    passed     79.25%
+ 136  _R_YPM-IZ-111495_mtgenome_scaffold_1--2307_                                           2.48%    failed      0.13%
+ 137  YPM-IZ-111513_mtgenome_scaffold_1--2499_2501_2317_2507_                               1.32%    failed      0.00%
+ 138  YPM-IZ-111514_mtgenome_scaffold_1--73_                                                2.48%    failed      0.06%
+ 139  YPM-IZ-111517_mtgenome_scaffold_1--149_                                               2.48%    failed      0.18%
+ 140  _R_YPM-IZ-111518_mtgenome_scaffold_1--93_                                             2.48%    failed      0.17%
+ 141  _R_YPM-IZ-111519_mtgenome_scaffold_1--19_                                             2.48%    failed      0.10%
+ 142  YPM-IZ-111520_mtgenome_scaffold_1--195_841_367_43_363_847_1127_                       2.48%    failed      0.18%
+ 143  _R_YPM-IZ-111521_mtgenome_scaffold_1--25_                                             2.48%    failed      0.20%
+ 144  _R_YPM-IZ-111529_mtgenome_scaffold_1--85_109_                                         2.48%    failed      0.13%
+ 145  YPM-IZ-111530_mtgenome_scaffold_1--59_                                                2.48%    failed      0.09%
+ 146  YPM-IZ-111539_mtgenome_scaffold_1--73_                                                2.44%    failed      0.13%
+ 147  YPM-IZ-111547_mtgenome_scaffold_1--13_                                                2.48%    passed     39.92%
+ 148  _R_YPM-IZ-111839_mtgenome_scaffold_1--1107_7_                                         2.50%    passed     87.21%
+ 149  YPM-IZ-111840_mtgenome_scaffold_1--3618182_                                           2.50%    passed     39.58%
+ 150  YPM-IZ-111759_mtgenome_scaffold_1--39_                                                2.46%    passed     88.19%
+ 151  YPM-IZ-111814_mtgenome_scaffold_1--2069_2017_1117_1743_1113_2065_2085_                2.48%    failed      0.07%
+ 152  _R_YPM-IZ-111819_mtgenome_scaffold_1--137_                                            2.48%    failed      0.30%
+ 153  _R_YPM-IZ-111820_mtgenome_scaffold_1--1421_1341_1347_811_1435_                        2.48%    failed      0.27%
+ 154  YPM-IZ-111220_mtgenome_scaffold_1--35_                                                2.50%    passed     93.38%
+ 155  _R_YPM-IZ-111261_mtgenome_scaffold_1--545_1489_1465_1577_1575_1569_1939_1431_         2.56%    passed     88.11%
+ 156  _R_YPM-IZ-111256_mtgenome_scaffold_1--62_                                             2.50%    passed     95.02%
+ 157  WAM-Z97909_mtgenome_scaffold_1--97_                                                   2.54%    failed      0.16%
+ 158  _R_YPM-IZ-111231_mtgenome_scaffold_1--13_                                             2.47%    passed     92.76%
+ 159  YPM-IZ-111806_mtgenome_scaffold_1--1953_                                              2.50%    passed     94.35%
+ 160  YPM-IZ-111813_mtgenome_scaffold_1--1781_1779_1233_1887_                               1.32%    passed     53.70%
+ 161  YPM-IZ-111816_mtgenome_scaffold_1--83_                                                2.48%    failed      0.20%
+ 162  YPM-IZ-111822_mtgenome_scaffold_1--863_                                               2.48%    failed      0.17%
+ 163  YPM-IZ-111825_mtgenome_scaffold_1--114_                                               2.48%    failed      0.28%
+ 164  _R_YPM-IZ-115977_mtgenome_scaffold_1--1315_                                           2.50%    passed     91.23%
+ 165  YPM-IZ-115978_mtgenome_scaffold_1--35_                                                2.47%    passed     90.98%
+ 166  _R_YPM-IZ-115980_mtgenome_scaffold_1--39_                                             2.50%    passed     81.95%
+ 167  YPM-IZ-115990_mtgenome_scaffold_1--33_                                                2.50%    passed     87.76%
+ 168  YPM-IZ-116019_mtgenome_scaffold_1--87_                                                2.54%    failed      0.05%
+****  TOTAL                                                                                 2.44%  34 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.000918865 secs using 391% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.060 seconds
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+7 trees examined
+Threads: 1 / Time: 8.399 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -492429
+Threads: 2 / Time: 27.830 sec / Speedup: 0.302 / Efficiency: 15% / LogL: -492429
+Determining AUTO threadcount: done in 36.2307 secs using 50.68% CPU
+BEST NUMBER OF THREADS: 1
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 1.0639 secs using 99.58% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -90429.399
+Optimal log-likelihood: -90428.511
+Rate parameters:  A-C: 1.59651  A-G: 27.90902  A-T: 0.71029  C-G: 3.04629  C-T: 27.03319  G-T: 1.00000
+Base frequencies:  A: 0.286  C: 0.168  G: 0.176  T: 0.370
+Proportion of invariable sites: 0.338
+Gamma shape alpha: 0.534
+Parameters optimization took 1 rounds (0.546 sec)
+Time for fast ML tree search: 7.883 seconds
+
+NOTE: ModelFinder requires 216 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 15420 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            105090.338   333 210846.676   210861.421   213391.935
+  2  JC+I          100634.765   334 201937.530   201952.365   204490.433
+  3  JC+G4         100354.276   334 201376.552   201391.387   203929.455
+  4  JC+I+G4       100286.136   335 201242.272   201257.196   203802.818
+  5  JC+R2         100380.596   335 201431.192   201446.116   203991.738
+  6  JC+R3         100217.768   337 201109.536   201124.641   203685.369
+  7  JC+R4         100209.895   339 201097.790   201113.077   203688.910
+ 14  JC+I+R2       100266.685   336 201205.371   201220.385   203773.560
+ 15  JC+I+R3       100199.270   338 201074.540   201089.735   203658.016
+ 16  JC+I+R4       100197.495   340 201074.990   201090.368   203673.753
+ 37  JC+I+R3       100199.270   338 201074.540   201089.735   203658.016
+ 59  F81+I+R3      100199.227   338 201074.454   201089.650   203657.930
+ 81  F81+F+I+R3    99915.026    341 200512.052   200527.521   203118.458
+103  K2P+I+R3      91494.852    339 183667.704   183682.990   186258.823
+125  K2P+I+R3      91494.852    339 183667.704   183682.990   186258.823
+147  HKY+I+R3      91494.805    339 183667.609   183682.896   186258.729
+169  HKY+F+I+R3    90416.102    342 181516.205   181531.766   184130.255
+191  TNe+I+R3      91492.295    340 183664.590   183679.968   186263.353
+213  TNe+I+R3      91492.295    340 183664.590   183679.968   186263.353
+235  TN+I+R3       91492.239    340 183664.477   183679.855   186263.240
+257  TN+F+I+R3     90415.138    343 181516.275   181531.928   184137.969
+279  K3P+I+R3      91489.092    340 183658.183   183673.561   186256.946
+301  K3P+I+R3      91489.092    340 183658.183   183673.561   186256.946
+323  K3Pu+I+R3     91489.074    340 183658.147   183673.525   186256.910
+345  K3Pu+F+I+R3   90415.768    343 181517.536   181533.189   184139.229
+367  TPM2+I+R3     91494.747    340 183669.494   183684.872   186268.257
+389  TPM2+I+R3     91494.747    340 183669.494   183684.872   186268.257
+411  TPM2u+I+R3    91494.727    340 183669.455   183684.832   186268.218
+433  TPM2u+F+I+R3  90391.076    343 181468.152   181483.805   184089.846
+455  TPM3+I+R3     91482.997    340 183645.994   183661.372   186244.757
+477  TPM3+I+R3     91482.997    340 183645.994   183661.372   186244.757
+499  TPM3u+I+R3    91482.976    340 183645.952   183661.330   186244.715
+521  TPM3u+F+I+R3  90312.417    343 181310.833   181326.486   183932.526
+543  TIMe+I+R3     91486.471    341 183654.941   183670.410   186261.348
+565  TIMe+I+R3     91486.471    341 183654.941   183670.410   186261.348
+587  TIM+I+R3      91486.436    341 183654.871   183670.340   186261.278
+609  TIM+F+I+R3    90414.535    344 181517.070   181532.815   184146.407
+631  TIM2e+I+R3    91492.281    341 183666.561   183682.030   186272.968
+653  TIM2e+I+R3    91492.281    341 183666.561   183682.030   186272.968
+675  TIM2+I+R3     91492.173    341 183666.345   183681.815   186272.752
+697  TIM2+F+I+R3   90389.885    344 181467.771   181483.516   184097.107
+719  TIM3e+I+R3    91480.686    341 183643.372   183658.842   186249.779
+741  TIM3e+I+R3    91480.686    341 183643.372   183658.842   186249.779
+763  TIM3+I+R3     91480.654    341 183643.308   183658.777   186249.714
+785  TIM3+F+I+R3   90311.619    344 181311.238   181326.984   183940.575
+807  TVMe+I+R3     91476.067    342 183636.133   183651.694   186250.183
+829  TVMe+I+R3     91476.067    342 183636.133   183651.694   186250.183
+851  TVM+I+R3      91476.030    342 183636.061   183651.622   186250.111
+873  TVM+F+I+R3    90283.951    345 181257.902   181273.740   183894.883
+895  SYM+I+R3      91473.603    343 183633.205   183648.858   186254.898
+917  SYM+I+R3      91473.603    343 183633.205   183648.858   186254.898
+939  GTR+I+R3      91473.572    343 183633.145   183648.798   186254.838
+961  GTR+F+I+R3    90283.095    346 181258.190   181274.121   183902.814
+Akaike Information Criterion:           TVM+F+I+R3
+Corrected Akaike Information Criterion: TVM+F+I+R3
+Bayesian Information Criterion:         TVM+F+I+R3
+Best-fit model: TVM+F+I+R3 chosen according to BIC
+
+All model information printed to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.model.gz
+CPU time for ModelFinder: 280.538 seconds (0h:4m:40s)
+Wall-clock time for ModelFinder: 302.019 seconds (0h:5m:2s)
+Generating 1000 samples for ultrafast bootstrap (seed: 904277)...
+
+NOTE: 74 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -90283.864
+Optimal log-likelihood: -90283.832
+Rate parameters:  A-C: 1.66902  A-G: 28.53908  A-T: 0.73697  C-G: 3.16371  C-T: 28.53908  G-T: 1.00000
+Base frequencies:  A: 0.286  C: 0.168  G: 0.176  T: 0.370
+Proportion of invariable sites: 0.550
+Site proportion and rates:  (0.272,0.999) (0.174,3.719) (0.005,16.974)
+Parameters optimization took 1 rounds (0.828 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.164925 secs using 99.44% CPU
+Computing ML distances took 0.167145 sec (of wall-clock time) 0.166076 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000569105 secs using 181% CPU
+Constructing RapidNJ tree: done in 0.00119805 secs using 182.8% CPU
+Computing RapidNJ tree took 0.001940 sec (of wall-clock time) 0.003387 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -91202.622
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 6.707 second
+Computing log-likelihood of 98 initial trees ... 9.531 seconds
+Current best score: -90283.832
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 1.05647 secs using 99.84% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -90282.285
+Optimizing NNI: done in 2.39034 secs using 99.72% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -90270.450
+Optimizing NNI: done in 2.24197 secs using 99.48% CPU
+Optimizing NNI: done in 2.22053 secs using 99.81% CPU
+Optimizing NNI: done in 2.14558 secs using 98.95% CPU
+Optimizing NNI: done in 2.41303 secs using 99.44% CPU
+Optimizing NNI: done in 2.28421 secs using 99.79% CPU
+Optimizing NNI: done in 2.49807 secs using 99.67% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -90269.928
+Optimizing NNI: done in 2.38179 secs using 99.23% CPU
+Optimizing NNI: done in 2.48409 secs using 96.2% CPU
+Iteration 10 / LogL: -90277.158 / Time: 0h:5m:44s
+Optimizing NNI: done in 2.78948 secs using 94.47% CPU
+Optimizing NNI: done in 3.22025 secs using 90.08% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -90269.240
+Optimizing NNI: done in 2.69554 secs using 96.96% CPU
+Optimizing NNI: done in 2.50283 secs using 95.41% CPU
+Optimizing NNI: done in 2.77932 secs using 97.8% CPU
+Optimizing NNI: done in 2.47307 secs using 98.59% CPU
+Optimizing NNI: done in 2.93922 secs using 95.44% CPU
+Optimizing NNI: done in 2.38782 secs using 97.61% CPU
+Optimizing NNI: done in 2.99183 secs using 90.73% CPU
+Optimizing NNI: done in 2.56601 secs using 95.51% CPU
+Iteration 20 / LogL: -90280.856 / Time: 0h:6m:13s
+Finish initializing candidate tree set (20)
+Current best tree score: -90269.240 / CPU time: 69.479
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 2.71309 secs using 88.53% CPU
+Optimizing NNI: done in 3.25498 secs using 98.04% CPU
+Optimizing NNI: done in 2.5992 secs using 98% CPU
+Optimizing NNI: done in 3.29001 secs using 95.22% CPU
+Optimizing NNI: done in 2.41465 secs using 93.28% CPU
+Optimizing NNI: done in 2.63652 secs using 98.5% CPU
+Optimizing NNI: done in 3.06806 secs using 98.56% CPU
+Optimizing NNI: done in 3.72633 secs using 95.89% CPU
+Optimizing NNI: done in 3.49634 secs using 98.63% CPU
+Optimizing NNI: done in 2.73295 secs using 99.22% CPU
+Iteration 30 / LogL: -90363.263 / Time: 0h:6m:43s (0h:4m:47s left)
+Optimizing NNI: done in 2.57708 secs using 98.97% CPU
+Optimizing NNI: done in 3.25377 secs using 97.07% CPU
+Optimizing NNI: done in 2.79913 secs using 96.12% CPU
+Optimizing NNI: done in 2.18252 secs using 98.99% CPU
+Optimizing NNI: done in 2.98571 secs using 91.55% CPU
+Optimizing NNI: done in 3.45896 secs using 98.81% CPU
+Optimizing NNI: done in 1.88539 secs using 99.73% CPU
+Optimizing NNI: done in 1.98533 secs using 95.72% CPU
+Optimizing NNI: done in 2.69169 secs using 99.76% CPU
+Optimizing NNI: done in 3.04557 secs using 96.27% CPU
+Iteration 40 / LogL: -90275.859 / Time: 0h:7m:10s (0h:3m:57s left)
+Optimizing NNI: done in 1.70515 secs using 99.68% CPU
+Optimizing NNI: done in 2.80203 secs using 99.73% CPU
+Optimizing NNI: done in 3.34454 secs using 99.22% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 43: -90268.341
+Optimizing NNI: done in 2.06877 secs using 99.84% CPU
+Optimizing NNI: done in 2.79164 secs using 98.1% CPU
+Optimizing NNI: done in 3.93564 secs using 80.88% CPU
+Optimizing NNI: done in 10.198 secs using 36.32% CPU
+Optimizing NNI: done in 9.76101 secs using 33.91% CPU
+Optimizing NNI: done in 6.96352 secs using 33.48% CPU
+Optimizing NNI: done in 8.85401 secs using 43.91% CPU
+Iteration 50 / LogL: -90269.413 / Time: 0h:8m:4s (0h:5m:46s left)
+Log-likelihood cutoff on original alignment: -90316.530
+Optimizing NNI: done in 3.74693 secs using 85.4% CPU
+Optimizing NNI: done in 3.87055 secs using 96.31% CPU
+Optimizing NNI: done in 1.86919 secs using 99.69% CPU
+Optimizing NNI: done in 2.4441 secs using 99.68% CPU
+Optimizing NNI: done in 2.04801 secs using 99.79% CPU
+Optimizing NNI: done in 2.58622 secs using 99.9% CPU
+Optimizing NNI: done in 3.00727 secs using 99.79% CPU
+Optimizing NNI: done in 2.30937 secs using 99.74% CPU
+Optimizing NNI: done in 2.8866 secs using 98.86% CPU
+Optimizing NNI: done in 2.4115 secs using 99.81% CPU
+Iteration 60 / LogL: -90306.981 / Time: 0h:8m:32s (0h:4m:55s left)
+Optimizing NNI: done in 2.14802 secs using 99.92% CPU
+Optimizing NNI: done in 4.45958 secs using 99.79% CPU
+Optimizing NNI: done in 1.85266 secs using 99.83% CPU
+Optimizing NNI: done in 3.23793 secs using 99.74% CPU
+Optimizing NNI: done in 6.25157 secs using 50.27% CPU
+Optimizing NNI: done in 10.4458 secs using 34.98% CPU
+Optimizing NNI: done in 10.4242 secs using 38.11% CPU
+Optimizing NNI: done in 5.04366 secs using 64.05% CPU
+Optimizing NNI: done in 3.6353 secs using 84.03% CPU
+Optimizing NNI: done in 2.18883 secs using 99.87% CPU
+Iteration 70 / LogL: -90345.499 / Time: 0h:9m:22s (0h:4m:35s left)
+Optimizing NNI: done in 1.87175 secs using 99.82% CPU
+Optimizing NNI: done in 1.99635 secs using 99.79% CPU
+Optimizing NNI: done in 1.61477 secs using 99.8% CPU
+Optimizing NNI: done in 3.64117 secs using 99.5% CPU
+Optimizing NNI: done in 2.52822 secs using 95.33% CPU
+Optimizing NNI: done in 3.30004 secs using 97.79% CPU
+Optimizing NNI: done in 2.37598 secs using 94.11% CPU
+Optimizing NNI: done in 2.94289 secs using 98.83% CPU
+Optimizing NNI: done in 3.27947 secs using 99.62% CPU
+Optimizing NNI: done in 2.48917 secs using 99.76% CPU
+Iteration 80 / LogL: -90700.897 / Time: 0h:9m:48s (0h:3m:48s left)
+Optimizing NNI: done in 2.9699 secs using 97.74% CPU
+Optimizing NNI: done in 2.89029 secs using 99.94% CPU
+Optimizing NNI: done in 3.48578 secs using 96.76% CPU
+Optimizing NNI: done in 3.37111 secs using 99.88% CPU
+Optimizing NNI: done in 3.31994 secs using 99.84% CPU
+Optimizing NNI: done in 2.50239 secs using 99.81% CPU
+Optimizing NNI: done in 2.95712 secs using 86.59% CPU
+Optimizing NNI: done in 2.70748 secs using 99.75% CPU
+Optimizing NNI: done in 3.58046 secs using 98.07% CPU
+Optimizing NNI: done in 2.91229 secs using 99.87% CPU
+Iteration 90 / LogL: -90268.518 / Time: 0h:10m:19s (0h:3m:9s left)
+Optimizing NNI: done in 2.40181 secs using 99.85% CPU
+Optimizing NNI: done in 3.00476 secs using 99.85% CPU
+Optimizing NNI: done in 2.49395 secs using 99.54% CPU
+Optimizing NNI: done in 2.58481 secs using 99.66% CPU
+Optimizing NNI: done in 3.61643 secs using 99.4% CPU
+Optimizing NNI: done in 2.14 secs using 99.54% CPU
+Optimizing NNI: done in 2.47202 secs using 99.93% CPU
+Optimizing NNI: done in 3.40373 secs using 99.64% CPU
+Optimizing NNI: done in 3.65975 secs using 99.31% CPU
+Optimizing NNI: done in 3.34452 secs using 99.82% CPU
+Iteration 100 / LogL: -90278.153 / Time: 0h:10m:49s (0h:2m:30s left)
+Log-likelihood cutoff on original alignment: -90316.530
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Optimizing NNI: done in 2.62608 secs using 98.39% CPU
+Optimizing NNI: done in 2.62836 secs using 99.89% CPU
+Optimizing NNI: done in 3.73813 secs using 97.06% CPU
+Optimizing NNI: done in 2.47727 secs using 99.82% CPU
+Optimizing NNI: done in 2.75879 secs using 99.74% CPU
+Optimizing NNI: done in 2.48933 secs using 99.84% CPU
+Optimizing NNI: done in 3.17072 secs using 99.68% CPU
+Optimizing NNI: done in 2.97627 secs using 99.66% CPU
+Optimizing NNI: done in 3.59681 secs using 99.58% CPU
+Optimizing NNI: done in 3.80864 secs using 99.64% CPU
+Iteration 110 / LogL: -90270.058 / Time: 0h:11m:19s (0h:5m:12s left)
+Optimizing NNI: done in 2.90161 secs using 99.94% CPU
+Optimizing NNI: done in 2.53177 secs using 99.77% CPU
+Optimizing NNI: done in 2.72052 secs using 99.44% CPU
+Optimizing NNI: done in 1.36549 secs using 99.95% CPU
+Optimizing NNI: done in 3.39627 secs using 99.4% CPU
+Optimizing NNI: done in 3.17064 secs using 99.84% CPU
+Optimizing NNI: done in 3.05858 secs using 99.81% CPU
+Optimizing NNI: done in 3.30128 secs using 99.66% CPU
+Optimizing NNI: done in 2.73833 secs using 99.8% CPU
+Optimizing NNI: done in 3.03485 secs using 99.85% CPU
+Iteration 120 / LogL: -90691.673 / Time: 0h:11m:48s (0h:4m:33s left)
+Optimizing NNI: done in 3.06963 secs using 98.59% CPU
+Optimizing NNI: done in 3.38983 secs using 99.9% CPU
+Optimizing NNI: done in 3.13457 secs using 96.55% CPU
+Optimizing NNI: done in 3.45479 secs using 99.67% CPU
+Optimizing NNI: done in 4.10368 secs using 99.88% CPU
+Optimizing NNI: done in 3.60117 secs using 98.01% CPU
+Optimizing NNI: done in 2.98369 secs using 98.18% CPU
+Optimizing NNI: done in 3.01171 secs using 99.91% CPU
+Optimizing NNI: done in 4.14516 secs using 99.92% CPU
+Optimizing NNI: done in 3.70583 secs using 99.93% CPU
+Iteration 130 / LogL: -90301.412 / Time: 0h:12m:23s (0h:3m:59s left)
+Optimizing NNI: done in 2.94764 secs using 98.9% CPU
+Optimizing NNI: done in 2.27464 secs using 99.75% CPU
+Optimizing NNI: done in 3.05194 secs using 99.78% CPU
+Optimizing NNI: done in 3.49408 secs using 99.95% CPU
+Optimizing NNI: done in 1.03239 secs using 99.62% CPU
+Optimizing NNI: done in 2.01894 secs using 99.84% CPU
+Optimizing NNI: done in 3.4855 secs using 99.9% CPU
+Optimizing NNI: done in 3.13168 secs using 99.91% CPU
+Optimizing NNI: done in 4.50496 secs using 99.9% CPU
+Optimizing NNI: done in 3.86277 secs using 99.2% CPU
+Iteration 140 / LogL: -90982.290 / Time: 0h:12m:53s (0h:3m:23s left)
+Optimizing NNI: done in 2.47097 secs using 99.89% CPU
+Optimizing NNI: done in 3.55121 secs using 96.31% CPU
+Optimizing NNI: done in 3.32174 secs using 99.58% CPU
+Optimizing NNI: done in 2.98899 secs using 99.92% CPU
+TREE SEARCH COMPLETED AFTER 144 ITERATIONS / Time: 0h:13m:6s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -90268.341
+2. Current log-likelihood: -90268.326
+Optimal log-likelihood: -90268.324
+Rate parameters:  A-C: 1.67703  A-G: 28.54381  A-T: 0.73585  C-G: 3.17072  C-T: 28.54381  G-T: 1.00000
+Base frequencies:  A: 0.286  C: 0.168  G: 0.176  T: 0.370
+Proportion of invariable sites: 0.548
+Site proportion and rates:  (0.271,0.983) (0.176,3.690) (0.005,16.929)
+Parameters optimization took 2 rounds (1.214 sec)
+BEST SCORE FOUND : -90268.324
+Creating bootstrap support values...
+Split supports printed to NEXUS file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.splits.nex
+Total tree length: 1.152
+
+Total number of iterations: 144
+CPU time used for tree search: 433.218 sec (0h:7m:13s)
+Wall-clock time used for tree search: 482.186 sec (0h:8m:2s)
+Total CPU time used: 717.232 sec (0h:11m:57s)
+Total wall-clock time used: 787.598 sec (0h:13m:7s)
+
+Computing bootstrap consensus tree...
+Reading input file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.splits.nex...
+168 taxa and 746 splits.
+Consensus tree written to /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.contree
+Reading input trees file /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.contree
+Log-likelihood of consensus tree: -90268.740
+
+Analysis results written to: 
+  IQ-TREE report:                /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.iqtree
+  Maximum-likelihood tree:       /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.treefile
+  Likelihood distances:          /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.splits.nex
+  Consensus tree:                /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.contree
+  Screen log file:               /Users/samuelchurch/Downloads/Physalia_spatiotemporal/github_physalia_spatiotemporal/phylogenetics/mitogenome_tree/submitted.log
+
+Date and Time: Thu Aug  6 09:31:18 2026
