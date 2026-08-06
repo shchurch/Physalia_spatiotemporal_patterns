@@ -63,7 +63,7 @@ Specimens were collected in the Southwest Pacific and South Atlantic. The Southw
 
 ###DNA extractions
 
-Samples were stored in 100% ethanol and DNA Shield (Zymo). The same procedure was used for ethanol (10 samples) and DNA Shield-stored samples(10 samples). A piece of a tentacle was used as input for all of the  samples, except for one degraded sample from Saint Helena, where we used a piece of float (YPM-IZ-116016). DNA was extracted using the EZNA Mollusk Kit following the manufacturer’s instructions, with an overnight digestion step at 60℃. Yale Center for Genome Analysis processed the genomic DNA and prepared libraries for Illumina NovaSeq paired-end 150bp whole-genome sequencing (WGS) (10x coverage).
+Samples were stored in 100% ethanol and DNA Shield (Zymo). The same procedure was used for ethanol (10 samples) and DNA Shield-stored samples(10 samples). A piece of a tentacle was used as input for all of the  samples, except for one degraded sample from Saint Helena, where we used a piece of float (YPM-IZ-116019). DNA was extracted using the EZNA Mollusk Kit following the manufacturer’s instructions, with an overnight digestion step at 60℃. Yale Center for Genome Analysis processed the genomic DNA and prepared libraries for Illumina NovaSeq paired-end 150bp whole-genome sequencing (WGS) (10x coverage).
 
 ## Read quality control and mitochondrial genomes assembly
 
