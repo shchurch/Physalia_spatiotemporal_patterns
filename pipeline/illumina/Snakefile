@@ -1,0 +1,335 @@
+"""
+This Snakefile is used for initial assessment of Illumina sequences
+from Siphonophores, using tools that don't require a reference genome.
+For reference-based QC (e.g. mapping rates) see elsewhere.
+"""
+
+import sys
+configfile: "config.yaml"
+scratchdir = config["scratchdir"]
+
+wildcard_constraints:
+    sample = "[A-Za-z0-9-]+"
+
+samples = config["sample"]
+sra_samples = {s: d["SRA"] for s, d in samples.items() if "SRA" in d}
+direct_reads_samples = {s: d["reads"] for s, d in samples.items() if "reads" in d}
+
+rule all:
+    input:
+        # fastqc
+        expand(scratchdir + "fastqc/{sample}", sample=config["sample"]), # fastQC report per sample
+        # kraken
+        expand(scratchdir + "kraken/{sample}.report.txt", sample=config["sample"]), 
+        # human
+        expand(scratchdir + "human/{sample}.mapped_paired", sample=config["sample"]),
+        # sharkmer
+        expand(scratchdir + "shark_results/{sample}/{sample}.stats",sample=config["sample"]),
+        # rego
+        expand(scratchdir + "rego_results/{sample}/{sample}_16sF.txt",sample=config["sample"]),
+        # mtgenome assembly and annotation
+        expand(scratchdir + "getorganelle/{sample}_mtgenome/get_org.log.txt", sample=config["sample"]),
+        expand(scratchdir + "mitos_results/{sample}/{sample}_runinfo.txt", sample=config["sample"]),
+        expand(scratchdir + "tRNAscan_results/{sample}/{sample}_runinfo.txt", sample=config["sample"]),
+        # report
+        expand(scratchdir + "QC_reports/{sample}_report.txt",sample=config["sample"]),
+        
+# GET SRA 
+rule download_SRA:
+    params:
+        SRA = lambda wildcards: sra_samples[wildcards.sample][0],
+        DIR = scratchdir + "downloaded_reads/"
+    threads: 8
+    log:
+        "logs/SRA/{sample}.log"
+    output:
+        READ1 = temp( scratchdir + "downloaded_reads/{sample}_1.fastq" ),
+        READ2 = temp( scratchdir + "downloaded_reads/{sample}_2.fastq" ),
+        DIR = temp( directory ( scratchdir + "downloaded_reads/{sample}/" ) )
+    shell: 
+        """
+        prefetch {params.SRA} --output-directory {params.DIR} && \
+        fasterq-dump {params.DIR}/{params.SRA} --outdir {params.DIR} --split-files --threads {threads} 2> {log}
+        """
+        
+# SUBSET READS
+rule reads_subset:
+    input:
+        READ1 = lambda wildcards: scratchdir + "downloaded_reads/{sample}_1.fastq" if wildcards.sample in sra_samples
+                        else direct_reads_samples[wildcards.sample][0],
+        READ2 = lambda wildcards: scratchdir + "downloaded_reads/{sample}_2.fastq" if wildcards.sample in sra_samples
+                        else direct_reads_samples[wildcards.sample][1]
+    output:
+        R1 = temp( scratchdir + "reads/{sample}_sub_R1.fastq" ),
+        R2 = temp( scratchdir + "reads/{sample}_sub_R2.fastq" )
+    params:
+        SUBSET = config["n_reads"] * 4
+    localrule: True
+    shell:
+        """
+        set +o pipefail;
+        if [[ "{input.READ1}" == *.gz ]]; then
+            zcat {input.READ1} | head --lines={params.SUBSET} > {output.R1}
+            zcat {input.READ2} | head --lines={params.SUBSET} > {output.R2}
+        else 
+            head {input.READ1} --lines={params.SUBSET} > {output.R1}
+            head {input.READ2} --lines={params.SUBSET} > {output.R2}
+        fi
+        """
+        
+# TRIM ADAPTERS
+rule trimmomatic_pe:
+    input:
+        R1 = scratchdir + "reads/{sample}_sub_R1.fastq",
+        R2 = scratchdir + "reads/{sample}_sub_R2.fastq"
+    output:
+        TRIM1P = temp( scratchdir + "trimmed/{sample}.R1.trimmed.fastq" ),
+        TRIM1U = temp( scratchdir + "trimmed/{sample}.R1.unpaired.trimmed.fastq" ),
+        TRIM2P = temp( scratchdir + "trimmed/{sample}.R2.trimmed.fastq" ),
+        TRIM2U = temp( scratchdir + "trimmed/{sample}.R2.unpaired_trimmed.fastq" )
+    localrule: True
+    log:
+        "logs/trimmomatic/{sample}.log"
+    threads: 8
+    shell:
+        """
+        echo ">PrefixPE/1\nTACACTCTTTCCCTACACGACGCTCTTCCGATCT\n>PrefixPE/2\nGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT" > TruSeq3-PE.fa
+        java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads {threads} \
+            {input.R1} \
+            {input.R2} \
+            {output.TRIM1P} \
+            {output.TRIM1U} \
+            {output.TRIM2P} \
+            {output.TRIM2U} \
+        ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:True LEADING:15 TRAILING:15 MINLEN:50 2> {log}
+        """
+
+# FASTQC
+rule fastqc:
+    input:
+        READ1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq",
+        READ2 = scratchdir + "trimmed/{sample}.R2.trimmed.fastq",
+    envmodules:
+        "FastQC"
+    localrule: True
+    output:
+        directory(scratchdir + "fastqc/{sample}")
+    log:
+        "logs/fastqc/{sample}.log"
+    shell:
+        """
+        mkdir -p {output}  # Create the output directory
+        fastqc {input.READ1} {input.READ2} --outdir {output} 2> {log}
+        """
+
+# KRAKEN 
+rule kraken:
+    input:
+        READ1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq",
+        READ2 = scratchdir + "trimmed/{sample}.R2.trimmed.fastq",
+        DB = config["kraken_db"]
+    output:
+        OUT = temp( scratchdir + "kraken/{sample}.out.txt" ),
+        CLASS_R1 = temp( scratchdir + "kraken/{sample}.classified_1.fq" ), 
+        CLASS_R2 = temp( scratchdir + "kraken/{sample}.classified_2.fq" ), 
+        UNCLASS_R1 = temp( scratchdir + "kraken/{sample}.unclassified_1.fq" ),
+        UNCLASS_R2 = temp( scratchdir + "kraken/{sample}.unclassified_2.fq" ),
+        REPORT = scratchdir + "kraken/{sample}.report.txt"
+    threads: 10
+    params:
+        SAMPLE = scratchdir + "kraken/{sample}", 
+    log:
+        "logs/kraken/{sample}.log"
+    shell:
+        """
+        kraken2 --threads {threads} \
+        --db {input.DB} \
+        --unclassified-out "{params.SAMPLE}.unclassified#.fq" \
+        --classified-out "{params.SAMPLE}.classified#.fq" \
+        --output "{params.SAMPLE}.out.txt" \
+        --report "{params.SAMPLE}.report.txt" --use-names --report-minimizer-data  \
+        --paired {input.READ1} {input.READ2} 2> {log}
+        """ 
+
+# HUMAN CONTAMINATION
+rule map_human:
+    input:
+        READ1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq",
+        READ2 = scratchdir + "trimmed/{sample}.R2.trimmed.fastq",
+        DB = config["human_bwa"]
+    output:
+        MAPPED = scratchdir + "human/{sample}.mapped_paired"
+    threads: 10
+    log: "logs/bwa_human/bwa_human_{sample}.log"
+    envmodules:
+        "BWA",
+        "SAMtools"
+    shell:
+        """
+        bwa mem -t {threads} \
+            {input.DB} \
+            {input.READ1} {input.READ2} | \
+          samtools view -q 30 -F 0x900 -f 0x0002 -h - | \
+          awk 'substr($0,1,1)=="@" || ($9>= 200 && $9<=1000) || ($9<=-200 && $9>=-1000)' | \
+          samtools view -c - > {output.MAPPED}
+        """
+        
+# GETORGANELLE
+rule get_organelle:
+    input:
+        ASSEM = config["mito_seed"],
+        READ1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq",
+        READ2 = scratchdir + "trimmed/{sample}.R2.trimmed.fastq",
+    output:
+        LOG = scratchdir + "getorganelle/{sample}_mtgenome/get_org.log.txt",
+    params:
+        OUTDIR = "getorganelle/{sample}_mtgenome",
+        FAS_HEAD = ">{sample}_mito_path1" 
+    log:
+        "logs/getorganelle/{sample}.log"
+    shell:
+        """
+        get_organelle_from_reads.py \
+            -1 {input.READ1} -2 {input.READ2} \
+            -R 10 -k 21,45,65,85,105 \
+            -F animal_mt \
+            -s {input.ASSEM} \
+            --overwrite \
+            --reduce-reads-for-coverage inf --max-reads inf \
+            -o {params.OUTDIR} > {log} || true
+        """
+ 
+# MITOS2       
+rule mitos:
+    input:
+        scratchdir + "getorganelle/{sample}_mtgenome/get_org.log.txt"
+    output:
+        scratchdir + "mitos_results/{sample}/{sample}_runinfo.txt"
+    log:
+        "logs/mitos/{sample}.log"
+    params:
+        SAMPLE = lambda wildcards: wildcards.sample,
+        DIR = config["mitos_refdir"],
+        REF = config["mitos_refname"],
+    shell:
+        """
+        subdir="getorganelle/{params.SAMPLE}_mtgenome"
+        echo "Starting mitos annotation" > {output}
+        outdir=mitos_results/{params.SAMPLE}
+
+        if ls "$subdir"/*path*fasta 1> /dev/null 2>&1; then
+            fasta_file=$(ls "$subdir"/*path*fasta | head -n 1)
+            runmitos.py -i "$fasta_file" \
+                -R {params.DIR} -r {params.REF} \
+                --orih 0 --oril 0 --trna 0 --intron 0 \
+                --linear -c 4 \
+                -o "$outdir" >> {output} 2> {log}
+        else 
+            echo "No mtgenome detected" >> {output}
+        fi
+        """
+        
+# TRNASCAN-SE       
+rule trnascan:
+    input:
+        scratchdir + "getorganelle/{sample}_mtgenome/get_org.log.txt"
+    output:
+        scratchdir + "tRNAscan_results/{sample}/{sample}_runinfo.txt"
+    log:
+        "logs/trnascan/{sample}.log"
+    params:
+        SAMPLE = lambda wildcards: wildcards.sample,
+        OUTPUT = scratchdir + "tRNAscan_results/{sample}/{sample}_tRNAscan_result.txt",
+        GCODE = config["trna_gcode"],
+    shell:
+        """
+        subdir="getorganelle/{params.SAMPLE}_mtgenome"
+        echo "Starting tRNA annotation" > {output}
+        outdir=tRNAscan_results/{params.SAMPLE}
+
+        if ls "$subdir"/*path*fasta 1> /dev/null 2>&1; then
+            fasta_file=$(ls "$subdir"/*path*fasta | head -n 1)
+            tRNAscan-SE -Q -o {params.OUTPUT} \
+                -O -g {params.GCODE} \
+                "$fasta_file" >> {output} 2> {log}
+        else 
+            echo "No mtgenome detected" >> {output}
+        fi
+        """
+
+# SHARKMER STANDARD CNIDARIAN PRIMERS
+rule sharkmer:
+    input:
+        R1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq"
+    output:
+        DIR = directory(scratchdir + "shark_results/{sample}"),        
+        STATS = scratchdir + "shark_results/{sample}/{sample}.stats"
+    params:
+        DIR = directory(scratchdir + "shark_results/"),        
+        SAMPLE = "{sample}",
+    envmodules:
+        "Biopython"
+    log:
+        OUT = "logs/sharkmer/{sample}.out",
+        ERR = "logs/sharkmer/{sample}.err"
+    shell:
+        """
+        touch {params.DIR}
+        ./sharkmer {input.R1} -k 31 -n 100 -t 1 -s {params.SAMPLE} -o {output.DIR} \
+            --pcr cnidaria \
+            --pcr metazoa \
+            --pcr bacteria 2>{log.ERR} || true
+        """
+        
+# REGO STANDARD CNIDARIAN PRIMERS
+rule rego:
+    input:
+        R1 = scratchdir + "trimmed/{sample}.R1.trimmed.fastq"
+    output:
+        DIR = directory(scratchdir + "rego_results/{sample}/"),        
+        TXT = scratchdir + "rego_results/{sample}/{sample}_16sF.txt"
+    params:
+        DIR = directory(scratchdir + "rego_results/"),        
+        REGO_PARAMS = "--before 150 --after 150 --max_hits 50",
+        SAMPLE = "{sample}",
+    log:
+        "logs/rego/{sample}.log",
+    shell:
+        """
+        touch {params.DIR}
+        python rego/rego.py GACTGTTTACCAAAAACATA {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_16sF.txt 2> {log}
+        python rego/rego.py AATTCAACATCGAGG {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_16sR.txt 2> {log}
+        python rego/rego.py TCATAAAGATATTGG {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_co1F.txt 2> {log}
+        python rego/rego.py ATGCCCGAAAAACCA {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_co1R.txt 2> {log}
+        python rego/rego.py AACCTGGTTGATCCTGCCAGT {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_18sF.txt 2> {log}
+        python rego/rego.py TGATCCTTCTGCAGGTTCACCTAC {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_18sR.txt 2> {log}
+        python rego/rego.py TACACACCGCCCGTCGCTACTA {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_ITSfullF.txt 2> {log}
+        #python rego/rego.py ACTCGCCGTTACTRRGG {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_ITSfullR.txt 2> {log}
+        #python rego/rego.py CCYYAGTAACGGCGAGT {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_28sF.txt 2> {log}
+        #python rego/rego.py SWACAGATGGTAGCTTCG {params.REGO_PARAMS} {input.R1} > {output.DIR}/{params.SAMPLE}_28sR.txt 2> {log}
+        """
+
+# WRITE REPORT
+rule report:
+    input:
+        FASTQC = scratchdir + "fastqc/{sample}",
+        KRAKEN = scratchdir + "kraken/{sample}.report.txt",
+        HUMAN = scratchdir + "human/{sample}.mapped_paired",
+        SHARK = scratchdir + "shark_results/{sample}/{sample}.stats",
+        REGO = scratchdir + "rego_results/{sample}/{sample}_16sF.txt",
+        GETORG = scratchdir + "getorganelle/{sample}_mtgenome/get_org.log.txt",
+        MITOS = scratchdir + "mitos_results/{sample}/{sample}_runinfo.txt",
+        TRNA = scratchdir + "tRNAscan_results/{sample}/{sample}_runinfo.txt"
+    output:
+        TXT = scratchdir + "QC_reports/{sample}_report.txt"
+    params:
+        SAMPLE = "{sample}",
+        N_READS = config["n_reads"]
+    log:
+        "logs/report/{sample}.log",
+    localrule: True
+    shell:
+        """
+        bash tool_scripts/illumina_QC_report.sh {params.SAMPLE} {output.TXT} {params.N_READS}
+        """
+      

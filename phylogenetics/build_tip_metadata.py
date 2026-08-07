@@ -22,7 +22,10 @@ import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.abspath(os.path.join(HERE, "..", ".."))
-PREV = os.path.expanduser("~/Downloads/physalia/data/NCBI_data.tsv")
+# The previous study's curated GenBank table, kept here so this script depends
+# only on files in this repository. Source:
+# https://github.com/shchurch/Physalia_population_genomics
+PREV = os.path.join(HERE, "previous_study_NCBI_data.tsv")
 SUB = os.path.join(DATA, "Physalia_mitogenomes_GenBank_submission")
 
 # GenBank locality -> ocean. NCBI renamed the `country` source qualifier to
