@@ -24,14 +24,16 @@ import sys
 import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.abspath(os.path.join(HERE, "..", ".."))
+ROOT = os.path.abspath(os.path.join(HERE, ".."))   # phylogenetics/
+REPO = os.path.abspath(os.path.join(ROOT, ".."))        # repository root
+WORK = os.path.abspath(os.path.join(REPO, ".."))        # working folder above it
 # Metadata from the mitogenome GenBank submission. Vendored here so this script
 # depends only on files in this repository; the full submission bundle, including
 # the sequence and annotation files, is not distributed.
-SUB = os.path.join(HERE, "mitogenome_submission")
+SUB = os.path.join(ROOT, "mitogenome_submission")
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--out", default=os.path.join(DATA, "Physalia_genes_GenBank_submission"))
+ap.add_argument("--out", default=os.path.join(WORK, "Physalia_genes_GenBank_submission"))
 args = ap.parse_args()
 
 ACC = re.compile(r"^[A-Z]{1,2}[0-9_]+\.\d")
@@ -134,7 +136,7 @@ for line in open(os.path.join(SUB, "Physalia_mitogenomes_species.tsv"), errors="
     p = line.rstrip("\n").split("\t")
     if len(p) > 1:
         species[p[0].replace("_annotation", "")] = p[1]
-ont_path = os.path.join(HERE, "ont_species_assignments.tsv")
+ont_path = os.path.join(ROOT, "ont_species_assignments.tsv")
 if os.path.exists(ont_path):
     for r in read_tsv(ont_path):
         species.setdefault(r["sample"], r["species"])
@@ -153,7 +155,7 @@ ST_HELENA = {"YPM-IZ-115977", "YPM-IZ-115978", "YPM-IZ-115980",
 mito_src = {r["Sequence_ID"].replace("_annotation", ""): r
             for r in read_tsv(os.path.join(SUB, "Physalia_mitogenomes_sourcemodifiers_accessioned.tsv"))}
 tables = {}
-for path in (os.path.join(DATA, "data", "sample_ids.tsv"), os.path.join(DATA, "data", "SEA.tsv")):
+for path in (os.path.join(REPO, "data", "sample_ids.tsv"), os.path.join(REPO, "data", "SEA.tsv")):
     for r in read_tsv(path):
         sid = (r.get("ID") or "").strip()
         if sid:
@@ -188,7 +190,7 @@ def source_row(sid):
 # ------------------------------------------------------------------ build ----
 os.makedirs(args.out, exist_ok=True)
 its_tbl = {}
-tbl_path = os.path.join(HERE, "ITS.tbl")
+tbl_path = os.path.join(ROOT, "ITS.tbl")
 if os.path.exists(tbl_path):
     cur = None
     for line in open(tbl_path):
@@ -200,7 +202,7 @@ if os.path.exists(tbl_path):
 
 summary = []
 for locus in LOCI:
-    fa = read_fasta(os.path.join(HERE, "gene_trees", f"{locus}.all.fasta"))
+    fa = read_fasta(os.path.join(ROOT, "gene_trees", f"{locus}.all.fasta"))
     ids = [k for k in fa if not ACC.match(k)]
     if locus in MITO_LOCI:
         ids = [k for k in ids if k not in deposited and k not in MITO_GENE_EXCLUDE]
