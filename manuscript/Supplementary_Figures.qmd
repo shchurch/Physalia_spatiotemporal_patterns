@@ -27,13 +27,7 @@ shared-traits sentence cites both Fig. S4 and Fig. S6 -- that's what pulls the
 Indonesia figure's number earlier than the multitentacled-utriculus placeholder
 right after it. -->
 
-::: {#fig-s1}
-
-\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
-
-**Effort-corrected seasonal abundance for _P. utriculus_ in Southern Africa.** Not yet generated (TODO-2).
-
-:::
+![**Effort-corrected seasonal abundance for _P. utriculus_ in Southern Africa.** Counts of _P. utriculus_ observations by day of year, in the region bounded by 5-45 deg E and 0-40 deg S. From top: the baseline of abundant beach species (hermit crabs and echinoderms) used as a proxy for observer activity; unweighted _P. utriculus_ counts; and the same counts corrected for observer effort on a daily and on a seasonal basis. The anomalous peak near the 116th day of the year appears in both the baseline and the unweighted counts, and corresponds to a local holiday rather than to a peak in abundance. It is removed by either correction, after which the underlying seasonal trend is clearer.](../figures/panels/norm_hist_utriculus_5_45_-40_0.pdf){#fig-s1 width=100%}
 
 \newpage
 
