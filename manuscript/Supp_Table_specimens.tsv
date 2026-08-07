@@ -1,10 +1,10 @@
 ID	source	specimen_ID	ocean	location	site	lat_long	date_collected	collection_ID	collector	permit	collection_status	sequencing_status	YCGA_ID	date_seq	resequencing_note	preservation	WGS_SRA_accession	mitogenome_accession
 FM-16644	Church et al. 2025		NE Atlantic	Canary Islands	La Palma	28.591940, -17.920910	5/14/2023		Tauana Cunha, Juan Moles		high quality	sequenced	FM16644	10/16/23			SRR28498736	PZ224317
-TMAG-K5632	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	resequenced	KM5632	10/20/23	originally sequenced 6/18/23		SRR28498728	PZ224322
-TMAG-K5633	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	resequenced	KM5633	10/20/23	originally sequenced 6/18/23		SRR28498727	PZ224323
-TMAG-K5634	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5634	6/18/23			SRR28498726	PZ224324
-TMAG-K5635	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5635	8/19/23			SRR28498785	PZ224325
-TMAG-K5636	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5636	8/19/23			SRR28498784	PZ224326
+TMAG-KM5632	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	resequenced	KM5632	10/20/23	originally sequenced 6/18/23		SRR28498728	PZ224322
+TMAG-KM5633	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	resequenced	KM5633	10/20/23	originally sequenced 6/18/23		SRR28498727	PZ224323
+TMAG-KM5634	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5634	6/18/23			SRR28498726	PZ224324
+TMAG-KM5635	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5635	8/19/23			SRR28498785	PZ224325
+TMAG-KM5636	Church et al. 2025		SW Pacific	Tasmania	Bicheno: Redbill Beach	-41.863900, 148.286500	1/14/2023		N. G. Wilson		moderate quality	sequenced	KM5636	8/19/23			SRR28498784	PZ224326
 WAM-Z88480	Church et al. 2025		E Indian	Western Australia	Peasholm Dog Beach, Scarborough	-31.908144, 115.754811	8/3/2018	NA	K. Tullis		high quality	resequenced	Z88480	10/15/23	originally sequenced 9/14/23		SRR28498838	PZ224327
 WAM-Z97900	Church et al. 2025	WA 1	E Indian	Western Australia	North Beach, Perth	-31.855786, 115.751741	4/19/2019	WA 1	N. G. Wilson, N. Tatarnic		high quality	sequenced	Z97900	9/14/23			SRR28498837	PZ224328
 WAM-Z97901	Church et al. 2025	WA 2	E Indian	Western Australia	North Beach, Perth	-31.855786, 115.751741	4/19/2019	WA 2	N. G. Wilson, N. Tatarnic		high quality	sequenced	Z97901	9/14/23			SRR28498836	PZ224329
