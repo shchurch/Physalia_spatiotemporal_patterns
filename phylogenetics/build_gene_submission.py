@@ -32,8 +32,35 @@ ap.add_argument("--out", default=os.path.join(DATA, "Physalia_genes_GenBank_subm
 args = ap.parse_args()
 
 ACC = re.compile(r"^[A-Z]{1,2}[0-9_]+\.\d")
-LOCI = ("16S", "18S", "CO1", "ITS")
-MITO_LOCI = {"16S", "CO1"}   # already inside the deposited mitogenomes
+
+# Excluded from the mitochondrial gene submissions (CO1, 16S). Their cox1 and
+# rrnL are derived from mitogenome assemblies that are not being released, so
+# releasing the genes from them would publish annotation we have withheld.
+#
+# YPM-IZ-104465  its mitogenome is already public as OQ957220.1 (2023). Our cox1
+#                is 100% identical to that record's and rrnL 99.94%, so these
+#                would be duplicates of existing GenBank data.
+# YPM-IZ-111760  the two longest Illumina assemblies, ranks 1 and 2 of 171, each
+# YPM-IZ-110972  ~420 bp over the 15037 bp modal length, with annotation tables
+#                that do not behave like the rest. Deliberately withheld from the
+#                mitogenome submission; see issue #17.
+MITO_GENE_EXCLUDE = {"YPM-IZ-104465", "YPM-IZ-111760", "YPM-IZ-110972"}
+# Only the nuclear loci are submitted.
+#
+# The mitochondrial loci were prepared and then withdrawn. After excluding the
+# samples whose mitogenomes are already public or deliberately withheld, all
+# that remained were the SEA2025 cruise samples -- and their mitochondrial data
+# does not meet the bar in either form. Their ONT mitogenome assemblies were not
+# good enough to deposit, and the sharkmer COI barcodes are no better: four of
+# six needed codon_start 2 to translate at all, and two carried internal stop
+# codons in every frame under translation table 4.
+#
+# Species identification for those samples therefore rests on the mitogenome
+# identification tree, which is provided in this repository as alignment and
+# treefiles rather than as GenBank records. The SEA2025 samples are represented
+# in GenBank through ITS and 18S, which are clean.
+LOCI = ("18S", "ITS")
+MITO_LOCI = {"16S", "CO1"}   # retained for the exclusion logic below
 
 # Free-text region names for the open-ocean cruise samples, which have no
 # country. NCBI accepts ocean names in geo_loc_name.
@@ -173,7 +200,7 @@ for locus in LOCI:
     fa = read_fasta(os.path.join(HERE, "gene_trees", f"{locus}.all.fasta"))
     ids = [k for k in fa if not ACC.match(k)]
     if locus in MITO_LOCI:
-        ids = [k for k in ids if k not in deposited]
+        ids = [k for k in ids if k not in deposited and k not in MITO_GENE_EXCLUDE]
     ids.sort()
     if not ids:
         continue
@@ -211,9 +238,9 @@ for locus in LOCI:
                 fh.write(f">Feature {sid}\n")
                 fh.write(f"<1\t>{n}\t{product[0]}\n")
                 fh.write(f"\t\t\tproduct\t{product[1]}\n")
-                if locus == "CO1":
-                    # cnidarian mitochondrial code
-                    fh.write("\t\t\ttransl_table\t4\n")
+                # transl_table is deliberately not declared. The mitogenome
+                # submission omits it too -- translation table 4 is applied from
+                # the organism's taxonomy rather than stated in the table.
 
     miss = {c: sum(1 for r in rows if not r[c]) for c in cols if c != "Sequence_ID"}
     miss = {k: v for k, v in miss.items() if v}

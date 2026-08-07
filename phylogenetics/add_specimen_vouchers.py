@@ -38,16 +38,17 @@ args = ap.parse_args()
 #   WAM-Z97900    -> WAM:Z97900         Western Australian Museum
 #   TMAG-K5632    -> TMAG:K5632         Tasmanian Museum and Art Gallery
 #   NIWA-173304   -> NIWA:173304        NIWA Invertebrate Collection
+#   FM-16644      -> FMNH:16644         Field Museum of Natural History
 #
 # Deliberately NOT vouchered:
 #   SEA2025-*  cruise samples, no museum accession
 #   OA-*       field collections, no museum accession
-#   FM-16644   institution code unconfirmed -- see the note in the README
 RULES = [
     (re.compile(r"^YPM-IZ-(\d+)$"),   lambda m: f"YPM:IZ:{m.group(1)}"),
     (re.compile(r"^WAM-(Z?\d+)$"),    lambda m: f"WAM:{m.group(1)}"),
     (re.compile(r"^TMAG-(\S+)$"),     lambda m: f"TMAG:{m.group(1)}"),
     (re.compile(r"^NIWA-(\d+)$"),     lambda m: f"NIWA:{m.group(1)}"),
+    (re.compile(r"^FM-(\d+)$"),       lambda m: f"FMNH:{m.group(1)}"),
 ]
 
 
