@@ -1,0 +1,95 @@
+scratchdir: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/" # for writing results
+kraken_db: "/gpfs/gibbs/data/kraken2/standard" # standard contaminant database
+human_bwa: "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa" # human genome
+mitos_refdir: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/mitos_reference/"
+mitos_refname: "refseq89m"
+trna_gcode: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/gcode.invmito" # trna coding for invertebrate mitochondrial seqs
+n_reads: 1000000 # number of subset reads to use
+mito_seed: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/siph_NCBI_RefSeq_mtgenome.fasta" # local database of siphonophore mt genomes
+
+sample:
+    SEA2025-Ph201:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph201.fastq
+    SEA2025-Ph209:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph209.fastq
+    SEA2025-Ph214:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph214.fastq
+    SEA2025-Ph221:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph221.fastq
+    SEA2025-Ph227:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph227.fastq
+    SEA2025-Ph239:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph239.fastq
+    SEA2025-Ph250:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph250.fastq
+    SEA2025-Ph255:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph255.fastq
+    SEA2025-Ph259:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph259.fastq
+    SEA2025-Ph264:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph264.fastq
+    SEA2025-Ph268:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph268.fastq
+    SEA2025-Ph271:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph271.fastq
+    SEA2025-Ph273:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph273.fastq
+    SEA2025-Ph277:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph277.fastq
+    SEA2025-Ph203:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph203.fastq
+    SEA2025-Ph211:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph211.fastq
+    SEA2025-Ph218:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph218.fastq
+    SEA2025-Ph225:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph225.fastq
+    SEA2025-Ph233:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph233.fastq
+    SEA2025-Ph240:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph240.fastq
+    SEA2025-Ph252:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph252.fastq
+    SEA2025-Ph256:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph256.fastq
+    SEA2025-Ph262:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph262.fastq
+    SEA2025-Ph265:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph265.fastq
+    SEA2025-Ph270:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph270.fastq
+    SEA2025-Ph272:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph272.fastq
+    SEA2025-Ph276:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph276.fastq
+    SEA2025-Ph278:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/20250707_SarahKingston_PhysaliaWGS/Ph278.fastq
+

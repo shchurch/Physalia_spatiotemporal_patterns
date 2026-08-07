@@ -9,11 +9,15 @@
 # Run from this directory:
 #   Rscript plot_trees.R
 
-# ggtree/phytools are installed in the renv library of the working folder that
-# contains this clone, not in the system library. Add it if it is there.
-for (lib in Sys.glob(file.path("~/Downloads/Physalia_spatiotemporal",
-                               "renv", "library", "*", "*", "*"))) {
-  if (dir.exists(file.path(lib, "ggtree"))) .libPaths(c(lib, .libPaths()))
+# ggtree/phytools may live in an renv library rather than the system library.
+# Look in this repository first, then in the folder containing it, so the
+# script works both from a standalone clone and from the original working
+# folder. Override with PHYSALIA_RENV if the library is somewhere else.
+for (root in c(Sys.getenv("PHYSALIA_RENV"), "..", "../..")) {
+  if (!nzchar(root)) next
+  for (lib in Sys.glob(file.path(root, "renv", "library", "*", "*", "*"))) {
+    if (dir.exists(file.path(lib, "ggtree"))) .libPaths(c(lib, .libPaths()))
+  }
 }
 
 suppressPackageStartupMessages({
@@ -54,17 +58,20 @@ ocean_cols <- c(
   "W Indian"           = "#66C2A5"
 )
 
-# Trees published in the previous manuscript, used to mark which tips are new
-# here. Squares = new to this study, circles = also in the previous trees.
-PREV_TREES <- c(
-  "16S" = "~/Downloads/physalia/results/iqtree/16S.aln.fasta.treefile",
-  "18S" = "~/Downloads/physalia/results/iqtree/18S.aln.fasta.treefile",
-  "CO1" = "~/Downloads/physalia/results/iqtree/CO1.aln.fasta.treefile",
-  "ITS" = "~/Downloads/physalia/results/iqtree/ITS.aln.fasta.treefile",
-  "mitogenome_submitted"      = "~/Downloads/physalia/results/iqtree/mito.aln.fa.treefile",
-  "mitogenome_submitted_rooted" = "~/Downloads/physalia/results/iqtree/mito.aln.fa.treefile",
-  "mitogenome_identification" = "~/Downloads/physalia/results/iqtree/mito.aln.fa.treefile"
-)
+# Tips that appeared in the previous manuscript's trees, used to mark which are
+# new here. Squares = new to this study, circles = also in the previous trees.
+#
+# The tip sets are recorded in previous_study_tips.tsv rather than read from the
+# previous study's treefiles, so that this script depends only on files in this
+# repository. Those treefiles are available from
+# https://github.com/shchurch/Physalia_population_genomics
+# and the labels here were extracted from them, normalised as normalise() below.
+# Labels in the file are already normalised; only the version suffix is dropped
+# here, matching what the old code did after reading each treefile.
+PREV_TIPS <- local({
+  x <- read.delim("previous_study_tips.tsv", header = TRUE, stringsAsFactors = FALSE)
+  split(sub("\\.\\d+$", "", x$tip), x$tree)
+})
 
 `%||%` <- function(a, b) if (is.null(a) || is.na(a)) b else a
 
@@ -106,12 +113,7 @@ plot_tree <- function(tree_file, name, height = 20, width = 11) {
   }, error = function(e) { message("  rooting failed for ", name, ", using midpoint"); phytools::midpoint.root(tr) })
 
   # Which tips also appeared in the previous manuscript's tree for this locus.
-  prev_tips <- character(0)
-  pf <- path.expand(PREV_TREES[[name]] %||% "")
-  if (nzchar(pf) && file.exists(pf)) {
-    prev_tips <- normalise(read.tree(pf)$tip.label)
-    prev_tips <- sub("\\.\\d+$", "", prev_tips)
-  }
+  prev_tips <- if (is.null(PREV_TIPS[[name]])) character(0) else PREV_TIPS[[name]]
   is_prev <- function(x) sub("\\.\\d+$", "", x) %in% prev_tips
 
   d <- meta %>%
