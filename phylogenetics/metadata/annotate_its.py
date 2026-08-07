@@ -30,13 +30,14 @@ from Bio import Align
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+ROOT = os.path.abspath(os.path.join(HERE, ".."))   # phylogenetics/
 ap = argparse.ArgumentParser()
-ap.add_argument("--its", default=os.path.join(HERE, "gene_trees", "ITS.all.fasta"))
+ap.add_argument("--its", default=os.path.join(ROOT, "gene_trees", "ITS.all.fasta"))
 ap.add_argument("--probe-18s", default="/tmp/18S_probe_trim.fasta")
 ap.add_argument("--probe-58s", default="/tmp/58S_probe.fasta")
 ap.add_argument("--probe-28s", default="/tmp/28S_probe_trim.fasta")
-ap.add_argument("--out-tsv", default=os.path.join(HERE, "its_boundaries.tsv"))
-ap.add_argument("--out-tbl", default=os.path.join(HERE, "ITS.tbl"))
+ap.add_argument("--out-tsv", default=os.path.join(ROOT, "its_boundaries.tsv"))
+ap.add_argument("--out-tbl", default=os.path.join(ROOT, "ITS.tbl"))
 ap.add_argument("--min-score", type=float, default=60.0,
                 help="minimum local alignment score for a probe hit to be trusted")
 ap.add_argument("--min-28s", type=int, default=50,
