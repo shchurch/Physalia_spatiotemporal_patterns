@@ -1,0 +1,1077 @@
+scratchdir: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/" # for writing results
+kraken_db: "/gpfs/gibbs/data/kraken2/standard" # standard contaminant database
+human_bwa: "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa" # human genome
+mitos_refdir: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/mitos_reference/"
+mitos_refname: "refseq89m"
+trna_gcode: "gcode.invmito" # trna coding for invertebrate mitochondrial seqs
+n_reads: 10000000 # number of subset reads to use
+mito_seed: "/gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/siph_NCBI_RefSeq_mtgenome.fasta" # local database of siphonophore mt genomes
+
+sample:
+    YPM-IZ-111759:
+        reads:
+                 - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111759_137_056/YPM-111759_137_056_S58_L003_R1_001.fastq.gz
+                 - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111759_137_056/YPM-111759_137_056_S58_L003_R2_001.fastq.gz
+    YPM-IZ-111760:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111760_125_068/YPM-111760_125_068_S59_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111760_125_068/YPM-111760_125_068_S59_L003_R2_001.fastq.gz
+    YPM-IZ-111814:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111814_113_080/YPM-111814_113_080_S60_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111814_113_080/YPM-111814_113_080_S60_L003_R2_001.fastq.gz
+    YPM-IZ-111819:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111819_101_092/YPM-111819_101_092_S61_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111819_101_092/YPM-111819_101_092_S61_L003_R2_001.fastq.gz
+    YPM-IZ-111820:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111820_184_009/YPM-111820_184_009_S62_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111820_184_009/YPM-111820_184_009_S62_L003_R2_001.fastq.gz
+    YPM-IZ-111220:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111220_172_021/YPM-111220_172_021_S63_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111220_172_021/YPM-111220_172_021_S63_L003_R2_001.fastq.gz
+    YPM-IZ-111261:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111261_160_033/YPM-111261_160_033_S64_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111261_160_033/YPM-111261_160_033_S64_L003_R2_001.fastq.gz
+    YPM-IZ-111256:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111256_148_045/YPM-111256_148_045_S65_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111256_148_045/YPM-111256_148_045_S65_L003_R2_001.fastq.gz
+    WAM-Z97909:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_WAMZ97909_136_057/WAMZ97909_136_057_S66_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_WAMZ97909_136_057/WAMZ97909_136_057_S66_L003_R2_001.fastq.gz
+    YPM-IZ-111231:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111231_124_069/YPM-111231_124_069_S67_L003_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111231_124_069/YPM-111231_124_069_S67_L003_R2_001.fastq.gz
+    YPM-IZ-111806:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111806_113_080/111806_113_080_S221_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111806_113_080/111806_113_080_S221_L004_R2_001.fastq.gz
+    YPM-IZ-111813:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111813_112_081/111813_112_081_S222_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111813_112_081/111813_112_081_S222_L004_R2_001.fastq.gz
+    YPM-IZ-111816:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111816_100_093/111816_100_093_S223_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111816_100_093/111816_100_093_S223_L004_R2_001.fastq.gz
+    YPM-IZ-111822:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111822_101_092/111822_101_092_S224_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111822_101_092/111822_101_092_S224_L004_R2_001.fastq.gz
+    YPM-IZ-111825:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111825_183_010/111825_183_010_S225_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111825_183_010/111825_183_010_S225_L004_R2_001.fastq.gz
+    YPM-IZ-106715:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-106715_272_305/YPM-IZ-106715_272_305_S48_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-106715_272_305/YPM-IZ-106715_272_305_S48_L004_R2_001.fastq.gz
+    YPM-IZ-112408:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112408_236_341/YPM-IZ-112408_236_341_S49_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112408_236_341/YPM-IZ-112408_236_341_S49_L004_R2_001.fastq.gz
+    YPM-IZ-112063:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112063_224_353/YPM-IZ-112063_224_353_S50_L004_R1_001.fastq.gz 
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112063_224_353/YPM-IZ-112063_224_353_S50_L004_R2_001.fastq.gz
+    YPM-IZ-112070:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112070_212_365/YPM-IZ-112070_212_365_S51_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112070_212_365/YPM-IZ-112070_212_365_S51_L004_R2_001.fastq.gz
+    YPM-IZ-112064:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112064_200_377/YPM-IZ-112064_200_377_S52_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112064_200_377/YPM-IZ-112064_200_377_S52_L004_R2_001.fastq.gz
+    YPM-IZ-112371:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112371_283_294/YPM-IZ-112371_283_294_S53_L004_R1_001.fastq.gz
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-112371_283_294/YPM-IZ-112371_283_294_S53_L004_R2_001.fastq.gz
+    YPM-IZ-106933:
+        reads:
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-106933_271_306/YPM-IZ-106933_271_306_S54_L004_R1_001.fastq.gz 
+             - /gpfs/ycga/work/dunn/sequences/illumina/formalin_extractions_2025/Sample_YPM-IZ-106933_271_306/YPM-IZ-106933_271_306_S54_L004_R2_001.fastq.gz
+#    YPM-IZ-110743:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110743_148_045/YPM110743_148_045_S306_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110743_148_045/YPM110743_148_045_S306_L004_R2_001.fastq.gz
+#    YPM-IZ-110748:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110748_136_057/YPM110748_136_057_S307_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110748_136_057/YPM110748_136_057_S307_L004_R2_001.fastq.gz
+#    YPM-IZ-110753:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110753_124_069/YPM110753_124_069_S308_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110753_124_069/YPM110753_124_069_S308_L004_R2_001.fastq.gz
+#    YPM-IZ-110755:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110755_112_081/YPM110755_112_081_S309_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110755_112_081/YPM110755_112_081_S309_L004_R2_001.fastq.gz
+#    YPM-IZ-110756:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110756_100_093/YPM110756_100_093_S310_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/physalis_eastern_novaseq_2025/Sample_YPM110756_100_093/YPM110756_100_093_S310_L004_R2_001.fastq.gz
+#    Sample-AF-11:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_11_169_024/AF_11_169_024_S115_L007_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_11_169_024/AF_11_169_024_S115_L007_R1_001.fastq.gz
+#    Sample-AF-12:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_12/AF_12_S1_L002_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_12/AF_12_S1_L002_R1_001.fastq.gz
+#    Sample-AF-13:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_13/AF_13_S11_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_13/AF_13_S11_L003_R1_001.fastq.gz
+#    Sample-AF-15:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_15/AF_15_S12_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_15/AF_15_S12_L003_R1_001.fastq.gz
+#    Sample-AF-16:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_16/AF_16_S1_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_16/AF_16_S1_L003_R1_001.fastq.gz
+#    Sample-AF-17:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_17/AF_17_S2_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_17/AF_17_S2_L003_R1_001.fastq.gz
+#    Sample-AF-18:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_18/AF_18_S3_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_18/AF_18_S3_L003_R1_001.fastq.gz
+#    Sample-AF-19:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_19_259_318/AF_19_259_318_S190_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_19_259_318/AF_19_259_318_S190_L004_R1_001.fastq.gz
+#    Sample-AF-20:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_20_247_330/AF_20_247_330_S191_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_20_247_330/AF_20_247_330_S191_L004_R1_001.fastq.gz
+#    Sample-AF-21:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_21_235_342/AF_21_235_342_S192_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_21_235_342/AF_21_235_342_S192_L004_R1_001.fastq.gz
+#    Sample-AF-22:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_22_223_354/AF_22_223_354_S193_L004_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_22_223_354/AF_22_223_354_S193_L004_R1_001.fastq.gz
+#    Sample-AF-23:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_23/AF_23_S4_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_23/AF_23_S4_L003_R1_001.fastq.gz
+#    Sample-AF-24:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_24/AF_24_S2_L002_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_24/AF_24_S2_L002_R1_001.fastq.gz
+#    Sample-AF-25:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_25/AF_25_S6_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_25/AF_25_S6_L003_R1_001.fastq.gz
+#    Sample-AF-26:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_26/AF_26_S7_L003_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_26/AF_26_S7_L003_R1_001.fastq.gz
+#    Sample-AF-27:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_27/AF_27_S3_L002_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_27/AF_27_S3_L002_R1_001.fastq.gz
+#    Sample-AF-28:
+#        reads:
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_28/AF_28_S4_L002_R1_001.fastq.gz
+#             - /gpfs/ycga/work/dunn/sequences/illumina/Agalmatidae_novaseq_2024/Sample_AF_28/AF_28_S4_L002_R1_001.fastq.gz
+#    YPM-IZ-111839:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_S238-015_102_091/S238-015_102_091_S2_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_S238-015_102_091/S238-015_102_091_S2_L008_R2_001.fastq.gz
+#    YPM-IZ-106943:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_Bermuda_67_162_031/67_162_031_S30_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_Bermuda_67_162_031/67_162_031_S30_L004_R2_001.fastq.gz
+#    YPM-IZ-110436:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_YPM-IZ-110436_185_008/YPM-IZ-110436_185_008_S111_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_YPM-IZ-110436_185_008/YPM-IZ-110436_185_008_S111_L001_R2_001.fastq.gz
+#    YPM-IZ-110877:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_GoCJUN6_195_382/GoCJUN6_195_382_S104_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_GoCJUN6_195_382/GoCJUN6_195_382_S104_L004_R2_001.fastq.gz
+#    YPM-IZ-111013:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq7_2023/Sample_111013_180_013/111013_180_013_S45_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq7_2023/Sample_111013_180_013/111013_180_013_S45_L004_R2_001.fastq.gz
+#    NIWA-173304:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq8_2023/Sample_CWD_NZ35_122_071/CWD_NZ35_122_071_S67_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq8_2023/Sample_CWD_NZ35_122_071/CWD_NZ35_122_071_S67_L002_R2_001.fastq.gz
+#    NIWA-173305:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq8_2023/Sample_CWD_NZ36_170_023/CWD_NZ36_170_023_S85_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq8_2023/Sample_CWD_NZ36_170_023/CWD_NZ36_170_023_S85_L003_R2_001.fastq.gz
+#    TMAG-K5633:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5633_150_043/KM5633_150_043_S66_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5633_150_043/KM5633_150_043_S66_L003_R2_001.fastq.gz
+#    TMAG-K5634:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5634_126_067/KM5634_126_067_S67_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5634_126_067/KM5634_126_067_S67_L003_R2_001.fastq.gz
+#    TMAG-K5635:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq3_2023/Sample_KM5635_128_065/KM5635_128_065_S5_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq3_2023/Sample_KM5635_128_065/KM5635_128_065_S5_L003_R2_001.fastq.gz
+#    TMAG-K5636:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq3_2023/Sample_KM5636_116_077/KM5636_116_077_S6_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq3_2023/Sample_KM5636_116_077/KM5636_116_077_S6_L003_R2_001.fastq.gz
+#    FM16644:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_FM16644_153_040/FM16644_153_040_S7_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_FM16644_153_040/FM16644_153_040_S7_L004_R2_001.fastq.gz
+#    TMAG-K5632:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5632_138_055/KM5632_138_055_S65_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_KM5632_138_055/KM5632_138_055_S65_L003_R2_001.fastq.gz
+#    WAM-Z88480:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z88480_170_023/Z88480_170_023_S23_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z88480_170_023/Z88480_170_023_S23_L002_R2_001.fastq.gz
+#    WAM-Z97900:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97900_158_035/Z97900_158_035_S24_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97900_158_035/Z97900_158_035_S24_L002_R2_001.fastq.gz
+#    WAM-Z97901:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97901_146_047/Z97901_146_047_S25_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97901_146_047/Z97901_146_047_S25_L002_R2_001.fastq.gz
+#    WAM-Z97902:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97902_152_041/Z97902_152_041_S1_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97902_152_041/Z97902_152_041_S1_L001_R2_001.fastq.gz
+#    WAM-Z97903:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97903_134_059/Z97903_134_059_S26_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97903_134_059/Z97903_134_059_S26_L002_R2_001.fastq.gz
+#    WAM-Z97906:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97906_122_071/Z97906_122_071_S27_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97906_122_071/Z97906_122_071_S27_L002_R2_001.fastq.gz
+#    WAM-Z97907:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97907_140_053/Z97907_140_053_S2_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97907_140_053/Z97907_140_053_S2_L001_R2_001.fastq.gz
+#    WAM-Z97908:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97908_128_065/Z97908_128_065_S3_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97908_128_065/Z97908_128_065_S3_L001_R2_001.fastq.gz
+#    WAM-Z97910:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97910_116_077/Z97910_116_077_S4_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97910_116_077/Z97910_116_077_S4_L001_R2_001.fastq.gz
+#    WAM-Z97911:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97911_104_089/Z97911_104_089_S5_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97911_104_089/Z97911_104_089_S5_L001_R2_001.fastq.gz
+#    WAM-Z97914:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97914_187_006/Z97914_187_006_S6_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97914_187_006/Z97914_187_006_S6_L003_R2_001.fastq.gz
+#    WAM-Z97916:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/RELABEL_Sample_Z97916/Z97916_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/RELABEL_Sample_Z97916/Z97916_L001_R2_001.fastq.gz
+#    WAM-Z97917:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97917_188_005/Z97917_188_005_S12_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/Sample_Z97917_188_005/Z97917_188_005_S12_L004_R2_001.fastq.gz
+#    WAM-Z97920:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97920_110_083/Z97920_110_083_S28_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97920_110_083/Z97920_110_083_S28_L003_R2_001.fastq.gz
+#    WAM-Z97921:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97921_098_095/Z97921_098_095_S29_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq4_2023/Sample_Z97921_098_095/Z97921_098_095_S29_L003_R2_001.fastq.gz
+#    WAM-Z97923:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/RELABEL_Sample_Z97923/Z97923_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq5_2023/RELABEL_Sample_Z97923/Z97923_L001_R2_001.fastq.gz
+#    YPM-IZ-104460:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_G104460_208_369/G104460_208_369_S8_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_G104460_208_369/G104460_208_369_S8_L001_R2_001.fastq.gz
+#    YPM-IZ-104461:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_G104461_196_381/G104461_196_381_S9_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_G104461_196_381/G104461_196_381_S9_L001_R2_001.fastq.gz
+#    YPM-IZ-104464:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA24_164_029/NA24_164_029_S8_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA24_164_029/NA24_164_029_S8_L002_R2_001.fastq.gz
+#    YPM-IZ-106919:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_2gDNA_279_298/2gDNA_279_298_S10_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq2_2023/Sample_2gDNA_279_298/2gDNA_279_298_S10_L001_R2_001.fastq.gz
+#    YPM-IZ-106920:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_3_Japan_138_055/3gDNA_138_055_S32_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_3_Japan_138_055/3gDNA_138_055_S32_L004_R2_001.fastq.gz
+#    YPM-IZ-106923:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_6_Japan_126_067/6gDNA_126_067_S33_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq_2023/Sample_6_Japan_126_067/6gDNA_126_067_S33_L004_R2_001.fastq.gz
+#    SRR1548354:
+#        SRA:
+#            - SRR1548354
+#    SRR1548355:
+#        SRA:
+#            - SRR1548355
+#    SRR1548356:
+#        SRA:
+#            - SRR1548356
+#    SRR1548357:
+#        SRA:
+#            - SRR1548357
+#    SRR1548358:
+#        SRA:
+#            - SRR1548358
+#    SRR1548359:
+#        SRA:
+#            - SRR1548359
+#    SRR1548360:
+#        SRA:
+#            - SRR1548360
+#    SRR1548361:
+#        SRA:
+#            - SRR1548361
+#    SRR1548362:
+#        SRA:
+#            - SRR1548362
+#    SRR1548371:
+#        SRA:
+#            - SRR1548371
+#    SRR1548372:
+#        SRA:
+#            - SRR1548372
+#    SRR1548374:
+#        SRA:
+#            - SRR1548374
+#    SRR1548375:
+#        SRA:
+#            - SRR1548375
+#    SRR1548376:
+#        SRA:
+#            - SRR1548376
+#    SRR1548377:
+#        SRA:
+#            - SRR1548377
+#    SRR1548383:
+#        SRA:
+#            - SRR1548383
+#    SRR1548384:
+#        SRA:
+#            - SRR1548384
+#    SRR27211523:
+#        SRA:
+#            - SRR27211523
+#    SRR6512850:
+#        SRA:
+#            - SRR6512850
+#    SRR6512852:
+#        SRA:
+#            - SRR6512852
+#    SRR6512858:
+#        SRA:
+#            - SRR6512858
+#    SRR6512859:
+#        SRA:
+#            - SRR6512859
+#    SRR6512865:
+#        SRA:
+#            - SRR6512865
+#    SRR871527:
+#        SRA:
+#            - SRR871527
+#    SRR871528:
+#        SRA:
+#            - SRR871528
+#    SRR871529:
+#        SRA:
+#            - SRR871529
+#    SRR14670555:
+#        SRA: 
+#            - SRR14670555
+#    SRR6232790:
+#        SRA:
+#            - SRR6232790
+#    SRR6232791:
+#        SRA:
+#            - SRR6232791
+#    SRR8116635:
+#        SRA:
+#            - SRR8116635
+#    VF041603:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD12_098_095/CWD12_098_095_S8_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD12_098_095/CWD12_098_095_S8_L001_R2_001.fastq.gz
+#    OC394-5-4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD117_160_033/CWD117_160_033_S14_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD117_160_033/CWD117_160_033_S14_L001_R2_001.fastq.gz
+#    D199-SS8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA9_099_094/NA9_099_094_S29_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA9_099_094/NA9_099_094_S29_L001_R2_001.fastq.gz
+#    V4355-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA7_123_070/NA7_123_070_S27_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA7_123_070/NA7_123_070_S27_L001_R2_001.fastq.gz
+#    V4355-SS6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA6_135_058/NA6_135_058_S26_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA6_135_058/NA6_135_058_S26_L001_R2_001.fastq.gz
+#    D1399-D12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA5_147_046/NA5_147_046_S25_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA5_147_046/NA5_147_046_S25_L001_R2_001.fastq.gz
+#    JSL3272D1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD11_146_047/CWD11_146_047_S7_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD11_146_047/CWD11_146_047_S7_L001_R2_001.fastq.gz
+#    D1398-SS11:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA4_159_034/NA4_159_034_S134_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA4_159_034/NA4_159_034_S134_L004_R2_001.fastq.gz
+#    D1399-D5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA3_171_022/NA3_171_022_S23_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA3_171_022/NA3_171_022_S23_L001_R2_001.fastq.gz
+#    D1399-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA2_183_010/NA2_183_010_S22_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA2_183_010/NA2_183_010_S22_L001_R2_001.fastq.gz
+#    T845-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA11_170_023/NA11_170_023_S31_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA11_170_023/NA11_170_023_S31_L001_R2_001.fastq.gz
+#    T987-D2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA10_182_011/NA10_182_011_S30_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA10_182_011/NA10_182_011_S30_L001_R2_001.fastq.gz
+#    OC381-9-4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD7_158_035/CWD7_158_035_S6_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD7_158_035/CWD7_158_035_S6_L001_R2_001.fastq.gz
+#    OC379-16-20:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD6_184_009/CWD6_184_009_S5_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD6_184_009/CWD6_184_009_S5_L001_R2_001.fastq.gz
+#    OC381-5-5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD3_101_092/CWD3_101_092_S4_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD3_101_092/CWD3_101_092_S4_L001_R2_001.fastq.gz
+#    OC381-22-18:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD21_157_036/CWD21_157_036_S11_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD21_157_036/CWD21_157_036_S11_L001_R2_001.fastq.gz
+#    MBARI-OC:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD20_169_024/CWD20_169_024_S10_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD20_169_024/CWD20_169_024_S10_L001_R2_001.fastq.gz
+#    OC381-7-27:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD2_110_083/CWD2_110_083_S113_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD2_110_083/CWD2_110_083_S113_L004_R2_001.fastq.gz
+#    OC381-3-20:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD17_181_012/CWD17_181_012_S9_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD17_181_012/CWD17_181_012_S9_L001_R2_001.fastq.gz
+#    531D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD7_158_035/CWD7_158_035_S6_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD7_158_035/CWD7_158_035_S6_L001_R2_001.fastq.gz
+#    26III03-GOC188:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD141_136_057/CWD141_136_057_S18_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD141_136_057/CWD141_136_057_S18_L001_R2_001.fastq.gz
+#    Tib595D1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD101_172_021/CWD101_172_021_S12_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD101_172_021/CWD101_172_021_S12_L001_R2_001.fastq.gz
+#    OC381-18-6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD1_122_071/CWD1_122_071_S112_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD1_122_071/CWD1_122_071_S112_L004_R2_001.fastq.gz
+#    Tib105SS8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD144_124_069/CWD144_124_069_S19_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD144_124_069/CWD144_124_069_S19_L001_R2_001.fastq.gz
+#    MBARI071903BW:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD116_134_059/CWD116_134_059_S13_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD116_134_059/CWD116_134_059_S13_L001_R2_001.fastq.gz
+#    YPM-IZ-111736:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS5_179_014/WS5_179_014_S30_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS5_179_014/WS5_179_014_S30_L004_R2_001.fastq.gz
+#    D1020-D5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D1020-D5_Barg1_122_071/D1020-D5_Barg1_122_071_S101_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D1020-D5_Barg1_122_071/D1020-D5_Barg1_122_071_S101_L008_R2_001.fastq.gz
+#    D343-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D343-D10_Hrub_121_072/D343-D10_Hrub_121_072_S109_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D343-D10_Hrub_121_072/D343-D10_Hrub_121_072_S109_L008_R2_001.fastq.gz
+#    D987-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D987-D4_Barg2_110_083/D987-D4_Barg2_110_083_S102_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_D987-D4_Barg2_110_083/D987-D4_Barg2_110_083_S102_L008_R2_001.fastq.gz
+#    ENS543-T4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_ENS543-T4_Htra_157_036/ENS543-T4_Htra_157_036_S106_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_ENS543-T4_Htra_157_036/ENS543-T4_Htra_157_036_S106_L008_R2_001.fastq.gz
+#    JSL-966-S8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSL-966-S8_ApoE_170_023/JSL-966-S8_ApoE_170_023_S97_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSL-966-S8_ApoE_170_023/JSL-966-S8_ApoE_170_023_S97_L008_R2_001.fastq.gz
+#    JSLI-2636-DS7:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2636-DS7_ApoJ_134_059/JSLI-2636-DS7_ApoJ_134_059_S100_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2636-DS7_ApoJ_134_059/JSLI-2636-DS7_ApoJ_134_059_S100_L008_R2_001.fastq.gz
+#    JSLI-2644-6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2644-6_ApoI_146_047/JSLI-2644-6_ApoI_146_047_S99_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2644-6_ApoI_146_047/JSLI-2644-6_ApoI_146_047_S99_L008_R2_001.fastq.gz
+#    JSLI-2646-CG3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2646-CG3_Hmac_133_060/JSLI-2646-CG3_Hmac_133_060_S108_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLI-2646-CG3_Hmac_133_060/JSLI-2646-CG3_Hmac_133_060_S108_L008_R2_001.fastq.gz
+#    JSLII-1450-S5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1450-S5_ApoC_182_011/JSLII-1450-S5_ApoC_182_011_S96_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1450-S5_ApoC_182_011/JSLII-1450-S5_ApoC_182_011_S96_L008_R2_001.fastq.gz
+#    JSLII-1450-SS4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1450-SS4_Hcup_145_048/JSLII-1450-SS4_Hcup_145_048_S107_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1450-SS4_Hcup_145_048/JSLII-1450-SS4_Hcup_145_048_S107_L008_R2_001.fastq.gz
+#    JSLII-1454-SS7:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1454-SS7_ApoF_158_035/JSLII-1454-SS7_ApoF_158_035_S98_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-1454-SS7_ApoF_158_035/JSLII-1454-SS7_ApoF_158_035_S98_L008_R2_001.fastq.gz
+#    JSLII-983-CGP9:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-983-CGP9_Barg3_098_095/JSLII-983-CGP9_Barg3_098_095_S103_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_JSLII-983-CGP9_Barg3_098_095/JSLII-983-CGP9_Barg3_098_095_S103_L008_R2_001.fastq.gz
+#    T1108-T5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_T1108-T5_Barg4_181_012/T1108-T5_Barg4_181_012_S104_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_T1108-T5_Barg4_181_012/T1108-T5_Barg4_181_012_S104_L008_R2_001.fastq.gz
+#    YPM-IZ-35028:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_YPM-IZ-35028_169_024/YPM-IZ-35028_169_024_S105_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext2/Sample_YPM-IZ-35028_169_024/YPM-IZ-35028_169_024_S105_L008_R2_001.fastq.gz
+#    YPM-IZ-35350:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD121_145_048/CWD121_145_048_S15_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD121_145_048/CWD121_145_048_S15_L001_R2_001.fastq.gz
+#    YPM-IZ-35049:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD122_133_060/CWD122_133_060_S16_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD122_133_060/CWD122_133_060_S16_L001_R2_001.fastq.gz
+#    YPM-IZ-110225:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA1_100_093/NA1_100_093_S131_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_NA1_100_093/NA1_100_093_S131_L004_R2_001.fastq.gz
+#    YPM-IZ-35346:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD19_308_269/CWD19_308_269_S16_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD19_308_269/CWD19_308_269_S16_L004_R2_001.fastq.gz
+#    YPM-IZ-35355:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD131_148_045/CWD131_148_045_S17_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD131_148_045/CWD131_148_045_S17_L001_R2_001.fastq.gz
+#    YPM-IZ-111936:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext1/Sample_111936_Barg1_238_339/111936_Barg1_238_339_S355_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/formalin_ext1/Sample_111936_Barg1_238_339/111936_Barg1_238_339_S355_L003_R2_001.fastq.gz
+#    D1240-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D1240-D10_372_205/D1240-D10_372_205_S53_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D1240-D10_372_205/D1240-D10_372_205_S53_L003_R2_001.fastq.gz
+#    D1244-D2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D1244-D2_128_065/D1244-D2_128_065_S46_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D1244-D2_128_065/D1244-D2_128_065_S46_L002_R2_001.fastq.gz
+#    D325-SS16:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D325-SS16_132_061/D325-SS16_132_061_S14_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D325-SS16_132_061/D325-SS16_132_061_S14_L001_R2_001.fastq.gz
+#    D419-SS6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D419-SS6_120_073/D419-SS6_120_073_S15_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D419-SS6_120_073/D419-SS6_120_073_S15_L001_R2_001.fastq.gz
+#    D421-D1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D1_108_085/D421-D1_108_085_S16_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D1_108_085/D421-D1_108_085_S16_L001_R2_001.fastq.gz
+#    D421-D5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D5_155_038/D421-D5_155_038_S20_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D5_155_038/D421-D5_155_038_S20_L001_R2_001.fastq.gz
+#    D421-D8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D8_130_063/D421-D8_130_063_S30_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D421-D8_130_063/D421-D8_130_063_S30_L001_R2_001.fastq.gz
+#    D422-D6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D422-D6_131_062/D422-D6_131_062_S22_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D422-D6_131_062/D422-D6_131_062_S22_L001_R2_001.fastq.gz
+#    D423-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D10_106_087/D423-D10_106_087_S32_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D10_106_087/D423-D10_106_087_S32_L002_R2_001.fastq.gz
+#    D423-D11:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D11_189_004/D423-D11_189_004_S33_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D11_189_004/D423-D11_189_004_S33_L002_R2_001.fastq.gz
+#    D423-D12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D12_177_016/D423-D12_177_016_S34_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D12_177_016/D423-D12_177_016_S34_L002_R2_001.fastq.gz
+#    D423-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D4_118_075/D423-D4_118_075_S31_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D423-D4_118_075/D423-D4_118_075_S31_L002_R2_001.fastq.gz
+#    D493-D8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D493-D8_141_052/D493-D8_141_052_S37_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D493-D8_141_052/D493-D8_141_052_S37_L002_R2_001.fastq.gz
+#    D494-SS10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D494-SS10_384_193/D494-SS10_384_193_S52_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D494-SS10_384_193/D494-SS10_384_193_S52_L003_R2_001.fastq.gz
+#    D496-D5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D496-D5_153_040/D496-D5_153_040_S36_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D496-D5_153_040/D496-D5_153_040_S36_L002_R2_001.fastq.gz
+#    D497-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D497-D4_129_064/D497-D4_129_064_S38_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D497-D4_129_064/D497-D4_129_064_S38_L002_R2_001.fastq.gz
+#    D499-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D499-D3_178_015/D499-D3_178_015_S26_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D499-D3_178_015/D499-D3_178_015_S26_L001_R2_001.fastq.gz
+#    D499-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D499-D4_166_027/D499-D4_166_027_S27_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D499-D4_166_027/D499-D4_166_027_S27_L001_R2_001.fastq.gz
+#    D551-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D551-D3_163_030/D551-D3_163_030_S54_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D551-D3_163_030/D551-D3_163_030_S54_L003_R2_001.fastq.gz
+#    D551-D5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D551-D5_165_028/D551-D5_165_028_S35_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D551-D5_165_028/D551-D5_165_028_S35_L002_R2_001.fastq.gz
+#    D552-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-D10_105_088/D552-D10_105_088_S40_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-D10_105_088/D552-D10_105_088_S40_L002_R2_001.fastq.gz
+#    D552-D6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-D6_143_050/D552-D6_143_050_S21_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-D6_143_050/D552-D6_143_050_S21_L001_R2_001.fastq.gz
+#    D552-SS8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-SS8_119_074/D552-SS8_119_074_S23_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D552-SS8_119_074/D552-SS8_119_074_S23_L001_R2_001.fastq.gz
+#    D553-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D553-D10_107_086/D553-D10_107_086_S24_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D553-D10_107_086/D553-D10_107_086_S24_L001_R2_001.fastq.gz
+#    D554-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D554-D10_188_005/D554-D10_188_005_S41_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D554-D10_188_005/D554-D10_188_005_S41_L002_R2_001.fastq.gz
+#    D555-D6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D555-D6_190_003/D555-D6_190_003_S25_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D555-D6_190_003/D555-D6_190_003_S25_L001_R2_001.fastq.gz
+#    D556-D1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D556-D1_176_017/D556-D1_176_017_S42_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D556-D1_176_017/D556-D1_176_017_S42_L002_R2_001.fastq.gz
+#    D556-D2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D556-D2_164_029/D556-D2_164_029_S43_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D556-D2_164_029/D556-D2_164_029_S43_L002_R2_001.fastq.gz
+#    D557-SS8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D557-SS8_152_041/D557-SS8_152_041_S44_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D557-SS8_152_041/D557-SS8_152_041_S44_L002_R2_001.fastq.gz
+#    D558-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D558-D4_140_053/D558-D4_140_053_S45_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D558-D4_140_053/D558-D4_140_053_S45_L002_R2_001.fastq.gz
+#    D611-D6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D611-D6_138_055/D611-D6_138_055_S65_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D611-D6_138_055/D611-D6_138_055_S65_L003_R2_001.fastq.gz
+#    D612-D12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D612-D12_154_039/D612-D12_154_039_S28_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D612-D12_154_039/D612-D12_154_039_S28_L001_R2_001.fastq.gz
+#    D614-D2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D614-D2_191_002/D614-D2_191_002_S17_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D614-D2_191_002/D614-D2_191_002_S17_L001_R2_001.fastq.gz
+#    D666-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D666-D10_174_019/D666-D10_174_019_S62_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D666-D10_174_019/D666-D10_174_019_S62_L003_R2_001.fastq.gz
+#    D667-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D667-D4_142_051/D667-D4_142_051_S29_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D667-D4_142_051/D667-D4_142_051_S29_L001_R2_001.fastq.gz
+#    D668-SS1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D668-SS1_117_076/D668-SS1_117_076_S39_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D668-SS1_117_076/D668-SS1_117_076_S39_L002_R2_001.fastq.gz
+#    D669-SS5:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D669-SS5_150_043/D669-SS5_150_043_S64_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D669-SS5_150_043/D669-SS5_150_043_S64_L003_R2_001.fastq.gz
+#    D724-D7:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D724-D7_167_026/D724-D7_167_026_S19_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D724-D7_167_026/D724-D7_167_026_S19_L001_R2_001.fastq.gz
+#    D725-D8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D725-D8_162_031/D725-D8_162_031_S63_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D725-D8_162_031/D725-D8_162_031_S63_L003_R2_001.fastq.gz
+#    D729-D6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D729-D6_126_067/D729-D6_126_067_S66_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D729-D6_126_067/D729-D6_126_067_S66_L003_R2_001.fastq.gz
+#    D961-D10:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D10_187_006/D961-D10_187_006_S49_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D10_187_006/D961-D10_187_006_S49_L002_R2_001.fastq.gz
+#    D961-D12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D12_104_089/D961-D12_104_089_S48_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D12_104_089/D961-D12_104_089_S48_L002_R2_001.fastq.gz
+#    D961-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D3_175_018/D961-D3_175_018_S50_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D961-D3_175_018/D961-D3_175_018_S50_L002_R2_001.fastq.gz
+#    D964-D1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D964-D1_116_077/D964-D1_116_077_S47_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_D964-D1_116_077/D964-D1_116_077_S47_L002_R2_001.fastq.gz
+#    GOC-24-7-BW6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_GOC-24-7-BW6_186_007/GOC-24-7-BW6_186_007_S60_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_GOC-24-7-BW6_186_007/GOC-24-7-BW6_186_007_S60_L003_R2_001.fastq.gz
+#    GOC-24-BW7-6:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_GOC-24-BW7-6_103_090/GOC-24-BW7-6_103_090_S59_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_GOC-24-BW7-6_103_090/GOC-24-BW7-6_103_090_S59_L003_R2_001.fastq.gz
+#    M120-SS3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_M120-SS3_151_042/M120-SS3_151_042_S55_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_M120-SS3_151_042/M120-SS3_151_042_S55_L003_R2_001.fastq.gz
+#    T411-SS2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_T411-SS2_360_217/T411-SS2_360_217_S61_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_T411-SS2_360_217/T411-SS2_360_217_S61_L003_R2_001.fastq.gz
+#    V4581-D12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D12_139_054/V4581-D12_139_054_S56_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D12_139_054/V4581-D12_139_054_S56_L003_R2_001.fastq.gz
+#    V4581-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D4_127_066/V4581-D4_127_066_S57_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D4_127_066/V4581-D4_127_066_S57_L003_R2_001.fastq.gz
+#    V4581-D8:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D8_115_078/V4581-D8_115_078_S58_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_V4581-D8_115_078/V4581-D8_115_078_S58_L003_R2_001.fastq.gz
+#    VF2016-45:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_VF2016-45_179_014/VF2016-45_179_014_S18_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_23/Sample_VF2016-45_179_014/VF2016-45_179_014_S18_L001_R2_001.fastq.gz
+#    D421-D9:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D421-D9_192_001/D421-D9_192_001_S1_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D421-D9_192_001/D421-D9_192_001_S1_L004_R2_001.fastq.gz
+#    D552-D2:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D552-D2_180_013/D552-D2_180_013_S2_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D552-D2_180_013/D552-D2_180_013_S2_L004_R2_001.fastq.gz
+#    D419-D3:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D419-D3_168_025/D419-D3_168_025_S3_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D419-D3_168_025/D419-D3_168_025_S3_L004_R2_001.fastq.gz
+#    D421-D4:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D421-D4_156_037/D421-D4_156_037_S4_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_D421-D4_156_037/D421-D4_156_037_S4_L004_R2_001.fastq.gz
+#    KOK17-BWP5-1:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_KOK17-BWP5-1_144_049/KOK17-BWP5-1_144_049_S5_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/apolemia_bargmannia_maciej/maciej_jan_20/Sample_KOK17-BWP5-1_144_049/KOK17-BWP5-1_144_049_S5_L004_R2_001.fastq.gz
+#    YPM-IZ-111806:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111806_113_080/111806_113_080_S221_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111806_113_080/111806_113_080_S221_L004_R2_001.fastq.gz
+#    YPM-IZ-111813:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111813_112_081/111813_112_081_S222_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111813_112_081/111813_112_081_S222_L004_R2_001.fastq.gz
+#    YPM-IZ-111816:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111816_100_093/111816_100_093_S223_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111816_100_093/111816_100_093_S223_L004_R2_001.fastq.gz
+#    YPM-IZ-111822:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111822_101_092/111822_101_092_S224_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111822_101_092/111822_101_092_S224_L004_R2_001.fastq.gz
+#    YPM-IZ-111825:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111825_183_010/111825_183_010_S225_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq10_2023/Sample_111825_183_010/111825_183_010_S225_L004_R2_001.fastq.gz
+#    SRR23143279:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR23143279_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR23143279_2.fastq
+#    SRR23143264:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR23143264_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR23143264_2.fastq
+#    SRR26965670:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR26965670_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR26965670_2.fastq
+#    SRR6512851:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512851_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512851_2.fastq
+#    SRR6512856:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512856_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512856_2.fastq
+#    SRR6512854:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512854_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512854_2.fastq
+#    SRR6512857:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512857_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512857_2.fastq
+#    SRR1548373:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548373_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548373_2.fastq
+#    SRR1548342:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548342_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548342_2.fastq
+#    SRR1548347:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548347_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548347_2.fastq
+#    SRR6512862:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512862_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512862_2.fastq
+#    SRR6512863:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512863_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR6512863_2.fastq
+#    SRR14670475:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670475_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670475_2.fastq
+#    SRR14670485:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670485_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670485_2.fastq
+#    SRR14670486:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670486_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670486_2.fastq
+#    SRR14670529:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670529_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670529_2.fastq
+#    SRR14670531:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670531_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670531_2.fastq
+#    SRR14670534:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670534_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670534_2.fastq
+#    SRR14670538:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670538_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670538_2.fastq
+#    SRR14670546:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670546_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670546_2.fastq
+#    SRR14670551:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670551_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670551_2.fastq
+#    SRR14670589:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670589_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR14670589_2.fastq
+#    DNA-WS11:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS11_131_062/WS11_131_062_S36_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS11_131_062/WS11_131_062_S36_L004_R2_001.fastq.gz
+#    DNA-WS12:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS12_119_074/WS12_119_074_S37_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS12_119_074/WS12_119_074_S37_L004_R2_001.fastq.gz
+#    DNA-WS13:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS13_107_086/WS13_107_086_S38_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS13_107_086/WS13_107_086_S38_L004_R2_001.fastq.gz
+#    DNA-WS16:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS16_176_017/WS16_176_017_S1_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_WS16_176_017/WS16_176_017_S1_L003_R2_001.fastq.gz
+#    DNA-CWD122:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD122_133_060/CWD122_133_060_S10_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD122_133_060/CWD122_133_060_S10_L004_R1_001.fastq.gz
+#    YPM-IZ-111593:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/2024-rhizophysa_novaseq/Sample_Rhizo1269_109_084/Rhizo1269_109_084_S147_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/2024-rhizophysa_novaseq/Sample_Rhizo1269_109_084/Rhizo1269_109_084_S147_L004_R2_001.fastq.gz
+#    YPM-IZ-111594:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/2024-rhizophysa_novaseq/Sample_Rhizo1270_097_096/Rhizo1270_097_096_S148_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/2024-rhizophysa_novaseq/Sample_Rhizo1270_097_096/Rhizo1270_097_096_S148_L004_R2_001.fastq.gz
+#    YPM-IZ-111759:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111759_137_056_pxqlpa/YPM-111759_137_056_S1_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq9_2023/Sample_YPM-111759_137_056_pxqlpa/YPM-111759_137_056_S1_L002_R2_001.fastq.gz
+#    SRR1548344:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548344_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548344_2.fastq
+#    SRR1548345:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548345_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548345_2.fastq
+#    SRR1548346:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548346_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548346_2.fastq
+#    SRR1548343:
+#        reads:
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548343_1.fastq
+#            - /vast/palmer/scratch/dunn/sc2962/siphonophore_SRA/SRR1548343_2.fastq
+#    YPM-IZ-111014:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq7_2023/Sample_111014_168_025/111014_168_025_S46_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/physalia_novaseq7_2023/Sample_111014_168_025/111014_168_025_S46_L004_R2_001.fastq.gz
+#    YPM-IZ-107008:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS9_178_015/WS9_178_015_S34_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS9_178_015/WS9_178_015_S34_L004_R2_001.fastq.gz
+#    YPM-IZ-111164:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA34_103_090/NA34_103_090_S34_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA34_103_090/NA34_103_090_S34_L008_R2_001.fastq.gz
+#    YPM-IZ-111165:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA35_186_007/NA35_186_007_S35_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA35_186_007/NA35_186_007_S35_L008_R2_001.fastq.gz
+#    YPM-IZ-111166:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA36_174_019/NA36_174_019_S36_L008_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA36_174_019/NA36_174_019_S36_L008_R2_001.fastq.gz
+#    YPM-IZ-111736:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS5_179_014/WS5_102_091_S40_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS5_179_014/WS5_102_091_S40_L001_R2_001.fastq.gz
+#    YPM-IZ-111737:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS6_190_003/WS6_113_080_S41_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS6_190_003/WS6_113_080_S41_L001_R2_001.fastq.gz
+#    YPM-IZ-111738:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS7_167_026/WS7_167_026_S32_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS7_167_026/WS7_167_026_S32_L004_R2_001.fastq.gz
+#    YPM-IZ-111739:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS8_155_038/WS8_155_038_S33_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS8_155_038/WS8_155_038_S33_L004_R2_001.fastq.gz
+#    YPM-IZ-111744:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA19_152_041/NA19_152_041_S6_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA19_152_041/NA19_152_041_S6_L002_R2_001.fastq.gz
+#    YPM-IZ-111745:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS10_143_050/WS10_143_050_S35_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS10_143_050/WS10_143_050_S35_L004_R2_001.fastq.gz
+#    YPM-IZ-35039:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD16_296_281/CWD16_296_281_S17_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Novaseq_siphgenomes/Sample_CWD16_296_281/CWD16_296_281_S17_L004_R2_001.fastq.gz
+#    YPM-IZ-110216:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS2_120_073/WS2_120_073_S27_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS2_120_073/WS2_120_073_S27_L004_R2_001.fastq.gz
+#    YPM-IZ-110451:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA28_165_028/NA28_165_028_S20_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA28_165_028/NA28_165_028_S20_L002_R2_001.fastq.gz
+#    YPM-IZ-111590:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_NA37_085_108/NA37_085_108_S112_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_NA37_085_108/NA37_085_108_S112_L002_R2_001.fastq.gz
+#    YPM-IZ-111591:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_NA38_173_020/NA38_173_020_S113_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/S2_assorted_samples_skimming_2024/Sample_NA38_173_020/NA38_173_020_S113_L001_R2_001.fastq.gz
+#    YPM-IZ-111732:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA30_153_040/NA30_153_040_S22_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA30_153_040/NA30_153_040_S22_L002_R2_001.fastq.gz
+#    YPM-IZ-111733:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA29_141_052/NA29_141_052_S21_L002_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA29_141_052/NA29_141_052_S21_L002_R2_001.fastq.gz
+#    YPM-IZ-111734:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS3_108_085/WS3_108_085_S28_L004_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS3_108_085/WS3_108_085_S28_L004_R2_001.fastq.gz
+#    YPM-IZ-111735:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS4_191_002/WS4_114_079_S39_L001_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_WS4_191_002/WS4_114_079_S39_L001_R2_001.fastq.gz
+#    YPM-IZ-111740:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA32_152_041/NA32_152_041_S3_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA32_152_041/NA32_152_041_S3_L003_R2_001.fastq.gz
+#    YPM-IZ-111741:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA33_140_053/NA33_140_053_S4_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA33_140_053/NA33_140_053_S4_L003_R2_001.fastq.gz
+#    YPM-IZ-111742:
+#        reads:
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA31_164_029/NA31_164_029_S2_L003_R1_001.fastq.gz
+#            - /gpfs/ycga/work/dunn/sequences/illumina/Nanomia_novaseq/Sample_NA31_164_029/NA31_164_029_S2_L003_R2_001.fastq.gz
+
