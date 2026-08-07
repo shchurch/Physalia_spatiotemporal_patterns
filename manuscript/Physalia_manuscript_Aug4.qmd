@@ -1,5 +1,5 @@
 ---
-title: "DRAFT: Spatiotemporal distributions of neustonic species in the genus _Physalia_"
+title: "DRAFT: Spatiotemporal distributions of bluebottles (_Physalia_) around the world's oceans"
 format:
  pdf:
    toc: false
