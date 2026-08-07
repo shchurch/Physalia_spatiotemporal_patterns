@@ -33,7 +33,11 @@ obtained. Neither directory has been modified since it was run.
 
 Several main figures are multi-panel compositions assembled in Illustrator from
 the PDFs in `figures/panels/`. Re-running the R code regenerates the panels; the
-composite `.png` files then need to be re-exported from their `.ai` sources.
+composite `.png` files then need to be re-exported.
+
+Figure files are named for what they show rather than by figure number, since
+the numbering has changed more than once. The `.png` committed here is what the
+manuscript includes.
 
 ## Data availability
 
