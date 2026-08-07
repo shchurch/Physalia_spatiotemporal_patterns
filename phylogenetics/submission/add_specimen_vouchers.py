@@ -24,9 +24,11 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.abspath(os.path.join(HERE, "..", ".."))
-MITO = os.path.join(DATA, "Physalia_mitogenomes_GenBank_submission")
-GENES = os.path.join(DATA, "Physalia_genes_GenBank_submission")
+ROOT = os.path.abspath(os.path.join(HERE, ".."))   # phylogenetics/
+REPO = os.path.abspath(os.path.join(ROOT, ".."))        # repository root
+WORK = os.path.abspath(os.path.join(REPO, ".."))        # working folder above it
+MITO = os.path.join(WORK, "Physalia_mitogenomes_GenBank_submission")
+GENES = os.path.join(WORK, "Physalia_genes_GenBank_submission")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--mito-dir", default=MITO)

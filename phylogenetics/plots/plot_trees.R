@@ -32,7 +32,9 @@ suppressPackageStartupMessages({
 here <- tryCatch(dirname(normalizePath(sub("^--file=", "",
          grep("^--file=", commandArgs(FALSE), value = TRUE)[1]))), error = function(e) ".")
 if (is.na(here) || !nzchar(here)) here <- "."
-setwd(here)
+# This script lives in plots/; everything it reads and writes -- the tip tables,
+# gene_trees/, mitogenome_tree/, figures/ -- sits one level up in phylogenetics/.
+setwd(normalizePath(file.path(here, "..")))
 
 outdir <- file.path("figures")
 dir.create(outdir, showWarnings = FALSE)
@@ -41,7 +43,7 @@ dir.create(outdir, showWarnings = FALSE)
 # the two papers can be read side by side. Gulf of Mexico and NW Atlantic share
 # #DAA520 intentionally.
 #
-# SE Atlantic is the one addition: the previous vocabulary has no South Atlantic
+# S Atlantic is the one addition: the previous vocabulary has no South Atlantic
 # category, and the Saint Helena specimens are the range extension, so without
 # it they would be uncoloured.
 ocean_cols <- c(
@@ -52,7 +54,7 @@ ocean_cols <- c(
   "NE Atlantic"        = "#006400",
   "NW Atlantic"        = "#DAA520",
   "NW Pacific"         = "#DC143C",
-  "SE Atlantic"        = "#9B59B6",
+  "S Atlantic"         = "#9B59B6",
   "SE Pacific"         = "#FC8D62",
   "SW Atlantic"        = "#452a00",
   "SW Pacific"         = "#686f80",

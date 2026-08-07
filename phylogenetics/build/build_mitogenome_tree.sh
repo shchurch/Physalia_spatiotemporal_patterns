@@ -18,11 +18,12 @@
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA="${DATA_ROOT:-$HERE/../..}"
+ROOT="$(cd "$HERE/.." && pwd)"   # phylogenetics/
+DATA="${DATA_ROOT:-$ROOT/..}"
 
-SRC_ALN="${SRC_ALN:-$HERE/mitogenome_tree/identification.aln.fa}"
-KEEP_IDS="${KEEP_IDS:-$HERE/mitogenome_submission/Physalia_mitogenomes_IDs.txt}"
-OUT_DIR="${OUT_DIR:-$HERE/mitogenome_tree}"
+SRC_ALN="${SRC_ALN:-$ROOT/mitogenome_tree/identification.aln.fa}"
+KEEP_IDS="${KEEP_IDS:-$ROOT/mitogenome_submission/Physalia_mitogenomes_IDs.txt}"
+OUT_DIR="${OUT_DIR:-$ROOT/mitogenome_tree}"
 ALN="$OUT_DIR/submitted.aln.fa"
 PREFIX="${PREFIX:-$OUT_DIR/submitted}"
 THREADS="${THREADS:-AUTO}"

@@ -23,14 +23,16 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.abspath(os.path.join(HERE, "..", ".."))
+ROOT = os.path.abspath(os.path.join(HERE, ".."))   # phylogenetics/
+REPO = os.path.abspath(os.path.join(ROOT, ".."))        # repository root
+WORK = os.path.abspath(os.path.join(REPO, ".."))        # working folder above it
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--tree", default=os.path.join(HERE, "mitogenome_tree", "identification.contree"))
+ap.add_argument("--tree", default=os.path.join(ROOT, "mitogenome_tree", "identification.contree"))
 ap.add_argument("--species", default=os.path.join(
-    DATA, "Physalia_mitogenomes_GenBank_submission", "Physalia_mitogenomes_species.tsv"))
+    ROOT, "mitogenome_submission", "Physalia_mitogenomes_species.tsv"))
 ap.add_argument("--pattern", default="SEA2025", help="substring identifying the ONT samples")
-ap.add_argument("--out", default=os.path.join(HERE, "ont_species_assignments.tsv"))
+ap.add_argument("--out", default=os.path.join(ROOT, "ont_species_assignments.tsv"))
 args = ap.parse_args()
 
 
