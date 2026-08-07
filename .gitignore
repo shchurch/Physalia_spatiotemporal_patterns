@@ -35,3 +35,7 @@ Thumbs.db
 # opaque binaries (~177 MB), and git stores a whole new copy on every save.
 figures/*.ai
 figures/**/*.ai
+
+# Per-image prediction log. 5.7 MB of intermediate output; results/all_predictions.json
+# is the version the analyses read.
+results/predictions_log.json
