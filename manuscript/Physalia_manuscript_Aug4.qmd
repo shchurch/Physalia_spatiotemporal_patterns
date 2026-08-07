@@ -226,7 +226,7 @@ Further exploration of the distribution and seasonality in the broad _P. utricul
 
 # Data availability
 
-Mitochondrial genomes are deposited in GenBank under accessions **PZ224317–PZ224484** (n=168). Nuclear 18S sequences are deposited under **PZ802573–PZ802753** (n=181). Nuclear ITS sequences (n=186) are deposited under accessions **[TODO: pending, submission SUB16390495]**.
+Mitochondrial genomes are deposited in GenBank under accessions **PZ224317–PZ224484** (n=168). Nuclear 18S sequences are deposited under **PZ802573–PZ802753** (n=181). Nuclear ITS sequences are deposited under accessions **PZ804143–PZ804328** (n=186).
 
 Mitochondrial genomes were assembled for the whole-genome-sequenced Illumina samples only. The 2025 open ocean samples were sequenced with Oxford Nanopore, and neither their mitochondrial genome assemblies nor the mitochondrial gene markers recovered from them met the quality threshold for deposition; no mitochondrial sequence from those samples is deposited. Those samples are represented in GenBank by their nuclear 18S and ITS sequences, and their species identifications derive from the mitochondrial genome tree provided in the repository below as alignments and treefiles.
 
