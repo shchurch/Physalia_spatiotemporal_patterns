@@ -212,6 +212,15 @@ To advance further studies of different aspects of _Physalia_ biology, we also p
 
 Further exploration of the distribution and seasonality in the broad _P. utriculus_ lineage in particular has great potential to advance efforts to understand their biology. _P. utriculus_ has the broadest distribution of all species, from Texas (USA) to the Pacific coast of Ecuador, and has corresponding patterns of regional diversity in genetic subpopulations [@church2025population]. Studying the processes that allow a lineage to remain cohesive across such vast geographic ranges has the potential to shed light on what drives dispersal and gene flow across ocean basins. At the same time, evidence that a sister lineage (_P mikazuki_) with similar morphology overlaps maintains a distinct and identifiable genotype despite strong overlap in ranges suggests that barriers to gene flow can arise in open waters[@church2025population; @yongstar2025physalia]. Further research to distinguish the proximal causes of these barriers can shed light on the origins of the complex and fascinating neustonic community.    
 
+# Data availability
+
+Mitochondrial genomes are deposited in GenBank under accessions **PZ224317–PZ224484** (n=168). Nuclear 18S sequences are deposited under **PZ802573–PZ802753** (n=181). Nuclear ITS sequences (n=186) are deposited under accessions **[TODO: pending, submission SUB16390495]**.
+
+Mitochondrial genomes were assembled for the whole-genome-sequenced Illumina samples only. The 2025 open ocean samples were sequenced with Oxford Nanopore, and neither their mitochondrial genome assemblies nor the mitochondrial gene markers recovered from them met the quality threshold for deposition; no mitochondrial sequence from those samples is deposited. Those samples are represented in GenBank by their nuclear 18S and ITS sequences, and their species identifications derive from the mitochondrial genome tree provided in the repository below as alignments and treefiles.
+
+All alignments, tree files, analysis code, and the labeled image dataset are available at <https://github.com/shchurch/Physalia_spatiotemporal_patterns>.
+
+
 # Acknowledgements
 Special thanks to the students and professional crews of SEA cruises S314 and S321 aboard the
 SSV Robert C Seamans (Marine Biodiversity and Conservation 2024 and 2025), in particular:
