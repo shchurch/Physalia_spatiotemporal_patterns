@@ -5,24 +5,76 @@ format:
    toc: false
    number-sections: false
    colorlinks: false
+   fig-pos: 'H'
+   include-in-header:
+     text: |
+       \renewcommand{\thefigure}{S\arabic{figure}}
+bibliography: references.bib
+crossref:
+  fig-prefix: "Fig."
 ---
 
-<!-- CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text mention in the main manuscript (matching the TODO-N markers added for #6). Panel assignments were cross-referenced from figure descriptions and by viewing each image directly. Note TODO-18 (P. mikazuki shared-traits sentence) cites both Supp. Fig. 4 and Supp. Fig. 6 -- that's what pulls the Indonesia figure's number earlier than the multitentacled-utriculus placeholder right after it. -->
+<!-- Figures are numbered S1, S2, ... automatically: the \thefigure redefinition
+above prefixes the LaTeX figure counter with "S", so captions render as
+"Figure S1:" and @fig-sN cross-references resolve to "Fig. S1". Placeholders are
+caption-only figure divs rather than plain paragraphs, so they occupy a counter
+slot and the numbering stays aligned with the main text's Fig. SN references.
 
-**Supp. Fig. 1.** PLACEHOLDER — effort-corrected seasonal abundance for _P. utriculus_ in Southern Africa (TODO-2). Not yet generated.
+CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text
+mention in the main manuscript. Panel assignments were cross-referenced from
+figure descriptions and by viewing each image directly. Note that the P. mikazuki
+shared-traits sentence cites both Fig. S4 and Fig. S6 -- that's what pulls the
+Indonesia figure's number earlier than the multitentacled-utriculus placeholder
+right after it. -->
 
-**Supp. Fig. 2.** PLACEHOLDER — seasonal trend panels: _P. megalista_ and _P. utriculus_ in the Southwest Pacific, and _P. physalis_ and _P. utriculus_ in the western South Atlantic, including the _P. megalista_ latitudinal gradient on the eastern Australian coast (TODO-3, TODO-4). Not yet generated.
+::: {#fig-s1}
 
-**Supp. Fig. 3.** PLACEHOLDER — phylogenetic tree placing the Saint Helena _P. minuta_ samples. Not yet generated -- note that `phylogenetics/mitogenome_tree/` now has built trees (`identification.treefile`, `submitted.treefile`, `submitted_rooted.treefile`) that may be able to source this once someone confirms which tree/rooting is appropriate here, and how the ONT dataset question (#21) affects it.
+\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
 
-![**Supp. Fig. 4. _P. utriculus_ morphology.** The anterior apex of the float is marked as aaf, crest as c, gonodendra as gd, major tentacle and palpon as mt+p. A- Specimen from Queensland, Australia, with green anterior apex of the float and purple crest. The float has a sinuous appearance. Blue coloration of the major tentacle, palpons, and gastrozooids (Photo by © Richard Fuller, some rights reserved (CC BY-NC), via iNaturalist Observation 318861404). B- Specimen from South Africa, two distinct purple gonodendra, clear float, and blue coloration of the float (Photo by © Johan Huisamen, some rights reserved (CC BY-NC), via iNaturalist Observation 327836760). C- Specimen from Baja California, Mexico, with a blue apical apex of the float (Photo by © Bill Levine, some rights reserved (CC BY-NC), via iNaturalist Observation 373121794). D- Specimen from Hainan, China, with a yellow anterior apex of the float and transparent crest (Photo by © 王琰, some rights reserved (CC BY-NC), via iNaturalist Observation 303923643).](../figures/supplemental/Supp_Fig_4_P_utriculus.png)
+**Effort-corrected seasonal abundance for _P. utriculus_ in Southern Africa.** Not yet generated (TODO-2).
 
-![**Supp. Fig. 5. _P. physalis_ morphology.** The anterior apex of the float is marked as aaf, gonodendra as gd, and gastrozooids as gz. A- A South Atlantic specimen from Tobago with distinct pink coloration and reddish gastrozooids (Photo by © Trizelle, some rights reserved (CC BY-NC), via iNaturalist Observation 70351531). B- South Atlantic specimen from Brazil with distinct pink coloration of the float, but the gastrozooids are blue (Photo by © nicolasteixeira, some rights reserved (CC BY-NC), via iNaturalist Observation 194374632). C- North Atlantic specimen from Tenerife with a clear float and dark blue gastrozooids (Photo by © Jane Candlish, some rights reserved (CC BY-NC), via iNaturalist Observation 354644470). D- Another North Atlantic specimen with clear reddish gastrozooid pigmentation (Photo by © averiemae1, some rights reserved (CC BY-NC), via iNaturalist Observation 366033572).](../figures/supplemental/Supp_Fig_5_P_physalis.png)
+:::
 
-![**Supp. Fig. 6. _Physalia_ specimens collected in Indonesia.** Based on the reported morphology [@yongstar2025physalia], they resemble specimens of the lineage "B2". A- Specimens with multiple major tentacles. B, C- The length of one of the specimens with relaxed tentacles was about 22cm. Gastrozooids with yellow distal tips visible, as well as multiple major tentacles.](../figures/supplemental/Supp_Fig_6_Indonesia_mikazuki.png)
+\newpage
 
-**Supp. Fig. 7.** PLACEHOLDER — multitentacled _P. utriculus_ individuals, genetically confirmed as B1 lineage. Not yet generated (see #8).
+![**Seasonal gradients in the Southwest Pacific and the western South Atlantic.** Tiles indicate median day of year for species observations in that area, colored by the calendar wheel at lower right. (A,B) Eastern Australia and New Zealand, for _P. megalista_ (A) and _P. utriculus_ (B); the _P. megalista_ latitudinal gradient from north (Sep) to south (Apr) along the eastern Australian coast is visible in A. (C,D) South America, for _P. physalis_ (C) and _P. utriculus_ (D). These panels are the counterpart to the main-text seasonal gradients figure, which shows the Caribbean and North America, and Southern Africa.](../figures/supplemental/Supp_Fig_2_gradients.png){#fig-s2 width=100% height=58%}
 
-![**Supp. Fig. 8. _P. minuta_ morphology.** The anterior apex of the float is marked as aaf, a major tentacle with an associated palpon as mt+p, and gastrozooids as gz. A- _P. minuta_ specimen from Saint Helena (YPM-IZ-115990) with two major tentacles with palpons. The anterior apex of the float is green. B- Gastrozooids with pale cream-colored distal tips of the same specimen as in panel A. C- _P. minuta_ from Tasmania, Australia. Sinuous appearance of the float, and green anterior apex of the float (Photo by © Milan Sojitra, some rights reserved (CC BY-NC), via iNaturalist Observation 356379205).](../figures/supplemental/Supp_Fig_8_P_minuta.png)
+\newpage
 
-![**Supp. Fig. 9. _P. megalista_ morphology.** The anterior apex of the float is marked as aaf, extension of the float is marked as eof, small extensions of the float as seof, gonodendron as gd, minor tentacles as mint, and crest as c. A- _P. megalista_ specimen from New Zealand (YPM-IZ-111515), a large specimen with one large extension of the float and a series of smaller ones spanning towards the posterior zone; gonodendron is pale compared to the rest of the blue body. B- _P. megalista_ specimen from New South Wales in a typical horned position after washing up (Photo by © Sabine Templeton, some rights reserved (CC BY-NC), via iNaturalist Observation 310629814). C- _P. megalista_ specimen from South Africa with reddish coloration of minor tentacles (Photo by © spensti, some rights reserved (CC BY-NC), via iNaturalist Observation 319807691). D- _P. megalista_ from New Zealand in a typical beaching posture with the anterior float projection raised; the crest has a lavender apex with green at the bases of the septae (Photo by © Paul Bell-Butler, some rights reserved (CC BY-NC), via iNaturalist Observation 184621409).](../figures/supplemental/Supp_Fig_9_P_megalista.png)
+::: {#fig-s3}
+
+\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
+
+**Phylogenetic tree placing the Saint Helena _P. minuta_ samples.** Not yet generated -- note that `phylogenetics/mitogenome_tree/` now has built trees (`identification.treefile`, `submitted.treefile`, `submitted_rooted.treefile`) that may be able to source this once someone confirms which tree/rooting is appropriate here, and how the ONT dataset question (#21) affects it.
+
+:::
+
+\newpage
+
+![**_P. utriculus_ morphology.** The anterior apex of the float is marked as aaf, crest as c, gonodendra as gd, major tentacle and palpon as mt+p. A- Specimen from Queensland, Australia, with green anterior apex of the float and purple crest. The float has a sinuous appearance. Blue coloration of the major tentacle, palpons, and gastrozooids (Photo by © Richard Fuller, some rights reserved (CC BY-NC), via iNaturalist Observation 318861404). B- Specimen from South Africa, two distinct purple gonodendra, clear float, and blue coloration of the float (Photo by © Johan Huisamen, some rights reserved (CC BY-NC), via iNaturalist Observation 327836760). C- Specimen from Baja California, Mexico, with a blue apical apex of the float (Photo by © Bill Levine, some rights reserved (CC BY-NC), via iNaturalist Observation 373121794). D- Specimen from Hainan, China, with a yellow anterior apex of the float and transparent crest (Photo by © 王琰, some rights reserved (CC BY-NC), via iNaturalist Observation 303923643).](../figures/supplemental/Supp_Fig_4_P_utriculus.png){#fig-s4 width=100% height=58%}
+
+\newpage
+
+![**_P. physalis_ morphology.** The anterior apex of the float is marked as aaf, gonodendra as gd, and gastrozooids as gz. A- A South Atlantic specimen from Tobago with distinct pink coloration and reddish gastrozooids (Photo by © Trizelle, some rights reserved (CC BY-NC), via iNaturalist Observation 70351531). B- South Atlantic specimen from Brazil with distinct pink coloration of the float, but the gastrozooids are blue (Photo by © nicolasteixeira, some rights reserved (CC BY-NC), via iNaturalist Observation 194374632). C- North Atlantic specimen from Tenerife with a clear float and dark blue gastrozooids (Photo by © Jane Candlish, some rights reserved (CC BY-NC), via iNaturalist Observation 354644470). D- Another North Atlantic specimen with clear reddish gastrozooid pigmentation (Photo by © averiemae1, some rights reserved (CC BY-NC), via iNaturalist Observation 366033572).](../figures/supplemental/Supp_Fig_5_P_physalis.png){#fig-s5 width=100% height=58%}
+
+\newpage
+
+![**_Physalia_ specimens collected in Indonesia.** Based on the reported morphology [@yongstar2025physalia], they resemble specimens of the lineage "B2". A- Specimens with multiple major tentacles. B, C- The length of one of the specimens with relaxed tentacles was about 22cm. Gastrozooids with yellow distal tips visible, as well as multiple major tentacles.](../figures/supplemental/Supp_Fig_6_Indonesia_mikazuki.png){#fig-s6 width=100% height=58%}
+
+\newpage
+
+::: {#fig-s7}
+
+\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
+
+**Multitentacled _P. utriculus_ individuals, genetically confirmed as B1 lineage.** Not yet generated (see #8).
+
+:::
+
+\newpage
+
+![**_P. minuta_ morphology.** The anterior apex of the float is marked as aaf, a major tentacle with an associated palpon as mt+p, and gastrozooids as gz. A- _P. minuta_ specimen from Saint Helena (YPM-IZ-115990) with two major tentacles with palpons. The anterior apex of the float is green. B- Gastrozooids with pale cream-colored distal tips of the same specimen as in panel A. C- _P. minuta_ from Tasmania, Australia. Sinuous appearance of the float, and green anterior apex of the float (Photo by © Milan Sojitra, some rights reserved (CC BY-NC), via iNaturalist Observation 356379205).](../figures/supplemental/Supp_Fig_8_P_minuta.png){#fig-s8 width=100% height=58%}
+
+\newpage
+
+![**_P. megalista_ morphology.** The anterior apex of the float is marked as aaf, extension of the float is marked as eof, small extensions of the float as seof, gonodendron as gd, minor tentacles as mint, and crest as c. A- _P. megalista_ specimen from New Zealand (YPM-IZ-111515), a large specimen with one large extension of the float and a series of smaller ones spanning towards the posterior zone; gonodendron is pale compared to the rest of the blue body. B- _P. megalista_ specimen from New South Wales in a typical horned position after washing up (Photo by © Sabine Templeton, some rights reserved (CC BY-NC), via iNaturalist Observation 310629814). C- _P. megalista_ specimen from South Africa with reddish coloration of minor tentacles (Photo by © spensti, some rights reserved (CC BY-NC), via iNaturalist Observation 319807691). D- _P. megalista_ from New Zealand in a typical beaching posture with the anterior float projection raised; the crest has a lavender apex with green at the bases of the septae (Photo by © Paul Bell-Butler, some rights reserved (CC BY-NC), via iNaturalist Observation 184621409).](../figures/supplemental/Supp_Fig_9_P_megalista.png){#fig-s9 width=100% height=58%}
