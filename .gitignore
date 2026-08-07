@@ -1,1 +1,30 @@
 .DS_Store
+
+# Attention-visualization output. ~190 MB of PNG triples (_attention,
+# _original, _overlay) for ~105 observations, of which two appear in
+# Figure 1. The _original files are iNaturalist contributors' photographs,
+# whose licenses vary per observation, so these are deliberately not
+# distributed from this repository. Regenerate with machine_learning/
+# (see issue #15) or take them from the Zenodo deposit (issue #12).
+results/attention_results/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+renv/staging/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
