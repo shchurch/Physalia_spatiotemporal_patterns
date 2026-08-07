@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Build the 16S / 18S / CO1 / ITS gene trees for the Physalia sample set.
 #
-# A local port of tool_scripts/genetree.sh from the McCleary HPC. Same stages in
+# A local port of the gene-tree script used on the McCleary HPC. Same stages in
 # the same order -- gather, trim headers, select longest per sample, restrict to
 # the study samples, add external sequences, align, infer -- but reading from
 # locally downloaded MITOS and sharkmer output instead of the HPC directories.
@@ -59,7 +59,7 @@ mkdir -p "$OUT_DIR"
 MITOS_SOURCE_EXCLUDE="${MITOS_SOURCE_EXCLUDE:-SEA2025}"
 
 # Pull every record whose header mentions $gene out of a MITOS result.fas,
-# re-headering it with the sample ID. Mirrors retrieve_mitos_results.sh, which
+# re-headering it with the sample ID. Mirrors the HPC retrieval script, which
 # builds the header from the containing directory name.
 gather_mitos () {
     local gene="$1" out="$2"
@@ -90,13 +90,13 @@ gather_shark () {
 # Reduce each header to its first token, split on space, underscore or slash.
 # MITOS "YPM-IZ-1_scaffold_1--3; 31-1593; -; cox1_0" and sharkmer
 # "YPM-IZ-1 cnidaria_CO1 product 0 length 688" both collapse to the sample ID,
-# which is what lets the two sources merge in select_longest. Same rule as
-# tool_scripts/trim_headers.sh.
+# which is what lets the two sources merge below. Same rule as
+# the HPC header-trimming script.
 trim_headers () {
     awk 'BEGIN{OFS=""} /^>/ {split($0,a,/[ _\/]/); print a[1]; next} {print}' "$1" > "$2"
 }
 
-# One sequence per header, longest wins. Same intent as select_longest.sh, but
+# One sequence per header, longest wins. Same intent as the HPC script, but
 # stream-based so it copes with the multi-line FASTA that sharkmer emits.
 #
 # Each record must be closed off before its length is compared. A sample

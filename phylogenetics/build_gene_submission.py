@@ -25,7 +25,10 @@ import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.abspath(os.path.join(HERE, "..", ".."))
-SUB = os.path.join(DATA, "Physalia_mitogenomes_GenBank_submission")
+# Metadata from the mitogenome GenBank submission. Vendored here so this script
+# depends only on files in this repository; the full submission bundle, including
+# the sequence and annotation files, is not distributed.
+SUB = os.path.join(HERE, "mitogenome_submission")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--out", default=os.path.join(DATA, "Physalia_genes_GenBank_submission"))
