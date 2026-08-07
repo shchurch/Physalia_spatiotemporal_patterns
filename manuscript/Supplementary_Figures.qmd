@@ -7,7 +7,7 @@ format:
    colorlinks: false
 ---
 
-<!-- CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text mention in the main manuscript (matching the TODO-N markers added for #6). Panel assignments were cross-referenced from figure descriptions and by viewing each image directly, but a few judgment calls were made -- see the note on issue #6 for full reasoning, especially around TODO-18's ambiguous mention near the P. mikazuki description. -->
+<!-- CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text mention in the main manuscript (matching the TODO-N markers added for #6). Panel assignments were cross-referenced from figure descriptions and by viewing each image directly. Note TODO-18 (P. mikazuki shared-traits sentence) cites both Supp. Fig. 4 and Supp. Fig. 6 -- that's what pulls the Indonesia figure's number earlier than the multitentacled-utriculus placeholder right after it. -->
 
 **Supp. Fig. 1.** PLACEHOLDER — effort-corrected seasonal abundance for _P. utriculus_ in Southern Africa (TODO-2). Not yet generated.
 
@@ -19,9 +19,9 @@ format:
 
 ![**Supp. Fig. 5. _P. physalis_ morphology.** The anterior apex of the float is marked as aaf, gonodendra as gd, and gastrozooids as gz. A- A South Atlantic specimen from Tobago with distinct pink coloration and reddish gastrozooids (Photo by © Trizelle, some rights reserved (CC BY-NC), via iNaturalist Observation 70351531). B- South Atlantic specimen from Brazil with distinct pink coloration of the float, but the gastrozooids are blue (Photo by © nicolasteixeira, some rights reserved (CC BY-NC), via iNaturalist Observation 194374632). C- North Atlantic specimen from Tenerife with a clear float and dark blue gastrozooids (Photo by © Jane Candlish, some rights reserved (CC BY-NC), via iNaturalist Observation 354644470). D- Another North Atlantic specimen with clear reddish gastrozooid pigmentation (Photo by © averiemae1, some rights reserved (CC BY-NC), via iNaturalist Observation 366033572).](../figures/supplemental/Supp_Fig_5_P_physalis.png)
 
-**Supp. Fig. 6.** PLACEHOLDER — multitentacled _P. utriculus_ individuals, genetically confirmed as B1 lineage. Not yet generated (see #8).
+![**Supp. Fig. 6. _Physalia_ specimens collected in Indonesia.** Based on the reported morphology [@yongstar2025physalia], they resemble specimens of the lineage "B2". A- Specimens with multiple major tentacles. B, C- The length of one of the specimens with relaxed tentacles was about 22cm. Gastrozooids with yellow distal tips visible, as well as multiple major tentacles.](../figures/supplemental/Supp_Fig_6_Indonesia_mikazuki.png)
 
-![**Supp. Fig. 7. _Physalia_ specimens collected in Indonesia.** Based on the reported morphology [@yongstar2025physalia], they resemble specimens of the lineage "B2". A- Specimens with multiple major tentacles. B, C- The length of one of the specimens with relaxed tentacles was about 22cm. Gastrozooids with yellow distal tips visible, as well as multiple major tentacles.](../figures/supplemental/Supp_Fig_7_Indonesia_mikazuki.png)
+**Supp. Fig. 7.** PLACEHOLDER — multitentacled _P. utriculus_ individuals, genetically confirmed as B1 lineage. Not yet generated (see #8).
 
 ![**Supp. Fig. 8. _P. minuta_ morphology.** The anterior apex of the float is marked as aaf, a major tentacle with an associated palpon as mt+p, and gastrozooids as gz. A- _P. minuta_ specimen from Saint Helena (YPM-IZ-115990) with two major tentacles with palpons. The anterior apex of the float is green. B- Gastrozooids with pale cream-colored distal tips of the same specimen as in panel A. C- _P. minuta_ from Tasmania, Australia. Sinuous appearance of the float, and green anterior apex of the float (Photo by © Milan Sojitra, some rights reserved (CC BY-NC), via iNaturalist Observation 356379205).](../figures/supplemental/Supp_Fig_8_P_minuta.png)
 
