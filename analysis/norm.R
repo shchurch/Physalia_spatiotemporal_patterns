@@ -1,4 +1,4 @@
-source("R_code/read.data.R")
+source("analysis/read.data.R")
 library(mgcv)
 
 set.seed(10012)
@@ -12,7 +12,7 @@ ranges <- list(
 )
 
 #i <- 1
-# for(i in 1:5){source("R_code/norm.R")}
+# for(i in 1:5){source("analysis/norm.R")}
 
 species_of_interest <- c("utriculus","physalis","megalista","minuta")
 longitude_range <- ranges[[i]][c(1,2)] 

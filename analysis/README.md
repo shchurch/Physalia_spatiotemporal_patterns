@@ -1,4 +1,4 @@
-# R_code
+# analysis
  
  This folder contains R scripts and Quarto notebooks used for:
  
@@ -10,7 +10,7 @@
  
  **Convention: no script hard-codes a machine-specific path. Start every `.R`/`.r` script from the repository root** (i.e., `Physalia_spatiotemporal/`), because they reference paths like:
  
- - `source("R_code/read.data.R")`
+ - `source("analysis/read.data.R")`
  - `data/...`
  - `results/...`
  - `figures/...`
@@ -75,7 +75,7 @@
  **How to run**:
  
  - Set `i <- 1` (or 1–5)
- - `source("R_code/seasonal_tiles.R")`
+ - `source("analysis/seasonal_tiles.R")`
  
  **Outputs (PDF)** (examples):
  
@@ -90,7 +90,7 @@
  **How to run**:
  
  - Set `i <- 1` (or 1–5)
- - `source("R_code/seasonal_histograms.R")`
+ - `source("analysis/seasonal_histograms.R")`
  
  **Outputs (PDF)**:
  
@@ -104,7 +104,7 @@
  **How to run**:
  
  - Set `i <- 1` (or 1–5)
- - `source("R_code/norm.R")`
+ - `source("analysis/norm.R")`
  
  **Output (PDF)**:
  
@@ -151,15 +151,15 @@
  Because many scripts use paths like `data/...` and `results/...`, the cleanest options are:
  
  - **Option 1 (most compatible):** initialize `renv` at the **repository root** (`Physalia_spatiotemporal/`).
- - **Option 2 (R_code-only renv):** initialize inside `R_code/`, but still run scripts with working directory set to the repo root, and explicitly activate `R_code`’s `renv` when needed.
+ - **Option 2 (`analysis`-only renv):** initialize inside `analysis/`, but still run scripts with working directory set to the repo root, and explicitly activate `analysis`’s `renv` when needed.
  
- If you initialize in `R_code/` and then set your working directory to the repo root, your scripts’ relative paths will work, but you need to ensure the `renv` environment is activated first.
+ If you initialize in `analysis/` and then set your working directory to the repo root, your scripts’ relative paths will work, but you need to ensure the `renv` environment is activated first.
  
- ### Create a new `renv` for `R_code/`
+ ### Create a new `renv` for `analysis/`
  
  From an R session:
  
- 1. Set your working directory to `R_code/`.
+ 1. Set your working directory to `analysis/`.
  2. Run:
  
  ```r
@@ -176,12 +176,12 @@
  
  This creates:
  
- - `R_code/renv.lock`
- - `R_code/renv/` (activation + infrastructure)
+ - `analysis/renv.lock`
+ - `analysis/renv/` (activation + infrastructure)
  
  ### Using the `renv` on a new machine
  
- 1. Open R with working directory set to `R_code/`.
+ 1. Open R with working directory set to `analysis/`.
  2. Run:
  
  ```r
@@ -189,13 +189,13 @@
  renv::restore()
  ```
  
- ### Running scripts from the repo root while using `R_code`’s `renv`
+ ### Running scripts from the repo root while using `analysis`’s `renv`
  
- If you want to keep the lockfile inside `R_code/` but execute scripts from the repo root (recommended for the current relative paths), you can activate the environment explicitly:
+ If you want to keep the lockfile inside `analysis/` but execute scripts from the repo root (recommended for the current relative paths), you can activate the environment explicitly:
  
  ```r
- source("R_code/renv/activate.R")
- source("R_code/read.data.R")
+ source("analysis/renv/activate.R")
+ source("analysis/read.data.R")
  ```
  
  After activation, you can run the other scripts normally.

@@ -72,10 +72,14 @@ Nanopore, reflecting the different error profiles.
 
 ## `tool_scripts/`
 
-Helper scripts used around the workflows rather than by them — retrieving MITOS
-results, selecting the longest sequence per marker, pulling reference sequences
-from NCBI, building quick trees, and assembling the per-sample QC report. They
-are included for completeness; the workflows do not call them.
+Helper scripts used around the workflows rather than by them: assembling the
+per-sample QC report, retrieving MITOS results, selecting the longest sequence
+per marker, summarising individual mitogenomes, concatenating FASTA files,
+trimming FASTA headers, and pulling reference sequences from NCBI.
+
+The workflows do not call these. They are kept because the Methods describe
+steps they carry out. Lab-general helpers for other taxa and other projects,
+which came from the same HPC directory, are not included here.
 
 ## Notes
 

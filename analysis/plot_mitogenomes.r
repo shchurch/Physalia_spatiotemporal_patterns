@@ -22,7 +22,7 @@ library(RColorBrewer)
   )
 
 # ---- Main directory ----
-# Run from the repository root (see R_code/README.md).
+# Run from the repository root (see analysis/README.md).
 # Physalia_annotated/individual_genomes is not currently tracked in this repo --
 # update this path once the annotated mitogenomes are added (see issue #13).
 main_dir <- file.path("Physalia_annotated", "individual_genomes")

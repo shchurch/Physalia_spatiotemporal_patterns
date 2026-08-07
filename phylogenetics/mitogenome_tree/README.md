@@ -54,7 +54,7 @@ The source alignment was produced on the Yale McCleary HPC by
 `new_mt_script.sh`, driven by `batch_newmt.sh`:
 
 ```bash
-bash tool_scripts/new_mt_script.sh 24 Physalia_annotated tmp.txt Physalia_mt_IDs.txt
+bash new_mt_script.sh   # HPC helper, not distributed here 24 Physalia_annotated tmp.txt Physalia_mt_IDs.txt
 # Physalia_mt_IDs.txt is tracked here as ../Physalia_sample_IDs.txt
 ```
 
@@ -67,10 +67,11 @@ Both trees here were inferred locally with **IQ-TREE 3.0.1**, `-B 1000`
 ultrafast bootstrap, model chosen by ModelFinder under BIC — the same version as
 the gene trees.
 
-`superseded/` holds the original HPC inference (IQ-TREE 2.2.2.3, GTR+F+I+R7),
-kept only for provenance. Note the two versions chose different models on the
-identical alignment — 2.2.2.3 GTR+F+I+R7, 3.0.1 GTR+F+I+R5 — while recovering
-the same Saint Helena result at 100% bootstrap.
+The original inference was run on the HPC under IQ-TREE 2.2.2.3. Its output is
+not kept in this repository, since the trees presented were all re-inferred
+under 3.0.1. Worth recording, though: the two versions chose different models on
+the identical alignment — 2.2.2.3 GTR+F+I+R7, 3.0.1 GTR+F+I+R5 — while
+recovering the same Saint Helena result at 100% bootstrap.
 
 **`20250417_redo_iqtree_physalia/` is not the authoritative pipeline.** That
 directory holds an earlier local attempt whose mitogenome alignment

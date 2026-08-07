@@ -1,5 +1,5 @@
-# run from the repository root (see R_code/README.md)
-source("R_code/read.data.R")
+# run from the repository root (see analysis/README.md)
+source("analysis/read.data.R")
 
 utr <- final_results %>% filter(species == "utriculus")
 meg <- final_results %>% filter(species == "megalista")
