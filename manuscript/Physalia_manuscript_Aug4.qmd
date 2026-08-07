@@ -136,12 +136,13 @@ We collected, observed, and photographed live (@fig-morphology A-H) and fixed (@
 ### Proposed common names
 _Physalia_ have many common names across languages [@pugh2019history], several of which refer to a specific kind of Portuguese sailing ship, the man-o-war or caravala. In the Pacific, especially Australia, _Physalia_ are also referred to as bluebottles, evocative of their striking color, and of their 'message-in-a-bottle' floating behavior. The common name Portuguese man-o-war has proven problematic, however, as the reference to the Portuguese ship is easily confused with a comment about their biogeography. In reality, the only _Physalia_ species known from Portugal is _P. physalis_, which is likely also the species to which the common name man-o-war was originally attributed.
 To rectify this situation, and to provide a standard set of English common names that can be used to refer to these species worldwide, we propose the following:
-for the genus, we propose the common name "bluebottles"
-for _P. physalis_, we propose this species retains the name "Portuguese man-o-war"
-for _P. utriculus_, the most widespread species and most abundant in English speaking parts of the Pacific, we propose the name "common bluebottle"
-for _P. minuta_, we propose the name "little bluebottle"
-for _P. megalista_, distributed around the southern tips of continents, we propose the name "southern bluebottle"
-For _P. mikazuki_, several names have already been proposed, including Japanese man-o-war, crescent helmet man-o-war, and crescent moon-o-war [@yongstar2026physalia]. This species is found outside of Japan (including Mexico, Pakistan, and elsewhere), and is also not the only or even most commonly collected Physalia species in Japan. For consistency and clarity, we propose the name "crescent helmet bluebottle" for _P. mikazuki_.
+
+- for the genus, we propose the common name "bluebottles"
+- for _P. physalis_, we propose this species retains the name "Portuguese man-o-war"
+- for _P. utriculus_, the most widespread species and most abundant in English-speaking parts of the Pacific, we propose the name "common bluebottle"
+- for _P. minuta_, we propose the name "little bluebottle"
+- for _P. megalista_, distributed around the southern tips of continents, we propose the name "southern bluebottle"
+- For _P. mikazuki_, several names have already been proposed, including Japanese man-o-war, crescent helmet man-o-war, and crescent moon-o-war [@yongstar2026physalia]. This species is found outside of Japan (including Mexico, Pakistan, and elsewhere), and is also not the only or even most commonly collected Physalia species in Japan. For consistency and clarity, we propose the name "crescent helmet bluebottle" for _P. mikazuki_.
 
 ### _Physalia_ (bluebottle) characteristics across species 
 
@@ -170,8 +171,6 @@ In our previous publication, _Physalia utriculus_ comprised two well-supported s
 The most reliable positive indicator of specimens of  _P. utriculus_ is the presence of bright yellow coloration on the distal tip of gastrozooids (@fig-morphology B inset). Other than the distal tip, gastrozooids are typically a bright blue, as are palpons and large tentacles, while gonodendra are light purple (Supp. Fig. 4B). Crest coloration varies from pink to blue or no color (Supp. Fig. 4). The anterior apex of the float may be colored green, yellow, or blue (Supp. Fig. 4A, C, D). Excluding the crest and anterior apex, coloration on the float is usually absent, and observation of a glassy transparent float is usually indicative of _P. utriculus_ (though very recently surfaced specimens of all species have glassy, globular floats). The float of _P. utriculus_ may appear curved or S-shaped when viewed dorsally, though in live animals this can change quickly as the muscles in the float contract and relax.
 
 P. utriculus shares a strong central organization of the main zone with _P. megalista_. All zooids appear to be borne on a single extension of the outer float of the colony, in contrast to _P. physalis_ that has multiple extensions. Small individuals of _P. utriculus_ may also resemble P. minuta due to glassiness of the float and size, but they do not share the central organization of the main zone. 
-
-We propose calling _P. utriculus_ a common bluebottle. The term “bluebottle” has been historically used in English-speaking countries on the Indian and Pacific oceans’ coasts, where this species has a wide range of distribution. A previous proposed common name for _P. utriculus_ was Indo-Pacific bluebottle/man-o’-war, but this species is also found in the Atlantic, making this name inadequate.
 
 #### _Physalia mikazuki_, crescent helmet bluebottle (**[TODO: panel, pending #7]**)
 
