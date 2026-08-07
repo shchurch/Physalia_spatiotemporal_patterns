@@ -18,8 +18,9 @@
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ALN="${ALN:-$HERE/mitogenome_tree/identification.aln.fa}"
-OUT_DIR="${OUT_DIR:-$HERE/mitogenome_tree}"
+ROOT="$(cd "$HERE/.." && pwd)"   # phylogenetics/
+ALN="${ALN:-$ROOT/mitogenome_tree/identification.aln.fa}"
+OUT_DIR="${OUT_DIR:-$ROOT/mitogenome_tree}"
 PREFIX="${PREFIX:-$OUT_DIR/iqtree_result_v3}"
 THREADS="${THREADS:-AUTO}"
 

@@ -10,18 +10,19 @@
 # are RefSeq mirrors of OQ957199 / OQ957206 and are deliberately excluded.
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-IN="${1:-$HERE/mitogenome_tree/submitted.aln.fa}"
+ROOT="$(cd "$HERE/.." && pwd)"   # phylogenetics/
+IN="${1:-$ROOT/mitogenome_tree/submitted.aln.fa}"
 TAG="${2:-submitted_rooted}"
-OG="$HERE/mitogenome_tree/rhizophysa_outgroups.fasta"
-OUT="$HERE/mitogenome_tree/${TAG}.aln.fa"
+OG="$ROOT/mitogenome_tree/rhizophysa_outgroups.fasta"
+OUT="$ROOT/mitogenome_tree/${TAG}.aln.fa"
 
 command -v mafft >/dev/null || { echo "ERROR: mafft not on PATH (conda activate tree)" >&2; exit 1; }
 IQTREE="$(command -v iqtree || command -v iqtree2 || command -v iqtree3)"
 
 echo "base alignment : $IN ($(grep -c '^>' "$IN") seqs)"
-mafft --add "$OG" --adjustdirectionaccurately --thread -1 "$IN" > "$OUT" 2> "$HERE/mitogenome_tree/${TAG}.mafft.log"
+mafft --add "$OG" --adjustdirectionaccurately --thread -1 "$IN" > "$OUT" 2> "$ROOT/mitogenome_tree/${TAG}.mafft.log"
 sed -i '' -E 's/^>_R_/>/' "$OUT"
 echo "with outgroups : $OUT ($(grep -c '^>' "$OUT") seqs)"
 
-"$IQTREE" -s "$OUT" -B 1000 -nt AUTO -pre "$HERE/mitogenome_tree/${TAG}"
+"$IQTREE" -s "$OUT" -B 1000 -nt AUTO -pre "$ROOT/mitogenome_tree/${TAG}"
 echo "done: ${TAG}.treefile"

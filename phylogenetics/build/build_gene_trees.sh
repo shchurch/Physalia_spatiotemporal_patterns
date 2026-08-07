@@ -18,13 +18,14 @@
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA="${DATA_ROOT:-$HERE/../..}"
+ROOT="$(cd "$HERE/.." && pwd)"   # phylogenetics/
+DATA="${DATA_ROOT:-$ROOT/..}"
 
 MITOS_DIR="${MITOS_DIR:-$DATA/mccleary_20250114_Siph_Genomics_partialdownload/mitos_results_fas}"
 SHARK_DIR="${SHARK_DIR:-$DATA/shark_results}"
-EXT_DIR="${EXT_DIR:-$HERE/external_seqs}"
-ID_FILE="${ID_FILE:-$HERE/Physalia_sample_IDs.txt}"
-OUT_DIR="${OUT_DIR:-$HERE/gene_trees}"
+EXT_DIR="${EXT_DIR:-$ROOT/external_seqs}"
+ID_FILE="${ID_FILE:-$ROOT/Physalia_sample_IDs.txt}"
+OUT_DIR="${OUT_DIR:-$ROOT/gene_trees}"
 THREADS="${THREADS:-AUTO}"
 
 # locus : mitos gene name (or NONE) : sharkmer gene name (or NONE)
