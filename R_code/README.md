@@ -15,9 +15,8 @@
  - `results/...`
  - `figures/...`
  
- The two scripts that used to hard-code `setwd("~/Downloads/Physalia_spatiotemporal/")` (`iNat_plot.r`, `map_problems.r`) have had that line removed -- just start R in the repo root and relative paths resolve.
+ No script sets its own working directory. Start R in the repository root and the relative paths resolve.
  
- **`.qmd` notebooks (`PCA.qmd`, `admixture.qmd`) are the one exception**: Quarto defaults a document's working directory to the file's own location, so these run with `R_code/` as the working directory and use `../data/...`, `../results/...` paths accordingly. No `setwd()` is needed or should be added back.
  
  ## Shared inputs produced/consumed by scripts
  
@@ -133,7 +132,6 @@
  
  - `<title>_predictions.pdf` maps written to the current working directory
  
- **Important**: Contains a hard-coded `setwd(...)`.
  
  ### `map_problems.r`
  **Role**: Debugging/outlier triage for suspicious spatial clusters. Subsets records for specific species/regions and writes review TSVs.
@@ -143,37 +141,6 @@
  - `<subset>_predictions.pdf` maps written to the current working directory
  - `<subset>.tsv` review tables (`id`, `image_url`, `place_guess`, `status`)
  
- **Important**: Contains a hard-coded `setwd(...)`.
- 
- ### `PCA.qmd`
- **Role**: Quarto notebook for population-genomic PCA + related map panels.
- 
- **Inputs** (relative to `R_code/` in the notebook):
- 
- - `../data/metadata.tsv`
- - `../data/sample_ids.tsv`
- - `../data/subset.txt`
- - `../results/...` (e.g., covariance files)
- 
- **Outputs**:
- 
- - Writes panels to `../figures/panels/` (PDF/PNG)
- 
- **Important**: Contains a hard-coded `setwd("/Users/samuelchurch/Downloads/Physalia_spatiotemporal/R_code")`.
- 
- ### `admixture.qmd`
- **Role**: Quarto notebook for admixture plots, assignment maps, and pixy-based population summary panels.
- 
- **Inputs**:
- 
- - `../data/metadata.tsv`
- - `../data/sample_ids.tsv`
- - `../results/subset/` (admix Q files, bam list)
- - `../results/pixy/locations/` (pixy output tables)
- 
- **Outputs**:
- 
- - Writes panels to `../figures/panels/` (PDF/PNG)
  
  ## Reproducibility with `renv`
  
