@@ -1,7 +1,7 @@
 # plot inaturalist records
-# run from the repository root (see R_code/README.md)
+# run from the repository root (see analysis/README.md)
 
-source("R_code/read.data.R")
+source("analysis/read.data.R")
 
 results <- final_results %>% filter(!is.na(longitude) & !is.na(latitude)) %>%
     mutate(species = ifelse(is.na(species),"",species))

@@ -36,4 +36,8 @@ or specimen table falls outside these 211 (199 + 12).
 |---|---|
 | `mitogenome_tree/` | Whole mitochondrial genome alignment and ML tree, 199 samples |
 
-Gene trees for 16S, 18S, CO1, and ITS are planned — see issues #9 and #12.
+Gene trees for 16S, 18S, CO1 and ITS are in `gene_trees/`, built by
+`build_gene_trees.sh`. Tip marks distinguish sequences new to this study from
+those also present in the previous manuscript's trees; the previous tip sets are
+recorded in `previous_study_tips.tsv` so the figures do not depend on files
+outside this repository.

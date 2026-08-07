@@ -28,3 +28,14 @@ venv/
 .idea/
 *.swp
 Thumbs.db
+
+# Illustrator sources for the multi-panel figures. They live here so that the
+# panels they link to, the composites they export, and the code that makes the
+# panels are all in one place -- but they are not tracked. They are large
+# opaque binaries (~177 MB), and git stores a whole new copy on every save.
+figures/*.ai
+figures/**/*.ai
+
+# Per-image prediction log. 5.7 MB of intermediate output; results/all_predictions.json
+# is the version the analyses read.
+results/predictions_log.json

@@ -1,4 +1,4 @@
-source("R_code/read.data.R")
+source("analysis/read.data.R")
 library(circular)
 circular_median_day <- function(days) {
   deg <- (days %% 365) / 365 * 360

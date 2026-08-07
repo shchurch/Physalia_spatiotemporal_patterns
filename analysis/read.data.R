@@ -19,7 +19,7 @@ library(dggridR)
 theme_set(theme_minimal())
 
 # Shared helper functions used by multiple plotting scripts.
-source("R_code/functions.R")
+source("analysis/functions.R")
 
 # Project color palette used across figures.
 cols <- c("purple","dodgerblue","dark orange","dark cyan","gray","dark gray")

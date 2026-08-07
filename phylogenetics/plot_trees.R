@@ -2,7 +2,8 @@
 # Supplemental tree figures, coloured by ocean of origin.
 #
 # Follows the convention of the gene-tree figures in the previous manuscript
-# (physalia/R_code/genetrees.qmd): root on the Rhizophysa MRCA where outgroups
+# (https://github.com/shchurch/Physalia_population_genomics): root on the
+# Rhizophysa MRCA where outgroups
 # are present and midpoint-root otherwise, colour tips by ocean, label tips with
 # specimen and locality, and print bootstrap support at nodes.
 #

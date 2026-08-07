@@ -1,5 +1,5 @@
 library(ggalluvial)
-source("R_code/read.data.R")
+source("analysis/read.data.R")
 
 inr_final <- bind_rows(inr_0,inr_1,inr_2,inr_3,inr_4,inr_5) %>% select(id, stage, species)
 
