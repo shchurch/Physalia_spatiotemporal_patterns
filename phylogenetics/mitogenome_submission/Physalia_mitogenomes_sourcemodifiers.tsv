@@ -1,0 +1,169 @@
+Sequence_ID	Collection_date	Country (geo_loc_name)	Isolate	Isolation_source	Tissue_type	Dev_stage	Lat_Lon
+FM-16644_annotation	2023-05-14	Spain: Canary Islands	FM-16644	ocean	tentacle		28.591940 N 17.920910 W
+NIWA-173304_annotation	2024-03-15	New Zealand	NIWA-173304	ocean	tentacle		36.895150 S 174.443889 W
+NIWA-173305_annotation	2024-03-15	New Zealand	NIWA-173305	ocean	tentacle		36.895150 S 174.443889 W
+OA-190531-1_annotation	2019-12-15	Australia: New South Wales	OA-190531-1	ocean	unknown		33.891500 S 151.276700 E
+OA-Bluebottle_annotation	2022-01-01	Australia: New South Wales	OA-Bluebottle	ocean	unknown		33.920300 151.258100 E
+TMAG-K5632_annotation	2023-01-14	Australia: Tasmania	TMAG-K5632	ocean	tentacle		41.863900 S 148.286500 E
+TMAG-K5633_annotation	2023-01-14	Australia: Tasmania	TMAG-K5633	ocean	tentacle		41.863900 S 148.286500 E
+TMAG-K5634_annotation	2023-01-14	Australia: Tasmania	TMAG-K5634	ocean	tentacle		41.863900 S 148.286500 E
+TMAG-K5635_annotation	2023-01-14	Australia: Tasmania	TMAG-K5635	ocean	tentacle		41.863900 S 148.286500 E
+TMAG-K5636_annotation	2023-01-14	Australia: Tasmania	TMAG-K5636	ocean	tentacle		41.863900 S 148.286500 E
+WAM-Z88480_annotation	2018-08-03	Australia: Western Australia	WAM-Z88480	ocean	unknown		31.908144 S 115.754811 E
+WAM-Z97900_annotation	2019-04-19	Australia: Western Australia	WAM-Z97900	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97901_annotation	2019-04-19	Australia: Western Australia	WAM-Z97901	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97902_annotation	2019-04-19	Australia: Western Australia	WAM-Z97902	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97903_annotation	2019-04-19	Australia: Western Australia	WAM-Z97903	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97906_annotation	2019-04-19	Australia: Western Australia	WAM-Z97906	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97907_annotation	2019-04-19	Australia: Western Australia	WAM-Z97907	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97908_annotation	2019-04-19	Australia: Western Australia	WAM-Z97908	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97909_annotation	2019-04-19	Australia: Western Australia	WAM-Z97909	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97910_annotation	2019-04-19	Australia: Western Australia	WAM-Z97910	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97911_annotation	2019-04-19	Australia: Western Australia	WAM-Z97911	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97914_annotation	2019-04-19	Australia: Western Australia	WAM-Z97914	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97916_annotation	2019-04-19	Australia: Western Australia	WAM-Z97916	ocean	unknown		31.855786 S 115.751741 E
+WAM-Z97917_annotation	2019-01-18	Australia: New South Wales	WAM-Z97917	ocean	unknown		33.787002 S 151.288609 E
+WAM-Z97920_annotation	2018-02-05	Australia: New South Wales	WAM-Z97920	ocean	unknown		33.987424 S 151.231329 E
+WAM-Z97921_annotation	2019-01-19	Australia: Queensland	WAM-Z97921	ocean	unknown		26.784003 S 153.140596 E
+WAM-Z97923_annotation	2019-01-19	Australia: Queensland	WAM-Z97923	ocean	unknown		26.784003 S 153.140596 E
+YPM-IZ-104460_annotation	2018-11-23	Guam	YPM-IZ-104460	ocean	tentacle		13.427861 N 144.798518 E
+YPM-IZ-104461_annotation	2018-11-23	Guam	YPM-IZ-104461	ocean	tentacle		13.427861 N 144.798518 E
+YPM-IZ-104464_annotation	2018-11-23	Guam	YPM-IZ-104464	ocean	tentacle		13.427861 N 144.798518 E
+YPM-IZ-106919_annotation	2020-11-19	Japan	YPM-IZ-106919	ocean	tentacle		35.307390 N 139.480651 E
+YPM-IZ-106920_annotation	2020-11-19	Japan	YPM-IZ-106920	ocean	tentacle		35.307390 N 139.480651 E
+YPM-IZ-106923_annotation	2020-11-19	Japan	YPM-IZ-106923	ocean	tentacle		35.307390 N 139.480651 E
+YPM-IZ-106935_annotation	2016-03-02	USA: Texas	YPM-IZ-106935	ocean	tentacle		29.19532 N 94.8429383 W
+YPM-IZ-106936_annotation	2016-03-03	USA: Texas	YPM-IZ-106936	ocean	tentacle		29.19532 N 94.8429383 W
+YPM-IZ-106937_annotation	2016-03-03	USA: Texas	YPM-IZ-106937	ocean	tentacle		29.19532 N 94.8429383 W
+YPM-IZ-106941_annotation	2019-05-18	Bermuda	YPM-IZ-106941	ocean	tentacle		32.323333 N 64.656300 W
+YPM-IZ-106943_annotation	2019-05-18	Bermuda	YPM-IZ-106943	ocean	tentacle		32.341117 N 64.669133 W
+YPM-IZ-106954_annotation	2019-05-20	Bermuda	YPM-IZ-106954	ocean	tentacle		32.367233 N 64.714550 W
+YPM-IZ-106958_annotation	2017-03-18	USA: Texas	YPM-IZ-106958	ocean	tentacle		29.195320 N 94.842938 W
+YPM-IZ-110251_annotation	2022-12-22	USA: Florida	YPM-IZ-110251	ocean	tentacle		25.737060 N 80.152790 W
+YPM-IZ-110254_annotation	2022-12-22	USA: Florida	YPM-IZ-110254	ocean	tentacle		25.736470 N 80.153500 W
+YPM-IZ-110264_annotation	2022-10-31	USA: Hawai'i	YPM-IZ-110264	ocean	tentacle		22.069018 N 159.316685 W
+YPM-IZ-110268_annotation	2022-11-04	USA: Hawai'i	YPM-IZ-110268	ocean	tentacle		22.069018 N 159.316685 W
+YPM-IZ-110269_annotation	2022-11-04	USA: Hawai'i	YPM-IZ-110269	ocean	tentacle		22.069018 N 159.316685 W
+YPM-IZ-110276_annotation	2022-11-19	USA: Hawai'i	YPM-IZ-110276	ocean	tentacle		20.9225222 N 156.4926917 W
+YPM-IZ-110277_annotation	2022-11-19	USA: Hawai'i	YPM-IZ-110277	ocean	tentacle		20.9225222 N 156.4926917 W
+YPM-IZ-110278_annotation	2022-11-19	USA: Hawai'i	YPM-IZ-110278	ocean	tentacle		20.9225222 N 156.4926917 W
+YPM-IZ-110433_annotation	2023-03-14	USA: Florida	YPM-IZ-110433	ocean	tentacle		25.741630 N 80.175194 W
+YPM-IZ-110434_annotation	2023-03-14	USA: Florida	YPM-IZ-110434	ocean	tentacle		25.741630 N 80.175194 W
+YPM-IZ-110436_annotation	2023-03-16	USA: Florida	YPM-IZ-110436	ocean	tentacle		25.705360 N 80.152810 W
+YPM-IZ-110438_annotation	2023-03-24	USA: Texas	YPM-IZ-110438	ocean	tentacle		28.989194 N 95.237778 W
+YPM-IZ-110443_annotation	2023-03-24	USA: Texas	YPM-IZ-110443	ocean	tentacle		28.951778 N 95.283167 W
+YPM-IZ-110460_annotation	2022-11-14	USA: Hawai'i	YPM-IZ-110460	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110467_annotation	2023-02-16	New Zealand	YPM-IZ-110467	ocean	tentacle		41.330278 S 174.831944 E
+YPM-IZ-110468_annotation	2023-02-16	New Zealand	YPM-IZ-110468	ocean	tentacle		41.330000 S 174.833056 E
+YPM-IZ-110469_annotation	2023-02-16	New Zealand	YPM-IZ-110469	ocean	tentacle		41.330000 S 174.833056 E
+YPM-IZ-110470_annotation	2023-02-16	New Zealand	YPM-IZ-110470	ocean	zooid		41.330000 S 174.833056 E
+YPM-IZ-110471_annotation	2023-04-09	USA: Hawai'i	YPM-IZ-110471	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110473_annotation	2023-04-09	USA: Hawai'i	YPM-IZ-110473	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110474_annotation	2023-04-04	USA: Hawai'i	YPM-IZ-110474	ocean	tentacle		21.454600 N 157.748500 W
+YPM-IZ-110480_annotation	2023-04-06	USA: Hawai'i	YPM-IZ-110480	ocean	tentacle		21.454600 N 157.748500 W
+YPM-IZ-110515_annotation	2023-02-09	Australia: New South Wales	YPM-IZ-110515	ocean	tentacle		33.947500 S 151.257361 E
+YPM-IZ-110520_annotation	2023-02-19	Australia: New South Wales	YPM-IZ-110520	ocean	tentacle		33.947500 S 151.257361 E
+YPM-IZ-110526_annotation	2023-04-23	Australia: New South Wales	YPM-IZ-110526	ocean	tentacle		33.947500 S 151.257361 E
+YPM-IZ-110556_annotation	2022-12-25	Australia: Tasmania	YPM-IZ-110556	ocean	tentacle		41.996839 S 148.284729 E
+YPM-IZ-110557_annotation	2022-12-25	Australia: Tasmania	YPM-IZ-110557	ocean	tentacle		41.996839 S 148.284729 E
+YPM-IZ-110558_annotation	2022-12-25	Australia: Tasmania	YPM-IZ-110558	ocean	tentacle		41.996839 S 148.284729 E
+YPM-IZ-110566_annotation	2022-01-24	Guam	YPM-IZ-110566	ocean	tentacle		13.605463 N 144.907196 E
+YPM-IZ-110569_annotation	2022-01-27	Guam	YPM-IZ-110569	ocean	tentacle		13.427664 N 144.801336 E
+YPM-IZ-110600_annotation	2023-04-27	Guam	YPM-IZ-110600	ocean	tentacle		13.372435 N 144.773357 E
+YPM-IZ-110602_annotation	2023-04-27	Guam	YPM-IZ-110602	ocean	tentacle		13.372435 N 144.773357 E
+YPM-IZ-110605_annotation	2023-02-03	Australia: Queensland	YPM-IZ-110605	ocean	tentacle		28.089089 S 153.453921 E
+YPM-IZ-110612_annotation	2023-03-26	Australia: New South Wales	YPM-IZ-110612	ocean	tentacle		30.745087 S 152.995494 E
+YPM-IZ-110613_annotation	2023-03-26	Australia: New South Wales	YPM-IZ-110613	ocean	tentacle		30.745087 S 152.995494 E
+YPM-IZ-110616_annotation	2023-03-26	Australia: New South Wales	YPM-IZ-110616	ocean	tentacle		30.881192 S 153.035604 E
+YPM-IZ-110631_annotation	2023-07-14	USA: Rhode Island	YPM-IZ-110631	ocean	tentacle		41.346250 N 71.678310 W
+YPM-IZ-110633_annotation	2023-07-15	USA: Rhode Island	YPM-IZ-110633	ocean	tentacle		41.377020 N 71.527820 W
+YPM-IZ-110667_annotation	2023-07-20	USA: New York	YPM-IZ-110667	ocean	tentacle		40.857420 N 71.779920 W
+YPM-IZ-110694_annotation	2023-07-26	USA: Massachusetts	YPM-IZ-110694	ocean	tentacle		41.344990 N 70.836797 W
+YPM-IZ-110716_annotation	2013-04-02	Spain	YPM-IZ-110716	ocean	tentacle		36.458090 N 6.252680 W
+YPM-IZ-110726_annotation	2013-04-02	Spain	YPM-IZ-110726	ocean	tentacle		36.458090 N 6.252680 W
+YPM-IZ-110738_annotation	2013-04-02	Spain	YPM-IZ-110738	ocean	tentacle		36.458090 N 6.252680 W
+YPM-IZ-110777_annotation	2023-07-19	USA: Hawai'i	YPM-IZ-110777	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110780_annotation	2023-07-19	USA: Hawai'i	YPM-IZ-110780	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110785_annotation	2023-07-21	USA: Hawai'i	YPM-IZ-110785	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110786_annotation	2023-07-28	USA: Hawai'i	YPM-IZ-110786	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-110828_annotation	2023-07-12	Chile	YPM-IZ-110828	ocean	tentacle		29.972700 S 71.360900 W
+YPM-IZ-110829_annotation	2023-07-13	Chile	YPM-IZ-110829	ocean	tentacle		29.972700 S 71.360900 W
+YPM-IZ-110830_annotation	2014-02-28	Uruguay	YPM-IZ-110830	ocean	tentacle		33.751600 S 53.380100 W
+YPM-IZ-110842_annotation	2019-07-18	Portugal: Azores	YPM-IZ-110842	ocean	tentacle		38.524769 N 28.625946 W
+YPM-IZ-110843_annotation	2020-05-22	Portugal: Azores	YPM-IZ-110843	ocean	tentacle		37.818604 N 25.543635 W
+YPM-IZ-110844_annotation	2019-11-29	Portugal: Azores	YPM-IZ-110844	ocean	tentacle		38.524769 N 28.625946 W
+YPM-IZ-110845_annotation	2020-08-17	Portugal: Azores	YPM-IZ-110845	ocean	tentacle		37.750488 N 25.624447 W
+YPM-IZ-110846_annotation	2020-07-10	Portugal: Azores	YPM-IZ-110846	ocean	tentacle		38.523756 N 28.623767 W
+YPM-IZ-110847_annotation	2020-07-15	Portugal: Azores	YPM-IZ-110847	ocean	tentacle		38.542865 N 28.618676 W
+YPM-IZ-110876_annotation	2017-03-19	USA: Texas	YPM-IZ-110876	ocean	tentacle		29.260000 N 94.840000 W
+YPM-IZ-110877_annotation	2007-06-06	Mexico	YPM-IZ-110877	ocean	tentacle		27.245000 N 111.500000 W
+YPM-IZ-110878_annotation	2006-06-09	Mexico	YPM-IZ-110878	ocean	tentacle		27.326667 N 111.480000 W
+YPM-IZ-110880_annotation	2023-08-23	USA: Rhode Island	YPM-IZ-110880	ocean	tentacle		41.149290 N 71.481140 W
+YPM-IZ-110881_annotation	2023-04-10	USA: Hawai'i	YPM-IZ-110881	ocean	whole body	juvenile	19.666667 N 156.083333 W
+YPM-IZ-110882_annotation	2023-04-10	USA: Hawai'i	YPM-IZ-110882	ocean	whole body	juvenile	19.666667 N 156.083333 W
+YPM-IZ-110883_annotation	2023-04-10	USA: Hawai'i	YPM-IZ-110883	ocean	whole body	juvenile	19.666667 N 156.083333 W
+YPM-IZ-110906_annotation	2023-08-23	Pacific Ocean	YPM-IZ-110906	ocean	zooid	juvenile	26.723056 N 164.766667 W
+YPM-IZ-110907_annotation	2023-08-22	Pacific Ocean	YPM-IZ-110907	ocean	zooid	juvenile	26.080000 N 176.470000 W
+YPM-IZ-110925_annotation	2023-02-04	Japan	YPM-IZ-110925	ocean	tentacle		28.404780 N 129.454826 E
+YPM-IZ-110926_annotation	2023-04-10	Japan	YPM-IZ-110926	ocean	tentacle		35.309561 N 139.478820 E
+YPM-IZ-110930_annotation	2023-04-30	Japan	YPM-IZ-110930	ocean	tentacle		35.309561 N 139.478820 E
+YPM-IZ-110931_annotation	2023-05-19	Japan	YPM-IZ-110931	ocean	tentacle		35.309561 N 139.478820 E
+YPM-IZ-110933_annotation	2023-07-20	Japan	YPM-IZ-110933	ocean	tentacle		35.309701 N 139.478831 E
+YPM-IZ-110937_annotation	2023-07-21	Japan	YPM-IZ-110937	ocean	tentacle		35.309561 N 139.478820 E
+YPM-IZ-110938_annotation	2023-09-22	Japan	YPM-IZ-110938	ocean	tentacle		35.309701 N 139.478831 E
+YPM-IZ-110943_annotation	2023-05-19	Japan	YPM-IZ-110943	ocean	tentacle		35.134935 N 140.284606 E
+YPM-IZ-111006_annotation	2023-08-08	South Africa	YPM-IZ-111006	ocean	tentacle		27.539919 S 32.678650 E
+YPM-IZ-111007_annotation	2023-08-08	South Africa	YPM-IZ-111007	ocean	tentacle		27.539919 S 32.678650 E
+YPM-IZ-111008_annotation	2023-08-08	South Africa	YPM-IZ-111008	ocean	tentacle		27.539919 S 32.678650 E
+YPM-IZ-111009_annotation	2023-08-08	South Africa	YPM-IZ-111009	ocean	tentacle		27.539919 S 32.678650 E
+YPM-IZ-111010_annotation	2023-08-08	South Africa	YPM-IZ-111010	ocean	tentacle		27.539919 S 32.678650 E
+YPM-IZ-111012_annotation	2022-03-08	Bermuda	YPM-IZ-111012	ocean	tentacle		
+YPM-IZ-111013_annotation	2022-03-08	Bermuda	YPM-IZ-111013	ocean	tentacle		
+YPM-IZ-111014_annotation	2022-03-09	Bermuda	YPM-IZ-111014	ocean	tentacle		
+YPM-IZ-111016_annotation	2022-03-09	Bermuda	YPM-IZ-111016	ocean	tentacle		
+YPM-IZ-111017_annotation	2022-03-09	Bermuda	YPM-IZ-111017	ocean	tentacle		
+YPM-IZ-111018_annotation	2022-03-09	Bermuda	YPM-IZ-111018	ocean	tentacle		
+YPM-IZ-111156_annotation	2023-10-16	Tasman Sea	YPM-IZ-111156	ocean	tentacle		35.747000 S 154.330000 E
+YPM-IZ-111157_annotation	2023-10-16	Tasman Sea	YPM-IZ-111157	ocean	tentacle		35.747000 S 154.330000 E
+YPM-IZ-111158_annotation	2023-10-16	Tasman Sea	YPM-IZ-111158	ocean	tentacle		35.747000 S 154.330000 E
+YPM-IZ-111159_annotation	2023-10-16	Tasman Sea	YPM-IZ-111159	ocean	tentacle		35.747000 S 154.330000 E
+YPM-IZ-111160_annotation	2023-10-16	Tasman Sea	YPM-IZ-111160	ocean	tentacle		35.747000 S 154.330000 E
+YPM-IZ-111163_annotation	2024-03-18	Australia: New South Wales	YPM-IZ-111163	ocean	tentacle		33.947500 S 151.257361 E
+YPM-IZ-111207_annotation	2024-03-15	New Zealand	YPM-IZ-111207	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111208_annotation	2024-03-15	New Zealand	YPM-IZ-111208	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111209_annotation	2024-03-15	New Zealand	YPM-IZ-111209	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111210_annotation	2024-03-15	New Zealand	YPM-IZ-111210	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111220_annotation	2024-03-15	New Zealand	YPM-IZ-111220	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111231_annotation	2024-03-15	New Zealand	YPM-IZ-111231	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111241_annotation	2024-03-15	New Zealand	YPM-IZ-111241	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111243_annotation	2024-03-15	New Zealand	YPM-IZ-111243	ocean	tentacle		36.895150 S 174.443889 E
+YPM-IZ-111256_annotation	2024-01-01	USA: Hawai'i	YPM-IZ-111256	ocean	tentacle		21.454600 N 157.748500 W
+YPM-IZ-111261_annotation	2024-03-06	USA: Hawai'i	YPM-IZ-111261	ocean	tentacle		21.454600 N 157.748500 W
+YPM-IZ-111495_annotation	2024-05-28	New Zealand	YPM-IZ-111495	ocean	tentacle		35.954891 S 173.744757 E
+YPM-IZ-111513_annotation	2024-05-29	New Zealand	YPM-IZ-111513	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111514_annotation	2024-05-29	New Zealand	YPM-IZ-111514	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111517_annotation	2024-05-30	New Zealand	YPM-IZ-111517	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111518_annotation	2024-05-30	New Zealand	YPM-IZ-111518	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111519_annotation	2024-05-30	New Zealand	YPM-IZ-111519	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111520_annotation	2024-05-30	New Zealand	YPM-IZ-111520	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111521_annotation	2024-05-30	New Zealand	YPM-IZ-111521	ocean	tentacle		36.082526 S 173.856312 E
+YPM-IZ-111529_annotation	2024-05-31	New Zealand	YPM-IZ-111529	ocean	tentacle		35.954891 S 173.744757 E
+YPM-IZ-111530_annotation	2024-05-31	New Zealand	YPM-IZ-111530	ocean	tentacle		35.954891 S 173.744757 E
+YPM-IZ-111539_annotation	2024-06-02	New Zealand	YPM-IZ-111539	ocean	tentacle		35.954891 S 173.744757 E
+YPM-IZ-111547_annotation	2024-04-05	USA: Hawai'i	YPM-IZ-111547	ocean	tentacle		21.400790 N 157.734500 W
+YPM-IZ-111759_annotation	2024-04-04	Pacific Ocean	YPM-IZ-111759	ocean	unknown		42.990400 S 171.893600 W
+YPM-IZ-111806_annotation	2024-04-10	Pacific Ocean	YPM-IZ-111806	ocean	unknown		40.757100 S 160.246100 W
+YPM-IZ-111813_annotation	2024-04-11	Pacific Ocean	YPM-IZ-111813	ocean	unknown		40.393400 S 157.414500 W
+YPM-IZ-111814_annotation	2024-04-14	Pacific Ocean	YPM-IZ-111814	ocean	unknown		39.943200 S 150.567400 W
+YPM-IZ-111816_annotation	2024-04-14	Pacific Ocean	YPM-IZ-111816	ocean	unknown		39.943200 S 150.567400 W
+YPM-IZ-111819_annotation	2024-04-15	Pacific Ocean	YPM-IZ-111819	ocean	unknown		39.450700 S 147.954700 W
+YPM-IZ-111820_annotation	2024-04-15	Pacific Ocean	YPM-IZ-111820	ocean	unknown		39.046600 S 146.960800 W
+YPM-IZ-111822_annotation	2024-04-16	Pacific Ocean	YPM-IZ-111822	ocean	unknown		38.597600 S 145.824500 W
+YPM-IZ-111825_annotation	2024-04-17	Pacific Ocean	YPM-IZ-111825	ocean	unknown		38.424200 S 143.985100 W
+YPM-IZ-111839_annotation	2011-11-24	Pacific Ocean	YPM-IZ-111839	ocean	tentacle		8.355000 N 156.890000 W
+YPM-IZ-111840_annotation	2011-11-23	Pacific Ocean	YPM-IZ-111840	ocean	tentacle		9.521700 N 157.425000 W
+YPM-IZ-115977_annotation	2025-09-24	Saint Helena	YPM-IZ-115977	ocean	tentacle		16.003892 S 5.714589 W
+YPM-IZ-115978_annotation	2025-09-24	Saint Helena	YPM-IZ-115977	ocean	tentacle		16.003892 S 5.714589 W
+YPM-IZ-115980_annotation	2026-01-13	Saint Helena	YPM-IZ-115980	ocean	tentacle		16.003892 S 5.714589 W
+YPM-IZ-115990_annotation	2026-01-13	Saint Helena	YPM-IZ-115990	ocean	tentacle		16.003892 S 5.714589 W
+YPM-IZ-116019_annotation	2026-01-19	Saint Helena	YPM-IZ-116019	ocean	float		16.003892 S 5.714589 W
