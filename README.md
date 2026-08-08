@@ -1,4 +1,4 @@
-# Spatiotemporal distributions of bluebottles (*Physalia*) around the world's oceans
+# Seasonality, range, and morphology of bluebottles (*Physalia*) around the world's oceans
 
 Code, data, and figures for the manuscript.
 
