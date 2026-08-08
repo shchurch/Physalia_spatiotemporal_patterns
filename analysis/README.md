@@ -81,7 +81,7 @@
  
  - `figures/panels/seasonal_<species>_<range>.pdf`: points colored by day-of-year
  - `figures/panels/seasonal_tiled_count_<species>_<range>.pdf`: DGGS-tiled log-scaled counts
- - `figures/panels/seasonal_tiled_<species>_<range>.pdf`: DGGS-tiled median day-of-year
+ - `figures/panels/seasonal_tiled_<species>_<range>.pdf`: DGGS-tiled median day-of-year. A hexagon is coloured only if it holds at least `MIN_N` (3) records; below that a median is one of two dates rather than a median. Thin hexes are kept and drawn near-white with an outline, so a reader still sees the species was recorded there. The outline matters: the land fill is `#D3D3D3`, and a plain light-grey hex disappears wherever it overlaps land.
  - `figures/panels/polar_calendar_<range>.pdf`: reference polar color map
  
  ### `seasonal_histograms.R`
@@ -98,6 +98,25 @@
  - `figures/panels/facet_hist_<range>.pdf`: stacked seasonal histograms by species
  - `figures/panels/yearly_hist_<species>_<range>.pdf`: seasonal histograms faceted by year
  
+ ### `seasonal_panels.R`
+ **Role**: Panels for the combined seasonality figure, which supplies `figures/seasonality_time.png` and `figures/seasonality_space.png` (these replaced the former `seasonality_pacific_africa` and `seasonality_atlantic` figures). Covers four regions: eastern Australia/New Zealand, Southern Africa, the Caribbean/North America, and eastern South America.
+
+ **How to run**: `Rscript analysis/seasonal_panels.R` from the repository root. Takes no arguments and does all four regions in one pass, unlike `seasonal_histograms.R` and `norm.R`, which want `i` set first.
+
+ **Outputs (PNG, 500 dpi, in `figures/panels/seasonality/`)**:
+
+ - `season_<region>.png`: radial seasonality, one ring per species
+ - `season_key_intensity.png`: the intensity ramp, placed once for the assembled figure (species names and counts sit in a boxed key under each region panel)
+ - `map_<region>_<quarter>.png`: the three-month maps, at cropped frames
+ - `counts_by_region.tsv`: per species-region totals, for the caption
+
+ **Two things to know before editing**:
+
+ - *Seasonality is radial, and deliberately so.* Day of year is cyclic; a linear axis has to cut the year somewhere, and a Jan 1 cut halves the austral summer peak and draws it at both ends of the axis as though it were two peaks. This is visible in the figures being replaced. A circle has no ends. Bins are 5 days because 365 = 5 × 73 divides exactly, and binning is on raw day of year — rotating first and taking the modulo back leaves one bin astride the boundary, which the scale then silently drops, putting a gap in every ring.
+ - *Nothing is smoothed.* Every value is a raw count in a stated bin, scaled against what an evenly spread year would put in that bin, so rings with very different `n` can be compared. The ramp saturates at 5×; four cells exceed that, the largest at 9.8×, so the figure cannot distinguish 5× from 10× and the caption should say so.
+
+ Map frames are cut to the 1st–99th percentile of each region's own records, which is 39–55% of the nominal region boxes. Four cells fall below n = 50 and are marked `*` next to their count.
+
  ### `norm.R`
  **Role**: Explores “effort normalization” using the `norm_results` baseline dataset and a cyclic GAM (`mgcv::gam`) over day-of-year.
  
