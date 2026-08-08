@@ -9,7 +9,7 @@ Code, data, and figures for the manuscript.
 | `manuscript/` | the manuscript and supplementary figures, as Quarto sources | yes — `quarto render` |
 | `analysis/` | R code for the iNaturalist analyses: seasonal abundance, effort normalisation, maps, classification figures | **yes** |
 | `phylogenetics/` | gene and mitochondrial genome trees, tip metadata, GenBank submission bundles | **yes** |
-| `machine_learning/` | image classification of iNaturalist photographs | needs the image corpus, deposited on Zenodo |
+| `machine_learning/` | image classification of iNaturalist photographs | no — needs the image corpus, which is not redistributed |
 | `pipeline/` | Snakemake read QC and mitochondrial genome assembly, Illumina and Nanopore | no — needs the raw reads and a Slurm cluster |
 | `data/` | iNaturalist exports, specimen tables, labels | — |
 | `results/` | classification outputs | — |
@@ -26,8 +26,10 @@ source("analysis/norm.R")
 
 `machine_learning/` and `pipeline/` were run on an HPC against inputs too large
 for this repository: the iNaturalist image corpus and the raw sequencing reads.
-The images are deposited on Zenodo and the reads in the SRA, so both can be
-obtained. Neither directory has been modified since it was run.
+The images are not redistributed, since their licences vary per observation, but
+`results/final_labeled_dataset.tsv` lists every observation with its photo URL,
+licence, and species label, so the corpus can be reassembled. The reads are in
+the SRA. Neither directory has been modified since it was run.
 
 ### Figures
 
@@ -41,13 +43,35 @@ manuscript includes.
 
 ## Data availability
 
-Mitochondrial genomes, 18S, and ITS sequences are deposited in GenBank; see the
-Data availability section of the manuscript for accession ranges. Raw reads are
-in the SRA.
+Together these resources are intended as a toolkit for identifying and
+monitoring the five described *Physalia* species. They are split across three
+places, indexed here.
 
-The Zenodo deposit — the iNaturalist image corpus and the larger derived
-outputs — is still pending. Its DOI will be added here and to the manuscript
-once minted.
+| Resource | Where |
+|---|---|
+| Labelled iNaturalist dataset — 20,704 observations with photo URL, licence, attribution, species, and label provenance | `results/final_labeled_dataset.tsv` |
+| Gene alignments and trees — 16S, 18S, CO1, ITS | `phylogenetics/gene_trees/` |
+| Mitochondrial genome alignments and trees, incl. the 199-sample tree used for species assignment | `phylogenetics/mitogenome_tree/` |
+| Tip metadata for all trees | `phylogenetics/tip_metadata.tsv` |
+| Seasonal abundance, effort normalisation, and mapping code | `analysis/` |
+| Image classification code | `machine_learning/` |
+| Read QC and mitogenome assembly workflows | `pipeline/` |
+| Mitochondrial genomes (n=168) | GenBank PZ224317–PZ224484 |
+| Nuclear 18S (n=181) | GenBank PZ802573–PZ802753 |
+| Nuclear ITS (n=186) | GenBank PZ804143–PZ804328 |
+| Raw reads | SRA — *submission pending* |
+| Morphological characters, type material, and the comparative figures | the manuscript |
+
+Two things are deliberately absent. The iNaturalist photographs are not
+redistributed, since their licences vary per observation and roughly a quarter
+carry no CC licence at all; the table above lists every observation so the
+corpus can be reassembled under each contributor's own terms. The fitted
+classification model was not retained, so it is not distributed either — the
+training and inference code is here, and the seeds are fixed, so it can be
+retrained.
+
+This repository is archived on Zenodo; the DOI will be added here and to the
+manuscript once minted.
 
 The population-genomic analyses of these samples are a separate manuscript:
 <https://github.com/shchurch/Physalia_population_genomics>
