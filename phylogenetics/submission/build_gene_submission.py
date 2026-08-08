@@ -145,11 +145,12 @@ species.setdefault("YPM-IZ-104465", "Physalia utriculus")
 species.setdefault("YPM-IZ-110972", "Physalia physalis")
 species.setdefault("YPM-IZ-111760", "Physalia minuta")
 
-# The five Saint Helena specimens have no row in either specimen table, so their
-# collector is recorded here rather than looked up (see issue #1).
-ST_HELENA_COLLECTORS = "Adam Riggs, Casey Dunn"
-ST_HELENA = {"YPM-IZ-115977", "YPM-IZ-115978", "YPM-IZ-115980",
-             "YPM-IZ-115990", "YPM-IZ-116019"}
+# The five Saint Helena specimens used to be absent from the specimen tables, so
+# their collector was written in here as "Adam Riggs, Casey Dunn" for all five.
+# They are in data/sample_ids.tsv now, and the table disagrees: 115977 and 115978
+# were collected by Adam Riggs on 2025-09-24, and 115980, 115990 and 116019 by
+# Casey W. Dunn in January 2026. The lookup is correct, so the override is gone.
+# See issue #1.
 
 # collection metadata, in priority order
 mito_src = {r["Sequence_ID"].replace("_annotation", ""): r
@@ -182,8 +183,7 @@ def source_row(sid):
         # here. The Lat_Lon strings in the mitogenome submission are taken only
         # as a fallback: several are wrong (see README), and one is malformed.
         "Lat_Lon": to_latlon(t.get("lat_long")) or to_latlon(m.get("Lat_Lon")),
-        "Collected_by": (ST_HELENA_COLLECTORS if sid in ST_HELENA
-                         else (t.get("collector") or "").strip()),
+        "Collected_by": (t.get("collector") or "").strip(),
     }
 
 

@@ -35,13 +35,7 @@ right after it. -->
 
 \newpage
 
-::: {#fig-s3}
-
-\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
-
-**Phylogenetic tree placing the Saint Helena _P. minuta_ samples.** Not yet generated -- note that `phylogenetics/mitogenome_tree/` now has built trees (`identification.treefile`, `submitted.treefile`, `submitted_rooted.treefile`) that may be able to source this once someone confirms which tree/rooting is appropriate here, and how the ONT dataset question (#21) affects it.
-
-:::
+![**Phylogenetic tree placing the Saint Helena _P. minuta_ samples.** Maximum likelihood tree of the 168 mitochondrial genomes deposited for this study, rooted with three _Rhizophysa_ mitochondrial genomes (KT809335, OQ957199, OQ957206), inferred with IQ-TREE under TVM+F+I+R4 with 1000 ultrafast bootstrap replicates. Tips are coloured by ocean of origin and labelled with specimen and locality; squares mark sequences new to this study and circles those also present in the previous manuscript's trees. Node labels give bootstrap support of 70% or above. The five Saint Helena specimens (YPM-IZ-115977, -115978, -115980, -115990 and -116019) fall within _P. minuta_, apart from YPM-IZ-116019 which falls within _P. megalista_.](../phylogenetics/figures/tree_mitogenome_submitted_rooted_ocean.pdf){#fig-s3 width=100%}
 
 \newpage
 
