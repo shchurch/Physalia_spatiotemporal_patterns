@@ -251,11 +251,13 @@ plot_collapsed_tree <- function(tree_file, name, thr = COLLAPSE_THR,
   }
   species_of <- function(tips) { s <- sp_of(tips); unique(s[!is.na(s)]) }
 
-  # YPM-IZ-111760, YPM-IZ-110972 and YPM-IZ-104465 have no species in
-  # tip_metadata.tsv -- they are the three left out of the GenBank submission,
-  # and the gap looks like a side effect of that. Resolve them the way the
-  # methods resolve the ONT samples: majority species of the smallest clade
-  # containing the sample and at least one identified sample.
+  # Fallback for any tip with no species in tip_metadata.tsv: the majority
+  # species of the smallest clade containing it and at least one identified
+  # sample, which is the rule the methods apply to the ONT samples. This is
+  # currently a no-op -- the three samples that used to fall through, the ones
+  # excluded from the GenBank submission, are now filled in by
+  # metadata/build_tip_metadata.py -- but it keeps a new unassigned sample from
+  # silently plotting as grey "unassigned".
   for (t in tr$tip.label[is.na(sp_of(tr$tip.label))]) {
     nd <- match(t, tr$tip.label)
     repeat {
