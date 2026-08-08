@@ -51,13 +51,7 @@ right after it. -->
 
 \newpage
 
-::: {#fig-s7}
-
-\vspace{6em}\begin{center}\itshape[figure not yet generated]\end{center}\vspace{6em}
-
-**Multitentacled _P. utriculus_ individuals, genetically confirmed as B1 lineage.** Not yet generated (see #8).
-
-:::
+![**Multitentacled _P. utriculus_ individual, genetically confirmed as B1 lineage.** _P. utriculus_ specimen YPM-IZ-XXXXXX from Eastern Australia, observed and collected with a group of single-tantacled _P. utriculus_ specimens. A- The specimen has two distinct major tentacles. B- Same specimen next to a color card.](../figures/supplemental/supp_morphology_P_utriculus_multitentacled.png){#fig-s7 width=100% height=58%}
 
 \newpage
 
