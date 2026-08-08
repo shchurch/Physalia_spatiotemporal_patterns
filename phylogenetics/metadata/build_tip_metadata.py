@@ -87,6 +87,29 @@ if os.path.exists(ont):
     for r in read_tsv(ont):
         species.setdefault(r["sample"], r["species"])
 
+# The two sources above are the 168 deposited records and the 28 Nanopore
+# samples: 196 of the 199 sequenced. The remaining three are exactly the samples
+# excluded from the GenBank submission, so they fall through both and would
+# otherwise carry no species at all.
+#
+#   YPM-IZ-111760, YPM-IZ-110972  withheld from deposition, see issue #17
+#   YPM-IZ-104465                 already public as OQ957220.1, which is itself
+#                                 deposited as "Physalia sp." under the same
+#                                 voucher and so supplies no species call
+#
+# Assigned by the rule the manuscript applies to the Nanopore samples: the
+# majority species of the smallest clade in the mitochondrial genome tree
+# containing the sample and at least one identified sample. All three are
+# unanimous, and each agrees with the specimen's locality -- Ireland for
+# physalis, Guam for utriculus, the SW Pacific for minuta.
+NOT_DEPOSITED_SPECIES = {
+    "YPM-IZ-111760": "Physalia minuta",
+    "YPM-IZ-110972": "Physalia physalis",
+    "YPM-IZ-104465": "Physalia utriculus",
+}
+for _sid, _sp in NOT_DEPOSITED_SPECIES.items():
+    species.setdefault(_sid, _sp)
+
 # --- study samples -----------------------------------------------------------
 for path in (os.path.join(REPO, "data", "sample_ids.tsv"),
              os.path.join(REPO, "data", "SEA.tsv")):
