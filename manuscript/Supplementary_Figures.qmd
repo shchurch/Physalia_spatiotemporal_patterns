@@ -35,7 +35,7 @@ right after it. -->
 
 \newpage
 
-![**Phylogenetic tree placing the Saint Helena _P. minuta_ samples.** Maximum likelihood tree of the 168 mitochondrial genomes deposited for this study, rooted with three _Rhizophysa_ mitochondrial genomes (KT809335, OQ957199, OQ957206), inferred with IQ-TREE under TVM+F+I+R4 with 1000 ultrafast bootstrap replicates. Tips are coloured by ocean of origin and labelled with specimen and locality; squares mark sequences new to this study and circles those also present in the previous manuscript's trees. Node labels give bootstrap support of 70% or above. The five Saint Helena specimens (YPM-IZ-115977, -115978, -115980, -115990 and -116019) fall within _P. minuta_, apart from YPM-IZ-116019 which falls within _P. megalista_.](../phylogenetics/figures/tree_mitogenome_submitted_rooted_ocean.pdf){#fig-s3 width=100%}
+![**Mitochondrial genome tree of all 199 sequenced samples.** Closely related clades of a single species are collapsed to one tip, giving the number of genomes and the localities they span; other tips give specimen and locality. Coloured tips are specimens identified in our previous study, grey tips are new here, and node labels give bootstrap support of 70% or above. Four of the five Saint Helena specimens fall within _P. minuta_ and one (YPM-IZ-116019) within _P. megalista_.](../phylogenetics/figures/tree_mitogenome_identification_collapsed.pdf){#fig-s3 width=100%}
 
 \newpage
 
