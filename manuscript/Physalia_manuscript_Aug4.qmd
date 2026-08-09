@@ -186,7 +186,7 @@ Small _P. physalis_ may share some characteristics associated with other species
 
 _P. physalis_ colonies vary in color from blue, to pink, purple, and green, but specimens from the South Atlantic and Caribbean Sea in particular achieve a bright pink coloration that is not known from other species of _Physalia_ (Fig. S7A-B). Colonies from both the North and South Atlantic may have reddish gastrozooids, also unique to _P. physalis_ (Fig. S7A, D). Other colonies have dark blue, purple, or blue-green gastrozooids and palpons, while gonodendra are light purple. The apex of the crest is often pink, but may have no obvious coloration. The large float is typically shaded blue or pink, and is not glassy or strongly opalescent.
 
-Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110254. Specimen was collected by Lourdes M. Rojas on 22nd December 2022. 25.73647 latitude, -80.15350 longitude on Virginia Beach, Miami, Florida, United States of America. The first illustration of _P. physalis_ (then known as _Holothuria physalis_ []) by Sloane in 1725 was of a North Atlantic specimen on a voyage to the Caribbean [@sloane1725voyage]. 
+Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110254. Specimen was collected by Lourdes M. Rojas on 22nd December 2022. 25.73647 latitude, -80.15350 longitude on Virginia Beach, Miami, Florida, United States of America. The first illustration of _P. physalis_ (then known as _Holothuria physalis_ [@linne1788systema]) by Sloane in 1725 was of a North Atlantic specimen on a voyage to the Caribbean [@sloane1725voyage]. 
 
 ### _Physalia utriculus_, common bluebottle (@fig-morphology B, G)
 
@@ -196,7 +196,7 @@ The most reliable positive indicator of the lineage of _P. utriculus_ and _P. mi
 
 _P. utriculus_ shares a strong central organization of the main zone with _P. megalista_. All zooids appear to be borne on a single cluster base, in contrast to _P. physalis_ that has multiple cluster bases. Small individuals of _P. utriculus_ may also resemble _P. minuta_ due to glassiness of the float and size, but they do not share the central organization of the main zone. 
 
-Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110777. The specimen was collected by Chris Simon on 19th July 2023. 21.400790 latitude, -157.734500 longitude on Kailua Beach, Oahu, Hawai'i, United States of America. The original species description was from illustrations by La Martinière in 1787 of a North Pacific specimen (20°N and 179°E).
+Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110777. The specimen was collected by Chris Simon on 19th July 2023. 21.400790 latitude, -157.734500 longitude on Kailua Beach, Oahu, Hawai'i, United States of America. The original species description was by Gmelin, 1788 [@linne1788systema] from illustrations by La Martinière in 1787 [@lamartiniere1787insects] of a North Pacific specimen (20°N and 179°E).
 
 #### _Physalia mikazuki_, crescent helmet bluebottle (@fig-morphology E, N)
 
@@ -220,7 +220,7 @@ _P. megalista_ may have one or multiple prominent tentacles. These are generally
 
 Zooid and tentacle coloration is typically a dark blue-green, with palpons more green than tentacles. In some specimens in the South Atlantic, minor tentacles may have red coloration (Fig. S11C). The float is often opalescent purple and blue-green, and rarely glassy. The crest often has a lavender apex with green at the bases of the septae. 
 
-Neotype specimen: Western Australian Museum (WAM) in Perth, Western Australia, Australia under catalog number WAM-Z88480. The specimen was collected by K. Tullis on 3rd of August 2018. -31.908144 latitude, 115.754811 longitude at the Peasholm Dog Beach, Scarborough, Western Australia, Australia. The original description of the species was from illustrated specimens from Indian Ocean observed near Western Australia[].
+Neotype specimen: Western Australian Museum (WAM) in Perth, Western Australia, Australia under catalog number WAM-Z88480. The specimen was collected by K. Tullis on 3rd of August 2018. -31.908144 latitude, 115.754811 longitude at the Peasholm Dog Beach, Scarborough, Western Australia, Australia. The original description of the species was from illustrated specimens from Indian Ocean observed near Western Australia in 1807 [@peron1807voyage].
 
 # Discussion
 
