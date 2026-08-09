@@ -157,8 +157,8 @@ We collected, observed, and photographed live (@fig-morphology A-I) and fixed (@
 
 ![**Comparative morphology of live and fixed specimens of _Physalia_.** (A-E) Lateral views of five _Physalia_ colonies, specimens **[TODO-8: specimen IDs, #2]**. Left-handed specimens have anterior to the left, when viewing the side of the float bearing the main zone of the colony. (F-I) Posterior view, showing a typical floating posture with the posterior and main zones held parallel to the surface, specimens **[TODO-9: specimen IDs, #2]**; no live posterior view is available for _P. mikazuki_. (J-N) Type material for each of the five species, viewed laterally, specimens **[TODO-10: specimen IDs, #2]**. Asterisk indicates neotype material designated here. (O-U) Additional specimens examined. Panels E and N are republished images of _P. mikazuki_ [@yongstar2025physalia]. Panels N and U are not to scale. Scale bars = 1cm.](../figures/morphology_species_comparison.png){#fig-morphology}
 
-### Proposed common names
-_Physalia_ have many common names across languages [@pugh2019history], several of which refer to a specific kind of Portuguese sailing ship, the man-o-war or caravala. In the Pacific, especially Australia, _Physalia_ are also referred to as bluebottles, evocative of their striking color, and of their 'message-in-a-bottle' floating behavior. The common name Portuguese man-o-war has proven problematic, however, as the reference to the Portuguese ship is easily confused with a comment about their biogeography. In reality, the only _Physalia_ species known from Portugal is _P. physalis_, which is likely also the species to which the common name man-o-war was originally attributed.
+### Proposed English common names
+_Physalia_ have many common names across languages [@pugh2019history], several of which refer to a specific kind of a Portuguese sailing ship, the man-o-war or caravala, used from the 15th to 18th century. In the Pacific, especially Australia, _Physalia_ are also referred to as bluebottles, evocative of their striking color, and of their 'message-in-a-bottle' floating behavior. The common name Portuguese man-o-war has proven problematic, however, as the reference to the Portuguese ship is easily confused with a comment about their biogeography. In reality, the only _Physalia_ species known from Portugal is _P. physalis_, which is likely also the species to which the common name man-o-war was originally attributed.
 To rectify this situation, and to provide a standard set of English common names that can be used to refer to these species worldwide, we propose the following:
 
 - for _Physalia_, we propose the common name "bluebottles"
@@ -186,7 +186,7 @@ Small _P. physalis_ may share some characteristics associated with other species
 
 _P. physalis_ colonies vary in color from blue, to pink, purple, and green, but specimens from the South Atlantic and Caribbean Sea in particular achieve a bright pink coloration that is not known from other species of _Physalia_ (Fig. S7A-B). Colonies from both the North and South Atlantic may have reddish gastrozooids, also unique to _P. physalis_ (Fig. S7A, D). Other colonies have dark blue, purple, or blue-green gastrozooids and palpons, while gonodendra are light purple. The apex of the crest is often pink, but may have no obvious coloration. The large float is typically shaded blue or pink, and is not glassy or strongly opalescent.
 
-Neotype specimen: YPM-IZ-110254
+Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110254. Specimen was collected by Lourdes M. Rojas on 22nd December 2022. 25.73647 latitude, -80.15350 longitude on Virginia Beach, Miami, Florida, United States of America. The first illustration of _P. physalis_ (then known as _Holothuria physalis_ []) by Sloane in 1725 was of a North Atlantic specimen on a voyage to the Caribbean [@sloane1725voyage]. 
 
 ### _Physalia utriculus_, common bluebottle (@fig-morphology B, G)
 
@@ -196,9 +196,9 @@ The most reliable positive indicator of the lineage of _P. utriculus_ and _P. mi
 
 _P. utriculus_ shares a strong central organization of the main zone with _P. megalista_. All zooids appear to be borne on a single cluster base, in contrast to _P. physalis_ that has multiple cluster bases. Small individuals of _P. utriculus_ may also resemble _P. minuta_ due to glassiness of the float and size, but they do not share the central organization of the main zone. 
 
+Neotype specimen: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM-IZ-110777. The specimen was collected by Chris Simon on 19th July 2023. 21.400790 latitude, -157.734500 longitude on Kailua Beach, Oahu, Hawai'i, United States of America. The original species description was from illustrations by La Martinière in 1787 of a North Pacific specimen (20°N and 179°E).
+
 #### _Physalia mikazuki_, crescent helmet bluebottle (@fig-morphology E, N)
-
-
 
 The description by Yongstar et al of _Physalia mikazuki_ [@yongstar2025physalia; @yongstar2026physalia] specimens (B2 lineage) indicates many shared morphological features with _P. utriculus_ specimens (B1 lineage), such as the distinct bright yellow coloration of the gastrozooid distal tip, bright blue gastrozooids, light purple gonodendra, variable crest and body coloration with a glassy float (Fig. S6, Fig. S8). The most prominent characteristic differentiating _P. utriculus_ from _P. mikazuki_ is the number of major tentacles. _P. utriculus_ are often associated with the presence of a single major tentacle, while _P. mikazuki_  specimens have multiple. Genetic data have confirmed that rare _P. utriculus_ individuals have >1 tentacle (Fig. S9), and it has been suggested since at least 1910 that tentacle number can vary across colonies of _P. utriculus_ [@kawamura1910bozunira; @pugh2019history]. Therefore, the tentacle number alone should be treated with caution as a diagnostic character. Here we suggest that a more robust feature that appears to be distinct is the colony arrangement of zooids. In _P. mikazuki_, the main zone of the colony of the specimen shown in the original description has multiple clusters of zooids born from distinct cluster bases (@fig-colony H, M). This is consistent with what we observed in the larger of the two fixed specimens that have been sequenced for genomic analysis (@fig-morphology U).
 
@@ -220,7 +220,7 @@ _P. megalista_ may have one or multiple prominent tentacles. These are generally
 
 Zooid and tentacle coloration is typically a dark blue-green, with palpons more green than tentacles. In some specimens in the South Atlantic, minor tentacles may have red coloration (Fig. S11C). The float is often opalescent purple and blue-green, and rarely glassy. The crest often has a lavender apex with green at the bases of the septae. 
 
-Neotype specimen: WAM-Z88480
+Neotype specimen: Western Australian Museum (WAM) in Perth, Western Australia, Australia under catalog number WAM-Z88480. The specimen was collected by K. Tullis on 3rd of August 2018. -31.908144 latitude, 115.754811 longitude at the Peasholm Dog Beach, Scarborough, Western Australia, Australia. The original description of the species was from illustrated specimens from Indian Ocean observed near Western Australia[].
 
 # Discussion
 
