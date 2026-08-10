@@ -99,7 +99,7 @@
  - `figures/panels/yearly_hist_<species>_<range>.pdf`: seasonal histograms faceted by year
  
  ### `seasonal_panels.R`
- **Role**: Panels for the combined seasonality figure, which supplies `figures/seasonality_time.png` and `figures/seasonality_space.png` (these replaced the former `seasonality_pacific_africa` and `seasonality_atlantic` figures). Covers four regions: eastern Australia/New Zealand, Southern Africa, the Caribbean/North America, and eastern South America.
+ **Role**: Panels for the combined seasonality figures. The maps and the seasonally-weighted wheels are assembled by ocean basin into `figures/seasonality_atlantic.png` and `figures/seasonality_pacific.png`; the unweighted and daily-weighted wheels supply the supplementary `figures/seasonality_time.png` and `figures/seasonality_time_norm_daily.png`. Covers four regions: eastern Australia/New Zealand, Southern Africa, the Caribbean/North America, and eastern South America.
 
  **How to run**: `Rscript analysis/seasonal_panels.R` from the repository root. Takes no arguments and does all four regions in one pass, unlike `seasonal_histograms.R` and `norm.R`, which want `i` set first.
 

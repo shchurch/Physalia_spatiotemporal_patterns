@@ -34,11 +34,11 @@ right after it. -->
 
 \newpage
 
-![**Seasonal timing of observations, unweighted.** As in @fig-seasonality-time of the main text, but with each observation counted once rather than weighted by observer effort. (A) The Caribbean and North America, (B) the Southwest Atlantic, (C) Southern Africa, (D) the Southwest Pacific.](../figures/seasonality_time.png){#fig-s2 width=100%}
+![**Seasonal timing of observations, unweighted.** As in the seasonal wheels of @fig-seasonality-atlantic and @fig-seasonality-pacific, but with each observation counted once rather than weighted by observer effort. All four regions are shown together here, so panel letters differ from the main-text figures: (A) the Caribbean and North America, (B) South America, (C) Southern Africa, (D) Eastern Australia and New Zealand.](../figures/seasonality_time.png){#fig-s2 width=100%}
 
 \newpage
 
-![**Seasonal timing of observations, weighted by daily observer effort.** As in @fig-seasonality-time of the main text, but each observation is divided by the number of baseline beach-species records on that same calendar day, rather than by a cyclic model fitted across the year. This follows day-to-day activity more closely but is far noisier: in Southern Africa and the Southwest Atlantic some days carry a single baseline record, so one observation on such a day can weigh a hundred times one on a well-covered day.](../figures/seasonality_time_norm_daily.png){#fig-s3 width=100%}
+![**Seasonal timing of observations, weighted by daily observer effort.** As in the seasonal wheels of @fig-seasonality-atlantic and @fig-seasonality-pacific, but each observation is divided by the number of baseline beach-species records on that same calendar day, rather than by a cyclic model fitted across the year. Panel order as in Fig. S2. This follows day-to-day activity more closely but is far noisier: in Southern Africa and the Southwest Atlantic some days carry a single baseline record, so one observation on such a day can weigh a hundred times one on a well-covered day.](../figures/seasonality_time_norm_daily.png){#fig-s3 width=100%}
 
 \newpage
 
