@@ -1,7 +1,8 @@
 #!/usr/bin/env Rscript
-# Panels for the combined seasonality figure, replacing the separate
-# seasonality_pacific_africa and seasonality_atlantic figures, now assembled as
-# figures/seasonality_time.png and figures/seasonality_space.png.
+# Panels for the combined seasonality figures, assembled by ocean basin as
+# figures/seasonality_atlantic.png and figures/seasonality_pacific.png, with the
+# unweighted and daily-weighted wheels going to the supplementary
+# figures/seasonality_time.png and figures/seasonality_time_norm_daily.png.
 #
 # Writes one file per panel into figures/panels/seasonality/, for assembly in
 # Illustrator:
