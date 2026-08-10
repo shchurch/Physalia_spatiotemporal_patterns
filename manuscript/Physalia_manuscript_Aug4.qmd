@@ -12,7 +12,7 @@ bibliography: references.bib
 ---
 
 
-Dalila Destanović, Samuel H. Church, Namrata Ahuja, Maciej Mańko, Ramdhan Firdaus, Sarah Kingston, Adam Riggs, Ali Fox, Kylie Pitt, Amandine Schaeffer, Chris Simon, Inma Herrera, Mary Beth Decker, Casey W. Dunn
+Dalila Destanović, Namrata Ahuja, Maciej Mańko, Ramdhan Firdaus, Ali Fox, Inma Herrera, Sarah Kingston, Kylie Pitt, Adam Riggs, Amandine Schaeffer, Chris Simon, Mary Beth Decker, Samuel H. Church, Casey W. Dunn
 
 corresponding author: samuelhchurch@gmail.com, SHC
 
