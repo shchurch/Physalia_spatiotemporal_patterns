@@ -242,14 +242,6 @@ Mitochondrial genomes are deposited in GenBank under accessions **PZ224317–PZ2
 
 Mitochondrial genomes were assembled for the whole-genome-sequenced Illumina samples only. The 2025 open ocean samples were sequenced with Oxford Nanopore, and neither their mitochondrial genome assemblies nor the mitochondrial gene markers recovered from them met the quality threshold for deposition; no mitochondrial sequence from those samples is deposited. Those samples are represented in GenBank by their nuclear 18S and ITS sequences, and their species identifications derive from the mitochondrial genome tree provided in the repository below as alignments and treefiles.
 
-Raw whole-genome sequencing reads for the 48 new specimens in this study (28 Oxford Nanopore, 20 Illumina) are deposited in the NCBI Sequence Read Archive under BioProject **PRJNA1509992** (SRA study **SRP725477**), comprising Illumina and Oxford Nanopore runs **SRR40085724–SRR40085779** (n=56 runs, including 8 specimens each sequenced across two Illumina flow cells) and BioSample accessions **SAMN62283094–SAMN62283141** (n=48). Per-specimen run accessions are given in Table S1 (`Supp_Table_specimens.tsv`).
+Whole-genome sequencing data for the 48 specimens generated in this study (28 ONT, 20 Illumina) are deposited in the NCBI Sequence Read Archive under BioProject **PRJNA1509992** (SRA study **SRP725477**), comprising Illumina and Oxford Nanopore runs **SRR40085724–SRR40085779** (n=56 runs, including 8 specimens each sequenced across two Illumina flow cells) and BioSample accessions **SAMN62283094–SAMN62283141** (n=48). Per-specimen run accessions are given in Table S1 (`Supp_Table_specimens.tsv`).
 
 All alignments, tree files, analysis code, and the labeled image dataset are available at <https://github.com/shchurch/Physalia_spatiotemporal_patterns>.
-
-
-# Acknowledgements
-Special thanks to the students and professional crews of SEA cruises S314 and S321 aboard the
-SSV Robert C Seamans (Marine Biodiversity and Conservation 2024 and 2025), in particular:
-Taylor Finn, Anneka Pitera, Jocelyn Rivera, Mya Williams, Aimee Bousquet, Ana Hoffman Sole,
-Gabriela Carttar, and Robin Muse. We thank the Western Australian Museum, Tasmanian Museum and Art Gallery, and the Field Museum of Natural History for loaning specimens. 
-
