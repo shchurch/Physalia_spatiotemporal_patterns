@@ -216,7 +216,7 @@ _P. megalista_ may have one or multiple principal tentacles. These are generally
 
 Zooid and tentacle coloration is typically a dark blue-green, with palpons more green than tentacles. In some specimens in the South Atlantic, accessory tentacles may have red coloration (Fig. S11C). The float is often opalescent purple and blue-green, and rarely glassy. The crest often has a lavender apex with green at the bases of the septae (indentations at the base of the crest, see Fig S11A,D). 
 
-Neotype specimen: Western Australian Museum (WAM) in Perth, Western Australia, Australia under catalog number WAM-Z88480. The specimen was collected by K. Tullis on 3rd of August 2018. -31.908144 latitude, 115.754811 longitude at the Peasholm Dog Beach, Scarborough, Western Australia, Australia. The original description of the species was from illustrated specimens from the Indian Ocean observed near Western Australia in 1807 [@peron1807voyage].
+Neotype specimen: Western Australian Museum (WAM) in Perth, Western Australia, Australia under catalog number WAM-Z88480. The specimen was collected by K. Tullis on 3rd of August 2018. -31.908144 latitude, 115.754811 longitude at the Peasholm Dog Beach, Scarborough, Western Australia, Australia. The species was named and illustrated as _P. megalista_ by Lesueur and Petit in 1807 [@peron1807voyage] based on specimens from Indian Ocean near Western Australia. In the Atlas volume [@peron1807voyage], the name _P. australis_ is used in the main text, but not to describe the species. For consistency with subsequent publications, we use _P. megalista_ [@pugh2019history; @church2025population].
 
 # Discussion
 
