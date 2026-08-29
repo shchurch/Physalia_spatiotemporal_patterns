@@ -47,3 +47,10 @@ results/predictions_log.json
 # assembled into the composites in figures/ via Illustrator. Rebuildable in one
 # command, so the panels themselves are not tracked.
 figures/panels/
+
+# The two Figure 1 attention panels and their source photographs, currently
+# linked from image_classification.ai in place. Panels are not tracked (see
+# above), and unlike the rest of figures/panels/ these cannot be rebuilt --
+# the fitted model was not retained. The photographs are CC BY and credited
+# in the figure caption, which is where they are published.
+machine_learning/*.png
