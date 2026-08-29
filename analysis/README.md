@@ -208,12 +208,31 @@
  ```
  
  ### Running scripts from the repo root while using `analysis`’s `renv`
- 
- If you want to keep the lockfile inside `analysis/` but execute scripts from the repo root (recommended for the current relative paths), you can activate the environment explicitly:
- 
+
+ **Do not** `source("analysis/renv/activate.R")` from the repository root. `activate.R`
+ takes the current working directory as the project, so from the root it creates a
+ second, empty `renv/` library there and hides everything that is installed. Scripts
+ then fail with `there is no package called '<x>'`. If that has already happened,
+ delete the stray `renv/` directory at the repository root.
+
+ Install the lockfile's packages once:
+
  ```r
- source("analysis/renv/activate.R")
- source("analysis/read.data.R")
+ renv::restore(project = "analysis")
  ```
- 
- After activation, you can run the other scripts normally.
+
+ then run the scripts from the repository root with no activation step:
+
+ ```
+ Rscript analysis/read.data.R
+ Rscript analysis/model_figures.R
+ Rscript analysis/seasonal_panels.R
+ ```
+
+ Note that `renv::restore(project = "analysis")` installs into the default R library
+ rather than an isolated project library, because no renv project is active at the
+ time. It resolves every package the scripts need, but it will also change versions
+ of packages already installed on the machine to match the lockfile. Verified on
+ 2026-08-29 against R 4.5.2: all 139 packages restored, and `model_figures.R`,
+ `seasonal_panels.R` and `seasonal_tiles.R` reproduced every existing panel
+ byte-identically.
