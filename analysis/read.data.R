@@ -3,7 +3,6 @@
 # - Builds staged classification tables (`inr_0` ... `inr_5`) showing how IDs change over time
 # - Produces `final_results`, the canonical record-level table used by plotting scripts
 
-library(rinat)
 library(dplyr)
 library(jsonlite)
 library(sf)
