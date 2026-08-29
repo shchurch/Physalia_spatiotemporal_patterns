@@ -4,7 +4,6 @@
  
  - Generating curated iNaturalist-derived datasets (`final_results`, `norm_results`) by combining community IDs, manual labels/corrections, and ML predictions
  - Producing the figures/panels used in the project (maps, seasonal plots, confusion matrices, alluvial plots)
- - Generating population-genomic figure panels (PCA / admixture) via Quarto (`.qmd`)
  
  ## Working directory expectations
  

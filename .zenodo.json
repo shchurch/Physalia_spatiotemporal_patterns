@@ -1,0 +1,108 @@
+{
+  "title": "Seasonality, range, and morphology of bluebottles (Physalia) around the world's oceans: code, data, and figures",
+  "description": "<p>Code, data, and figures accompanying the manuscript. This archive is the analysis half of an identification and monitoring toolkit for the five described <i>Physalia</i> species; the sequence data live in GenBank and the SRA, and are linked from this record.</p><p><b>Contains:</b></p><ul><li>A labelled iNaturalist dataset of 20,704 observations, each with photo URL, licence, attribution, species label, and label provenance. The photographs themselves are not redistributed &mdash; their licences vary per observation &mdash; but the corpus can be reassembled from this table.</li><li>R code for the seasonal abundance, observer-effort normalisation, mapping, and classification analyses.</li><li>Gene alignments and maximum-likelihood trees for 16S, 18S, CO1, and ITS, plus whole mitochondrial genome alignments and trees, with tip metadata. These are the reference panels for molecular identification.</li><li>Snakemake workflows for read quality control and mitochondrial genome assembly, for both Illumina and Oxford Nanopore libraries.</li><li>Python code for the image classification model. The fitted model is not included.</li><li>Manuscript and supplementary figure sources.</li></ul>",
+  "upload_type": "software",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Destanović, Dalila",
+      "orcid": "0000-0002-3744-5789"
+    },
+    {
+      "name": "Ahuja, Namrata",
+      "orcid": "0000-0002-2282-9755"
+    },
+    {
+      "name": "Mańko, Maciej K.",
+      "orcid": "0000-0001-6872-0256"
+    },
+    {
+      "name": "Firdaus, Ramdhan",
+      "affiliation": "National Research and Innovation Agency (BRIN)",
+      "orcid": "0000-0001-8620-7210"
+    },
+    {
+      "name": "Fox, Ali"
+    },
+    {
+      "name": "Herrera, Inma",
+      "orcid": "0000-0002-5043-2181"
+    },
+    {
+      "name": "Kingston, Sarah",
+      "affiliation": "Sea Education Association",
+      "orcid": "0000-0003-1607-1789"
+    },
+    {
+      "name": "Pitt, Kylie",
+      "affiliation": "Griffith University",
+      "orcid": "0000-0002-2292-2052"
+    },
+    {
+      "name": "Riggs, Adam"
+    },
+    {
+      "name": "Schaeffer, Amandine",
+      "affiliation": "UNSW Sydney",
+      "orcid": "0000-0002-8320-4951"
+    },
+    {
+      "name": "Simon, Chris"
+    },
+    {
+      "name": "Decker, Mary Beth",
+      "affiliation": "Yale University",
+      "orcid": "0000-0003-0479-5309"
+    },
+    {
+      "name": "Church, Samuel H.",
+      "affiliation": "Yale University",
+      "orcid": "0000-0002-8451-103X"
+    },
+    {
+      "name": "Dunn, Casey W.",
+      "affiliation": "Yale University",
+      "orcid": "0000-0003-0628-5150"
+    }
+  ],
+  "keywords": [
+    "Physalia",
+    "bluebottle",
+    "Portuguese man-o-war",
+    "Siphonophora",
+    "neuston",
+    "species identification",
+    "participatory science",
+    "iNaturalist",
+    "phylogenetics",
+    "mitochondrial genome",
+    "seasonality",
+    "biogeography"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/nuccore/?term=PZ224317:PZ224484[ACCN]",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/nuccore/?term=PZ802573:PZ802753[ACCN]",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/nuccore/?term=PZ804143:PZ804328[ACCN]",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/shchurch/Physalia_population_genomics",
+      "relation": "references",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ]
+}
