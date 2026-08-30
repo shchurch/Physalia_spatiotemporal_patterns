@@ -1,0 +1,62 @@
+# License
+
+This repository holds both software and research content, released under two
+licenses.
+
+## Software — MIT
+
+Applies to the code in `analysis/`, `machine_learning/`, `phylogenetics/` and
+`pipeline/`, including scripts, notebooks and workflow definitions.
+
+Copyright (c) 2026 the authors of *Seasonality, distribution, and morphology of
+bluebottles (Physalia) in the world's oceans*.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Data, figures and text — CC BY 4.0
+
+Applies to the contents of `data/`, `results/`, `figures/` and `manuscript/`:
+derived datasets, sequence alignments and trees, figures, and manuscript text.
+
+Copyright (c) 2026 the authors of *Seasonality, distribution, and morphology of
+bluebottles (Physalia) in the world's oceans*.
+
+Licensed under the Creative Commons Attribution 4.0 International License. You
+may share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit, link to the license, and indicate whether
+changes were made. The full text is at
+<https://creativecommons.org/licenses/by/4.0/legalcode>.
+
+## Third-party material
+
+Neither license above extends to material this repository describes but does not
+own.
+
+**iNaturalist photographs** are not redistributed here. They remain under each
+contributor's own terms, which vary per observation and in some cases reserve
+all rights. `results/final_labeled_dataset.tsv` records the license and
+attribution for every observation; anyone reassembling the image corpus is bound
+by those terms, not by this file.
+
+Two iNaturalist photographs are reproduced inside a figure, both CC BY, and both
+credited in that figure's caption.
+
+**Sequence records** deposited in GenBank and the SRA are governed by NCBI's
+terms.
+
+**Reference basemaps** are drawn from Natural Earth, which is public domain.
