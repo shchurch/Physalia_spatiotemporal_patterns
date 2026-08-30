@@ -11,10 +11,16 @@ format:
        \renewcommand{\thefigure}{S\arabic{figure}}
        \usepackage{fontspec}
        \newfontfamily\cjkname{Noto Sans CJK SC}
+theme: cosmo
 bibliography: references.bib
 crossref:
   fig-prefix: "Fig."
 ---
+
+
+Dalila Destanović, Namrata Ahuja, Maciej K. Mańko, Ramdhan Firdaus, Ali Fox, Inma Herrera, Sarah Kingston, Adam Riggs, Amandine Schaeffer, Chris Simon, Mary Beth Decker, Samuel H. Church, Casey W. Dunn
+
+corresponding author: samuelhchurch@gmail.com, SHC
 
 <!-- Figures are numbered S1, S2, ... automatically: the \thefigure redefinition
 above prefixes the LaTeX figure counter with "S", so captions render as
