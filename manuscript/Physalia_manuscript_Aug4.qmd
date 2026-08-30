@@ -140,7 +140,7 @@ Both _P. minuta_ and _P. megalista_ were collected from the open ocean east of N
 
 Open-ocean transects were sampled at the same time of the year (April-May), therefore giving insight into interannual signals, but cannot provide data on other time periods. Collections at other times of the year may inform us of how _Physalia_ distribution changes, and how they move with the currents through the seasons. 
 
-![**Genomic sampling in the South Pacific shows distinct pelagic distributions**. Sampling over multiple years shows _P. minuta_ in open waters East of New Zealand. In both years (2024 and 2025), observations further East were exclusively of _P. megalista_ (~143-152° W). meg=_P. megalista_, minuta=_P. minuta_, utr=_P. utriculus_.](../figures/open_ocean_sampling.png){#fig-openocean}
+![**Genomic sampling in the South Pacific shows distinct pelagic distributions**. Sampling over multiple years shows _P. minuta_ in open waters East of New Zealand. In both years (2024 and 2025), observations further East were exclusively of _P. megalista_ (~143-152° W). meg=_P. megalista_, min=_P. minuta_, utr=_P. utriculus_.](../figures/open_ocean_sampling.png){#fig-openocean}
 
 ## Revised distribution of _P. minuta_
 
