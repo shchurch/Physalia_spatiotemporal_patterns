@@ -125,7 +125,7 @@
 
  **Output (PDF)**: `figures/panels/SPacific_sampling_assignments.pdf`
 
- **Does not currently reproduce the published panel.** The tracked inputs have changed since that panel was rendered in July 2025 — see the header comment in the script and issue #54. Read that before re-exporting the figure.
+ **Scope**: restricted to the 92 samples that fall inside the plotted frame (meg 27, min 52, utr 13 — the three species the figure caption names). The original notebook passed all 199 non-excluded samples in and relied on `ggrepel` dropping the out-of-frame ones; current `ggrepel` repels them to the frame edge instead. Clipping on the projected coordinates makes the panel independent of that behaviour. See issue #54.
 
  ### `norm.R`
  **Role**: Explores “effort normalization” using the `norm_results` baseline dataset and a cyclic GAM (`mgcv::gam`) over day-of-year.

@@ -13,22 +13,18 @@
 # the seed below is what pins the output. Changing it moves the labels without
 # changing the data.
 #
-# IMPORTANT -- this does not reproduce the panel currently assembled into
-# figures/open_ocean_sampling.png. That panel was rendered 2025-07-17, and the
-# inputs have moved on since:
+# Samples are restricted to those that fall inside the plotted frame. The
+# original chunk passed all 199 non-excluded samples to geom_label_repel and
+# relied on ggrepel dropping the ones outside it; current ggrepel repels them
+# to the frame edge instead, crowding the top of the plot with more than a
+# hundred labels for specimens the figure is not about. Clipping to the frame
+# explicitly makes the panel independent of that behaviour.
 #
-#   - data/sample_ids.tsv now holds 199 non-excluded samples, including 3
-#     collected in 2026, which adds a shape level the published panel lacks.
-#   - 5 of those samples (YPM-IZ-115977, -115978, -115980, -115990, -116019)
-#     are absent from data/subset.txt, so they join as cluster = NA and add an
-#     NA entry to the assignment legend.
-#   - 107 of the 199 fall outside the South Pacific frame. Current ggrepel
-#     repels them to the frame edge instead of dropping them, crowding the top
-#     of the plot; the published panel shows none of them.
-#
-# So the figure needs a decision before it is re-exported: either bring
-# subset.txt up to date and accept a changed Figure 5, or restrict the input
-# to the samples the figure is about. See issue #54.
+# 92 of the 199 samples fall inside the frame: meg 27, min 52, utr 13. All 92
+# carry a cluster assignment, and none were collected in 2026, so the clipped
+# panel has neither the NA assignment level nor the extra shape level that the
+# unclipped version picks up. The three species left are exactly the three the
+# figure caption names. See issue #54.
 
 library(ggplot2)
 library(dplyr)
@@ -89,6 +85,16 @@ bbox_proj <- st_transform(bbox_ll, crs = robinson)
 bbox_coords <- st_bbox(bbox_proj)
 xlims <- c(bbox_coords$xmin, bbox_coords$xmax)
 ylims <- c(bbox_coords$ymin, bbox_coords$ymax)
+
+# Clip to the plotted frame. Doing this on the projected coordinates rather
+# than on raw latitude/longitude means the kept points are exactly the ones
+# coord_sf will show, including across the antimeridian.
+frame_xy <- st_coordinates(dtran)
+inside <- frame_xy[, 1] >= xlims[1] & frame_xy[, 1] <= xlims[2] &
+          frame_xy[, 2] >= ylims[1] & frame_xy[, 2] <= ylims[2]
+cat(sprintf("%d of %d sampling points fall inside the frame; %d clipped\n",
+            sum(inside), nrow(dtran), sum(!inside)))
+dtran <- dtran[inside, ]
 
 theme_set(theme_minimal())
 g1 <- ggplot(data = world2) + geom_sf(fill = "light gray", colour = NA) +
