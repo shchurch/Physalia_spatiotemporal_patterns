@@ -116,6 +116,17 @@
 
  Map frames are cut to the 1st–99th percentile of each region's own records, which is 39–55% of the nominal region boxes. Four cells fall below n = 50 and are marked `*` next to their count.
 
+ ### `open_ocean_map.R`
+ **Role**: The open-ocean sampling map, the single panel assembled into `figures/open_ocean_sampling.png`. Extracted from the superseded `R_code/PCA.qmd`, which was dropped with the population-genomic analyses; only the map is kept, and it reads no popgen output.
+
+ **How to run**: `Rscript analysis/open_ocean_map.R` from the repository root.
+
+ **Inputs**: `data/sample_ids.tsv`, `data/subset.txt` (genomic cluster assignments, recoded A/B1/C1/C2 to phy/utr/meg/min).
+
+ **Output (PDF)**: `figures/panels/SPacific_sampling_assignments.pdf`
+
+ **Does not currently reproduce the published panel.** The tracked inputs have changed since that panel was rendered in July 2025 — see the header comment in the script and issue #54. Read that before re-exporting the figure.
+
  ### `norm.R`
  **Role**: Explores “effort normalization” using the `norm_results` baseline dataset and a cyclic GAM (`mgcv::gam`) over day-of-year.
  
