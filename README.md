@@ -1,77 +1,76 @@
-# Seasonality, range, and morphology of bluebottles (*Physalia*) around the world's oceans
+# Bluebottles (*Physalia*) around the world's oceans
 
-Code, data, and figures for the manuscript.
+Code, data, and figures for **Seasonality, distribution, and morphology of bluebottles (*Physalia*) in the world's oceans**. Full author list and corresponding author are in `manuscript/`.
 
-## Layout
+Bluebottles are neustonic siphonophores comprising at least five species with overlapping ranges. This study combines participatory-science photographs, whole mitochondrial genomes, and morphological description into a toolkit for identifying and monitoring those species, and uses it to describe where and when each one strands.
 
-| directory | contents | re-runnable? |
-|---|---|---|
-| `manuscript/` | the manuscript and supplementary figures, as Quarto sources | yes — `quarto render` |
-| `analysis/` | R code for the iNaturalist analyses: seasonal abundance, effort normalisation, maps, classification figures | **yes** |
-| `phylogenetics/` | gene and mitochondrial genome trees, tip metadata, GenBank submission bundles | **yes** |
-| `machine_learning/` | image classification of iNaturalist photographs | no — needs the image corpus, which is not redistributed |
-| `pipeline/` | Snakemake read QC and mitochondrial genome assembly, Illumina and Nanopore | no — needs the raw reads and a Slurm cluster |
-| `data/` | iNaturalist exports, specimen tables, labels | — |
-| `results/` | classification outputs | — |
-| `figures/` | final figures, and the panels they are composed from | — |
+The population-genomic analyses of the same specimens belong to a separate manuscript: <https://github.com/shchurch/Physalia_population_genomics>
 
-### What can and cannot be re-run
+## What is here
 
-`analysis/` and `phylogenetics/` regenerate their outputs from the data here.
-Run R scripts from the repository root:
+| | |
+|---|---|
+| `manuscript/` | Manuscript and supplementary figures, as Quarto sources |
+| `analysis/` | R code for the iNaturalist analyses: seasonality, observer-effort normalisation, maps, classifier figures |
+| `phylogenetics/` | Gene and mitochondrial genome alignments, trees, tip metadata, and GenBank submission bundles |
+| `machine_learning/` | Image classification of iNaturalist photographs |
+| `pipeline/` | Snakemake workflows for read quality control and mitochondrial genome assembly |
+| `data/` | iNaturalist exports, specimen tables, and manual labels |
+| `results/` | Classification outputs, including the labelled observation dataset |
+| `figures/` | Figures as they appear in the manuscript |
+
+## Reproducing the analyses
+
+`analysis/` and `phylogenetics/` regenerate their outputs from the data in this repository.
+
+For the R code, install the pinned package versions once, then run scripts from the repository root:
 
 ```r
-source("analysis/norm.R")
+renv::restore(project = "analysis")
 ```
 
-`machine_learning/` and `pipeline/` were run on an HPC against inputs too large
-for this repository: the iNaturalist image corpus and the raw sequencing reads.
-The images are not redistributed, since their licences vary per observation, but
-`results/final_labeled_dataset.tsv` lists every observation with its photo URL,
-licence, and species label, so the corpus can be reassembled. The reads are in
-the SRA. Neither directory has been modified since it was run.
+```
+Rscript analysis/read.data.R          # builds results/final_labeled_dataset.tsv
+Rscript analysis/model_figures.R      # classifier panels
+Rscript analysis/seasonal_panels.R    # seasonality panels
+Rscript analysis/open_ocean_map.R     # open-ocean sampling map
+```
+
+`analysis/README.md` documents each script and its outputs. Do not source `analysis/renv/activate.R` from the repository root; see that file for why.
+
+The phylogenetic metadata regenerates with Python and Biopython:
+
+```
+python3 phylogenetics/metadata/build_tip_metadata.py
+python3 phylogenetics/metadata/assign_ont_species.py
+```
+
+Alignments and trees themselves were built with MAFFT and IQ-TREE; `phylogenetics/build/` holds those commands, and `phylogenetics/README.md` describes the tree set.
+
+Two directories cannot be re-run here. `machine_learning/` needs the iNaturalist image corpus, and `pipeline/` needs the raw sequencing reads and a Slurm cluster. Both were run once on HPC and their outputs are included as they were produced.
 
 ### Figures
 
-Several main figures are multi-panel compositions assembled in Illustrator from
-the PDFs in `figures/panels/`. Re-running the R code regenerates the panels; the
-composite `.png` files then need to be re-exported.
+Most figures are multi-panel compositions assembled in Illustrator from the panels in `figures/panels/`. The panels are rebuilt by the scripts above and are not tracked, so re-running the generating script before re-exporting a figure is what keeps the two in step. The Illustrator sources are not tracked either — they are large binaries that git would store whole on every save.
 
-Figure files are named for what they show rather than by figure number, since
-the numbering has changed more than once. The `.png` committed here is what the
-manuscript includes.
+Figures are named for what they show rather than by number, since the numbering changed during review. The `.png` committed here is the version the manuscript includes.
 
 ## Data availability
 
-Together these resources are intended as a toolkit for identifying and
-monitoring the five described *Physalia* species. They are split across three
-places, indexed here.
-
 | Resource | Where |
 |---|---|
-| Labelled iNaturalist dataset — 20,704 observations with photo URL, licence, attribution, species, and label provenance | `results/final_labeled_dataset.tsv` |
-| Gene alignments and trees — 16S, 18S, CO1, ITS | `phylogenetics/gene_trees/` |
-| Mitochondrial genome alignments and trees, incl. the 199-sample tree used for species assignment | `phylogenetics/mitogenome_tree/` |
-| Tip metadata for all trees | `phylogenetics/tip_metadata.tsv` |
-| Seasonal abundance, effort normalisation, and mapping code | `analysis/` |
-| Image classification code | `machine_learning/` |
-| Read QC and mitogenome assembly workflows | `pipeline/` |
-| Mitochondrial genomes (n=168) | GenBank PZ224317–PZ224484 |
-| Nuclear 18S (n=181) | GenBank PZ802573–PZ802753 |
-| Nuclear ITS (n=186) | GenBank PZ804143–PZ804328 |
-| Raw reads | SRA — *submission pending* |
-| Morphological characters, type material, and the comparative figures | the manuscript |
+| Labelled iNaturalist dataset — 20,704 observations with photo URL, licence, attribution, species, and label provenance; 16,453 identified to species | `results/final_labeled_dataset.tsv` |
+| Gene alignments and trees — 16S, 18S, *COI*, ITS | `phylogenetics/gene_trees/` |
+| Mitochondrial genome alignments and trees, including the 199-sample tree used for species assignment | `phylogenetics/mitogenome_tree/` |
+| Tip metadata for every tree | `phylogenetics/tip_metadata.tsv` |
+| Mitochondrial genomes (n = 168) | GenBank PZ224317–PZ224484 |
+| Nuclear 18S (n = 181) | GenBank PZ802573–PZ802753 |
+| Nuclear ITS (n = 186) | GenBank PZ804143–PZ804328 |
+| Raw reads | SRA, submission pending |
+| Morphological characters, type material, and comparative imaging | the manuscript |
 
-Two things are deliberately absent. The iNaturalist photographs are not
-redistributed, since their licences vary per observation and roughly a quarter
-carry no CC licence at all; the table above lists every observation so the
-corpus can be reassembled under each contributor's own terms. The fitted
-classification model was not retained, so it is not distributed either — the
-training and inference code is here, and the seeds are fixed, so it can be
-retrained.
+Two things are not distributed here. The iNaturalist photographs remain with their contributors: licences vary per observation and about a quarter carry no Creative Commons licence at all, so the dataset above lists every observation and its licence instead, allowing the corpus to be reassembled under each contributor's own terms. The fitted classification model was not retained; the training and inference code is in `machine_learning/`.
 
-This repository is archived on Zenodo; the DOI will be added here and to the
-manuscript once minted.
+## Citation
 
-The population-genomic analyses of these samples are a separate manuscript:
-<https://github.com/shchurch/Physalia_population_genomics>
+Please cite the manuscript. This repository is archived on Zenodo, and the DOI will be added here once minted.
