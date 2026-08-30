@@ -12,6 +12,8 @@ include-in-header:
      \linenumbers
      \usepackage{setspace}
      \doublespacing
+     \usepackage{fontspec}
+     \newfontfamily\cjkname{Noto Sans CJK SC}
 bibliography: references.bib
 csl: plos.csl
 ---
@@ -286,5 +288,31 @@ All alignments, tree files, analysis code, and the labeled image dataset are ava
 - Mary Beth Decker: [TODO]
 - Samuel H. Church: [TODO]
 - Casey W. Dunn: [TODO]
+
+# Supporting Information
+
+**S1 Fig. Effort-corrected seasonal abundance for _Physalia utriculus/mikazuki_ in southern Africa.** Counts of _P. utriculus/mikazuki_ observations by day of year, in the region bounded by 5-45° E and 0-40° S. From top: the baseline of abundant beach species (hermit crabs and echinoderms) used as a proxy for observer activity; unweighted _P. utriculus/mikazuki_ counts; and the same counts corrected for observer effort on a daily and on a seasonal basis. The anomalous peak near the 116th day of the year appears in both the baseline and the unweighted counts, and corresponds to a local holiday rather than to a peak in abundance. It is removed by either correction, after which the underlying seasonal trend is clearer.
+
+**S2 Fig. Seasonal timing of observations, unweighted.** As in the seasonal wheels of Fig 2 and Fig 3 of the main text, but with each observation counted once rather than weighted by observer effort. All four regions are shown together here, so panel letters differ from the main-text figures: (A) the Caribbean and North America, (B) South America, (C) southern Africa, (D) Eastern Australia and New Zealand.
+
+**S3 Fig. Seasonal timing of observations, weighted by daily observer effort.** As in the seasonal wheels of Fig 2 and Fig 3 of the main text, but each observation is divided by the number of baseline beach-species records on that same calendar day, rather than by a cyclic model fitted across the year. Panel order as in S2 Fig. This follows day-to-day activity more closely but is far noisier: in southern Africa and the southwest Atlantic some days carry a single baseline record, so one observation on such a day can weigh a hundred times one on a well-covered day.
+
+**S4 Fig. Seasonal patterns in the southwest Pacific and the western South Atlantic.** Tiles indicate the median day observed for species observations in that area, colored by the calendar wheel at lower right. Grey hexagons hold fewer than three observations, too few to calculate a median. (A,B) Eastern Australia and New Zealand, for _P. megalista_ (A) and _P. utriculus/mikazuki_ (B); the _P. megalista_ latitudinal gradient from north (Sep) to south (Apr) along the eastern Australian coast is visible in A. (C,D) South America, for _P. physalis_ (C) and _P. utriculus/mikazuki_ (D). These panels are the counterpart to the main-text seasonal gradients figure, which shows the Caribbean and North America, and southern Africa.
+
+**S5 Fig. Mitochondrial genome tree of all 199 sequenced _Physalia_ samples.** Closely related clades of a single species are collapsed to one tip, giving the number of genomes and the localities they span; other tips give specimen and locality. Coloured tips are specimens identified in our previous study, grey tips are new here, and node labels give bootstrap support of 70% or above. Four of the five Saint Helena specimens fall within _P. minuta_ and one (YPM IZ 116019) within _P. megalista_.
+
+**S6 Fig. _Physalia utriculus_ morphology.** The anterior apex of the float is marked as aaf, crest as c, gonodendra as gd, major tentacle and palpon as mt+p. A- Specimen from Queensland, Australia, with green anterior apex of the float and purple crest. The float has a sinuous appearance. Blue coloration of the major tentacle, palpons, and gastrozooids (Photo by © Richard Fuller, some rights reserved (CC BY-NC), via iNaturalist Observation 318861404). B- Specimen from South Africa, two distinct purple gonodendra, clear float, and blue coloration of the float (Photo by © Johan Huisamen, some rights reserved (CC BY-NC), via iNaturalist Observation 327836760). C- Specimen from Baja California, Mexico, with a blue apical apex of the float (Photo by © Bill Levine, some rights reserved (CC BY-NC), via iNaturalist Observation 373121794). D- Specimen from Hainan, China, with a yellow anterior apex of the float and transparent crest (Photo by © `{\cjkname 王琰}`{=latex}, some rights reserved (CC BY-NC), via iNaturalist Observation 303923643).
+
+**S7 Fig. _Physalia physalis_ morphology.** The anterior apex of the float is marked as aaf, gonodendra as gd, and gastrozooids as gz. A- A South Atlantic specimen from Tobago with distinct pink coloration and reddish gastrozooids (Photo by © Trizelle, some rights reserved (CC BY-NC), via iNaturalist Observation 70351531). B- South Atlantic specimen from Brazil with distinct pink coloration of the float, but the gastrozooids are blue (Photo by © nicolasteixeira, some rights reserved (CC BY-NC), via iNaturalist Observation 194374632). C- North Atlantic specimen from Tenerife with a clear float and dark blue gastrozooids (Photo by © Jane Candlish, some rights reserved (CC BY-NC), via iNaturalist Observation 354644470). D- Another North Atlantic specimen with clear reddish gastrozooid pigmentation (Photo by © averiemae1, some rights reserved (CC BY-NC), via iNaturalist Observation 366033572).
+
+**S8 Fig. _Physalia_ specimens collected in Indonesia.** Based on the reported morphology [@yongstar2025physalia], they are likely _P. mikazuki_. A- Specimens with multiple major tentacles. B, C- Gastrozooids with yellow distal tips visible, as well as multiple major tentacles.
+
+**S9 Fig. Multitentacled _Physalia utriculus_ individual, genetically confirmed as B1 lineage.** _P. utriculus_ specimen YPM IZ 111163 from Eastern Australia, observed and collected with a group of single-tantacled _P. utriculus_ specimens. A- The specimen has two distinct major tentacles. B- Same specimen next to a color card.
+
+**S10 Fig. _Physalia minuta_ morphology.** The anterior apex of the float is marked as aaf, a major tentacle with an associated palpon as mt+p, and gastrozooids as gz. A- _P. minuta_ specimen from Saint Helena (YPM IZ 115990) with two major tentacles with palpons. The anterior apex of the float is green. B- Gastrozooids with pale cream-colored distal tips of the same specimen as in panel A. C- _P. minuta_ from Tasmania, Australia. Sinuous appearance of the float, and green anterior apex of the float (Photo by © Milan Sojitra, some rights reserved (CC BY-NC), via iNaturalist Observation 356379205).
+
+**S11 Fig. _Physalia megalista_ morphology.** The anterior apex of the float is marked as aaf, septa as s, cluster base as cb, smaller cluster bases as scb, gonodendron as gd, minor tentacles as mint, and crest as c. A- _P. megalista_ specimen from New Zealand (YPM IZ 111515), a large specimen with one large cluster base and a series of smaller ones spanning towards the posterior zone; gonodendron is pale compared to the rest of the blue body. B- _P. megalista_ specimen from New South Wales in a typical horned position after washing up (Photo by © Sabine Templeton, some rights reserved (CC BY-NC), via iNaturalist Observation 310629814). C- _P. megalista_ specimen from South Africa with reddish coloration of minor tentacles (Photo by © spensti, some rights reserved (CC BY-NC), via iNaturalist Observation 319807691). D- _P. megalista_ from New Zealand in a typical beaching posture with the anterior float projection raised; the crest has a lavender apex with green at the bases of the septae (Photo by © Paul Bell-Butler, some rights reserved (CC BY-NC), via iNaturalist Observation 184621409).
+
+S1 Table. Specimen information for all sequenced samples. Collection details, sequencing status, and SRA/mitochondrial genome accession numbers for each specimen (`Supp_Table_specimens.tsv`).
 
 # References
