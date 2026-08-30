@@ -71,6 +71,12 @@ Figures are named for what they show rather than by number, since the numbering 
 
 Two things are not distributed here. The iNaturalist photographs remain with their contributors: licences vary per observation and about a quarter carry no Creative Commons licence at all, so the dataset above lists every observation and its licence instead, allowing the corpus to be reassembled under each contributor's own terms. The fitted classification model was not retained; the training and inference code is in `machine_learning/`.
 
+## License
+
+Code is released under the MIT license; data, figures, and manuscript text under
+CC BY 4.0. The iNaturalist photographs are not covered by either — they remain
+under each contributor's own terms. See `LICENSE`.
+
 ## Citation
 
 Please cite the manuscript. This repository is archived on Zenodo, and the DOI will be added here once minted.
