@@ -17,27 +17,25 @@ csl: plos.csl
 ---
 
 
-short title: "Seasonality, range, and morphology of bluebottles (_Physalia_)"
+short title: "Seasonality, distribution, and morphology of bluebottles (_Physalia_)"
 
-Dalila Destanović^1^, Namrata Ahuja^2^, Maciej K. Mańko^3^, Ramdhan Firdaus^4^, Ali Fox^5^, Inma Herrera^6^, Sarah Kingston^7^, Adam Riggs^8^, Amandine Schaeffer^9^, Chris Simon^10^, Mary Beth Decker^11^, Samuel H. Church^12^, Casey W. Dunn^13^
+Dalila Destanović^1^, Namrata Ahuja^1^, Maciej K. Mańko^2^, Ramdhan Firdaus^3^, Ali Fox^4^, Inma Herrera^5^, Sarah Kingston^4^, Adam Riggs^6^, Amandine Schaeffer^7^, Chris Simon^8^, Mary Beth Decker^1^, Samuel H. Church^1,9^, Casey W. Dunn^1^
 
-^1^ [TODO: affiliation for Dalila Destanović — department, institution, city, state/province, country]
-^2^ [TODO: affiliation for Namrata Ahuja — department, institution, city, state/province, country]
-^3^ [TODO: affiliation for Maciej K. Mańko — department, institution, city, state/province, country]
-^4^ [TODO: affiliation for Ramdhan Firdaus — department, institution, city, state/province, country]
-^5^ [TODO: affiliation for Ali Fox — department, institution, city, state/province, country]
-^6^ [TODO: affiliation for Inma Herrera — department, institution, city, state/province, country]
-^7^ [TODO: affiliation for Sarah Kingston — department, institution, city, state/province, country]
-^8^ [TODO: affiliation for Adam Riggs — department, institution, city, state/province, country]
-^9^ [TODO: affiliation for Amandine Schaeffer — department, institution, city, state/province, country]
-^10^ [TODO: affiliation for Chris Simon — department, institution, city, state/province, country]
-^11^ [TODO: affiliation for Mary Beth Decker — department, institution, city, state/province, country]
-^12^ [TODO: affiliation for Samuel H. Church — department, institution, city, state/province, country]
-^13^ [TODO: affiliation for Casey W. Dunn — department, institution, city, state/province, country]
+^1^ Department of Ecology and Evolutionary Biology, Yale University, New Haven, Connecticut, USA
+^2^ Department of Marine Biology and Biotechnology, Laboratory of Plankton Biology, University of Gdańsk, Gdynia, Poland
+^3^ Research Center for Biological Systems, National Research and Innovation Agency (BRIN), Cibinong, Bogor, Indonesia
+^4^ Sea Education Association, 171 Woods Hole Rd, Falmouth, Massachusetts 02540, USA
+^5^ Research Group in Biodiversity & Conservation (BIOCON), University Institute ECOAQUA, University of Las Palmas de Gran Canaria (ULPGC), Scientific & Technological Marine Park, Ctra. Taliarte s/n, 35214 Telde, Spain
+^6^ St Helena Government, Environment, Natural Resources and Planning Portfolio, Marine and Fisheries Conservation Section, The Wharf, Jamestown, St Helena
+^7^ School of Mathematics and Statistics, University of New South Wales, Sydney, Australia
+^8^ Department of Ecology and Evolutionary Biology, University of Connecticut, 75 N. Eagleville Rd., Storrs, Connecticut 06269-3043, USA
+^9^ Department of Biology, New York University, New York, New York, USA
+
+ORCIDs: Dalila Destanović 0000-0002-3744-5789; Namrata Ahuja 0000-0002-2282-9755; Maciej K. Mańko 0000-0001-6872-0256; Ramdhan Firdaus 0000-0001-8620-7210; Ali Fox [TODO]; Inma Herrera 0000-0002-5043-2181; Sarah Kingston 0000-0003-1607-1789; Adam Riggs [TODO]; Amandine Schaeffer 0000-0002-8320-4951; Chris Simon 0000-0002-3576-1120; Mary Beth Decker 0000-0003-0479-5309; Samuel H. Church 0000-0002-8451-103X; Casey W. Dunn 0000-0003-0628-5150
 
 corresponding author: samuelhchurch@gmail.com, SHC
 
-corresponding author ORCID: [TODO: ORCID iD for Samuel H. Church]
+corresponding author ORCID: 0000-0002-8451-103X
 
 non-standard abbreviations: ONT (Oxford Nanopore Technology)
 
