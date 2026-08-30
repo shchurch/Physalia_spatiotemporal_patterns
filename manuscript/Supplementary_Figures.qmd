@@ -31,7 +31,7 @@ slot and the numbering stays aligned with the main text's Fig. SN references.
 CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text
 mention in the main manuscript. Panel assignments were cross-referenced from
 figure descriptions and by viewing each image directly. Note that the P. mikazuki
-shared-traits sentence cites both Fig. S4 and Fig. S6 -- that's what pulls the
+shared-traits sentence cites both S4 Fig and S6 Fig -- that's what pulls the
 Indonesia figure's number earlier than the multitentacled-utriculus placeholder
 right after it. -->
 
@@ -40,11 +40,11 @@ right after it. -->
 
 \newpage
 
-![**Seasonal timing of observations, unweighted.** As in the seasonal wheels of Figures 2 and 3 of the main text, but with each observation counted once rather than weighted by observer effort. All four regions are shown together here, so panel letters differ from the main-text figures: (A) the Caribbean and North America, (B) South America, (C) southern Africa, (D) Eastern Australia and New Zealand.](../figures/seasonality_time.png){#fig-s2 width=100%}
+![**Seasonal timing of observations, unweighted.** As in the seasonal wheels of Fig 2 and Fig 3 of the main text, but with each observation counted once rather than weighted by observer effort. All four regions are shown together here, so panel letters differ from the main-text figures: (A) the Caribbean and North America, (B) South America, (C) southern Africa, (D) Eastern Australia and New Zealand.](../figures/seasonality_time.png){#fig-s2 width=100%}
 
 \newpage
 
-![**Seasonal timing of observations, weighted by daily observer effort.** As in the seasonal wheels of Figures 2 and 3 of the main text, but each observation is divided by the number of baseline beach-species records on that same calendar day, rather than by a cyclic model fitted across the year. Panel order as in Fig. S2. This follows day-to-day activity more closely but is far noisier: in southern Africa and the southwest Atlantic some days carry a single baseline record, so one observation on such a day can weigh a hundred times one on a well-covered day.](../figures/seasonality_time_norm_daily.png){#fig-s3 width=100%}
+![**Seasonal timing of observations, weighted by daily observer effort.** As in the seasonal wheels of Fig 2 and Fig 3 of the main text, but each observation is divided by the number of baseline beach-species records on that same calendar day, rather than by a cyclic model fitted across the year. Panel order as in S2 Fig. This follows day-to-day activity more closely but is far noisier: in southern Africa and the southwest Atlantic some days carry a single baseline record, so one observation on such a day can weigh a hundred times one on a well-covered day.](../figures/seasonality_time_norm_daily.png){#fig-s3 width=100%}
 
 \newpage
 
