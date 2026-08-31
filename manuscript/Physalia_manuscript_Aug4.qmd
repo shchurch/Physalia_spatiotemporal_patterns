@@ -110,7 +110,7 @@ Based on these results, we performed a detailed examination of potentially misse
 
 ## Morphological characterization of species
 
-We collected, observed, and photographed live (@fig-morphology A-I) and fixed (@fig-morphology J-U) specimens of four species that, in combination with the recent description of _P. mikazuki_, establish features for morphological identification. We also describe the typical postures for each species that may reflect underlying differences in tissue-level anatomy. Based on these results, we present the shared characters and diagnoses of species, as well as English common names for each.
+We collected, observed, and photographed live (@fig-morphology A-I) and fixed (@fig-morphology J-U) specimens of four species that, in combination with the recent description of _P. mikazuki_, establish features for morphological identification. We also describe the typical postures for each species that may reflect underlying differences in tissue-level anatomy. Based on these results, we present the shared characters and diagnoses of species, as well as English common names for each. To make our results more accessible for the community, we also composed a dichotomous key to the five species (S1 Text).
 
 ![**Comparative morphology of live and fixed specimens of _Physalia_.** (A-E) Lateral views of five _Physalia_ colonies, specimens YPM IZ 112279 (A), YPM IZ 112657 (B), YPM IZ 111243 (C), YPM IZ 111535 (D), and TUM 112960 (E). Left-handed specimens have anterior to the left, when viewing the side of the float bearing the main zone of the colony. (F-I) Posterior view, showing a typical floating posture with the posterior and main zones held parallel to the surface, specimens YPM IZ 112283 (F), YPM IZ 112656 (G), YPM IZ 111243 (H), and YPM IZ 111526 (I); no live posterior view is available for _P. mikazuki_. (J-N) Type material for each of the five species, viewed laterally, specimens YPM IZ 110254 (J), YPM IZ 110777 (K), YPM IZ 111209 (L), WAM Z88480 (M), and TUM 112960 (N). Asterisk indicates neotype material designated here. (O-U) Additional specimens examined, specimens FM16644 (O), YPM IZ 112321 (P), YPM IZ 110520 (Q), NIWA 173305 (R), YPM IZ 111539 (S), YPM IZ 111519 (T), and YPM IZ 110931 (U). Panels E and N are republished images of _P. mikazuki_ [@yongstar2025physalia]. Panels N and U are not to scale. Scale bars = 1cm.](../figures/morphology_species_comparison.png){#fig-morphology}
 
@@ -271,7 +271,7 @@ All alignments, tree files, analysis code, and the labeled image dataset are ava
 
 # Acknowledgments
 
-[TODO: list any contributors who do not meet full authorship criteria (e.g., technical assistance, specimen collection help, community labeling support), describe their specific contribution, and confirm each named individual has agreed to be acknowledged. Do not list funding sources here -- those are declared separately in the submission system's financial disclosure statement.]
+Special thanks to the students and professional crews of SEA cruises S314 and S321 aboard the SSV _Robert C Seamans_ (Marine Biodiversity and Conservation 2024 and 2025), in particular: Taylor Finn, Anneka Pitera, Jocelyn Rivera, Mya Williams, Aimee Bousquet, Ana Hoffman Sole, Gabriela Carttar, and Robin Muse. We thank the Western Australian Museum, Tasmanian Museum and Art Gallery, and the Field Museum of Natural History for loaning specimens. We thank the St Helena Government Marine and Fisheries Conservation Section for the use of their laboratory. For help with specimen collection, we also thank Jake Letori, Aurelie Hector and the St Helena Research Institute.
 
 # Author Contributions
 
@@ -315,6 +315,28 @@ All alignments, tree files, analysis code, and the labeled image dataset are ava
 
 **S11 Fig. _Physalia megalista_ morphology.** The anterior apex of the float is marked as aaf, septa as s, cluster base as cb, smaller cluster bases as scb, gonodendron as gd, minor tentacles as mint, and crest as c. A- _P. megalista_ specimen from New Zealand (YPM IZ 111515), a large specimen with one large cluster base and a series of smaller ones spanning towards the posterior zone; gonodendron is pale compared to the rest of the blue body. B- _P. megalista_ specimen from New South Wales in a typical horned position after washing up (Photo by © Sabine Templeton, some rights reserved (CC BY-NC), via iNaturalist Observation 310629814). C- _P. megalista_ specimen from South Africa with reddish coloration of minor tentacles (Photo by © spensti, some rights reserved (CC BY-NC), via iNaturalist Observation 319807691). D- _P. megalista_ from New Zealand in a typical beaching posture with the anterior float projection raised; the crest has a lavender apex with green at the bases of the septae (Photo by © Paul Bell-Butler, some rights reserved (CC BY-NC), via iNaturalist Observation 184621409).
 
-S1 Table. Specimen information for all sequenced samples. Collection details, sequencing status, and SRA/mitochondrial genome accession numbers for each specimen (`Supp_Table_specimens.tsv`).
+**S1 Table.** Specimen information for all sequenced samples. Collection details, sequencing status, and SRA/mitochondrial genome accession numbers for each specimen (`Supp_Table_specimens.tsv`).
+
+**S1 Text. Key to the mature colonies of _Physalia_.** Key to the mature colonies (bearing multiple zooids including visible gonodendra in the main zone) of _Physalia_.
+
+**1a.** Gastrozooids with a bright yellow distal tip; float glassy and transparent except at the anterior apex (green, yellow or blue) and crest ... 2
+
+**1b.** Gastrozooid tips not yellow (dark blue, blue-green, reddish, or pale cream); float pigmented, opalescent, or colourless but not conspicuously glassy ... 3
+
+**2a.** Main zone with a centrally located principal palpon and tentacle, adjacent palpons and tentacles much smaller; all clusters borne on one cluster base ... _P. utriculus_ (common bluebottle)
+
+**2b.** Main zone with several clusters borne on distinct cluster bases, bearing more than one major tentacle and associated prominent palpon ... provisionally _P. mikazuki_ (crescent helmet bluebottle; see the _Physalia mikazuki_ section in the main text for the caveats on this diagnosis)
+
+**3a.** Clusters borne on several independent cluster bases spaced along the anterior–posterior axis of the float (up to seven in large colonies); crest running nearly the length of the float and capable of being raised to about the height of the float; main and posterior zones usually continuous, without a visible gap; float shaded blue, pink or purple ... _P. physalis_ (Portuguese man-o-war)
+
+**3b.** Clusters borne primarily on a single cluster base (large colonies of _P. megalista_ occasionally with multiple clusters, but central cluster much larger); crest shorter; a distinct gap usually present between the main and posterior zones ... 4
+
+**4a.** Float projecting anteriorly well beyond the anterior insertion of the crest (crest "incomplete"), this projection often held perpendicular to the water surface in disturbed or beached specimens; crest crimped along its dorsal edge; float opalescent purple and blue-green, rarely glassy ... _P. megalista_ (southern bluebottle)
+
+**4b.** Float not projecting beyond the crest insertion; crest smooth dorsally; float colourless apart from a green anterior apex, elongate-cylindrical in fixed material ... 5
+
+**5a.** Main zone bearing several palpons and tentacles of similar maturity, giving a "bunched" appearance; large gonodendra present on a colony of relatively small overall size ... _P. minuta_ (little bluebottle)
+
+**5b.** Main zone with a strong anterior–posterior maturity gradient about the largest palpon ... return to 4a (_P. megalista_, small or relaxed specimen)
 
 # References
