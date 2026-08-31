@@ -25,7 +25,7 @@ crossref:
 
 short title: "Seasonality, distribution, and morphology of bluebottles (_Physalia_)"
 
-Dalila Destanović^1^, Namrata Ahuja^1^, Maciej K. Mańko^2^, Ramdhan Firdaus^3^, Ali Fox^4^, Inma Herrera^5^, Sarah Kingston^4^, Adam Riggs^6^, Amandine Schaeffer^7^, Chris Simon^8^, Mary Beth Decker^1^, Samuel H. Church^1,9^, Casey W. Dunn^1^
+Dalila Destanović^1^, Namrata Ahuja^1^, Maciej K. Mańko^2^, Mochamad R. Firdaus^3^, Ali Fox^4^, Inma Herrera^5^, Sarah Kingston^4^, Adam Riggs^6^, Amandine Schaeffer^7^, Chris Simon^8^, Mary Beth Decker^1^, Samuel H. Church^1,9^, Casey W. Dunn^1^
 
 ^1^ Department of Ecology and Evolutionary Biology, Yale University, New Haven, Connecticut, USA
 ^2^ Department of Marine Biology and Biotechnology, Laboratory of Plankton Biology, University of Gdańsk, Gdynia, Poland
@@ -37,7 +37,7 @@ Dalila Destanović^1^, Namrata Ahuja^1^, Maciej K. Mańko^2^, Ramdhan Firdaus^3^
 ^8^ Department of Ecology and Evolutionary Biology, University of Connecticut, 75 N. Eagleville Rd., Storrs, Connecticut 06269-3043, USA
 ^9^ Department of Biology, New York University, New York, New York, USA
 
-ORCIDs: Dalila Destanović 0000-0002-3744-5789; Namrata Ahuja 0000-0002-2282-9755; Maciej K. Mańko 0000-0001-6872-0256; Ramdhan Firdaus 0000-0001-8620-7210; Ali Fox [TODO]; Inma Herrera 0000-0002-5043-2181; Sarah Kingston 0000-0003-1607-1789; Adam Riggs [TODO]; Amandine Schaeffer 0000-0002-8320-4951; Chris Simon 0000-0002-3576-1120; Mary Beth Decker 0000-0003-0479-5309; Samuel H. Church 0000-0002-8451-103X; Casey W. Dunn 0000-0003-0628-5150
+ORCIDs: Dalila Destanović 0000-0002-3744-5789; Namrata Ahuja 0000-0002-2282-9755; Maciej K. Mańko 0000-0001-6872-0256; Mochamad R. Firdaus 0000-0001-8620-7210; Ali Fox [TODO]; Inma Herrera 0000-0002-5043-2181; Sarah Kingston 0000-0003-1607-1789; Adam Riggs [TODO]; Amandine Schaeffer 0000-0002-8320-4951; Chris Simon 0000-0002-3576-1120; Mary Beth Decker 0000-0003-0479-5309; Samuel H. Church 0000-0002-8451-103X; Casey W. Dunn 0000-0003-0628-5150
 
 corresponding author: samuelhchurch@gmail.com, SHC
 
@@ -275,21 +275,19 @@ Special thanks to the students and professional crews of SEA cruises S314 and S3
 
 # Author Contributions
 
-[TODO: assign at least one CRediT role to each author. Standard CRediT roles: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Software, Supervision, Validation, Visualization, Writing - original draft, Writing - review & editing.]
-
-- Dalila Destanović: [TODO]
-- Namrata Ahuja: [TODO]
-- Maciej K. Mańko: [TODO]
-- Ramdhan Firdaus: [TODO]
-- Ali Fox: [TODO]
-- Inma Herrera: [TODO]
-- Sarah Kingston: [TODO]
-- Adam Riggs: [TODO]
-- Amandine Schaeffer: [TODO]
-- Chris Simon: [TODO]
-- Mary Beth Decker: [TODO]
-- Samuel H. Church: [TODO]
-- Casey W. Dunn: [TODO]
+- Dalila Destanović: Data curation, Formal analysis, Investigation, Resources, Validation, Visualization, Writing - original draft
+- Namrata Ahuja: Resources, Writing - review & editing
+- Maciej K. Mańko: Writing - review & editing
+- Mochamad R. Firdaus: Investigation
+- Ali Fox: Resources, Investigation
+- Inma Herrera: Resources
+- Sarah Kingston: Resources, Investigation
+- Adam Riggs: Resources
+- Amandine Schaeffer: Writing - review & editing
+- Chris Simon: Resources, Writing - review & editing
+- Mary Beth Decker: Conceptualization, Supervision, Writing - review & editing
+- Samuel H. Church: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Software, Project administration, Validation, Visualization, Supervision, Writing - original draft
+- Casey W. Dunn: Conceptualization, Funding acquisition, Project administration, Supervision, Writing - review & editing
 
 # Supporting Information
 
