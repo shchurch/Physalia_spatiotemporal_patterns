@@ -27,12 +27,12 @@ A population-genomics sister study is at <https://github.com/shchurch/Physalia_p
 |---|---|
 | Labelled iNaturalist dataset — 20,704 observations with photo URL, licence, attribution, species, and label provenance; 16,453 identified to species | `results/final_labeled_dataset.tsv` |
 | Gene alignments and trees — 16S, 18S, *COI*, ITS | `phylogenetics/gene_trees/` |
-| Mitochondrial genome alignments and trees, including the 199-sample tree used for species assignment | `phylogenetics/mitogenome_tree/` |
+| Mitochondrial genome alignments and trees, including the identification tree covering all 199 sequenced specimens | `phylogenetics/mitogenome_tree/` |
 | Tip metadata for every tree | `phylogenetics/tip_metadata.tsv` |
 | Mitochondrial genomes (n = 168) | GenBank PZ224317–PZ224484 |
 | Nuclear 18S (n = 181) | GenBank PZ802573–PZ802753 |
 | Nuclear ITS (n = 186) | GenBank PZ804143–PZ804328 |
-| Raw reads | SRA, submission pending |
+| Raw reads (48 libraries, 56 runs) | SRA BioProject PRJNA1509992, runs SRR40085724–SRR40085779 |
 | Morphological characters, type material, and comparative imaging | the manuscript |
 
 The iNaturalist photographs are not redistributed, since their licences vary per observation; the dataset above records each one, so the corpus can be reassembled under each contributor's own terms. The fitted classification model was not retained.
