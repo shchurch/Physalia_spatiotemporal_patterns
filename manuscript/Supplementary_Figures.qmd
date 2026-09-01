@@ -18,24 +18,17 @@ crossref:
 ---
 
 
-Dalila Destanović, Namrata Ahuja, Maciej K. Mańko, Ramdhan Firdaus, Ali Fox, Inma Herrera, Sarah Kingston, Adam Riggs, Amandine Schaeffer, Chris Simon, Mary Beth Decker, Samuel H. Church, Casey W. Dunn
+Dalila Destanović, Namrata Ahuja, Maciej K. Mańko, Mochamad R. Firdaus, Ali Fox, Inma Herrera, Sarah Kingston, Adam Riggs, Amandine Schaeffer, Chris Simon, Mary Beth Decker, Samuel H. Church, Casey W. Dunn
 
-corresponding author: samuelhchurch@gmail.com, SHC
+corresponding author: samuel.church@nyu.edu, SHC
 
 <!-- Figures are numbered S1, S2, ... automatically: the \thefigure redefinition
 above prefixes the LaTeX figure counter with "S", so captions render as
 "Figure S1:" and @fig-sN cross-references resolve to "Fig. S1". Placeholders are
 caption-only figure divs rather than plain paragraphs, so they occupy a counter
-slot and the numbering stays aligned with the main text's Fig. SN references.
+slot and the numbering stays aligned with the main text's Fig. SN references. -->
 
-CLAUDE-ASSEMBLED, PLEASE VERIFY: numbering follows strict order of first in-text
-mention in the main manuscript. Panel assignments were cross-referenced from
-figure descriptions and by viewing each image directly. Note that the P. mikazuki
-shared-traits sentence cites both S4 Fig and S6 Fig -- that's what pulls the
-Indonesia figure's number earlier than the multitentacled-utriculus placeholder
-right after it. -->
-
-![**Effort-corrected seasonal abundance for _Physalia utriculus/mikazuki_ in southern Africa.** Counts of _P. utriculus/mikazuki_ observations by day of year, in the region bounded by 5-45° E and 0-40° S. From top: the baseline of abundant beach species (hermit crabs and echinoderms) used as a proxy for observer activity; unweighted _P. utriculus/mikazuki_ counts; and the same counts corrected for observer effort on a daily and on a seasonal basis. The anomalous peak near the 116th day of the year appears in both the baseline and the unweighted counts, and corresponds to a local holiday rather than to a peak in abundance. It is removed by either correction, after which the underlying seasonal trend is clearer.](../figures/supplemental/supp_normalization_utriculus.pdf){#fig-s1 width=100%}
+![**Effort-corrected seasonal abundance for _Physalia utriculus/mikazuki_ in southern Africa.** Counts of _P. utriculus/mikazuki_ observations by day of year, in the region bounded by 5-45° E and 0-40° S. From top: the baseline of abundant beach species (hermit crabs and echinoderms) used as a proxy for observer activity; unweighted _P. utriculus/mikazuki_ counts; and the same counts corrected for observer effort on a daily and on a seasonal basis. The anomalous peak in late April appears in both the baseline and the unweighted counts, and corresponds to a period of local public holidays rather than to a peak in abundance. It is removed by either correction, after which the underlying seasonal trend is clearer.](../figures/supplemental/supp_normalization_utriculus.pdf){#fig-s1 width=100%}
 
 
 \newpage
@@ -48,7 +41,7 @@ right after it. -->
 
 \newpage
 
-![**Seasonal patterns in the southwest Pacific and the western South Atlantic.** Tiles indicate the median day observed for species observations in that area, colored by the calendar wheel at lower right. Grey hexagons hold fewer than three observations, too few to calculate a median. (A,B) Eastern Australia and New Zealand, for _P. megalista_ (A) and _P. utriculus/mikazuki_ (B); the _P. megalista_ latitudinal gradient from north (Sep) to south (Apr) along the eastern Australian coast is visible in A. (C,D) South America, for _P. physalis_ (C) and _P. utriculus/mikazuki_ (D). These panels are the counterpart to the main-text seasonal gradients figure, which shows the Caribbean and North America, and southern Africa.](../figures/supplemental/supp_seasonal_gradients.png){#fig-s4 width=100%}
+![**Seasonal patterns in the southwest Pacific and the western South Atlantic.** Tiles indicate the circular median day for species observations in that area, colored by the calendar wheel at lower right. Grey hexagons hold fewer than three observations, too few to calculate a median. (A,B) Eastern Australia and New Zealand, for _P. megalista_ (A) and _P. utriculus/mikazuki_ (B); the _P. megalista_ latitudinal gradient from north (Sep) to south (Apr) along the eastern Australian coast is visible in A. (C,D) South America, for _P. physalis_ (C) and _P. utriculus/mikazuki_ (D). These panels are the counterpart to the main-text seasonal gradients figure, which shows the Caribbean and North America, and southern Africa.](../figures/supplemental/supp_seasonal_gradients.png){#fig-s4 width=100%}
 
 \newpage
 
