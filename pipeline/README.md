@@ -16,7 +16,7 @@ Applied to the Illumina WGS libraries. Rules, in order:
 |---|---|
 | `download_SRA` | fetch previously published libraries |
 | `reads_subset` | subset to 10 million reads |
-| `trimmomatic_pe` | Trimmomatic 0.39, default settings |
+| `trimmomatic_pe` | Trimmomatic 0.39, `ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:True LEADING:15 TRAILING:15 MINLEN:50` |
 | `fastqc` | read quality report |
 | `kraken` | Kraken2 against the standard contaminant database |
 | `map_human` | BWA-MEM against GRCh38, to check for human contamination |
