@@ -14,18 +14,30 @@ tRNAscan-SE. Out of scope here: the 28 ONT `SEA2025-*` cruise samples, and three
 Illumina samples with assemblies but no accession (`YPM-IZ-104465`, `-110972`,
 `-111760`).
 
-Built by `../build_mitogenome_tree.sh`, which subsets the 199-sample alignment
-to the deposited set and drops columns left all-gap. Removing sequences from an
-alignment cannot change the homology of the columns that remain, so the
-alignment is not recomputed. Subsetting removed **10,333 of 25,753 columns**
-(40%) as all-gap — those columns existed only to accommodate the excluded
-sequences.
+Built by `../build_mitogenome_tree.sh`, which subsets the identification
+alignment to the deposited set and drops columns left all-gap. Removing
+sequences from an alignment cannot change the homology of the columns that
+remain, so the alignment is not recomputed. Subsetting removed **10,333 of
+25,753 columns** (40%) as all-gap — those columns existed only to accommodate
+the excluded sequences.
 
-## `identification.*` — all sequenced samples (199)
+## `identification.*` — all sequenced samples (199 specimens, 201 tips)
 
 A supporting tree, **not** a published phylogeny of deposited data. Its only
 purpose is to assign species to the ONT cruise samples by their placement among
 the Illumina samples, whose identities are known from the GenBank submission.
+
+**The alignment holds 201 sequences for 199 specimens.** `YPM-IZ-110972` and
+`YPM-IZ-111760` each appear twice, as two GetOrganelle path variants of the same
+assembly — the pairs differ by 2 and 4 bases respectively and each is recovered
+as a cherry at 100% bootstrap. These are the two specimens withheld from the
+GenBank submission for being the longest recovered, and the duplication is the
+same ambiguity that made them long: the assembly graph admits more than one path,
+and `new_mt_script.sh` took the first `*path*fasta` per sample, which for these
+two was not unique. It does not affect any species assignment. `plot_trees.R`
+drops the duplicate at plot time, so the published figure shows 199 tips, but the
+alignment and the treefiles built from it carry both copies — anything counting
+tips in those files should expect 201. See issue #57.
 
 The ONT assemblies are good enough to place a sample in a well-supported clade
 but not good enough to deposit as reference mitogenomes: their terminal branches

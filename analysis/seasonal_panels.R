@@ -57,6 +57,7 @@ NB     <- 73     # 5-day bins
 BINW   <- 365 / NB
 CAP    <- 5      # intensity at which the ramp saturates; see note below
 SPARSE <- 50     # below this, a ring is a handful of records, not a season
+FLAT   <- 0.40   # fixed intensity for sparse rings, as a fraction of CAP
 DPI    <- 500
 
 # Three-month map sizing. MAP_H is the full-size map height in inches; MAP_SCALE
@@ -67,10 +68,16 @@ MAP_SCALE  <- 0.75
 AXIS_ALLOW <- 0.35   # room for the degree labels, at fixed type size
 MAP_PT     <- 1.2
 
-# CAP is a real choice, not a formality. Four cells exceed it, the largest
-# reaching 9.8x (the Caribbean P. utriculus mass-stranding week), and the figure
-# cannot distinguish 5x from 10x. 5 sits just above the 99th percentile of all
-# well-sampled cells. State it in the caption.
+# CAP is a real choice, not a formality: above it the figure cannot tell 5x from
+# 10x. 5 sits just above the maximum of the well-sampled rings, whose ratios top
+# out at 5.4x (Southern Africa P. megalista) and are otherwise all below 5. Since
+# the FLAT rule below took the n < 50 rings off the ramp, that ring is the only
+# bin the cap clips under the seasonal weighting the main figures use (raw and
+# daily clip two each, to 6.4x and 6.3x), so saturation no longer needs
+# explaining in the caption. Before the FLAT rule, 22
+# of 876 populated bins exceeded the cap and 21 of them sat in the four sparse
+# rings, reaching 27.2x in a ring of three records -- that concentration is what
+# the FLAT rule exists to stop misreporting.
 
 REGIONS <- tibble::tribble(
   ~region,                    ~x0,  ~x1,  ~y0,  ~y1, ~tag,
@@ -167,7 +174,22 @@ build_rings <- function(dat, wt) {
     mutate(region  = factor(region, levels = REGIONS$region),
            species = factor(species, levels = SPP),
            day     = (bin - 0.5) * BINW,
-           shown   = pmin(ratio, CAP))
+           # Sparse rings encode presence only, not intensity. Because the
+           # ratio is normalised within each ring, a 3-record ring expects
+           # 0.04 records per bin, so one observation is 24x expectation and
+           # saturates instantly, while a 7,622-record ring expects 104 per bin
+           # and a real seasonal peak reaches only 2-4x. Measured on the
+           # seasonal weighting the main figures use, the four rings at n < 50
+           # were drawn at 0.79 mean alpha with 48% of their cells fully
+           # saturated, against 0.24 and 0.2% for the eight rings at n >= 50 --
+           # so the rings the figure flags as too sparse to trust were also the
+           # ones it drew most emphatically, and the dashed outline argued
+           # against the impression the fill created. Drawing them at a fixed
+           # FLAT keeps *when* the records fell without claiming how
+           # concentrated they were. Rings at n >= SPARSE are unchanged.
+           shown   = ifelse(n > 0 & n < SPARSE,
+                            ifelse(k > 0, FLAT * CAP, 0),
+                            pmin(ratio, CAP)))
 }
 
 # Effort weights, fitted per region on that region's own baseline records.
@@ -308,9 +330,19 @@ draw_rings <- function(rings, suffix) {
 
 for (wname in names(WEIGHTINGS)) {
   rg_data <- build_rings(obs, WEIGHTINGS[[wname]])
-  over <- sum(rg_data$ratio > CAP & rg_data$n > 0)
-  cat(sprintf("%-9s weighting: %3d of %4d populated bins exceed the %dx cap; max %.1fx\n",
-              wname, over, sum(rg_data$n > 0), CAP, max(rg_data$ratio)))
+  # Count what is actually clipped on the ramp. Bins in sparse rings are drawn
+  # at FLAT rather than by ratio, so their ratios -- which are the extreme ones --
+  # are no longer a statement the figure makes, and counting them here would
+  # overstate the clipping.
+  on_ramp <- rg_data$n >= SPARSE
+  over    <- sum(rg_data$ratio > CAP & on_ramp)
+  cat(sprintf(paste0("%-9s weighting: %2d of %3d bins on the ramp exceed the %dx cap ",
+                     "(max %.1fx); %3d bins in rings at n < %d drawn flat, ",
+                     "ratios to %.1fx not shown\n"),
+              wname, over, sum(on_ramp & rg_data$n > 0), CAP,
+              max(rg_data$ratio[on_ramp]),
+              sum(!on_ramp & rg_data$k > 0), SPARSE,
+              max(rg_data$ratio[!on_ramp])))
   # All three composites are assembled in Illustrator from these panels; this
   # script writes panels only, so there is one source of truth per figure.
   draw_rings(rg_data, if (wname == "raw") "" else paste0("_norm_", wname))

@@ -1,249 +1,81 @@
 # analysis
- 
- This folder contains R scripts and Quarto notebooks used for:
- 
- - Generating curated iNaturalist-derived datasets (`final_results`, `norm_results`) by combining community IDs, manual labels/corrections, and ML predictions
- - Producing the figures/panels used in the project (maps, seasonal plots, confusion matrices, alluvial plots)
- 
- ## Working directory expectations
- 
- **Convention: no script hard-codes a machine-specific path. Start every `.R`/`.r` script from the repository root** (i.e., `Physalia_spatiotemporal/`), because they reference paths like:
- 
- - `source("analysis/read.data.R")`
- - `data/...`
- - `results/...`
- - `figures/...`
- 
- No script sets its own working directory. Start R in the repository root and the relative paths resolve.
- 
- 
- ## Shared inputs produced/consumed by scripts
- 
- - **Primary iNat download(s)**: `data/observations-*.csv`
- - **Manual labels**: `data/labels.tsv`
- - **Manual correction passes**:
-   - `data/corrected.tsv`
-   - `data/corrected_final.tsv`
- - **Model predictions**: `results/all_predictions.json`
- - **Outputs**: most figure scripts write PDFs into `figures/panels/`
- 
- ## File-by-file guide
- 
- ### `read.data.R`
- **Role**: Central data assembly script. Loads packages, reads raw iNat data + labeling/correction/prediction artifacts, and builds the core tables used everywhere.
- 
- **Key objects created**:
- 
- - `inat_results`: raw iNat export from `data/observations-604981.csv`
- - `norm_results`: “effort/baseline” iNat export created by binding `data/observations-607577.csv` and `data/observations-607598.csv` (tagged `species = "beach_sp"`)
- - `labeled_data`, `corrected_data_1`, `corrected_data_2`: manual review tables
- - `learned_data` / `predicted_data`: ML predictions read from `results/all_predictions.json` and filtered by `confidence_threshold`
- - `community_data`: non-generic community IDs (anything where `scientific_name != "Physalia"`)
- - `inr_0 ... inr_5`: staged versions of the classification table
- - `final_results`: final merged dataset (`id`, `species`, `status` plus iNat columns), with derived `yd`, `ymd`, `mon`, `year`
- 
- **Notes**:
- 
- - `confidence_threshold` is set to `0.65`.
- - `species_order` is defined here and used for consistent plotting order.
- 
- ### `functions.R`
- **Role**: Helper functions used across plotting scripts.
- 
- - `conditional_breaks(limit)`: y-axis breaks tuned for low-count facets
- - `circular_median_day(days)`: circular median for day-of-year (seasonality)
- - `build_world(LeftBound, latitude_range, longitude_range, species_of_interest)`: subsets `final_results` and returns projected map layers + `xlims`/`ylims`
- 
- **Important**: `build_world()` expects a global `final_results` (created by sourcing `read.data.R`).
- 
- ### `model_figures.R`
- **Role**: Produces several figure panels related to the semi-supervised labeling pipeline and model performance.
- 
- **Major outputs (PDF)**:
- 
- - `figures/panels/alluvial_plot.pdf`: flow of IDs through staging (`inr_0`→`inr_5`)
- - `figures/panels/confusion_matrix_raw.pdf`: confusion matrix proportions from `results/confusion_matrix.txt`
- - `figures/panels/confusion_matrix_norm.pdf`: row-normalized confusion matrix
- - `figures/panels/community_predicted_matrix.pdf`: agreement between community IDs and model predictions
- - `figures/panels/global_map.pdf`: global map of `final_results`
- - `figures/panels/year_species.pdf`: time histogram by species (post-2015)
- 
- ### `seasonal_tiles.R`
- **Role**: Regional seasonal panels, iterated over predefined lat/lon “ranges” (requires setting `i`).
- 
- **How to run**:
- 
- - Set `i <- 1` (or 1–5)
- - `source("analysis/seasonal_tiles.R")`
- 
- **Outputs (PDF)** (examples):
- 
- - `figures/panels/seasonal_<species>_<range>.pdf`: points colored by day-of-year
- - `figures/panels/seasonal_tiled_count_<species>_<range>.pdf`: DGGS-tiled log-scaled counts
- - `figures/panels/seasonal_tiled_<species>_<range>.pdf`: DGGS-tiled median day-of-year. A hexagon is coloured only if it holds at least `MIN_N` (3) records; below that a median is one of two dates rather than a median. Thin hexes are kept and drawn near-white with an outline, so a reader still sees the species was recorded there. The outline matters: the land fill is `#D3D3D3`, and a plain light-grey hex disappears wherever it overlaps land.
- - `figures/panels/polar_calendar_<range>.pdf`: reference polar color map
- 
- ### `seasonal_histograms.R`
- **Role**: For a chosen region (`i`), generates seasonal histograms and year-by-year seasonal histograms.
- 
- **How to run**:
- 
- - Set `i <- 1` (or 1–5)
- - `source("analysis/seasonal_histograms.R")`
- 
- **Outputs (PDF)**:
- 
- - `figures/panels/months_<range>.pdf`: quarterly maps
- - `figures/panels/facet_hist_<range>.pdf`: stacked seasonal histograms by species
- - `figures/panels/yearly_hist_<species>_<range>.pdf`: seasonal histograms faceted by year
- 
- ### `seasonal_panels.R`
- **Role**: Panels for the combined seasonality figures. The maps and the seasonally-weighted wheels are assembled by ocean basin into `figures/seasonality_atlantic.png` and `figures/seasonality_pacific.png`; the unweighted and daily-weighted wheels supply the supplementary `figures/seasonality_time.png` and `figures/seasonality_time_norm_daily.png`. Covers four regions: eastern Australia/New Zealand, Southern Africa, the Caribbean/North America, and eastern South America.
 
- **How to run**: `Rscript analysis/seasonal_panels.R` from the repository root. Takes no arguments and does all four regions in one pass, unlike `seasonal_histograms.R` and `norm.R`, which want `i` set first.
+R code for the iNaturalist analyses: it assembles the labelled observation
+dataset from the raw exports, manual corrections and model predictions, then
+draws the seasonality, distribution and classifier panels used in the manuscript.
 
- **Outputs (PNG, 500 dpi, in `figures/panels/seasonality/`)**:
+Every script reads from `data/` and `results/` and writes panels into
+`figures/panels/`. The multi-panel figures in `figures/` are assembled from those
+panels in Illustrator; the `.ai` sources are not tracked.
 
- - `season_<region>.png`: radial seasonality, one ring per species
- - `season_key_intensity.png`: the intensity ramp, placed once for the assembled figure (species names and counts sit in a boxed key under each region panel)
- - `map_<region>_<quarter>.png`: the three-month maps, at cropped frames
- - `counts_by_region.tsv`: per species-region totals, for the caption
+## Running
 
- **Two things to know before editing**:
+Start R **in the repository root**, not in this directory — every path is
+relative to the root:
 
- - *Seasonality is radial, and deliberately so.* Day of year is cyclic; a linear axis has to cut the year somewhere, and a Jan 1 cut halves the austral summer peak and draws it at both ends of the axis as though it were two peaks. This is visible in the figures being replaced. A circle has no ends. Bins are 5 days because 365 = 5 × 73 divides exactly, and binning is on raw day of year — rotating first and taking the modulo back leaves one bin astride the boundary, which the scale then silently drops, putting a gap in every ring.
- - *Nothing is smoothed.* Every value is a raw count in a stated bin, scaled against what an evenly spread year would put in that bin, so rings with very different `n` can be compared. The ramp saturates at 5×; four cells exceed that, the largest at 9.8×, so the figure cannot distinguish 5× from 10× and the caption should say so.
+```r
+renv::restore(project = "analysis")   # once, to install pinned versions
+```
 
- Map frames are cut to the 1st–99th percentile of each region's own records, which is 39–55% of the nominal region boxes. Four cells fall below n = 50 and are marked `*` next to their count.
+```
+Rscript analysis/read.data.R
+Rscript analysis/model_figures.R
+Rscript analysis/seasonal_panels.R
+Rscript analysis/open_ocean_map.R
+```
 
- ### `open_ocean_map.R`
- **Role**: The open-ocean sampling map, the single panel assembled into `figures/open_ocean_sampling.png`. Extracted from the superseded `R_code/PCA.qmd`, which was dropped with the population-genomic analyses; only the map is kept, and it reads no popgen output.
+Do not `source("analysis/renv/activate.R")` from the root: `activate.R` treats the
+current directory as the project, so it creates an empty library there and hides
+everything installed. If that has happened, delete the stray `renv/` at the root.
 
- **How to run**: `Rscript analysis/open_ocean_map.R` from the repository root.
+`seasonal_tiles.R`, `seasonal_histograms.R` and `norm.R` run one region at a time
+and expect `i` to be set to 1–5 first:
 
- **Inputs**: `data/sample_ids.tsv`, `data/subset.txt` (genomic cluster assignments, recoded A/B1/C1/C2 to phy/utr/meg/min).
+```r
+for (i in 1:5) source("analysis/seasonal_tiles.R")
+```
 
- **Output (PDF)**: `figures/panels/SPacific_sampling_assignments.pdf`
+## Contents
 
- **Scope**: restricted to the 92 samples that fall inside the plotted frame (meg 27, min 52, utr 13 — the three species the figure caption names). The original notebook passed all 199 non-excluded samples in and relied on `ggrepel` dropping the out-of-frame ones; current `ggrepel` repels them to the frame edge instead. Clipping on the projected coordinates makes the panel independent of that behaviour. See issue #54.
+| | |
+|---|---|
+| `read.data.R` | Builds `final_results`, the canonical per-observation table, by layering manual labels, corrections, model predictions and community IDs in order. Writes `results/final_labeled_dataset.tsv`. Every other script sources this one. |
+| `functions.R` | Shared helpers: circular median day of year, map construction, axis breaks |
+| `model_figures.R` | Classification figure panels — label-provenance alluvial, confusion matrices, model vs community agreement, global map, observations by year |
+| `seasonal_panels.R` | The seasonality figures: radial species rings and three-month maps for four regions, in unweighted, effort-weighted and daily-weighted versions |
+| `seasonal_tiles.R` | Per-region hexagon maps of circular median day of year, and tiled record counts |
+| `seasonal_histograms.R` | Per-region seasonal histograms, overall and by year |
+| `norm.R` | Observer-effort normalisation against the beach-species baseline, using a cyclic GAM over day of year |
+| `open_ocean_map.R` | The South Pacific open-ocean sampling map |
+| `seasonal.r`, `iNat_plot.r`, `map_problems.r` | Earlier exploratory scripts, kept for provenance. `map_problems.r` defines the geographic outlier regions used in the manual review described in the Methods. |
 
- ### `norm.R`
- **Role**: Explores “effort normalization” using the `norm_results` baseline dataset and a cyclic GAM (`mgcv::gam`) over day-of-year.
- 
- **How to run**:
- 
- - Set `i <- 1` (or 1–5)
- - `source("analysis/norm.R")`
- 
- **Output (PDF)**:
- 
- - `figures/panels/norm_hist_<species>_<range>.pdf`: baseline vs unweighted vs daily vs seasonal weighting
- 
- ### `seasonal.r`
- **Role**: Older / exploratory seasonal plotting script.
- 
- **Notes**:
- 
- - Re-defines `circular_median_day()` and `build_world()` locally (similar to `functions.R`).
- - Includes both point-based seasonal maps and DGGS tiled maps.
- 
- **Outputs (PDF)**:
- 
- - `figures/panels/months_<name>.pdf`
- - `figures/panels/seasonal_<name>.pdf`
- - `figures/panels/seasonal_tiled_count_<name>.pdf`
- - `figures/panels/seasonal_tiled_season_<name>.pdf`
- 
- ### `iNat_plot.r`
- **Role**: Exploratory map + alluvial plots comparing semisupervised labels vs community scientific names.
- 
- **Outputs**:
- 
- - `<title>_predictions.pdf` maps written to the current working directory
- 
- 
- ### `map_problems.r`
- **Role**: Debugging/outlier triage for suspicious spatial clusters. Subsets records for specific species/regions and writes review TSVs.
- 
- **Outputs**:
- 
- - `<subset>_predictions.pdf` maps written to the current working directory
- - `<subset>.tsv` review tables (`id`, `image_url`, `place_guess`, `status`)
- 
- 
- ## Reproducibility with `renv`
- 
- The R scripts here rely on a consistent set of spatial + tidyverse packages (e.g., `sf`, `rnaturalearth`, `dggridR`, `ggplot2`, `dplyr`, `mgcv`, `ggalluvial`, etc.). `renv` is the easiest way to lock versions.
- 
- ### Recommendation: choose the `renv` project root intentionally
- 
- Because many scripts use paths like `data/...` and `results/...`, the cleanest options are:
- 
- - **Option 1 (most compatible):** initialize `renv` at the **repository root** (`Physalia_spatiotemporal/`).
- - **Option 2 (`analysis`-only renv):** initialize inside `analysis/`, but still run scripts with working directory set to the repo root, and explicitly activate `analysis`’s `renv` when needed.
- 
- If you initialize in `analysis/` and then set your working directory to the repo root, your scripts’ relative paths will work, but you need to ensure the `renv` environment is activated first.
- 
- ### Create a new `renv` for `analysis/`
- 
- From an R session:
- 
- 1. Set your working directory to `analysis/`.
- 2. Run:
- 
- ```r
- install.packages("renv")
- renv::init()
- ```
- 
- 3. Install any missing packages by running one of the scripts/notebooks.
- 4. Lock versions:
- 
- ```r
- renv::snapshot()
- ```
- 
- This creates:
- 
- - `analysis/renv.lock`
- - `analysis/renv/` (activation + infrastructure)
- 
- ### Using the `renv` on a new machine
- 
- 1. Open R with working directory set to `analysis/`.
- 2. Run:
- 
- ```r
- install.packages("renv")
- renv::restore()
- ```
- 
- ### Running scripts from the repo root while using `analysis`’s `renv`
+## Inputs
 
- **Do not** `source("analysis/renv/activate.R")` from the repository root. `activate.R`
- takes the current working directory as the project, so from the root it creates a
- second, empty `renv/` library there and hides everything that is installed. Scripts
- then fail with `there is no package called '<x>'`. If that has already happened,
- delete the stray `renv/` directory at the repository root.
+| | |
+|---|---|
+| `data/observations-604981.csv` | *Physalia* observations exported from iNaturalist |
+| `data/observations-607577.csv`, `-607598.csv` | Hermit crab and echinoderm exports, the observer-effort baseline |
+| `data/labels.tsv` | First-pass manual species labels |
+| `data/corrected.tsv`, `corrected_final.tsv`, `corrected_DD.tsv` | Manual correction passes |
+| `results/all_predictions.json` | Per-image classifier predictions |
+| `data/sample_ids.tsv`, `data/subset.txt` | Sequenced specimen coordinates and genomic cluster assignments |
 
- Install the lockfile's packages once:
+Analysis choices — bin widths, the effort-weighting scheme, the intensity cap,
+the record thresholds below which a median or a ring is not drawn, and the
+regional bounding boxes — are documented in comments at the point of use in each
+script rather than repeated here.
 
- ```r
- renv::restore(project = "analysis")
- ```
+## Reproducibility
 
- then run the scripts from the repository root with no activation step:
+Package versions are pinned in `renv.lock` and were last verified on 2026-08-29
+against R 4.5.2, where `renv::restore(project = "analysis")` resolved all 139
+packages and `model_figures.R`, `seasonal_panels.R` and `seasonal_tiles.R`
+reproduced every existing panel byte-identically. Note that restoring this way
+installs into the default R library rather than an isolated project library, so it
+will change versions of packages already present on the machine.
 
- ```
- Rscript analysis/read.data.R
- Rscript analysis/model_figures.R
- Rscript analysis/seasonal_panels.R
- ```
+## Authorship note
 
- Note that `renv::restore(project = "analysis")` installs into the default R library
- rather than an isolated project library, because no renv project is active at the
- time. It resolves every package the scripts need, but it will also change versions
- of packages already installed on the machine to match the lockfile. Verified on
- 2026-08-29 against R 4.5.2: all 139 packages restored, and `model_figures.R`,
- `seasonal_panels.R` and `seasonal_tiles.R` reproduced every existing panel
- byte-identically.
+Code and documentation in this directory were written and edited in part with
+Claude Code (Anthropic). The authors have reviewed all of it and take full
+responsibility for its contents.
