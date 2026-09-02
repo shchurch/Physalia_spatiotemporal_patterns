@@ -6,27 +6,32 @@
   "creators": [
     {
       "name": "Destanović, Dalila",
-      "orcid": "0000-0002-3744-5789"
+      "orcid": "0000-0002-3744-5789",
+      "affiliation": "Department of Ecology and Evolutionary Biology, Yale University, New Haven, Connecticut, USA"
     },
     {
       "name": "Ahuja, Namrata",
-      "orcid": "0000-0002-2282-9755"
+      "orcid": "0000-0002-2282-9755",
+      "affiliation": "Department of Ecology and Evolutionary Biology, Yale University, New Haven, Connecticut, USA"
     },
     {
       "name": "Mańko, Maciej K.",
-      "orcid": "0000-0001-6872-0256"
+      "orcid": "0000-0001-6872-0256",
+      "affiliation": "Department of Marine Biology and Biotechnology, Laboratory of Plankton Biology, University of Gdańsk, Gdynia, Poland"
     },
     {
-      "name": "Firdaus, Ramdhan",
+      "name": "Firdaus, Mochamad R.",
       "affiliation": "National Research and Innovation Agency (BRIN)",
       "orcid": "0000-0001-8620-7210"
     },
     {
-      "name": "Fox, Ali"
+      "name": "Fox, Ali",
+      "affiliation": "Sea Education Association, Falmouth, Massachusetts, USA"
     },
     {
       "name": "Herrera, Inma",
-      "orcid": "0000-0002-5043-2181"
+      "orcid": "0000-0002-5043-2181",
+      "affiliation": "Research Group in Biodiversity & Conservation (BIOCON), University Institute ECOAQUA, University of Las Palmas de Gran Canaria, Telde, Spain"
     },
     {
       "name": "Kingston, Sarah",
@@ -34,7 +39,8 @@
       "orcid": "0000-0003-1607-1789"
     },
     {
-      "name": "Riggs, Adam"
+      "name": "Riggs, Adam",
+      "affiliation": "St Helena Government, Marine and Fisheries Conservation Section, Jamestown, St Helena"
     },
     {
       "name": "Schaeffer, Amandine",
@@ -42,7 +48,9 @@
       "orcid": "0000-0002-8320-4951"
     },
     {
-      "name": "Simon, Chris"
+      "name": "Simon, Chris",
+      "orcid": "0000-0002-3576-1120",
+      "affiliation": "Department of Ecology and Evolutionary Biology, University of Connecticut, Storrs, Connecticut, USA"
     },
     {
       "name": "Decker, Mary Beth",
