@@ -55,6 +55,12 @@ figures/panels/
 # in the figure caption, which is where they are published.
 machine_learning/*.png
 
-# Review copies of the rendered manuscript. These are circulated, not tracked:
-# the repository is already dominated by PDF blobs and each copy is ~33 MB.
+# Rendered manuscripts are not tracked. They regenerate from the .qmd sources
+# with `quarto render`, and each render is 30-35 MB: 29 versions of the main
+# manuscript and 14 of the supplement had accumulated to 1.2 GB, 82% of all
+# history, before they were purged. Figure PDFs under figures/ and
+# phylogenetics/figures/ are still tracked -- the supplement includes two of
+# them and they are a few kB each.
+manuscript/Physalia_manuscript_Aug4.pdf
+manuscript/Supplementary_Figures.pdf
 manuscript/*REVIEW*.pdf
