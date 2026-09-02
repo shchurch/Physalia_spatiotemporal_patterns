@@ -22,6 +22,7 @@ Rscript analysis/read.data.R
 Rscript analysis/model_figures.R
 Rscript analysis/seasonal_panels.R
 Rscript analysis/open_ocean_map.R
+Rscript analysis/seasonality_index.R
 ```
 
 Do not `source("analysis/renv/activate.R")` from the root: `activate.R` treats the
@@ -47,6 +48,7 @@ for (i in 1:5) source("analysis/seasonal_tiles.R")
 | `seasonal_histograms.R` | Per-region seasonal histograms, overall and by year |
 | `norm.R` | Observer-effort normalisation against the beach-species baseline, using a cyclic GAM over day of year |
 | `open_ocean_map.R` | The South Pacific open-ocean sampling map |
+| `seasonality_index.R` | How concentrated each species' observations are within the calendar year, per region, with a Rayleigh test against an even spread. Writes `manuscript/seasonality_index.tsv` and the markdown fragment the supplement includes (S1 Table). |
 | `seasonal.r`, `iNat_plot.r`, `map_problems.r` | Earlier exploratory scripts, kept for provenance. `map_problems.r` defines the geographic outlier regions used in the manual review described in the Methods. |
 
 ## Inputs
