@@ -54,3 +54,7 @@ figures/panels/
 # the fitted model was not retained. The photographs are CC BY and credited
 # in the figure caption, which is where they are published.
 machine_learning/*.png
+
+# Review copies of the rendered manuscript. These are circulated, not tracked:
+# the repository is already dominated by PDF blobs and each copy is ~33 MB.
+manuscript/*REVIEW*.pdf
