@@ -189,7 +189,9 @@ To clarify the taxonomic status of the nominal species, we hereby designate UPSZ
 
 #### _Physalia utriculus_
 
-Neotype: Yale Peabody Museum Invertebrate Collection (YPM-IZ) in New Haven, Connecticut, United States of America, catalog number YPM IZ 110777. The specimen was collected by Chris Simon on 19th July 2023. 21.400790 latitude, -157.734500 longitude on Kailua Beach, Oahu, Hawai'i, United States of America. The original species description was by Gmelin, 1788 [@linne1788systema] from illustrations by La Martinière in 1787 [@lamartiniere1787insects] of a North Pacific specimen (20°N and 179°E).
+No type material of _Physalia utriculus_ is known to survive. _Physalia utriculus_ (Gmelin, 1788) was illustrated by La Martinière (1787) [@lamartiniere1787insects] from a specimen observed at approximately 20°N, 179°E during the La Pérouse expedition; Gmelin (1788) [@linne1788systema] supplied the name. Under Article 72.5.6 of the ICZN Code the specimen figured constitutes the name-bearing type. That specimen cannot be extant: La Martinière died with the expedition in 1788 when both vessels were lost, and only drawings, journals and correspondence dispatched from Kamchatka and Botany Bay reached France. We have consulted the history of the expedition and find no indication that any preserved specimens survived the voyage.
+
+To clarify the taxonomic status of the nominal species, we designate as neotype YPM IZ 110777, Yale Peabody Museum Invertebrate Zoology collection, New Haven, Connecticut, United States of America, collected by C. Simon on 19 July 2023 at 21.400790 latitude, -157.734500 longitude, Kailua Beach, Oahu, Hawai'i. The specimen agrees with La Martinière's figure and description in the characters given above, and was taken in the central North Pacific at approximately the latitude of the original observation, as near the original type locality as is practicable. It is the property of the Yale Peabody Museum, which maintains a permanent research collection accessible for study.
 
 #### _Physalia mikazuki_
 
