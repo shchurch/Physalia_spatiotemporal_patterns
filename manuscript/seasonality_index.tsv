@@ -1,0 +1,12 @@
+region	species	n	seasonality_index	expected_if_even	peak_date	rayleigh_p
+E Australia, New Zealand	megalista	1657	0.26	0.02	16 Oct	1.31e-50
+E Australia, New Zealand	minuta	444	0.74	0.04	15 Jan	1.43e-106
+E Australia, New Zealand	utriculus	663	0.55	0.04	24 Jan	6.8e-88
+Southern Africa	megalista	251	0.53	0.06	25 Sep	7.59e-32
+Southern Africa	minuta	25	0.82	0.18	25 Nov	3.94e-08
+Southern Africa	utriculus	688	0.29	0.03	12 Jan	3.03e-25
+Caribbean, N America	physalis	7622	0.51	0.01	01 Mar	0
+Caribbean, N America	utriculus	127	0.29	0.08	03 Nov	2.4e-05
+E South America	physalis	513	0.53	0.04	30 Dec	1.95e-62
+E South America	megalista	10	0.66	0.28	18 Dec	0.00969
+E South America	utriculus	105	0.28	0.08	22 Jan	0.000285
