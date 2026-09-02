@@ -299,7 +299,7 @@ Mitochondrial genomes were assembled for the whole-genome-sequenced Illumina sam
 
 Whole-genome sequencing data for the 48 specimens generated in this study (28 ONT, 20 Illumina) are deposited in the NCBI Sequence Read Archive under BioProject **PRJNA1509992** (SRA study **SRP725477**), comprising Illumina and Oxford Nanopore runs **SRR40085724–SRR40085779** (n=56 runs, including 8 specimens each sequenced across two Illumina flow cells) and BioSample accessions **SAMN62283094–SAMN62283141** (n=48). Per-specimen run accessions are given in S2 Table (`Supp_Table_specimens.tsv`).
 
-All alignments, tree files, analysis code, and the labeled image dataset are available at <https://github.com/shchurch/Physalia_spatiotemporal_patterns>.
+All alignments, tree files, analysis code, and the labeled image dataset are available at <https://github.com/shchurch/Physalia_spatiotemporal_patterns>, archived at <https://doi.org/10.5281/zenodo.22240660>.
 
 # Acknowledgments
 

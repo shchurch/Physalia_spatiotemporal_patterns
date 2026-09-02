@@ -39,4 +39,4 @@ The iNaturalist photographs are not redistributed, since their licences vary per
 
 ## License and citation
 
-Code is MIT, data and text CC BY 4.0; see `LICENSE`. Please cite the manuscript. This repository is archived on Zenodo, and the DOI will be added once minted.
+Code is MIT, data and text CC BY 4.0; see `LICENSE`. Please cite the manuscript. This repository is archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22240660.svg)](https://doi.org/10.5281/zenodo.22240660). That DOI always resolves to the latest release.
